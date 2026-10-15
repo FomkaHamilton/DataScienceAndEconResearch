@@ -64,6 +64,10 @@ Hyperparameters tuned only within the development window via time-series cross-v
 **Exploratory (labeled as such, not confirmatory):**
 6. RQ4: predictive gains vs. BDS new-firm-share (parked covariate, [data/MANIFEST.md](data/MANIFEST.md) item 3).
 
+## Addenda
+
+- [pre_analysis_plan_addendum_1.md](pre_analysis_plan_addendum_1.md) (2026-10-15) — robustness checks, performance over time, and detectable-effect analysis, committed after Phase 5 and before running them.
+
 ## 8. What would change this plan
 
 Per the program's own rules: if Phase 5 execution reveals a problem with this design (e.g., the quarter-FE/winsorizing choices don't behave as expected, or a model fails to converge), the deviation and the reason for it will be written into the paper and the research log — not quietly substituted.
