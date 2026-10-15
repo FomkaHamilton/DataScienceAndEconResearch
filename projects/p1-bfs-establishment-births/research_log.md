@@ -171,4 +171,60 @@ Results ([literature/rq2_findings.md](literature/rq2_findings.md)):
   - The first attempt failed because the session's scratch folder path exceeded Windows' 260-character limit inside `.git` and `.venv`. The audit was re-run in a short temporary folder, which was deleted afterwards.
   - Anyone reproducing this on Windows should clone to a short path.
 
+## 2026-10-15: Pre-registered live forecasts (Addendum 3) and RQ4 (Addendum 4)
+
+The author approved this order: live forecasts first (they have a deadline), then a small RQ4, then drafting.
+
+### Live forecasts (Addendum 3)
+
+[Addendum 3](pre_analysis_plan_addendum_3.md) was committed together with the forecasts in commit 7a36fe1, tagged `prereg-live-forecasts-2026`. BLS publishes 2026Q1 on October 28, so the commit precedes any 2026 establishment-birth data.
+
+**What was forecast:**
+
+- 2,448 forecasts: 51 states × 2026Q1–Q3 × 16 model variants.
+- The variants are the benchmark, all applications at leads 0–4, and high-propensity applications at leads 0 and 3.
+- Each variant is run twice: trained on all data, and trained without 2020–22.
+- Before forecasting, the rebuilt features were checked against the Phase 5 forecast data and matched exactly on all 4,386 rows.
+
+**Safeguards:**
+
+- File SHA-256 `8e0751c9…841fc`.
+- A `.gitattributes` rule stores the file byte-for-byte, so the hash is the same on every platform. Without it, git's line-ending conversion would have changed the hash on Mac and Linux checkouts. The hash of the stored copy was confirmed after pushing.
+- The forecasting script refuses to overwrite the file.
+
+**Scoring:**
+
+- The scoring script was committed at the same time and tested on synthetic data only; a hand calculation matched its output.
+- **H1** (the paper's claim): applications still don't help.
+- **H2:** training without 2020–22 helps.
+- **Expected differences between variants:** models trained on all data forecast 4–9% year-over-year growth; the 2020–22-excluded models and the benchmark forecast about 1–3%.
+
+**Pending author decision:** public timestamping. The repo is private, so outsiders can't verify when the forecasts were made.
+
+### RQ4 (Addendum 4)
+
+[Addendum 4](pre_analysis_plan_addendum_4.md) was committed (4fd546f) before running.
+
+**Correction before running.** The Phase 2 new-firm share had excluded firms too old for Census to date ("left-censored") from its denominator. That overstated the share:
+
+| | Before | After |
+|---|---|---|
+| 2010–19 mean | 69% | 61% |
+| All-years mean | 77.9% | 66.8% |
+
+The corrected figure implies about 39% of new establishments come from existing firms, close to Decker & Haltiwanger's ~36%. Fixed in `clean_bds.py` before any use. The Phase 3 findings and the data manifest are corrected; the Phase 2 log entry above is left as originally written.
+
+**Results** ([literature/rq4_findings.md](literature/rq4_findings.md)):
+
+- **Same-quarter lead, pre-2020:** forecasting gains are larger in states where more entry comes from brand-new firms (Spearman ρ = 0.37, Holm p = 0.014). Under the pre-registered reading, that is consistent with the new-firm mechanism.
+- **3-quarter lead:** ρ = 0.11, inconclusive.
+- **After 2020:** no relationship.
+- **Robustness:** a moderate tendency, not driven by any single state.
+
+### Pipeline
+
+`make_live_forecasts.py` (which checks the frozen file) and `run_rq4.py` are added to `replication/run_all.py`.
+
+**AI-use record:** Claude (Opus 5.5) wrote Addenda 3 and 4, the forecast, scoring and RQ4 code, and the findings; found and fixed the new-firm-share definition and the line-ending risk to the forecast hash. Not yet reviewed by the author.
+
 **AI-use record:** Claude (Opus 5.5) wrote Addendum 2, the RQ2 code, the reproducibility tooling and the findings; redrew the charts; and ran everything. Not yet reviewed by the author.

@@ -40,6 +40,8 @@ PIPELINE = [
     "src/analysis/run_phase5_evaluation.py",  # primary results
     "src/analysis/run_phase5_extensions.py",  # Addendum 1
     "src/analysis/run_rq2.py",  # Addendum 2
+    "src/analysis/make_live_forecasts.py",  # Addendum 3: checks the frozen forecasts, never overwrites
+    "src/analysis/run_rq4.py",  # Addendum 4
 ]
 
 

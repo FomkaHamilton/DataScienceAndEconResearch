@@ -61,7 +61,9 @@ This is flagged here rather than fixed silently, per the program's standard: an 
 
 ## BDS cross-check (RQ4 covariate, not yet used in a model)
 
-The BDS state × firm-age extraction ([src/cleaning/clean_bds.py](../src/cleaning/clean_bds.py)) gives a mean new-firm share of establishment entry of **77.9%** (std 8.8%) across state-years, i.e. roughly 22% of new establishments come from already-existing firms opening another location, not brand-new firms. This is the same direction as Decker & Haltiwanger's (2022) finding of ~36% existing-firm share nationally during the COVID surge specifically — the gap between 22% (this project's long-run state-year average) and 36% (their COVID-specific national figure) is plausible given the different time periods and the national-vs-state-year averaging, but the two numbers are not directly comparable and this should not be overstated. This variable is parked for RQ4 use in Phase 5; it has not been merged into the forecasting panel or tested against anything yet.
+The BDS state × firm-age extraction ([src/cleaning/clean_bds.py](../src/cleaning/clean_bds.py)) gives a mean new-firm share of establishment entry of **61%** for 2010–2019 (66.8% across all state-years, 1978–2023). So roughly 39% of new establishments in 2010–2019 came from existing firms opening another location. That is close to Decker & Haltiwanger's (2022) ~36%.
+
+*Corrected 2026-10-15.* This section originally reported 77.9%. That figure came from a definitional error: openings by firms too old for Census to date ("left-censored") were excluded from the denominator. The error was corrected before the variable was used in any analysis; see [rq4_findings.md](rq4_findings.md). The variable is used in RQ4.
 
 ## What this does NOT establish
 

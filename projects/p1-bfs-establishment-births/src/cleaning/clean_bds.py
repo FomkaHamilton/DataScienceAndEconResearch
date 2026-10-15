@@ -33,10 +33,13 @@ RAW_BDS_DIR = PROJECT_ROOT / "data" / "raw" / "bds"
 PROCESSED_DIR = PROJECT_ROOT / "data" / "processed"
 
 NEW_FIRM_FAGE = "a) 0"
-# Exclude the left-censored category from the denominator: it is an
-# artifact of the BDS time window (firms too old to date exactly in the
-# earliest years of the series), not a meaningful age group every year.
-EXCLUDE_FAGE = {"l) Left Censored"}
+# The denominator includes every firm-age category, including "Left
+# Censored" (firms that already existed when BDS begins, so their exact
+# age is unknown). Those are old firms opening new locations, which is
+# exactly the "not a new firm" case. An earlier version excluded them,
+# which overstated the new-firm share (2010-19 mean 0.69 instead of 0.61);
+# corrected 2026-10-15, before this file was used in any analysis.
+EXCLUDE_FAGE: set[str] = set()
 
 
 def _latest_raw_file() -> Path:

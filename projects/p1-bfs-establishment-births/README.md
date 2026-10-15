@@ -17,7 +17,8 @@ Full design: [research_question.md](research_question.md). Program-level context
 | 4. Pre-analysis plan | Committed — see [pre_analysis_plan.md](pre_analysis_plan.md) |
 | 5. Baseline + full model set | Done (corrected run) — see [literature/phase5_findings.md](literature/phase5_findings.md) |
 | 6. Robustness & sensitivity | Done via [Addendum 1](pre_analysis_plan_addendum_1.md): seasonally adjusted series, winsorizing, performance over time, detectable effects |
-| 7. Secondary / exploratory | RQ2 done via [Addendum 2](pre_analysis_plan_addendum_2.md), see [literature/rq2_findings.md](literature/rq2_findings.md). RQ4 (new-firm share, exploratory) not started. |
+| 7. Secondary / exploratory | RQ2 done via [Addendum 2](pre_analysis_plan_addendum_2.md) ([findings](literature/rq2_findings.md)); RQ4 done via [Addendum 4](pre_analysis_plan_addendum_4.md) ([findings](literature/rq4_findings.md)) |
+| 7b. Live forecasts | Pre-registered 2026Q1–Q3 forecasts committed via [Addendum 3](pre_analysis_plan_addendum_3.md) (tag `prereg-live-forecasts-2026`). First scoring when BLS publishes 2026Q1 on 2026-10-28. |
 | 8. Reproducibility audit | Passed 2026-10-15. Fresh clone + pinned environment + one command reproduced all 31 tables (max difference 1.1e-14) and 6 figures. See [Reproduce](#reproduce). |
 | 9+ | Not started |
 

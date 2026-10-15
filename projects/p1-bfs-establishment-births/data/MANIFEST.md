@@ -54,7 +54,9 @@ The raw files are not committed. BED alone is 253 MB, and the agencies host them
 - **No API key required** for this bulk CSV. No robots.txt restriction found on www2.census.gov (checked 2026-10-14).
 - **Coverage:** annual (BDS's March-to-March reference year), 1978–2023, 50 states + DC, 12 firm-age categories.
 - **Purpose:** RQ4 only (exploratory heterogeneity question) — not part of the core quarterly forecasting panel.
-- **Transformation:** `src/cleaning/clean_bds.py` computes `new_firm_share = estabs_entry[firm age 0] / sum(estabs_entry, all ages except "Left Censored")` per state-year → `data/processed/bds_state_new_firm_share.csv` (2,346 rows). Mean 77.9% (std 8.8%).
+- **Transformation:** `src/cleaning/clean_bds.py` computes `new_firm_share = estabs_entry[firm age 0] / sum(estabs_entry, all firm ages)` per state-year → `data/processed/bds_state_new_firm_share.csv` (2,346 rows). Mean 66.8% across all state-years, 61.1% for 2010–2019.
+  - The denominator includes "left-censored" firms: firms that already existed when BDS begins, so their exact age is unknown.
+  - An earlier version excluded them, giving a 77.9% mean. That overstated the share. It was corrected 2026-10-15, before the file was used in any analysis.
 - **Status:** parked for Phase 5; not yet merged into the forecasting panel or used in any model.
 
 ## 4. Integrated quarterly panel (derived, not a separate source)
