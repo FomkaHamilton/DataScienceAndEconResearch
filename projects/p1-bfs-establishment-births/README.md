@@ -1,6 +1,6 @@
 # Project 1 — Business Applications and State Establishment Births
 
-**Status: Phase 1 (literature review) in progress. No data acquired, no analysis run.**
+**Status: Phase 1 (literature review) complete — gate passed. Starting Phase 2 (data acquisition). No analysis run.**
 
 Working title: *Do Business Applications Predict Where New Establishments Will Open? State-Level Nowcasts of Establishment Births from the Business Formation Statistics.*
 
@@ -11,8 +11,8 @@ Full design: [research_question.md](research_question.md). Program-level context
 | Phase | Status |
 |---|---|
 | 0. Setup | Done |
-| 1. Literature review | In progress — see [literature/search_protocol.md](literature/search_protocol.md) |
-| 2. Data acquisition | Not started — blocked on Phase 1 gate |
+| 1. Literature review | Done — gate passed, see [literature/extraction_table.md](literature/extraction_table.md) |
+| 2. Data acquisition | In progress |
 | 3+ | Not started |
 
 ## Reproduce (once code exists)

@@ -1,6 +1,6 @@
 # Research Plan (DRAFT) — Project 1: Business Applications and State Establishment Births
 
-*Drafted 2026-10-14. Status: **draft pending author approval** of the first-project choice (see [01_research_roadmap.md](01_research_roadmap.md) §6).*
+*Drafted 2026-10-14. Status: **approved 2026-10-14.** Superseded as the living design document by [../projects/p1-bfs-establishment-births/research_question.md](../projects/p1-bfs-establishment-births/research_question.md), which reflects Phase 1 literature-review findings. This file remains the original proposal for reference.*
 *No data has been downloaded into the project or modeled. Everything below is design, not results.*
 
 Working title: *Do Business Applications Predict Where New Establishments Will Open? State-Level Nowcasts of Establishment Births from the Business Formation Statistics.*
