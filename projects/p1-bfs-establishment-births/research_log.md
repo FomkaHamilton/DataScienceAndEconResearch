@@ -159,6 +159,16 @@ Results ([literature/rq2_findings.md](literature/rq2_findings.md)):
 - Added `replication/verify_outputs.py`, which compares regenerated outputs against git HEAD.
 - Added SHA-256 checksums of the raw files to `data/MANIFEST.md`.
 
-The fresh-clone audit follows after this commit.
+**Fresh-clone audit: passed.**
+
+- **Setup:** cloned from GitHub at commit a131fb8 into an empty folder, with a new virtual environment installed from the pinned `requirements.txt` (Python 3.12.10).
+- **Pipeline:** `replication/run_all.py` ran end to end in 4.1 minutes.
+- **Consistency checks:** both internal checks passed — the over-time and RQ2 forecasts match the primary forecasts exactly.
+- **Output comparison:** `replication/verify_outputs.py` checked all 31 committed tables and 6 figures and found 0 problems.
+  - The largest numeric difference anywhere was 1.1e-14. That is last-digit floating-point variation from multi-threaded arithmetic, not a substantive difference.
+  - The ML tuning chose identical settings.
+- **Practical notes:**
+  - The first attempt failed because the session's scratch folder path exceeded Windows' 260-character limit inside `.git` and `.venv`. The audit was re-run in a short temporary folder, which was deleted afterwards.
+  - Anyone reproducing this on Windows should clone to a short path.
 
 **AI-use record:** Claude (Opus 5.5) wrote Addendum 2, the RQ2 code, the reproducibility tooling and the findings; redrew the charts; and ran everything. Not yet reviewed by the author.
