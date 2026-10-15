@@ -51,6 +51,8 @@ Checking whether this was an isolated data error or a broader pattern: across al
 
 This is flagged here rather than fixed silently, per the program's standard: an anomaly in the data gets investigated and reported, not quietly smoothed over.
 
+**Follow-up check (2026-10-15): does BFS share the same Q1 pattern?** Yes, more strongly. 21% of state-Q1 observations in BA_BA (business applications) show a >40% quarter-over-quarter jump, versus ~0% in Q2 and a smaller share in Q3 — far more concentrated than births' own Q1 pattern. Of the 41 state-quarters where *both* series jump sharply (>30%) at once, 36 are in Q1. **This raises a genuine confound risk:** part of the Phase 3 lagged correlation could reflect both series reacting to a shared calendar-timing effect (plausibly tax-year-aligned business registration timing), not applications genuinely forecasting births. This is addressed directly in [pre_analysis_plan.md](../pre_analysis_plan.md) §4 (pooled quarter-of-year indicator in all models, as the structural fix, not just an outcome-side cleanup) rather than left as an unaddressed risk in the correlation numbers above.
+
 ## Summary stats and other outputs
 
 - [outputs/tables/national_lag_correlations.csv](../outputs/tables/national_lag_correlations.csv)

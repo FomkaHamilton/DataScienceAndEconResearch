@@ -59,3 +59,13 @@ Both outputs spot-checked for sanity (magnitudes, date ranges, null patterns ful
 **AI-use record:** Claude (Sonnet 5) wrote and ran all Phase 2b/3 scripts, generated the figures/tables, and investigated the CA anomaly (checked whether it was isolated or systematic before writing it up) rather than either ignoring it or over-claiming a cause. Not yet reviewed by the author.
 
 **Next:** Phase 4 — pre-analysis plan (lock the test window, finalize model list, specify the Q1-lumpiness handling, commit before any out-of-sample evaluation).
+
+## 2026-10-15: Phase 4 — pre-analysis plan (committed)
+
+Before finalizing the Q1-lumpiness handling, checked whether BFS applications show the same pattern as BED births (they do, more strongly: 21% of state-Q1 observations jump >40% QoQ vs. ~0% in other quarters; 36 of 41 simultaneous large jumps in both series are in Q1). This is a genuine confound risk — part of the Phase 3 correlation could reflect both series reacting to the same calendar-timing effect, not a real predictive relationship. Reported this to the author along with the handling options (quarter FE, switch to SA series, winsorizing, or a combination), with explicit publication-impact reasoning for each (notably: switching to SA as primary would reintroduce the look-ahead bias problem the NSA choice was meant to avoid). Author chose the combination approach.
+
+**Committed:** [pre_analysis_plan.md](pre_analysis_plan.md) — test window locked at 2023Q1–2025Q4 (births); information-set treatment (pseudo-real-time on final-vintage data, both series, with the BED-vintage-unavailability and BFS-vintage-deferred decisions stated as limitations); seasonality handling (quarter-of-year indicator in all models as the structural fix targeting the newly-found confound; BLS/Census SA series as a robustness line only, explicitly not valid for real-time claims; winsorizing at development-window-only 1st/99th percentiles as a disclosed, pre-specified sensitivity check — thresholds fixed now, not tuned later); full model list; evaluation design (Clark-West/Giacomini-White, Hansen-Lunde-Nason MCS, Qu-Timmermann-Zhu/Akgun panel tests); and primary-vs-secondary-vs-exploratory comparisons specified in advance to prevent fishing.
+
+**AI-use record:** Claude (Sonnet 5) ran the BFS-side diagnostic, presented the options with publication-impact tradeoffs, and drafted the committed plan per the author's chosen approach. Author made the actual decision (AskUserQuestion). Not yet reviewed by the author in full detail.
+
+**Next:** Phase 5 — baseline + full model set, executed exactly per the committed plan.
