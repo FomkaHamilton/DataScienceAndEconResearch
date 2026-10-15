@@ -69,3 +69,17 @@ Before finalizing the Q1-lumpiness handling, checked whether BFS applications sh
 **AI-use record:** Claude (Sonnet 5) ran the BFS-side diagnostic, presented the options with publication-impact tradeoffs, and drafted the committed plan per the author's chosen approach. Author made the actual decision (AskUserQuestion). Not yet reviewed by the author in full detail.
 
 **Next:** Phase 5 — baseline + full model set, executed exactly per the committed plan.
+
+## 2026-10-15: Phase 5 — model evaluation (major finding, paused for author input)
+
+Built the real-time forecast dataset and ran all pre-specified models (benchmark AR, benchmark+BFS per horizon h=0-4, ElasticNet, RF, GBM, combination) with genuine expanding-window re-estimation against the locked test window (2023Q1-2025Q4), exactly per [pre_analysis_plan.md](pre_analysis_plan.md).
+
+**Headline finding: the apparent signal does not survive correcting for the panel's dependence structure.** Naive pooled Clark-West tests showed BFS significantly improving forecasts at h=1-4 (p as low as 0.0003 at h=3) and RF beating the benchmark (p=0.00006). But 612 "observations" (51 states x 12 quarters) are not 612 independent data points -- a two-way clustered test (Cameron-Gelbach-Miller, clustering by state and by quarter simultaneously) finds **no significant improvement at any horizon, for any model** (p=0.26-0.96 across horizons; RF's point estimate actually turns slightly negative under clustering).
+
+Follow-up diagnostic: the lag-3 correlation that drove Phase 3's optimistic read drops from 0.26 to 0.10 when the 2020-21 pandemic business-formation surge is excluded from the development window, and is 0.43 within 2020-21 alone. The test window (2023-2025) has no comparable shock, consistent with the relationship not generalizing out of that one episode.
+
+**Disclosed deviations from the PAP** (per its own Sec. 8 rule): Hansen-Lunde-Nason MCS and the Qu-Timmermann-Zhu/Akgun panel tests were not implemented from scratch (no vetted reference implementation available; risk of an unverifiable bespoke bug). Substituted with Holm-Bonferroni (for MCS) and cluster-robust/two-way-clustered tests (for the panel tests) -- standard, well-understood methods serving the same purpose. The cluster-robust substitution is the one that mattered: it directly overturned the naive result, which is itself evidence the Phase 1 instinct to look for those specialized tests was the right one.
+
+Full writeup: [literature/phase5_findings.md](literature/phase5_findings.md). Paused here -- this is a genuine pivot point for the paper's direction, not a routine implementation detail, so it goes to the author before any further phase work.
+
+**AI-use record:** Claude (Sonnet 5) built the forecast infrastructure, ran all models, caught the naive-vs-clustered divergence by checking rather than accepting the first (favorable-looking) result, and ran the COVID-episode diagnostic to explain it. Not yet reviewed by the author.

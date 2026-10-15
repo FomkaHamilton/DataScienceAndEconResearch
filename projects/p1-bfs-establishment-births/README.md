@@ -1,6 +1,6 @@
 # Project 1 — Business Applications and State Establishment Births
 
-**Status: Phases 0–4 complete (setup, literature review, data acquisition, exploratory analysis, pre-analysis plan). All gates passed. Starting Phase 5 (baseline + full model set) next.**
+**Status: Phases 0–5 executed. Phase 5's headline finding is a genuine pivot point — see [literature/phase5_findings.md](literature/phase5_findings.md) — paused for author direction before any further work.**
 
 Working title: *Do Business Applications Predict Where New Establishments Will Open? State-Level Nowcasts of Establishment Births from the Business Formation Statistics.*
 
@@ -15,7 +15,8 @@ Full design: [research_question.md](research_question.md). Program-level context
 | 2. Data acquisition | Done (BFS + BED + BDS) — see [data/MANIFEST.md](data/MANIFEST.md). Vintage-data decision for BED still open (deferred to Phase 4). |
 | 3. Exploratory analysis | Done — gate passed, see [literature/phase3_findings.md](literature/phase3_findings.md) |
 | 4. Pre-analysis plan | Committed — see [pre_analysis_plan.md](pre_analysis_plan.md) |
-| 5+ | Not started |
+| 5. Baseline + full model set | Run — major finding, see [literature/phase5_findings.md](literature/phase5_findings.md). Paused for author direction. |
+| 6+ | Not started |
 
 ## Reproduce (once code exists)
 

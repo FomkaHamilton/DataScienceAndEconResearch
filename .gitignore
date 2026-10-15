@@ -24,6 +24,7 @@ projects/**/data/processed/*
 !projects/p1-bfs-establishment-births/data/processed/bed_state_establishment_births_deaths.csv
 !projects/p1-bfs-establishment-births/data/processed/bds_state_new_firm_share.csv
 !projects/p1-bfs-establishment-births/data/processed/analysis_panel_quarterly.csv
+!projects/p1-bfs-establishment-births/data/processed/forecast_dataset.csv
 
 # --- OS / editor ---
 .DS_Store
