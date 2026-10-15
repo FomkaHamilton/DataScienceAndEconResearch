@@ -11,11 +11,17 @@ venv/
 env/
 .env
 
-# --- Data (raw/processed data is documented via manifests, not committed by default) ---
+# --- Data (raw data is documented via manifests, not committed by default) ---
 projects/**/data/raw/*
 !projects/**/data/raw/.gitkeep
+
+# Processed data is excluded by default, but small, public, unrestricted
+# derived datasets may be committed explicitly (see each project's
+# data/MANIFEST.md for provenance). Exceptions below.
 projects/**/data/processed/*
 !projects/**/data/processed/.gitkeep
+!projects/p1-bfs-establishment-births/data/processed/bfs_state_applications.csv
+!projects/p1-bfs-establishment-births/data/processed/bed_state_establishment_births_deaths.csv
 
 # --- OS / editor ---
 .DS_Store

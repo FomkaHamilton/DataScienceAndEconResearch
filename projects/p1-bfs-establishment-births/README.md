@@ -12,7 +12,7 @@ Full design: [research_question.md](research_question.md). Program-level context
 |---|---|
 | 0. Setup | Done |
 | 1. Literature review | Done — gate passed, see [literature/extraction_table.md](literature/extraction_table.md) |
-| 2. Data acquisition | In progress |
+| 2. Data acquisition | First pass done (BFS + BED) — see [data/MANIFEST.md](data/MANIFEST.md). BDS (RQ4) and vintage-data decision still open. |
 | 3+ | Not started |
 
 ## Reproduce (once code exists)

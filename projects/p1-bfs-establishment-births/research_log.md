@@ -27,3 +27,19 @@ Dispatched two parallel AI research passes against the written search protocol. 
 **AI-use record:** Claude (Sonnet 5 via Claude Code) ran both literature searches and drafted the extraction table and design updates. Not yet reviewed by the author.
 
 **Next:** Phase 2 — data acquisition.
+
+## 2026-10-14: Phase 2 — data acquisition (first pass complete)
+
+Verified both access paths directly (robots.txt check, directory listing) before pulling anything, per the program's scraping-ethics rule. Neither host restricts the paths used.
+
+**BFS:** `src/acquisition/fetch_bfs.py` downloads the single published CSV (no API key). `src/cleaning/clean_bfs.py` filters to `naics_sector == "TOTAL"` (state/region rows have no industry detail), reshapes wide-to-long, and keeps the four application series (BA_BA/HBA/WBA/CBA) plus Census's own BF_* projection series for context. Output: 327,636 rows, 2004–2026, 51 states + DC.
+
+**BED:** `src/acquisition/fetch_bed.py` downloads BLS's full flat-file set (253.5 MB data file + series directory + 12 lookup tables, no API key). `src/cleaning/clean_bed.py` decodes `bd.series` to find the 432 series_ids matching state-level, total-private, all-size-class establishment births/deaths, quarterly, both SA/NSA and both rate/level — then filters the 4.6M-row data file down to those. Output: 57,648 rows, 1992 Q3–2025 Q4 (births) / 2025 Q1 (deaths — confirmed 3-quarter publication lag).
+
+Both outputs spot-checked for sanity (magnitudes, date ranges, null patterns fully explained — see [data/MANIFEST.md](data/MANIFEST.md)). Processed CSVs (23.5 MB combined, public and unrestricted) are committed to git as an exception to the default `data/processed` gitignore rule, since they're small and central to reproducibility; raw files stay local/gitignored per the manifest.
+
+**Confirmed from Phase 1:** BFS has real-time vintages on ALFRED (needs a free API key, deferred). BED has none anywhere — this pull is final-vintage only, as expected.
+
+**Not yet done:** BDS (for RQ4) acquisition; the real-time information-set/release-calendar construction; the vintage-data decision for BED. These come next, alongside Phase 3 (exploratory analysis).
+
+**AI-use record:** Claude (Sonnet 5 via Claude Code) wrote and ran the acquisition/cleaning scripts, including fixing one merge-key bug (bd.seasonal's `seasonal_code` vs. bd.series's `seasonal`) caught by actually running the pipeline rather than just reviewing the code. Not yet reviewed by the author.
