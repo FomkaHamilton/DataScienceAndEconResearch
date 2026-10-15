@@ -110,8 +110,10 @@ def build_target_series(raw_dir: Path) -> pd.DataFrame:
     ]
 
 
-def clean(retrieval_date: str | None = None) -> Path:
-    raw_dir = RAW_BED_DIR / retrieval_date if retrieval_date else _latest_raw_dir()
+def load_bed(raw_dir: Path) -> pd.DataFrame:
+    """Read one BED raw-file folder and return the tidy state births/deaths
+    table, without writing anything (used directly by the live-forecast
+    evaluation, which must not overwrite the committed processed file)."""
     print(f"Reading raw BED files from {raw_dir}")
 
     target = build_target_series(raw_dir)
@@ -160,6 +162,12 @@ def clean(retrieval_date: str | None = None) -> Path:
             "series_id",
         ]
     ].sort_values(["state_code", "dataclass", "seasonal_adj", "ratelevel", "year", "quarter"])
+    return out
+
+
+def clean(retrieval_date: str | None = None) -> Path:
+    raw_dir = RAW_BED_DIR / retrieval_date if retrieval_date else _latest_raw_dir()
+    out = load_bed(raw_dir)
 
     PROCESSED_DIR.mkdir(parents=True, exist_ok=True)
     out_path = PROCESSED_DIR / "bed_state_establishment_births_deaths.csv"

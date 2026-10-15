@@ -33,6 +33,25 @@ DEVELOPMENT_END_QUARTER = 4
 
 BFS_SERIES_KEEP = ["BA_BA", "BA_HBA", "BA_WBA", "BA_CBA"]
 
+# Join key: BFS uses 2-letter postal codes (geo), BED uses state names. This
+# crosswalk maps BFS geo codes to BED's state_name, including the U.S. total
+# and Puerto Rico rows both sources carry.
+GEO_TO_NAME = {
+    "AL": "Alabama", "AK": "Alaska", "AZ": "Arizona", "AR": "Arkansas",
+    "CA": "California", "CO": "Colorado", "CT": "Connecticut", "DE": "Delaware",
+    "DC": "District of Columbia", "FL": "Florida", "GA": "Georgia", "HI": "Hawaii",
+    "ID": "Idaho", "IL": "Illinois", "IN": "Indiana", "IA": "Iowa", "KS": "Kansas",
+    "KY": "Kentucky", "LA": "Louisiana", "ME": "Maine", "MD": "Maryland",
+    "MA": "Massachusetts", "MI": "Michigan", "MN": "Minnesota", "MS": "Mississippi",
+    "MO": "Missouri", "MT": "Montana", "NE": "Nebraska", "NV": "Nevada",
+    "NH": "New Hampshire", "NJ": "New Jersey", "NM": "New Mexico", "NY": "New York",
+    "NC": "North Carolina", "ND": "North Dakota", "OH": "Ohio", "OK": "Oklahoma",
+    "OR": "Oregon", "PA": "Pennsylvania", "RI": "Rhode Island", "SC": "South Carolina",
+    "SD": "South Dakota", "TN": "Tennessee", "TX": "Texas", "UT": "Utah",
+    "VT": "Vermont", "VA": "Virginia", "WA": "Washington", "WV": "West Virginia",
+    "WI": "Wisconsin", "WY": "Wyoming", "US": "U.S. totals", "PR": "Puerto Rico",
+}
+
 
 def _bfs_to_quarterly(bfs: pd.DataFrame) -> pd.DataFrame:
     bfs = bfs[bfs["series"].isin(BFS_SERIES_KEEP)].copy()
@@ -78,28 +97,8 @@ def build() -> Path:
     bfs_q = _bfs_to_quarterly(bfs)
     bed_w = _bed_wide(bed)
 
-    # Join key: BFS uses 2-letter postal codes (geo), BED uses FIPS state_code
-    # + state_name. Join on state_name after harmonizing BFS's geo to a name
-    # via a small crosswalk built from BED's own state_code/state_name list
-    # plus the US-total/region/territory rows BFS has that BED doesn't carry
-    # the same way.
-    geo_to_name = {
-        "AL": "Alabama", "AK": "Alaska", "AZ": "Arizona", "AR": "Arkansas",
-        "CA": "California", "CO": "Colorado", "CT": "Connecticut", "DE": "Delaware",
-        "DC": "District of Columbia", "FL": "Florida", "GA": "Georgia", "HI": "Hawaii",
-        "ID": "Idaho", "IL": "Illinois", "IN": "Indiana", "IA": "Iowa", "KS": "Kansas",
-        "KY": "Kentucky", "LA": "Louisiana", "ME": "Maine", "MD": "Maryland",
-        "MA": "Massachusetts", "MI": "Michigan", "MN": "Minnesota", "MS": "Mississippi",
-        "MO": "Missouri", "MT": "Montana", "NE": "Nebraska", "NV": "Nevada",
-        "NH": "New Hampshire", "NJ": "New Jersey", "NM": "New Mexico", "NY": "New York",
-        "NC": "North Carolina", "ND": "North Dakota", "OH": "Ohio", "OK": "Oklahoma",
-        "OR": "Oregon", "PA": "Pennsylvania", "RI": "Rhode Island", "SC": "South Carolina",
-        "SD": "South Dakota", "TN": "Tennessee", "TX": "Texas", "UT": "Utah",
-        "VT": "Vermont", "VA": "Virginia", "WA": "Washington", "WV": "West Virginia",
-        "WI": "Wisconsin", "WY": "Wyoming", "US": "U.S. totals", "PR": "Puerto Rico",
-    }
-    bfs_q = bfs_q[bfs_q["geo"].isin(geo_to_name)].copy()
-    bfs_q["state_name"] = bfs_q["geo"].map(geo_to_name)
+    bfs_q = bfs_q[bfs_q["geo"].isin(GEO_TO_NAME)].copy()
+    bfs_q["state_name"] = bfs_q["geo"].map(GEO_TO_NAME)
 
     panel = bfs_q.merge(
         bed_w, on=["state_name", "seasonal_adj", "year", "quarter"], how="inner"
