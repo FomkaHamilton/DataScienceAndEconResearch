@@ -39,3 +39,5 @@ projects/**/outputs/figures/*
 !projects/**/outputs/figures/.gitkeep
 !projects/p1-bfs-establishment-births/outputs/figures/national_bfs_vs_bed_yoy.png
 !projects/p1-bfs-establishment-births/outputs/figures/state_examples_bfs_vs_bed_yoy.png
+!projects/p1-bfs-establishment-births/outputs/figures/phase5x_cumulative_gain_h3.png
+!projects/p1-bfs-establishment-births/outputs/figures/phase5x_bfs_coefficient_path_h3.png

@@ -1,78 +1,152 @@
-# Phase 5 — Model Evaluation Findings
+# Phase 5 — Model Evaluation Findings (corrected) and Addendum 1 Results
 
-*2026-10-15. Test window (2023Q1–2025Q4) evaluated for the first time, exactly per [pre_analysis_plan.md](../pre_analysis_plan.md). Not yet reviewed by the author.*
+*2026-10-15. This is the current version. It supersedes the first write-up (commit 24013c8), which contained three errors described in section 1. Analyses follow [pre_analysis_plan.md](../pre_analysis_plan.md) and [pre_analysis_plan_addendum_1.md](../pre_analysis_plan_addendum_1.md); the addendum was committed (feb59b5) before any of its analyses were run. Not yet reviewed by the author.*
 
-## Headline finding
+Units used throughout: accuracy differences are expressed as **% of the benchmark's mean squared error (MSE)**. +5% means the model's squared forecast errors were 5% smaller than the benchmark's; negative means the model did worse.
 
-**The apparent predictive signal does not survive proper statistical treatment of the panel's dependence structure.** A naive pooled test suggests BFS applications significantly improve forecasts of BED establishment births. A correctly clustered version of the same test — accounting for the fact that 612 "observations" (51 states × 12 quarters) are not 612 independent data points — finds **no statistically significant improvement at any horizon, for either the econometric or the machine-learning models.**
+## Summary
 
-A follow-up check traces much of the apparent signal to a single historical episode: the 2020–21 pandemic business-formation surge. Excluding those two years, the in-sample correlation between applications and births **falls by more than half** (lag-3 correlation: 0.26 → 0.10). The test window (2023–2025) contains no comparable shock, which is consistent with the predictive relationship not generalizing out-of-sample.
+1. **Before 2020**, business applications carried real but modest predictive information for state establishment births. The nested information test (Clark–West) is significant even with dependence-robust inference (p ≈ 0.004 at the 3-quarter lead). Accuracy gains were small, about 1–4% depending on the lead, positive in roughly two-thirds of states, and not individually significant. These years are pseudo-out-of-sample (see §6).
+2. **During 2020–21**, gains were large: 11–20% at leads of 0–3 quarters, positive in 80–92% of states. Four quarters (2021Q2–2022Q1) account for most of the cumulative forecasting gain across the whole 2010–2025 span. Inference within this period is weak (only 8 quarters).
+3. **After the pandemic**, the estimated weight on applications roughly doubled (from about 0.15–0.20 to about 0.32–0.34, re-estimated each quarter), and the models that use applications stopped helping:
+   - In the locked 2023–25 test window, accuracy gains are indistinguishable from zero (3-quarter lead: +1.6%, 95% CI −6.5% to +9.7%).
+   - Across 2022–25, adding applications made forecasts slightly *worse* at leads of 0–3 quarters, in most states.
+4. **Machine learning adds nothing detectable.** With corrected tuning, the best ML model is an elastic net. It is +2.3% more accurate than the benchmark, with a 95% CI of −8.7% to +13.4%.
+5. **Naive pooled tests badly overstate significance.** For example, the information test at the 3-quarter lead has p = 0.0003 naive versus p ≈ 0.07 when it accounts for correlated errors.
+6. **The test-window results hold** under the two committed robustness checks (seasonally adjusted series; winsorized series).
 
-## What was run
+The pre-specified "pandemic-episode" explanation (Addendum 1) is **partly supported and partly undercut**:
 
-Per the committed plan: pooled panel models (benchmark AR, benchmark+BFS at each horizon h=0–4, ElasticNet, Random Forest, Gradient Boosting, an equal-weight combination), all with quarter-of-target and state fixed effects/features, fit with genuine expanding-window re-estimation, hyperparameters tuned only on the development window, tested against the locked 2023Q1–2025Q4 window.
+- **Supported:** the pandemic-period gains are large, and the pre-2020 accuracy gains are small and not individually significant.
+- **Undercut:** applications did carry statistically detectable information before 2020.
+- **Not anticipated:** after the pandemic the relationship didn't just fade back to its pre-2020 level; it stopped helping or slightly hurt.
 
-### Model performance (RMSE/MAE, pooled across the test window)
+The accurate description is a **regime-dependent relationship**, not a pure pandemic artifact.
 
-| Model | RMSE | MAE |
+## 1. Corrections to the first Phase 5 write-up
+
+Found while preparing Addendum 1. None of these let test-window data into model training.
+
+| # | Problem | Effect on results |
 |---|---|---|
-| Benchmark (AR only) | 0.1798 | 0.1252 |
-| Econometric, BFS lag 3 | 0.1784 | 0.1262 |
-| Random Forest | 0.1802 | 0.1241 |
-| Gradient Boosting | 0.1796 | 0.1218 |
-| Equal-weight combination | **0.1759** | **0.1218** |
+| C1 | The machine-learning tuning step was meant to validate on later years after training on earlier ones. Because the data was sorted by state, it actually split into alphabetical groups of states, each covering 2006–2022. | ML results only. With corrected (time-ordered) tuning, two of the three models chose simpler settings, and the best model by validation error is the elastic net, not random forest. |
+| C2 | "Best ML model" was hard-coded to random forest instead of being chosen by validation error. | The primary ML comparison and the combination forecast now use the elastic net. |
+| C3 | The dependence-robust tests were run on the *unadjusted* error difference, while the naive test they were compared with used the Clark–West *adjusted* difference. So the "naive vs. robust" comparison changed two things at once. | **This changes the headline.** I reported the 3-quarter-lead result as "nowhere near significant (p = 0.70)." That p-value is for actual accuracy, and it is correct as an accuracy test. The matching robust *information* test is p ≈ 0.07: marginal, not absent. |
 
-Differences are small in absolute terms across the board — none of these look like a dramatic win even before formal testing.
+The regression forecasts themselves are unchanged. The Addendum 1 consistency check confirmed all 612 test-window regression forecasts match the first run exactly.
 
-### Naive (uncorrected) Clark & West test — what Phase 3's design anticipated
+## 2. Locked test window, 2023Q1–2025Q4 (primary results, corrected)
 
-| Horizon | t-stat | p-value (one-sided) |
-|---|---|---|
-| 0 | 0.08 | 0.47 |
-| 1 | 2.25 | 0.012 |
-| 2 | 2.55 | 0.005 |
-| 3 | 3.46 | **0.0003** |
-| 4 | 2.42 | 0.008 |
+### Accuracy
 
-Taken at face value, this would say BFS significantly helps at every horizon except the nowcast, peaking at h=3 — matching Phase 3's exploratory correlation almost exactly. **This table is misleading on its own; see below.**
+| Model | RMSE | Accuracy vs. benchmark | 95% CI | Two-way p |
+|---|---|---|---|---|
+| Benchmark (own history only) | 0.1798 | — | — | — |
+| + applications, same quarter (h=0) | 0.1824 | −3.0% | −8.1% to +2.2% | 0.26 |
+| + applications, 3-quarter lead (h=3) | 0.1784 | +1.6% | −6.5% to +9.7% | 0.70 |
+| Elastic net (best ML by validation) | 0.1777 | +2.3% | −8.7% to +13.4% | 0.68 |
+| Random forest | 0.1806 | −0.8% | −13.3% to +11.6% | 0.89 |
+| Gradient boosting | 0.1824 | −2.9% | −13.8% to +8.0%* | 0.64* |
+| Combination (h=3 + elastic net) | 0.1771 | +3.0% | −6.2% to +12.1% | 0.53 |
 
-### Cluster-robust and two-way-clustered test — the honest version
+\*Gradient boosting's two-way clustered standard error was unstable (its interval was 1.6× narrower than the bootstrap's), so the wild-cluster-bootstrap interval and p-value are reported for it, as Addendum 1 specified.
 
-Clark & West (and the naive pooled approach generally) assumes something close to 612 independent data points. They are not: a given state's errors are correlated across its own 12 test quarters, and all 51 states share common shocks within the same quarter. Clustering for each of those separately, and then both at once (Cameron–Gelbach–Miller two-way clustering):
+### Information tests (Clark–West, one-sided: does adding applications help?)
 
-| Horizon | Two-way clustered p-value |
-|---|---|
-| 0 | 0.26 |
-| 1 | 0.81 |
-| 2 | 0.96 |
-| 3 | 0.70 |
-| 4 | 0.82 |
-
-**None are close to significant.** The effective sample size here is much closer to 12 (independent quarters) than 612. The same pattern holds for Random Forest vs. the benchmark (naive p = 0.00006; two-way clustered p = 0.94, and the point estimate of the improvement is actually *negative* — RF did very slightly worse than the simple benchmark on average).
-
-Full tables: [outputs/tables/phase5_clark_west.csv](../outputs/tables/phase5_clark_west.csv), [outputs/tables/phase5_cluster_robust_panel_test.csv](../outputs/tables/phase5_cluster_robust_panel_test.csv), [outputs/tables/phase5_two_way_cluster_by_horizon.csv](../outputs/tables/phase5_two_way_cluster_by_horizon.csv).
-
-### Diagnostic: is this driven by 2020–21?
-
-| Sample | lag-0 corr | lag-1 | lag-2 | lag-3 | lag-4 |
+| Comparison | Naive p | Clustered by state | Clustered by quarter | Two-way | Wild cluster bootstrap |
 |---|---|---|---|---|---|
-| Full development window (2004–2022) | 0.22 | 0.27 | 0.24 | 0.26 | 0.13 |
-| **Excluding 2020–2021** | 0.12 | 0.17 | 0.09 | **0.10** | 0.10 |
-| **2020–2021 only** | 0.14 | 0.27 | 0.26 | **0.43** | 0.19 |
+| h=0 | 0.47 | 0.47 | 0.48 | 0.48 | 0.49 |
+| h=3 | 0.0003 | 0.008 | 0.057 | 0.076 | 0.067 |
+| Elastic net | 0.0001 | 0.003 | 0.037 | 0.052 | 0.048 |
 
-The lag-3 correlation — the headline number from Phase 3 — drops by more than half once the pandemic years are excluded, and is dramatically elevated within those two years specifically. This is a plausible, direct explanation for why the relationship does not hold up in a test window (2023–2025) without a comparable shock.
+Holm-adjusted across the three primary comparisons (h=0, h=3, best ML):
 
-## Disclosed deviations from the committed plan
+- **h=3:** 0.15 (two-way), 0.14 (bootstrap)
+- **Elastic net:** 0.15 (two-way), 0.14 (bootstrap)
 
-Per [pre_analysis_plan.md](../pre_analysis_plan.md) Sec. 8 (any deviation disclosed, not silently substituted):
+Neither is significant after adjustment.
 
-1. **ARDL and bridge equations collapse to one specification.** Under the real-time convention implemented (BFS treated as available at full-quarter granularity once its ~2-week lag passes), there is no partial-quarter bridging left to do, so these are numerically the same model.
-2. **Hansen–Lunde–Nason (2011) Model Confidence Set was not implemented.** No vetted, widely-used Python reference implementation was available to build on with confidence, and a bespoke MCS bootstrap risks a subtle, hard-to-verify bug. Substituted with **Holm–Bonferroni** step-down correction across the primary comparisons — a standard, low-risk method with the same family-wise error-control purpose. (This substitution turned out not to be the binding constraint — the cluster-robust finding above is the one that overturns the naive result, not the multiple-comparison correction.)
-3. **Qu, Timmermann & Zhu (2024) / Akgun et al. (2024) were not implemented.** Both are very recent papers without an available reference implementation to build on safely. Substituted with cluster-robust and two-way-clustered tests of the pooled loss differential — a standard, well-understood method for exactly the cross-sectional-dependence problem those papers address. **This substitution is the one that matters**: it's what overturned the naive result, which is itself a demonstration of why those specialized panel tests exist and why Phase 1's choice to look for them was the right instinct, even though a full from-scratch implementation wasn't attempted here.
+**Clark–West is not used to judge the tree models.** Its adjustment assumes the larger model nests the smaller one in a linear way. Random forest's forecasts differ a lot from the benchmark's, so the adjustment inflates the statistic: random forest "passes" Clark–West (two-way p = 0.014) while being *less* accurate than the benchmark. For random forest and gradient boosting, only the accuracy test is meaningful.
 
-## What this does and doesn't show
+Full tables:
 
-- **Does not show:** that BFS applications have no predictive value for establishment births, in general or in all circumstances. The 2020–21 evidence is real — applications clearly did lead births during that episode. What's shown is that this relationship does not clearly generalize to calmer periods, at least not with enough strength to detect in a 12-quarter test window.
-- **Does not show:** that machine learning is useless here. It shows RF/GBM did not meaningfully beat a simple autoregressive benchmark *in this test window, with this feature set and this amount of data* — consistent, incidentally, with the weak non-top-tier state-unemployment-forecasting paper flagged in the Phase 1 methods review, which found the same thing in a similar short, noisy state panel.
-- **Does show:** a naive, pooled significance test on this kind of state panel can be substantially overconfident, and checking for cross-sectional/serial dependence is not optional box-ticking — it reversed the conclusion here.
-- **Important caveat on power:** "not significant" is not the same as "proven zero effect." With an effective sample closer to 12 independent quarters, this test window has limited power to detect even a real but modest effect. A longer test window, or a test window that happens to include another large shock, could look different.
+- [phase5_comparisons.csv](../outputs/tables/phase5_comparisons.csv)
+- [phase5_model_performance.csv](../outputs/tables/phase5_model_performance.csv)
+- [phase5_ml_tuning.csv](../outputs/tables/phase5_ml_tuning.csv)
+- [phase5_primary_comparisons_holm.csv](../outputs/tables/phase5_primary_comparisons_holm.csv)
+
+## 3. Robustness checks (Addendum 1, Analysis A)
+
+Locked test window, 3-quarter lead and best ML model:
+
+| Variant | h=3 accuracy | h=3 info test (two-way p) | Best-ML accuracy |
+|---|---|---|---|
+| Primary | +1.6% | 0.076 | +2.3% |
+| Seasonally adjusted series (no quarter indicator) | +1.7% | 0.065 | +2.9% |
+| Winsorized, scored against winsorized actuals | +0.0% | 0.117 | −0.4% |
+| Winsorized, scored against raw actuals | +0.9% | 0.092 | −0.0% |
+
+The conclusion doesn't depend on the seasonal-adjustment choice or on a few extreme quarters. If anything, clipping extremes shrinks the small gains further.
+
+Full table: [phase5x_robustness_comparisons.csv](../outputs/tables/phase5x_robustness_comparisons.csv).
+
+## 4. What the test window could have detected (Addendum 1, Analysis C)
+
+- **Upper end of the 95% intervals (§2 table):** the largest accuracy improvement the data can rule out.
+  - Same-quarter applications (h=0): gains above roughly **+2%** are ruled out.
+  - 3-quarter lead (h=3): gains above roughly **+10%** are ruled out.
+- **Minimum detectable improvement at 80% power:** 7–12% for the regression models, 10–18% for the ML models.
+- **So:** the test window rules out *large* gains but cannot rule out *modest* gains of a few percent. That is why the over-time analysis (§5) carries the paper.
+- **Few-cluster check:** wild-cluster-bootstrap intervals are within ±13% of the two-way intervals for every model except gradient boosting. The conventional intervals are not overconfident.
+
+Full table: [phase5x_detectable_effects.csv](../outputs/tables/phase5x_detectable_effects.csv).
+
+## 5. Forecast performance over time, 2010–2025 (Addendum 1, Analysis B)
+
+Regression models only, same expanding window and real-time rule. The test-window forecasts reproduce the primary run exactly (maximum difference 1e-16).
+
+| Period | Lead | Accuracy vs. benchmark | Two-way p (accuracy) | Info test, two-way p | States where model was more accurate |
+|---|---|---|---|---|---|
+| 2010–19 (40 qtrs) | h=0 | +2.6% | 0.19 | 0.0001 | 67% |
+| | h=1 | +3.8% | 0.15 | 0.0001 | 76% |
+| | h=3 | +0.8% | 0.23 | 0.004 | 65% |
+| 2020–21 (8 qtrs) | h=0 | +11.3% | 0.31 | 0.064 | 80% |
+| | h=1 | +20.1% | 0.22 | 0.046 | 90% |
+| | h=3 | +11.9% | 0.16 | 0.070 | 92% |
+| 2022–25 (16 qtrs) | h=0 | −7.1% | 0.079 | 0.85 | 18% |
+| | h=1 | −4.7% | 0.37 | 0.44 | 33% |
+| | h=3 | −3.7% | 0.66 | 0.27 | 37% |
+| | h=4 | +3.5% | 0.43 | 0.058 | 67% |
+
+All horizons and the bootstrap p-values: [phase5x_by_period.csv](../outputs/tables/phase5x_by_period.csv).
+
+**Cumulative gain** ([figure](../outputs/figures/phase5x_cumulative_gain_h3.png)):
+
+- Flat through 2014, then a slow, steady rise from 2015 to 2019.
+- Back to zero in 2020, then a near-vertical jump in 2021Q2–2022Q1.
+- A sharp loss in 2022Q2, then flat through the test window.
+- 2021Q2 alone contributed about seven times the entire 2010–2019 net gain.
+
+**Estimated weight on applications** ([figure](../outputs/figures/phase5x_bfs_coefficient_path_h3.png)):
+
+- Stable at about 0.15–0.20, and clearly above zero from about 2013, through 2021.
+- Rises to 0.32–0.41 once the 2020–21 surge enters the training data, and stays around 0.32–0.34 through the test window.
+- In plain terms: before 2020, a 10% year-over-year rise in applications was associated with roughly a 1.5–2% rise in establishment births three quarters later. The models trained through the pandemic assume roughly 3.3%.
+
+**Interpretation (hypothesis, not tested):** the post-pandemic models may be over-weighting applications because their estimated weight was learned largely from the 2020–21 surge. Addendum 1 commits to *not* testing a fix (for example, excluding 2020–21 from training) on the locked test window, since that would be specification search on the test data. The fix can be tested on future quarters as BLS publishes them.
+
+## 6. Caveats the paper must carry
+
+- **The pandemic explanation was formed after seeing the Phase 5 results** (stated in Addendum 1). The 2010–2022 forecasts are pseudo-out-of-sample, because those years informed exploratory choices such as emphasizing the 3-quarter lead.
+- **Pandemic-period inference rests on 8 quarters.** Point estimates are large and consistent across states, but p-values within that period are weak.
+- **Not a causal claim.** Nothing here says what drives the change after 2020.
+- **Data are final vintage, not real-time.** The BED vintage limitation from the original plan still applies.
+- **Two methods were substituted,** as disclosed in the plan: Holm–Bonferroni instead of the Model Confidence Set, and cluster-robust/bootstrap tests instead of the Qu–Timmermann–Zhu / Akgun panel tests.
+
+## 7. Citations introduced in this phase — verify before manuscript use
+
+- Cameron, Gelbach & Miller — two-way clustered standard errors (believed: *Journal of Business & Economic Statistics*, 2011)
+- Cameron, Gelbach & Miller — wild cluster bootstrap for few clusters (believed: *Review of Economics and Statistics*, 2008)
+- Webb — six-point weights for the wild cluster bootstrap (believed: *Canadian Journal of Economics*, 2023)
+
+None of these has been checked against a publisher page yet.

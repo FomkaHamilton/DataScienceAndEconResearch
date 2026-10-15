@@ -83,3 +83,46 @@ Follow-up diagnostic: the lag-3 correlation that drove Phase 3's optimistic read
 Full writeup: [literature/phase5_findings.md](literature/phase5_findings.md). Paused here -- this is a genuine pivot point for the paper's direction, not a routine implementation detail, so it goes to the author before any further phase work.
 
 **AI-use record:** Claude (Sonnet 5) built the forecast infrastructure, ran all models, caught the naive-vs-clustered divergence by checking rather than accepting the first (favorable-looking) result, and ran the COVID-episode diagnostic to explain it. Not yet reviewed by the author.
+
+## 2026-10-15: Phase 5 corrected + pre-analysis plan Addendum 1 (complete)
+
+The author chose to write up the Phase 5 result (option 1) and approved three follow-up analyses that decide whether it is a publishable paper.
+
+**Addendum committed before running** ([pre_analysis_plan_addendum_1.md](pre_analysis_plan_addendum_1.md), commit feb59b5). It fixes, in advance:
+
+- the period boundaries;
+- what result would support or undercut the pandemic-episode explanation;
+- a required consistency check;
+- an explicit note that the pandemic hypothesis was formed after seeing the Phase 5 results.
+
+**Three errors in the first Phase 5 run, found while preparing the addendum and corrected.** None let test data into training.
+
+- **C1:** the ML tuning folds split by alphabetical blocks of states, not by time.
+- **C2:** "best ML model" was hard-coded to random forest.
+- **C3 (changes the headline):** the robust tests were run on the unadjusted error difference, while the naive test used the Clark–West adjusted one.
+  - The first write-up said the 3-quarter-lead result was "nowhere near significant (p = 0.70)". That is correct for *accuracy*.
+  - The robust *information* test is p ≈ 0.07, which is marginal.
+  - I told the author the stronger version; the corrected version is in the findings doc.
+
+Regression forecasts are unchanged; all 612 match the first run exactly. The new inference code reproduced every original naive and two-way number exactly before being trusted.
+
+**Results** (full write-up: [literature/phase5_findings.md](literature/phase5_findings.md)):
+
+- **Locked test window:** no detectable accuracy gain. 3-quarter lead +1.6% of benchmark MSE (95% CI −6.5% to +9.7%); best ML (elastic net) +2.3%. The data rule out gains above about +2% at the same-quarter lead and about +10% at the 3-quarter lead, but cannot rule out modest gains.
+- **Robust** to the seasonally adjusted series and to winsorizing.
+- **Over time, the relationship is regime-dependent:**
+  - 2010–19: modest real information (robust information test p ≈ 0.004 at h=3), accuracy gains of about 1–4%, positive in about two-thirds of states.
+  - 2020–21: large gains, 11–20% at leads 0–3, in 80–92% of states.
+  - 2022–25: no gain or slight losses at leads 0–3.
+- **The estimated weight on applications roughly doubled after the pandemic entered the training data.** One possible explanation is that post-pandemic models over-weight applications. That is a hypothesis only: per the addendum, no fix is tested on the locked window.
+- **Against the addendum's pre-stated rules:** partly supported (large pandemic gains; small pre-2020 accuracy gains), partly undercut (real pre-2020 information), plus an unanticipated post-pandemic deterioration. The findings doc states this mixed outcome rather than forcing it into one bucket.
+
+**Open items before drafting:**
+
+- RQ2 (which application series carries the signal) is pre-specified and not yet run.
+- RQ4 (BDS new-firm share) is exploratory and not yet run.
+- Citations for the two-way clustering and wild cluster bootstrap methods are not yet verified.
+- The Phase 3 national chart uses two y-axes (a charting anti-pattern) and needs redrawing before any manuscript use.
+- Reproducibility audit (Phase 8).
+
+**AI-use record:** Claude (Opus 5.5) wrote the addendum and the analysis code, found and fixed the three errors, ran everything, and wrote the findings. Not yet reviewed by the author.

@@ -2,7 +2,15 @@
 
 *This document is authoritative for the project's design. It is a condensed, living version of [../../roadmap/02_project1_research_plan.md](../../roadmap/02_project1_research_plan.md), to be revised as the literature review and data acquisition narrow the design. Changes here should be logged in [research_log.md](research_log.md).*
 
-**Status:** Phases 0–4 complete as of 2026-10-15 (setup, literature review, data acquisition, exploratory analysis, pre-analysis plan). All gates passed. The pre-analysis plan ([pre_analysis_plan.md](pre_analysis_plan.md)) is now the authoritative specification for Phase 5 — it supersedes the design summary below wherever the two differ (notably: seasonality handling now includes a pooled quarter-of-year indicator in every model, added after finding BFS shares the same Q1 pattern as BED). See [literature/extraction_table.md](literature/extraction_table.md) (Phase 1) and [literature/phase3_findings.md](literature/phase3_findings.md) (Phase 3) for full detail.
+**Status:** Phases 0–5 complete as of 2026-10-15, plus [pre-analysis plan Addendum 1](pre_analysis_plan_addendum_1.md). The pre-analysis plan and its addendum are the authoritative specification; they supersede the design summary below wherever the two differ.
+
+**Where the evidence points (see [literature/phase5_findings.md](literature/phase5_findings.md)):** the predictive relationship is regime-dependent.
+
+- **Before 2020:** modest but real information.
+- **2020–21:** large gains.
+- **2023–25 (locked test window):** no detectable accuracy gain.
+
+The paper's framing has shifted accordingly. It is no longer "applications are a useful state-level leading indicator". It is now about how stable that relationship is, with the original RQ1 as the vehicle. See [literature/extraction_table.md](literature/extraction_table.md) (Phase 1) and [literature/phase3_findings.md](literature/phase3_findings.md) (Phase 3) for full detail.
 
 ## Questions
 
