@@ -17,16 +17,26 @@ Full design: [research_question.md](research_question.md). Program-level context
 | 4. Pre-analysis plan | Committed — see [pre_analysis_plan.md](pre_analysis_plan.md) |
 | 5. Baseline + full model set | Done (corrected run) — see [literature/phase5_findings.md](literature/phase5_findings.md) |
 | 6. Robustness & sensitivity | Done via [Addendum 1](pre_analysis_plan_addendum_1.md): seasonally adjusted series, winsorizing, performance over time, detectable effects |
-| 7. Secondary / exploratory | Not started — RQ2 (which application series) is pre-specified; RQ4 (new-firm share) is exploratory |
-| 8+ | Not started |
+| 7. Secondary / exploratory | RQ2 done via [Addendum 2](pre_analysis_plan_addendum_2.md), see [literature/rq2_findings.md](literature/rq2_findings.md). RQ4 (new-firm share, exploratory) not started. |
+| 8. Reproducibility audit | One-command pipeline and output checker added (see [Reproduce](#reproduce)); fresh-clone audit in progress |
+| 9+ | Not started |
 
-## Reproduce (once code exists)
+## Reproduce
 
-```
+Tested with Python 3.12.10. Package versions are pinned in [`requirements.txt`](../../requirements.txt).
+
+From the repository root:
+
+```bash
 python -m venv .venv
-.venv\Scripts\activate
-pip install -r ../../requirements.txt
+.venv\Scripts\activate            # Windows (macOS/Linux: source .venv/bin/activate)
+pip install -r requirements.txt
+cd projects/p1-bfs-establishment-births
+python replication/run_all.py      # about 15 minutes; regenerates every table and figure
+python replication/verify_outputs.py   # checks the regenerated outputs match the committed ones
 ```
+
+`run_all.py` starts from the committed processed data, so it reproduces the committed numbers exactly. `run_all.py --full` re-downloads the raw data first; because Census and BLS revise their data, that can give slightly different numbers. See [data/MANIFEST.md](data/MANIFEST.md) for sources, retrieval dates, and checksums.
 
 ## AI-use log
 

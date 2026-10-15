@@ -28,15 +28,23 @@ Documents every acquisition: source, retrieval date, parameters, and transformat
 
 ## Reproducing from scratch
 
-```
-cd projects/p1-bfs-establishment-births
-python src/acquisition/fetch_bfs.py
-python src/acquisition/fetch_bed.py
-python src/cleaning/clean_bfs.py
-python src/cleaning/clean_bed.py
-```
+Use the one-command pipeline in [../replication/run_all.py](../replication/run_all.py):
 
-Re-running on a later date creates new dated raw files/folders rather than overwriting prior pulls (both source series revise).
+- **Default mode** starts from the committed processed files and reproduces the committed numbers exactly.
+- **`--full`** re-downloads the raw data first.
+
+Re-downloading creates new dated raw files rather than overwriting earlier pulls. Both source agencies revise their data, so a later download can differ from the vintage used here.
+
+### Raw-file checksums (SHA-256) for the vintage used in the analysis
+
+| File | Retrieved | SHA-256 |
+|---|---|---|
+| `raw/bfs/bfs_monthly_2026-10-14.csv` | 2026-10-14 | `8b759b60dc7518ae6ae3d1cf1e80fc3f0ed5295ab4eb6a263bfb26ae742c06c4` |
+| `raw/bed/2026-10-14/bd.data.1.AllItems` | 2026-10-14 | `88ff1e867c714f85d68d565f14b1a98e616e6eb91d894544743d58623bcd4055` |
+| `raw/bed/2026-10-14/bd.series` | 2026-10-14 | `ea09556dc0e36a37b3946c56913a2007125e1f61e70938482b64f8768da7a8ed` |
+| `raw/bds/bds2023_st_fa_2026-10-15.csv` | 2026-10-15 | `adb23fccea76d1cbcc27291b43054f366151f146174979c11b9eeadedd9c679b` |
+
+The raw files are not committed. BED alone is 253 MB, and the agencies host them publicly. A freshly downloaded file that matches these checksums is the same vintage.
 
 ## 3. Census Business Dynamics Statistics (BDS) — state × firm-age
 

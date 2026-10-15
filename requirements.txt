@@ -1,9 +1,15 @@
-pandas
-numpy
-matplotlib
-scikit-learn
-statsmodels
-requests
-python-dotenv
-jupyter
-openpyxl
+# Exact versions used to produce the committed results (Python 3.12.10).
+# Unpinned installs can change results: e.g. a new scikit-learn release
+# may change random-forest or gradient-boosting fits.
+pandas==3.0.6
+numpy==2.5.4
+scipy==1.18.1
+statsmodels==0.15.0
+patsy==1.0.3
+scikit-learn==1.9.1
+joblib==1.6.0
+threadpoolctl==3.7.0
+matplotlib==3.11.2
+requests==2.34.2
+python-dotenv==1.2.4
+openpyxl==3.1.5

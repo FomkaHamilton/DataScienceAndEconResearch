@@ -36,6 +36,23 @@ TABLE_DIR = PROJECT_ROOT / "outputs" / "tables"
 
 MAX_LAG = 4  # quarters
 
+# Chart chrome and series colors from the dataviz reference palette
+# (slots 1-2 validated together: CVD and contrast checks pass, light mode).
+SURFACE, INK, INK_2, GRID = "#fcfcfb", "#0b0b0b", "#52514e", "#e1e0d9"
+COLOR_BIRTHS, COLOR_APPS = "#2a78d6", "#eb6834"
+
+
+def _style(ax) -> None:
+    ax.set_facecolor(SURFACE)
+    for side in ["top", "right"]:
+        ax.spines[side].set_visible(False)
+    for side in ["left", "bottom"]:
+        ax.spines[side].set_color(GRID)
+    ax.tick_params(colors=INK_2, labelsize=9)
+    ax.grid(axis="y", color=GRID, linewidth=0.8)
+    ax.set_axisbelow(True)
+    ax.axhline(0, color=INK_2, linewidth=0.8, zorder=1)
+
 
 def load_development_panel() -> pd.DataFrame:
     df = pd.read_csv(PROCESSED_DIR / "analysis_panel_quarterly.csv", parse_dates=["date"])
@@ -106,16 +123,22 @@ def main() -> None:
     print("\nNational lag-correlation table (BA_BA leads births by `lag` quarters):")
     print(nat_corr.to_string(index=False))
 
-    fig, ax1 = plt.subplots(figsize=(10, 5))
-    ax1.plot(nat["date"], nat["births_yoy"] * 100, color="#1f77b4", label="BED establishment births, YoY %")
-    ax1.set_ylabel("Establishment births, YoY %", color="#1f77b4")
-    ax2 = ax1.twinx()
-    ax2.plot(nat["date"], nat["BA_BA_yoy"] * 100, color="#d62728", alpha=0.7, label="BFS business applications, YoY %")
-    ax2.set_ylabel("Business applications, YoY %", color="#d62728")
-    ax1.set_title("National: BFS business applications vs. BED establishment births (YoY, NSA)\nDevelopment window only (through 2022Q4)")
-    ax1.axhline(0, color="gray", linewidth=0.5)
-    fig.tight_layout()
-    fig.savefig(FIG_DIR / "national_bfs_vs_bed_yoy.png", dpi=150)
+    # Two stacked panels on one shared y-scale (both series are YoY %), not
+    # a dual-axis chart: a second y-axis lets the scales be tuned to make
+    # any two lines look related.
+    fig, axes = plt.subplots(2, 1, figsize=(10, 6.4), sharex=True, sharey=True, facecolor=SURFACE)
+    for ax, col, color, name in [
+        (axes[0], "BA_BA_yoy", COLOR_APPS, "Business applications (Census BFS)"),
+        (axes[1], "births_yoy", COLOR_BIRTHS, "Establishment births (BLS BED)"),
+    ]:
+        _style(ax)
+        ax.plot(nat["date"], nat[col] * 100, color=color, linewidth=2)
+        ax.set_title(name, loc="left", fontsize=10, color=INK)
+    fig.suptitle("National, year-over-year % change (not seasonally adjusted), development window only (through 2022Q4)",
+                 x=0.01, ha="left", fontsize=11, color=INK)
+    fig.supylabel("Year-over-year change, %", fontsize=9, color=INK_2)
+    fig.tight_layout(rect=(0.01, 0, 1, 0.97))
+    fig.savefig(FIG_DIR / "national_bfs_vs_bed_yoy.png", dpi=200, facecolor=SURFACE)
     plt.close(fig)
 
     # --- Pooled state-level (exclude US total and PR) ---
@@ -128,17 +151,21 @@ def main() -> None:
     # --- Example state plots: 3 largest (by mean births) + 1 small state ---
     mean_births = states.groupby("geo")["births"].mean().sort_values(ascending=False)
     example_states = list(mean_births.head(3).index) + [mean_births.index[-1]]
-    fig, axes = plt.subplots(len(example_states), 1, figsize=(10, 3 * len(example_states)), sharex=True)
-    for ax, geo in zip(axes, example_states):
+    fig, axes = plt.subplots(len(example_states), 1, figsize=(10, 2.8 * len(example_states)),
+                             sharex=True, facecolor=SURFACE)
+    for i, (ax, geo) in enumerate(zip(axes, example_states)):
         sub = states[states["geo"] == geo].sort_values("date")
-        ax.plot(sub["date"], sub["births_yoy"] * 100, label="births YoY %", color="#1f77b4")
-        ax.plot(sub["date"], sub["BA_BA_yoy"] * 100, label="BA_BA YoY %", color="#d62728", alpha=0.7)
-        ax.axhline(0, color="gray", linewidth=0.5)
-        ax.set_title(geo)
-        ax.legend(loc="upper left", fontsize=8)
-    fig.suptitle("State examples: BFS applications vs. BED births (YoY, NSA), development window only")
-    fig.tight_layout()
-    fig.savefig(FIG_DIR / "state_examples_bfs_vs_bed_yoy.png", dpi=150)
+        _style(ax)
+        ax.plot(sub["date"], sub["BA_BA_yoy"] * 100, color=COLOR_APPS, linewidth=2, label="Business applications")
+        ax.plot(sub["date"], sub["births_yoy"] * 100, color=COLOR_BIRTHS, linewidth=2, label="Establishment births")
+        ax.set_title(geo, loc="left", fontsize=10, color=INK)
+        if i == 0:
+            ax.legend(loc="upper left", fontsize=8, frameon=False, labelcolor=INK_2)
+    fig.suptitle("State examples, year-over-year % change (not seasonally adjusted), development window only",
+                 x=0.01, ha="left", fontsize=11, color=INK)
+    fig.supylabel("Year-over-year change, %", fontsize=9, color=INK_2)
+    fig.tight_layout(rect=(0.01, 0, 1, 0.98))
+    fig.savefig(FIG_DIR / "state_examples_bfs_vs_bed_yoy.png", dpi=200, facecolor=SURFACE)
     plt.close(fig)
 
     # --- Summary stats ---

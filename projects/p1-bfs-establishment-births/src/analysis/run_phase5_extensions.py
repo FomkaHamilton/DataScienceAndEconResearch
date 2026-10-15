@@ -96,12 +96,14 @@ def analysis_c() -> pd.DataFrame:
 
 # ---------------------------------------------------------------- B ----
 
-def coefficient_path(nsa: pd.DataFrame, states: list[str], eval_q: list[int], h: int = 3) -> pd.DataFrame:
-    """BFS coefficient from each expanding-window refit (descriptive only),
-    with standard errors clustered by state."""
+def coefficient_path(
+    nsa: pd.DataFrame, states: list[str], eval_q: list[int], h: int = 3, series: str = "BA_BA"
+) -> pd.DataFrame:
+    """Coefficient on an application series from each expanding-window
+    refit (descriptive only), with standard errors clustered by state."""
     df = nsa.copy()
     df["qd"] = qdate(df["year"], df["quarter"])
-    cols = BENCHMARK_COLS + [f"BA_BA_yoy_lag{h}"]
+    cols = BENCHMARK_COLS + [f"{series}_yoy_lag{h}"]
     rows = []
     for t in eval_q:
         train = df[df["qd"] <= t - LABEL_LAG_MIN].dropna(subset=cols + [TARGET])
@@ -129,14 +131,15 @@ def _style(ax):
     ax.axhline(0, color=INK_2, linewidth=0.8, zorder=1)
 
 
-def _shade_periods(ax):
+def _shade_periods(ax, labels: bool = True):
     for label, start, end in [
         ("Pandemic\n2020–21", "2020-01-01", "2022-01-01"),
         ("Locked test\nwindow 2023–25", "2023-01-01", "2026-01-01"),
     ]:
         ax.axvspan(pd.Timestamp(start), pd.Timestamp(end), color=SHADE, linewidth=0, zorder=0)
-        ax.text(pd.Timestamp(start) + pd.Timedelta(days=30), 0.98, label,
-                transform=ax.get_xaxis_transform(), va="top", ha="left", fontsize=8, color=INK_2)
+        if labels:
+            ax.text(pd.Timestamp(start) + pd.Timedelta(days=30), 0.98, label,
+                    transform=ax.get_xaxis_transform(), va="top", ha="left", fontsize=8, color=INK_2)
 
 
 def _figures(gains: pd.DataFrame, coefs: pd.DataFrame) -> None:

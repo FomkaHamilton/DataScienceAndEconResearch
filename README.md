@@ -40,11 +40,14 @@ Raw/processed data files are not committed by default (see `.gitignore`); each p
 
 ## Setup
 
-```
+```bash
 python -m venv .venv
 .venv\Scripts\activate   # Windows
-pip install -r requirements.txt
+pip install -r requirements.txt            # pinned versions used for all committed results
+pip install -r requirements-notebooks.txt  # optional: adds Jupyter for exploratory notebooks
 ```
+
+Each project has a one-command reproduction script; see its README (e.g. [projects/p1-bfs-establishment-births](projects/p1-bfs-establishment-births/README.md#reproduce)).
 
 ## AI assistance disclosure
 

@@ -36,7 +36,7 @@
 
    Weaker than the national correlation (expected — national aggregation smooths out state-level noise), but positive and non-trivial at every lag tested, peaking around 1 and 3 quarters. This is the first direct evidence (that this project is aware of) of the relationship holding at the state level specifically — the gap identified in Phase 1.
 
-5. **Visual check** ([outputs/figures/national_bfs_vs_bed_yoy.png](../outputs/figures/national_bfs_vs_bed_yoy.png)): the clearest confirming pattern is 2020–2021 — applications (red) spike first and sharply in 2020, establishment births (blue) follow with a lag and peak later, after applications had already started to come back down. This lead-lag pattern is visible by eye, not just in the correlation table.
+5. **Visual check** ([outputs/figures/national_bfs_vs_bed_yoy.png](../outputs/figures/national_bfs_vs_bed_yoy.png)): the clearest confirming pattern is 2020–2021 — applications (top panel) spike first and sharply in 2020, establishment births (bottom panel) follow with a lag and peak later, after applications had already started to come back down. This lead-lag pattern is visible by eye, not just in the correlation table. *(Chart redrawn 2026-10-15: the original overlaid both series on two separate y-axes, a format that can make any two lines look related. It now uses stacked panels on one shared scale, which also shows the applications spike, about 60%, was larger than the births spike, about 44%.)*
 
 ## Data-quality finding: Q1 "lumpiness" in NSA establishment birth counts
 

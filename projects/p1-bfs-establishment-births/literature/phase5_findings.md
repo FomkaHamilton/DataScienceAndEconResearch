@@ -143,10 +143,15 @@ All horizons and the bootstrap p-values: [phase5x_by_period.csv](../outputs/tabl
 - **Data are final vintage, not real-time.** The BED vintage limitation from the original plan still applies.
 - **Two methods were substituted,** as disclosed in the plan: Holm–Bonferroni instead of the Model Confidence Set, and cluster-robust/bootstrap tests instead of the Qu–Timmermann–Zhu / Akgun panel tests.
 
-## 7. Citations introduced in this phase — verify before manuscript use
+## 7. Citations introduced in this phase (verified 2026-10-15)
 
-- Cameron, Gelbach & Miller — two-way clustered standard errors (believed: *Journal of Business & Economic Statistics*, 2011)
-- Cameron, Gelbach & Miller — wild cluster bootstrap for few clusters (believed: *Review of Economics and Statistics*, 2008)
-- Webb — six-point weights for the wild cluster bootstrap (believed: *Canadian Journal of Economics*, 2023)
+Checked against IDEAS/RePEc and Crossref, and quoted from the authors' own posted versions. Typeset page locations inside the published articles were not checked (publisher pages blocked automated access).
 
-None of these has been checked against a publisher page yet.
+- **Cameron, A. C., Gelbach, J. B., & Miller, D. L. (2011).** Robust inference with multiway clustering. *Journal of Business & Economic Statistics*, 29(2), 238–249. doi:10.1198/jbes.2010.07136
+  - Source of the two-way variance formula used here (variance clustered on each dimension, minus the variance clustered on their intersection).
+  - The paper notes this estimate can be non-positive-definite in finite samples and proposes setting negative eigenvalues to zero. For our single-parameter tests, that is exactly what the code's `max(variance, 0)` does.
+- **Cameron, A. C., Gelbach, J. B., & Miller, D. L. (2008).** Bootstrap-based improvements for inference with clustered errors. *Review of Economics and Statistics*, 90(3), 414–427. doi:10.1162/rest.90.3.414
+  - Supports the few-cluster concern: standard tests "can over-reject… with few (five to thirty) clusters."
+- **Webb, M. D. (2023).** Reworking wild bootstrap-based inference for clustered errors. *Canadian Journal of Economics*, 56(3), 839–858. doi:10.1111/caje.12661
+  - The six-point weights (±√(1/2), ±1, ±√(3/2), each with probability 1/6) are confirmed from the 2014 working paper (Queen's Economics Department WP 1315) and from Roodman, MacKinnon, Nielsen & Webb (2019), *Stata Journal* 19(1), 4–60.
+- **Holm, S. (1979).** A simple sequentially rejective multiple test procedure. *Scandinavian Journal of Statistics*, 6(2), 65–70. No DOI; JSTOR stable URL http://www.jstor.org/stable/4615733.
