@@ -37,3 +37,20 @@ python src/cleaning/clean_bed.py
 ```
 
 Re-running on a later date creates new dated raw files/folders rather than overwriting prior pulls (both source series revise).
+
+## 3. Census Business Dynamics Statistics (BDS) — state × firm-age
+
+- **Source:** https://www2.census.gov/programs-surveys/bds/tables/time-series/2023/bds2023_st_fa.csv (linked from https://www.census.gov/data/datasets/time-series/econ/bds/bds-datasets.html)
+- **Retrieved:** 2026-10-15, via `src/acquisition/fetch_bds.py`
+- **Raw file:** `data/raw/bds/bds2023_st_fa_2026-10-15.csv` (3.8 MB)
+- **No API key required** for this bulk CSV. No robots.txt restriction found on www2.census.gov (checked 2026-10-14).
+- **Coverage:** annual (BDS's March-to-March reference year), 1978–2023, 50 states + DC, 12 firm-age categories.
+- **Purpose:** RQ4 only (exploratory heterogeneity question) — not part of the core quarterly forecasting panel.
+- **Transformation:** `src/cleaning/clean_bds.py` computes `new_firm_share = estabs_entry[firm age 0] / sum(estabs_entry, all ages except "Left Censored")` per state-year → `data/processed/bds_state_new_firm_share.csv` (2,346 rows). Mean 77.9% (std 8.8%).
+- **Status:** parked for Phase 5; not yet merged into the forecasting panel or used in any model.
+
+## 4. Integrated quarterly panel (derived, not a separate source)
+
+- **Built by:** `src/cleaning/build_panel.py` — aggregates BFS from monthly to quarterly (sums 3 months; requires all 3 present, else `NaN`) and merges with BED on state name, seasonal adjustment, year, and quarter.
+- **Output:** `data/processed/analysis_panel_quarterly.csv`, 9,116 rows (53 geographies × 2 seasonal adjustments × ~86 quarters).
+- **`in_test_window` flag:** `True` for 2023Q1 onward. The file keeps the full history (transparency over deletion), but every Phase 3+ analysis script must filter this flag before using the data — `src/analysis/exploratory_analysis.py` does this and prints an explicit confirmation. The test window stays locked until the Phase 4 pre-analysis plan is committed.

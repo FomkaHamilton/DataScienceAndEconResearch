@@ -43,3 +43,19 @@ Both outputs spot-checked for sanity (magnitudes, date ranges, null patterns ful
 **Not yet done:** BDS (for RQ4) acquisition; the real-time information-set/release-calendar construction; the vintage-data decision for BED. These come next, alongside Phase 3 (exploratory analysis).
 
 **AI-use record:** Claude (Sonnet 5 via Claude Code) wrote and ran the acquisition/cleaning scripts, including fixing one merge-key bug (bd.seasonal's `seasonal_code` vs. bd.series's `seasonal`) caught by actually running the pipeline rather than just reviewing the code. Not yet reviewed by the author.
+
+## 2026-10-15: Phase 2 continued — BDS acquisition; Phase 3 exploratory analysis (complete)
+
+**BDS:** `src/acquisition/fetch_bds.py` + `src/cleaning/clean_bds.py` pull the state × firm-age cross-tab (no API key, direct CSV) and compute a state-year "new-firm share of establishment entry" for RQ4. Mean 77.9% (std 8.8%) across state-years — same direction as Decker & Haltiwanger's ~36%-from-existing-firms finding, though the two aren't directly comparable (different period, national vs. state-year averaging). Parked for Phase 5; not yet used in any model.
+
+**Phase 3 gate: PASS.** Built the integrated quarterly panel (`src/cleaning/build_panel.py`, 9,116 rows, explicit `in_test_window` flag so 2023Q1+ can't be accidentally used) and ran exploratory correlations (`src/analysis/exploratory_analysis.py`, development window only — the script prints a loud confirmation that test-window rows were dropped before anything else runs).
+
+- National lag-correlation (BA_BA applications leading births): peaks at 0.64 at a 3-quarter lag.
+- Pooled, within-state-demeaned state-level correlation: positive at every lag (0.14–0.28), peaking around 1 and 3 quarters — the first evidence (that this project is aware of) that the relationship holds at the state level, which is the gap Phase 1 identified.
+- Visual confirmation: 2020–21 shows applications spiking first, establishment births following with a lag.
+
+**New finding requiring a design decision:** NSA establishment-birth counts show irregular, state-varying Q1 "lumpiness" — a disproportionate share of large quarter-over-quarter jumps cluster in Q1 across many years (2006, 2007, 2012, 2013, 2015, 2019–2022). Traced a misleading ~-65% YoY reading in California 2013Q1 to this (base effect off an unusually high 2012Q1, not a real decline). Plain YoY differencing does not fully remove it since the spike magnitude varies year to year. **Phase 4 must address this**: evaluate BLS's seasonally adjusted series, consider quarter fixed effects, and/or test sensitivity to winsorizing. Full writeup: [literature/phase3_findings.md](literature/phase3_findings.md).
+
+**AI-use record:** Claude (Sonnet 5) wrote and ran all Phase 2b/3 scripts, generated the figures/tables, and investigated the CA anomaly (checked whether it was isolated or systematic before writing it up) rather than either ignoring it or over-claiming a cause. Not yet reviewed by the author.
+
+**Next:** Phase 4 — pre-analysis plan (lock the test window, finalize model list, specify the Q1-lumpiness handling, commit before any out-of-sample evaluation).

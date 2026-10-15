@@ -2,7 +2,7 @@
 
 *This document is authoritative for the project's design. It is a condensed, living version of [../../roadmap/02_project1_research_plan.md](../../roadmap/02_project1_research_plan.md), to be revised as the literature review and data acquisition narrow the design. Changes here should be logged in [research_log.md](research_log.md).*
 
-**Status:** Phase 1 (literature review) complete, 2026-10-14. Gate passed — see [literature/extraction_table.md](literature/extraction_table.md) for full detail. The design below reflects Phase 1 findings. Proceeding to Phase 2 (data acquisition).
+**Status:** Phases 0–3 complete as of 2026-10-15 (setup, literature review, data acquisition, exploratory analysis). All gates passed. Proceeding to Phase 4 (pre-analysis plan) next. See [literature/extraction_table.md](literature/extraction_table.md) (Phase 1) and [literature/phase3_findings.md](literature/phase3_findings.md) (Phase 3) for full detail.
 
 ## Questions
 
@@ -37,6 +37,14 @@
 
 - **BFS has real vintages**, archived on ALFRED (Federal Reserve Bank of St. Louis), state-level, release IDs 443 (monthly/quarterly) and 468 (weekly, back to 2006). Requires a free FRED/ALFRED API key (not yet obtained).
 - **BED has no existing vintage archive** — not on ALFRED, not elsewhere found. Phase 2 must choose: (a) hand-construct a vintage history from BLS's archived news releases (`bls.gov/news.release/archives/cewbd_*.htm`) and annual revision notices — real added effort — or (b) run the evaluation on final BED data only and state that limitation plainly (the fallback the original plan already allowed for). **Decision deferred to Phase 2**, once the hand-construction effort is scoped.
+
+## Phase 3 gate: resolved (2026-10-15)
+
+> Is a BFS-applications → BED-establishment-births signal plausibly present at all?
+
+**Yes.** National lag-correlation peaks at 0.64 (3-quarter lag); pooled, within-state-demeaned state-level correlation is positive at every lag tested (0.14–0.28), peaking around 1 and 3 quarters. The 2020–21 episode shows the lead-lag pattern visually: applications spike first, establishment births follow. Full writeup: [literature/phase3_findings.md](literature/phase3_findings.md).
+
+**New design consideration found in Phase 3:** NSA establishment-birth counts show irregular, state-varying Q1 "lumpiness" (a disproportionate share of large quarter-over-quarter jumps cluster in Q1 across many years) — plausibly a registration/administrative-timing artifact, not a stable seasonal factor. Plain YoY differencing does not fully remove it (it produced a misleading ~-65% reading in California 2013Q1, traced to an unusual 2012Q1 spike). **Phase 4/5 must address this explicitly**: evaluate BLS's seasonally adjusted series as a robustness check, consider quarter fixed effects in panel models, and/or test sensitivity to winsorizing extreme QoQ swings.
 
 ## Phase 1 gate: resolved
 
