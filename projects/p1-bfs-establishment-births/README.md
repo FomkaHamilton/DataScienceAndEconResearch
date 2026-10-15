@@ -39,7 +39,7 @@ python replication/verify_outputs.py   # checks the regenerated outputs match th
 
 On Windows, clone to a short path (for example `C:\src\...`). Long paths can exceed Windows' 260-character limit inside `.git` and `.venv`.
 
-`run_all.py` starts from the committed processed data, so it reproduces the committed numbers exactly. `run_all.py --full` re-downloads the raw data first; because Census and BLS revise their data, that can give slightly different numbers. See [data/MANIFEST.md](data/MANIFEST.md) for sources, retrieval dates, and checksums.
+`run_all.py` starts from the committed processed data, so it reproduces the committed numbers. Some tables may differ from the committed files in about the 15th–16th significant digit, because the random forest adds up its trees in parallel and the order varies between runs. `verify_outputs.py` treats these as matches; they are not substantive. `run_all.py --full` re-downloads the raw data first; because Census and BLS revise their data, that can give slightly different numbers. See [data/MANIFEST.md](data/MANIFEST.md) for sources, retrieval dates, and checksums.
 
 ## AI-use log
 

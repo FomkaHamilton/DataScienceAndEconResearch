@@ -227,4 +227,31 @@ The corrected figure implies about 39% of new establishments come from existing 
 
 **AI-use record:** Claude (Opus 5.5) wrote Addenda 3 and 4, the forecast, scoring and RQ4 code, and the findings; found and fixed the new-firm-share definition and the line-ending risk to the forecast hash. Not yet reviewed by the author.
 
+**Pipeline re-run.** A full re-run with all 8 steps took 4.3 minutes and reproduced all 34 tables and 7 figures, with 0 problems. The live-forecast step confirmed the frozen file regenerates exactly.
+
+Ten tables differed from the committed copies only in the 15th–16th significant digit, because the random forest sums trees in parallel. The committed copies were restored, and the README now notes this.
+
+## 2026-10-15: Manuscript draft v1
+
+Wrote [manuscript/draft_v1.md](manuscript/draft_v1.md): about 4,500 words of main text, 5 tables, 3 figures, references, a data/code statement, an AI-use statement, and a pre-registration and deviations section. It uses the *Journal of Forecasting* format, the plan's primary target.
+
+**Framing:** the relationship between applications and establishment births is regime-dependent and changed after 2020. That change is not explained by application composition. Naive pooled tests overstate significance in state panels. The live-forecast test is Section 8.
+
+**Checks on the draft:**
+
+- Every number was checked against the committed output tables. That check found and fixed one overstatement ("every lead" corrected to "leads 0–3") and one imprecise claim about the four-quarter contribution.
+- A false description of the repo as "public-on-request" was removed.
+- An unsupported sentence about policy demand was replaced with a factual one.
+
+**Open items before submission, marked [VERIFY] in the draft:**
+
+- reference author initials;
+- the Decker & Haltiwanger (2023) page range;
+- one DOI;
+- JEL codes;
+- the journal's current AI-disclosure wording;
+- the repository's public URL.
+
+**AI-use record:** drafted by Claude (Opus 5.5) from the project's findings documents. Not yet reviewed by the author; the author's revision is the next step.
+
 **AI-use record:** Claude (Opus 5.5) wrote Addendum 2, the RQ2 code, the reproducibility tooling and the findings; redrew the charts; and ran everything. Not yet reviewed by the author.
