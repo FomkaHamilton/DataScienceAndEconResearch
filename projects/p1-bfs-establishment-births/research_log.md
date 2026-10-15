@@ -255,3 +255,58 @@ Wrote [manuscript/draft_v1.md](manuscript/draft_v1.md): about 4,500 words of mai
 **AI-use record:** drafted by Claude (Opus 5.5) from the project's findings documents. Not yet reviewed by the author; the author's revision is the next step.
 
 **AI-use record:** Claude (Opus 5.5) wrote Addendum 2, the RQ2 code, the reproducibility tooling and the findings; redrew the charts; and ran everything. Not yet reviewed by the author.
+
+## 2026-10-15: Manuscript figures
+
+The author asked whether the draft needed more figures. Claude recommended a small set, each carrying one claim, and the author approved building them. The figures are in [manuscript/figures/](manuscript/figures/README.md), with draft captions and proposed placements. None has been placed in the draft yet; that waits for the author's review.
+
+- **Code:** new script `src/analysis/make_paper_figures.py`, added to `replication/run_all.py`. `verify_outputs.py` now also checks `manuscript/figures/`.
+- **Presentation only:** every figure is drawn from committed tables, the committed analysis panel, or the frozen live-forecast file. Nothing is re-estimated.
+- **Consistency check:** the script asserts that the quarterly gains it recomputes match the committed `rq2_quarterly_gains_h3.csv`.
+- **Determinism:** PDF output is byte-identical across runs.
+- **Seven figures:**
+  1. national applications and births;
+  2. test-window results with naive and robust intervals;
+  3. cumulative gain over time;
+  4. cumulative gain by application series;
+  5. weight on applications, indexed;
+  6. gain against new-firm share;
+  7. the 2026 live forecasts.
+
+**Draft correction.** Building Figure 5 showed that the draft overstated how stable the weight on applications was. The draft said it was "stable at about 0.15–0.20 through 2021". In fact:
+
+- the 2010 estimates, from short samples, ran from 0.18 to 0.30;
+- from 2011 to 2021 it stayed between 0.11 and 0.20, averaging 0.18 over 2010–2019;
+- it peaked at 0.41 in 2022 and then settled at 0.32–0.34.
+
+The sentence and the related elasticity bullet in Section 6.4 are corrected. The "roughly doubled" conclusion is unchanged.
+
+**Live-forecast summary, made precise.** The earlier entry said that models trained on all data forecast 4–9% growth for 2026, and the others about 1–3%. Those were averages across states with equal weights, the same weighting the evaluation uses. Exact ranges over 2026Q1–Q3, in log points:
+
+- all-data applications models: 4.0–8.5;
+- applications models estimated excluding 2020–22: 1.9–3.4;
+- benchmark: 2.5–2.8 on all data, 0.3–0.9 excluding 2020–22.
+
+Summed to a national total, the levels are lower and closer together (all-data applications models 1.6–7.1; benchmark 0.4–4.2), because large states forecast lower growth.
+
+**Observation recorded before any 2026 outcome data exist (no change to the pre-registered tests).**
+
+National applications rose sharply in 2025, but almost entirely outside the series Census builds to flag likely employers:
+
+| National YoY change, log points | 2025Q2 | 2025Q3 | 2025Q4 |
+|---|---|---|---|
+| All applications | +6.2 | +12.7 | +20.6 |
+| High-propensity | +1.9 | +1.0 | +5.3 |
+| Planned wages | −5.3 | −11.9 | −13.9 |
+| Corporate | −1.8 | −4.3 | +0.6 |
+
+Implications:
+
+- **The 2026 forecasts.** The all-data applications models weight applications about twice as heavily as before 2020, so they translate this surge into the high 2026 forecasts above.
+- **Reading the H1 result.** If 2026 births do not rise to match, the result will be consistent with the paper's H1 reading, but part of the reason may be this 2025 shift in composition, not only the 2022–25 breakdown. Section 8 will need to say so.
+- **What helps separate the two.** The secondary high-propensity forecasts in Addendum 3, which are already frozen, will help.
+- **A possible explanation, not established.** In February 2026 Census removed internet-sales applications from the high-propensity and corporate series after a spike in such filings, but kept them in all applications. Census did not give the date of the spike (see `literature/rq2_findings.md` §6), so this is unverified.
+
+Addendum 3 and the frozen forecasts are unchanged.
+
+**AI-use record:** Claude (Opus 5.5) proposed the figure set, wrote the figure script, captions and review notes, found the draft's coefficient-range error and the 2025 divergence, and wrote this entry. Not yet reviewed by the author.

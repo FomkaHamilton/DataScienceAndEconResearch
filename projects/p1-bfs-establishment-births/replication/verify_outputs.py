@@ -4,7 +4,8 @@ Check that regenerated outputs match the committed ones.
 Compares every tracked CSV under data/processed/ and outputs/tables/
 against its version in git HEAD: same columns and shape, identical
 non-numeric values, and numeric values equal within a tolerance. Also
-checks that every tracked figure was regenerated.
+checks that every tracked figure (outputs/figures and
+manuscript/figures) was regenerated.
 
     python replication/verify_outputs.py [--rtol 1e-6] [--atol 1e-9]
 
@@ -55,9 +56,9 @@ def main() -> None:
     parser.add_argument("--atol", type=float, default=1e-9)
     args = parser.parse_args()
 
-    tracked = git("ls-files", "--full-name", "data/processed", "outputs").split()
+    tracked = git("ls-files", "--full-name", "data/processed", "outputs", "manuscript/figures").split()
     csvs = [f for f in tracked if f.endswith(".csv")]
-    figures = [f for f in tracked if f.endswith(".png")]
+    figures = [f for f in tracked if f.endswith((".png", ".pdf"))]
     repo_root = Path(git("rev-parse", "--show-toplevel").strip())
 
     failures = 0

@@ -186,9 +186,9 @@ Four quarters, 2021Q2 to 2022Q1, contribute more than the entire net gain over t
 
 **Figure 2.** Estimated weight on applications (three-quarter lead) from each expanding-window re-estimation. `../outputs/figures/phase5x_bfs_coefficient_path_h3.png`
 
-The estimated weight on applications was stable at about 0.15–0.20 through 2021. Once the pandemic surge entered the estimation sample, it roughly doubled, to 0.32–0.34 (Figure 2). Put in elasticity terms:
+Apart from the first estimates in 2010, which rest on short samples, the estimated weight on applications stayed between about 0.11 and 0.20 through 2021, averaging 0.18 over 2010–2019. Once the pandemic surge entered the estimation sample it rose sharply, peaking at 0.41 in 2022, and has since settled at about 0.32–0.34, roughly double its pre-2020 level (Figure 2). Put in elasticity terms:
 
-- **Before 2020:** a 10% year-over-year rise in applications was associated with a 1.5–2% rise in establishment births three quarters later.
+- **Before 2020:** a 10% year-over-year rise in applications was associated with a rise of about 1.8% in establishment births three quarters later.
 - **Models estimated through the pandemic:** they assume roughly 3.3%.
 
 ### 6.5 Which application series carries the signal?

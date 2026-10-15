@@ -42,6 +42,7 @@ PIPELINE = [
     "src/analysis/run_rq2.py",  # Addendum 2
     "src/analysis/make_live_forecasts.py",  # Addendum 3: checks the frozen forecasts, never overwrites
     "src/analysis/run_rq4.py",  # Addendum 4
+    "src/analysis/make_paper_figures.py",  # manuscript figures (presentation only)
 ]
 
 
