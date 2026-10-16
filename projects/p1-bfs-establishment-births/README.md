@@ -33,7 +33,7 @@ Each phase ends with a gate: a check, stated in advance in the [research plan](.
 | 6. Robustness and sensitivity | Done via [Addendum 1](pre_analysis_plan_addendum_1.md): seasonally adjusted series, winsorizing, performance over time, detectable effects. |
 | 7. Secondary and exploratory questions | RQ2 done via [Addendum 2](pre_analysis_plan_addendum_2.md) ([findings](literature/rq2_findings.md)); RQ4 done via [Addendum 4](pre_analysis_plan_addendum_4.md) ([findings](literature/rq4_findings.md)). |
 | 7b. Live forecasts | Forecasts for 2026Q1–Q3 pre-registered via [Addendum 3](pre_analysis_plan_addendum_3.md) (commit 7a36fe1, tag `prereg-live-forecasts-2026`). First scoring when BLS publishes 2026Q1 on 2026-10-28. |
-| 8. Reproducibility audit | Passed 2026-10-15. A fresh clone at commit a131fb8, with the pinned environment and one command, reproduced all 31 tables committed at the time (maximum difference 1.1e-14) and all 6 figures. The latest full re-run (2026-10-15) passed with 34 tables and 21 figure files (7 analysis figures, plus 7 manuscript figures in PNG and PDF). See [Reproduce](#reproduce). |
+| 8. Reproducibility audit | Passed 2026-10-15. A fresh clone at commit a131fb8, with the pinned environment and one command, reproduced all 31 tables committed at the time (maximum difference 1.1e-14) and all 6 figures. The latest full re-run (2026-10-15) passed with 36 tables and 21 figure files (7 analysis figures, plus 7 manuscript figures in PNG and PDF). See [Reproduce](#reproduce). |
 | 9. Drafting | In progress. Draft v1 with 7 figures: [manuscript/draft_v1.md](manuscript/draft_v1.md). |
 | 10. Submission | Not started |
 
