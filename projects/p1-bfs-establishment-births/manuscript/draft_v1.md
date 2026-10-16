@@ -21,7 +21,7 @@ New business applications are published within weeks of being filed, whereas cou
 
 **Keywords:** business formation; leading indicators; nowcasting; forecast evaluation; cross-sectional dependence; machine learning
 
-**JEL codes:** C53, E32, L26, M13 [VERIFY codes against the journal's preferences]
+**JEL codes:** C53, E32, L26, M13, R11 [VERIFY whether the journal requests JEL codes]
 
 ## 1. Introduction
 
@@ -41,7 +41,7 @@ Several features of the design limit the scope for specification search. The for
 
 **Business applications and business formation.** Bayard et al. (2018) construct the BFS from IRS Form SS-4 filings and show that applications, especially those with characteristics associated with hiring, predict which applicants become employer businesses. Dinlersoz, Dunne, Haltiwanger and Penciakova (2021) compare business formation in the Great Recession and the COVID-19 recession, documenting a 2020 surge in applications concentrated among those more likely to remain nonemployers. Decker and Haltiwanger (2022, 2023) relate the application surge to official establishment entry. They find that industries and places with larger surges saw more employer entry, and Decker and Haltiwanger (2022) report that existing firms, rather than new ones, accounted for about 36% of annual establishment births in 2015–2019. Dinlersoz et al. (2026) decompose local startup rates into the rate of applications and the rate at which applications become employers, a decomposition that helps explain why the information in applications may differ across places.
 
-**Leading indicators of business dynamics.** Asturias et al. (2023, 2024) provide the closest antecedent: national, monthly, using a dynamic factor model, with nonfarm payroll employment as the outcome. Grieves, Mance and Witt (2023) nowcast the birth-death adjustment in the BLS Current Employment Statistics survey without using applications. Savagar and Galanakis (2026) find that real-time company incorporations in the United Kingdom lead official business-demography statistics. Borup and Schütte (2022) show that internet search data improve forecasts of employment growth at the state as well as the national level, and their study provides a template for state-panel forecast comparisons.
+**Leading indicators of business dynamics.** Asturias et al. (2023, 2024) provide the closest antecedent: national, monthly, using a dynamic factor model, with nonfarm payroll employment as the outcome. Grieves, Mance and Witt (2023) nowcast the birth-death adjustment in the BLS Current Employment Statistics survey without using applications. Galanakis and Savagar (2026) find that real-time company incorporations in the United Kingdom lead official business-demography statistics. Borup and Schütte (2022) show that internet search data improve forecasts of employment growth at the state as well as the national level, and their study provides a template for state-panel forecast comparisons.
 
 **Econometric versus machine-learning forecasts.** Goulet Coulombe, Leroux, Stevanovic and Surprenant (2022) find that the gains from machine learning in macroeconomic forecasting come mainly from nonlinearity in uncertain periods. Medeiros, Vasconcelos, Veiga and Zilberman (2021) find large gains from random forests in forecasting inflation. The present setting differs: a short, noisy panel of state-level counts, in which flexible methods have little data to learn from.
 
@@ -246,57 +246,57 @@ Three errors in an earlier run of the main evaluation were found and corrected b
 
 ## References
 
-*Each work was confirmed to exist, with the title, venue and year shown, on a publisher, repository, or agency page during the project. DOIs shown were seen on those pages. Before submission, still check author first names and initials (not systematically verified) and anything marked [VERIFY].*
+*Bibliographic details, including author names, pages and DOIs, were verified against publisher, registry (Crossref, DataCite) or agency pages on 15 October 2026.*
 
 Akgun, O., Pirotte, A., Urga, G., & Yang, Z. (2024). Equal predictive ability tests based on panel data with applications to OECD and IMF forecasts. *International Journal of Forecasting*, 40(1), 202–228. https://doi.org/10.1016/j.ijforecast.2023.02.001
 
 Asturias, J., Dinlersoz, E., Haltiwanger, J., & Hutchinson, R. (2023). Are business applications early economic indicators? *AEA Papers and Proceedings*, 113, 151–155. https://doi.org/10.1257/pandp.20231053
 
-Asturias, J., Dinlersoz, E., Haltiwanger, J., Hutchinson, R., & Plumb, J. (2024). *Business applications as a leading economic indicator?* NBER Working Paper 33224. https://doi.org/10.3386/w33224
+Asturias, J., Dinlersoz, E., Haltiwanger, J., Hutchinson, R., & Plumb, A. (2024). *Business applications as a leading economic indicator?* NBER Working Paper 33224. https://doi.org/10.3386/w33224
 
-Bayard, K., Dinlersoz, E., Dunne, T., Haltiwanger, J., Miranda, J., & Stevens, J. (2018). *Early-stage business formation: An analysis of applications for employer identification numbers.* NBER Working Paper 24364.
+Bayard, K., Dinlersoz, E., Dunne, T., Haltiwanger, J., Miranda, J., & Stevens, J. (2018). *Early-stage business formation: An analysis of applications for employer identification numbers.* NBER Working Paper 24364. https://doi.org/10.3386/w24364
 
-Borup, D., & Schütte, E. C. M. (2022). In search of a job: Forecasting employment growth using Google Trends. *Journal of Business & Economic Statistics*, 40(1), 186–200.
+Borup, D., & Schütte, E. C. M. (2022). In search of a job: Forecasting employment growth using Google Trends. *Journal of Business & Economic Statistics*, 40(1), 186–200. https://doi.org/10.1080/07350015.2020.1791133
 
 Cameron, A. C., Gelbach, J. B., & Miller, D. L. (2008). Bootstrap-based improvements for inference with clustered errors. *Review of Economics and Statistics*, 90(3), 414–427. https://doi.org/10.1162/rest.90.3.414
 
 Cameron, A. C., Gelbach, J. B., & Miller, D. L. (2011). Robust inference with multiway clustering. *Journal of Business & Economic Statistics*, 29(2), 238–249. https://doi.org/10.1198/jbes.2010.07136
 
-Cao, D., Hyatt, H., Mukoyama, T., & Sager, E. (2026). *New U.S. business establishments: Surging or stalling?* Center for Economic Studies Working Paper 26-36 / FEDS 2026-40. [VERIFY author first names]
+Cao, D., Hyatt, H., Mukoyama, T., & Sager, E. (2026). *New U.S. business establishments: Surging or stalling?* Center for Economic Studies Working Paper 26-36, U.S. Census Bureau; also Finance and Economics Discussion Series 2026-040, Board of Governors of the Federal Reserve System. https://doi.org/10.17016/FEDS.2026.040
 
 Clark, T. E., & West, K. D. (2007). Approximately normal tests for equal predictive accuracy in nested models. *Journal of Econometrics*, 138(1), 291–311. https://doi.org/10.1016/j.jeconom.2006.05.023
 
-Decker, R. A., & Haltiwanger, J. (2022). Business entry and exit in the COVID-19 pandemic: A preliminary look at official data. *FEDS Notes*, Board of Governors of the Federal Reserve System, May 6, 2022.
+Decker, R. A., & Haltiwanger, J. (2022). Business entry and exit in the COVID-19 pandemic: A preliminary look at official data. *FEDS Notes*, Board of Governors of the Federal Reserve System, May 6, 2022. https://doi.org/10.17016/2380-7172.3129
 
-Decker, R. A., & Haltiwanger, J. (2023). Surging business formation in the pandemic: Causes and consequences? *Brookings Papers on Economic Activity*, Fall 2023. [VERIFY page range: sources disagree, 249–302 vs. 249–316]
+Decker, R. A., & Haltiwanger, J. (2023). Surging business formation in the pandemic: Causes and consequences? *Brookings Papers on Economic Activity*, Fall 2023, 249–302. https://doi.org/10.1353/eca.2023.a935424
 
-Diebold, F. X., & Mariano, R. S. (1995). Comparing predictive accuracy. *Journal of Business & Economic Statistics*, 13(3), 253–263.
+Diebold, F. X., & Mariano, R. S. (1995). Comparing predictive accuracy. *Journal of Business & Economic Statistics*, 13(3), 253–263. https://doi.org/10.1080/07350015.1995.10524599
 
-Dinlersoz, E., Dunne, T., Haltiwanger, J., & Penciakova, V. (2021). Business formation: A tale of two recessions. *AEA Papers and Proceedings*, 111, 253–257. Also Center for Economic Studies Working Paper 21-01. [VERIFY DOI]
+Dinlersoz, E., Dunne, T., Haltiwanger, J., & Penciakova, V. (2021). Business formation: A tale of two recessions. *AEA Papers and Proceedings*, 111, 253–257. https://doi.org/10.1257/pandp.20211055. Also Center for Economic Studies Working Paper 21-01.
 
-Dinlersoz, E., Dunne, T., Haltiwanger, J., & Penciakova, V. (2026). *The local origins of business formation: Entry as a two-stage process.* NBER Working Paper 34881.
+Dinlersoz, E., Dunne, T., Haltiwanger, J., & Penciakova, V. (2026). *The local origins of business formation: Entry as a two-stage process.* NBER Working Paper 34881. https://doi.org/10.3386/w34881
 
-Giacomini, R., & White, H. (2006). Tests of conditional predictive ability. *Econometrica*, 74(6), 1545–1578.
+Galanakis, Y., & Savagar, A. (2026). *Tracking the economy through firm creation: Evidence from real-time administrative data.* arXiv:2606.01307. https://doi.org/10.48550/arXiv.2606.01307
+
+Giacomini, R., & White, H. (2006). Tests of conditional predictive ability. *Econometrica*, 74(6), 1545–1578. https://doi.org/10.1111/j.1468-0262.2006.00718.x
 
 Goulet Coulombe, P., Leroux, M., Stevanovic, D., & Surprenant, S. (2022). How is machine learning useful for macroeconomic forecasting? *Journal of Applied Econometrics*, 37(5), 920–964. https://doi.org/10.1002/jae.2910
 
-Grieves, C., Mance, S., & Witt, R. (2023). *Predicting the effect of business births and deaths on the Current Employment Statistics survey.* BLS research paper. [VERIFY author first names]
+Grieves, C., Mance, S., & Witt, C. (2023). *Predicting the effect of business births and deaths on the Current Employment Statistics survey: Using sample information to minimize coverage error.* Statistical Survey Paper, Office of Survey Methods Research, U.S. Bureau of Labor Statistics. https://www.bls.gov/osmr/research-papers/2023/st230010.htm
 
 Hansen, P. R., Lunde, A., & Nason, J. M. (2011). The model confidence set. *Econometrica*, 79(2), 453–497. https://doi.org/10.3982/ECTA5771
 
-Holm, S. (1979). A simple sequentially rejective multiple test procedure. *Scandinavian Journal of Statistics*, 6(2), 65–70.
+Holm, S. (1979). A simple sequentially rejective multiple test procedure. *Scandinavian Journal of Statistics*, 6(2), 65–70. https://www.jstor.org/stable/4615733
 
 Medeiros, M. C., Vasconcelos, G. F. R., Veiga, Á., & Zilberman, E. (2021). Forecasting inflation in a data-rich environment: The benefits of machine learning methods. *Journal of Business & Economic Statistics*, 39(1), 98–119. https://doi.org/10.1080/07350015.2019.1637745
 
 Qu, R., Timmermann, A., & Zhu, Y. (2024). Comparing forecasting performance with panel data. *International Journal of Forecasting*, 40(3), 918–941. https://doi.org/10.1016/j.ijforecast.2023.08.001
 
-Savagar, A., & Galanakis, Y. (2026). *Tracking the economy through firm creation: Evidence from real-time administrative data.* arXiv:2606.01307.
-
 Webb, M. D. (2023). Reworking wild bootstrap-based inference for clustered errors. *Canadian Journal of Economics*, 56(3), 839–858. https://doi.org/10.1111/caje.12661
 
 U.S. Bureau of Labor Statistics. Business Employment Dynamics. https://www.bls.gov/bdm/ (data retrieved 14 October 2026).
 
-U.S. Census Bureau. Business Formation Statistics: Methodology; Definitions. https://www.census.gov/econ/bfs/ (data retrieved 14 October 2026).
+U.S. Census Bureau. Business Formation Statistics. https://www.census.gov/econ/bfs/ (data retrieved 14 October 2026). Methodology: https://www.census.gov/econ/bfs/technicaldocumentation/methodology.html. Definitions: https://www.census.gov/econ/bfs/definitions.html.
 
 U.S. Census Bureau. Business Dynamics Statistics. https://www.census.gov/programs-surveys/bds.html (data retrieved 15 October 2026).
 
