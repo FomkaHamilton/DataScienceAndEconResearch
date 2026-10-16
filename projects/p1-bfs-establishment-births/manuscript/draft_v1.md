@@ -1,5 +1,5 @@
 <!--
-DRAFT v1 — 2026-10-15. Not yet reviewed by the author.
+DRAFT v1 — 2026-10-15; figures placed the same day (manuscript/figures/). Not yet reviewed by the author.
 Target format: Journal of Forecasting (full research article). Verify current
 author guidelines, length limits, and the AI-disclosure policy before submission.
 Every number below comes from a committed output table or figure; sources are
@@ -60,9 +60,15 @@ Two documented changes matter here. In November 2021 Census redefined HBA for da
 
 **Establishment births.** Quarterly state-level counts of private-sector establishment births from the BLS Business Employment Dynamics, 1992Q3 to 2025Q4, not seasonally adjusted. The outcome is the year-over-year log change. BED has no archive of historical vintages, so the analysis uses the vintage retrieved on 14 October 2026 throughout. Section 9 discusses the implications.
 
+Figure 1 shows both series at the national level. Applications surged in 2020 and peaked in 2020Q3. Establishment births peaked three quarters later, in 2021Q2.
+
+![Figure 1](figures/fig1_national_applications_births.png)
+
+**Figure 1.** National year-over-year change in business applications (a) and establishment births (b), 2005Q3–2025Q4, in log points (100 × the log change from the same quarter a year earlier), not seasonally adjusted. Shaded: the pandemic (2020–21) and the test window (2023–25). *Sources: Census Bureau, Business Formation Statistics; BLS, Business Employment Dynamics.*
+
 **New-firm share of entry.** From the Census Business Dynamics Statistics (state × firm age, annual, through 2023): the share of new establishments belonging to firms in their first year. Over 2010–2019 the state average is 61% (range 54%–69%). That implies about 39% of new establishments come from existing firms, close to Decker and Haltiwanger's (2022) figure.
 
-**Seasonality.** Not-seasonally-adjusted establishment births and applications both show irregular spikes in the first quarter of the year. For applications, 21% of state first-quarter observations jump by more than 40% from the previous quarter, compared with almost none in other quarters. Of the 41 state-quarters in which both series jump by more than 30% at once, 36 are first quarters. Year-over-year differencing removes a stable seasonal pattern but not a pattern whose size varies by year. Every model therefore includes a quarter-of-year indicator. Section 6.6 shows the results are unchanged with the official seasonally adjusted series.
+**Seasonality.** Not-seasonally-adjusted establishment births and applications both show irregular spikes in the first quarter of the year. For applications, 21% of state first-quarter observations jump by more than 40% from the previous quarter, compared with almost none in other quarters. Of the 41 state-quarters in which both series jump by more than 30% at once, 36 are first quarters. Year-over-year differencing removes a stable seasonal pattern but not a pattern whose size varies by year. Every model therefore includes a quarter-of-year indicator. Section 6.7 shows the results are unchanged with the official seasonally adjusted series.
 
 *Source: data/MANIFEST.md (retrieval dates, URLs, SHA-256 checksums); literature/phase3_findings.md; literature/rq2_findings.md §6.*
 
@@ -121,7 +127,7 @@ Two methods named in the original plan were replaced, as disclosed in the plan i
 
 *Notes: Accuracy is the reduction in mean squared error relative to the benchmark; positive values favour the model. †Wild cluster bootstrap interval and p-value; the two-way clustered standard error was unstable for this model. Source: outputs/tables/phase5_model_performance.csv, phase5_comparisons.csv, phase5x_detectable_effects.csv.*
 
-No model detectably improves on the benchmark (Table 1). The confidence intervals are informative about what can be ruled out:
+No model detectably improves on the benchmark (Table 1; Figure 2b). The confidence intervals are informative about what can be ruled out:
 
 - Same-quarter applications cannot have improved accuracy by more than about 2%.
 - Applications three quarters ahead cannot have improved it by more than about 10%.
@@ -131,20 +137,15 @@ At 80% power, the minimum detectable improvement is 7–12% for the regression m
 
 ### 6.2 Naive versus dependence-robust inference
 
-**Table 2. Information tests (Clark–West, one-sided p-values), test window**
+Figure 2 shows each point estimate with two intervals: one that treats the 612 state-quarters as independent, and one that allows for correlation across states within a quarter and within states over time. The p-values under every method are in Appendix Table A1.
 
-| Comparison | Naive | By state | By quarter | Two-way | Wild bootstrap (quarter) |
-|---|---|---|---|---|---|
-| Applications, h = 0 | 0.47 | 0.47 | 0.48 | 0.48 | 0.49 |
-| Applications, h = 1 | 0.012 | 0.040 | 0.19 | 0.20 | 0.19 |
-| Applications, h = 2 | 0.005 | 0.018 | 0.15 | 0.16 | 0.16 |
-| Applications, h = 3 | 0.0003 | 0.008 | 0.057 | 0.076 | 0.067 |
-| Applications, h = 4 | 0.008 | 0.030 | 0.13 | 0.15 | 0.15 |
-| Elastic net | 0.0001 | 0.003 | 0.037 | 0.052 | 0.048 |
+![Figure 2](figures/fig2_test_window_intervals.png)
 
-*Source: outputs/tables/phase5_comparisons.csv.*
+**Figure 2.** Test-window comparisons with the benchmark, 2023Q1–2025Q4 (612 state-quarters). Grey intervals treat every state-quarter as independent; black intervals are two-way clustered by state and quarter. Panel (a): Clark–West adjusted loss difference, 90% intervals, so a black interval lying wholly above zero corresponds to rejection at the 5% level in the one-sided information test; the tree-based models are omitted because the adjustment is not meaningful for them (Section 6.3). Panel (b): reduction in mean squared error, 95% intervals; positive values favour the model. †Robust interval from the wild cluster bootstrap by quarter, because the two-way clustered standard error was unstable for this model. *Source: outputs/tables/phase5_comparisons.csv.*
 
-Taken at face value, the naive column says applications carry significant information at every lead except the same quarter. Most of that evidence comes from treating 51 states in the same quarter as independent. Clustering by state alone barely changes the picture. Clustering by quarter, or both ways, does: the three-quarter-lead result becomes marginal (p = 0.076 two-way; p = 0.067 by wild bootstrap), and the others are not significant. After Holm adjustment across the three primary comparisons, the smallest p-value is 0.14.
+Taken at face value, the naive intervals say applications carry significant information at every lead except the same quarter (Figure 2a). Most of that evidence comes from treating 51 states in the same quarter as independent. Clustering by state alone barely changes the picture. Clustering by quarter, or both ways, does: the three-quarter-lead result becomes marginal (p = 0.076 two-way; p = 0.067 by wild bootstrap), and the others are not significant. After Holm adjustment across the three primary comparisons, the smallest p-value is 0.14.
+
+The same problem appears in the accuracy comparison, in the opposite direction. The naive interval for same-quarter applications lies wholly below zero (naive p = 0.03), which would suggest that applications made forecasts significantly *worse*. The robust interval does not (two-way p = 0.26; Figure 2b).
 
 The wild bootstrap and the two-way clustered results agree closely, so the conclusion does not hinge on the few-cluster correction.
 
@@ -158,7 +159,7 @@ The Clark–West adjustment credits the larger model for the dispersion between 
 
 To see whether the test-window result reflects a lasting property or a particular period, I extend the same procedure to forecast every quarter from 2010Q1. The 2023–2025 forecasts from this extended run are identical to those in Section 6.1.
 
-**Table 3. Accuracy and information by period, all applications**
+**Table 2. Accuracy and information by period, all applications**
 
 | Period | Lead | Accuracy vs. benchmark (%) | Two-way p (accuracy) | Information test, two-way p | States where model more accurate |
 |---|---|---|---|---|---|
@@ -174,7 +175,7 @@ To see whether the test-window result reflects a lasting property or a particula
 
 *Note: 2010–2022 is pseudo-out-of-sample. Inference within 2020–21 rests on 8 quarters. Source: outputs/tables/phase5x_by_period.csv.*
 
-The pattern has three phases (Table 3; Figure 1).
+The pattern has three phases (Table 2; Figure 3).
 
 - **2010–2019:** applications carried statistically detectable information at leads of 0–3 quarters, robust to dependence. At the four-quarter lead, p = 0.06. Accuracy gains were small, 1–4%, and positive in about two-thirds of states.
 - **2020–2021:** gains were large, 11–20%, positive in 80–92% of states.
@@ -182,29 +183,17 @@ The pattern has three phases (Table 3; Figure 1).
 
 Four quarters, 2021Q2 to 2022Q1, contribute more than the entire net gain over the sixteen years.
 
-**Figure 1.** Cumulative reduction in squared error from adding applications (three-quarter lead), 2010–2025. `../outputs/figures/phase5x_cumulative_gain_h3.png`
+![Figure 3](figures/fig3_cumulative_gain_ba_h3.png)
 
-**Figure 2.** Estimated weight on applications (three-quarter lead) from each expanding-window re-estimation. `../outputs/figures/phase5x_bfs_coefficient_path_h3.png`
-
-Apart from the first estimates in 2010, which rest on short samples, the estimated weight on applications stayed between about 0.11 and 0.20 through 2021, averaging 0.18 over 2010–2019. Once the pandemic surge entered the estimation sample it rose sharply, peaking at 0.41 in 2022, and has since settled at about 0.32–0.34, roughly double its pre-2020 level (Figure 2). Put in elasticity terms:
-
-- **Before 2020:** a 10% year-over-year rise in applications was associated with a rise of about 1.8% in establishment births three quarters later.
-- **Models estimated through the pandemic:** they assume roughly 3.3%.
+**Figure 3.** Cumulative accuracy gain from adding applications at a three-quarter lead, 2010Q1–2025Q4. Each quarter adds the reduction in squared error relative to the benchmark, averaged across states. The running total is expressed as a percentage of the benchmark's total squared error over the whole period, so the final value (3.0%) is the accuracy gain over 2010–2025 as a whole. A rising line means the model with applications beat the benchmark that quarter. 2010–2022 is pseudo-out-of-sample. *Source: outputs/tables/rq2_predictions.csv.*
 
 ### 6.5 Which application series carries the signal?
 
-**Table 4. Accuracy vs. benchmark by application series (% of benchmark MSE)**
+Figure 4 repeats the cumulative comparison for each of the four application series. Period averages are in Appendix Table A2.
 
-| Period | Lead | All (BA) | High-propensity (HBA) | Planned wages (WBA) | Corporate (CBA) |
-|---|---|---|---|---|---|
-| 2010–2019 | h = 0 | +2.6 | +7.3 | +5.3 | +4.6 |
-| | h = 3 | +0.8 | +3.9 | +4.5 | +1.8 |
-| 2020–2021 | h = 0 | +11.3 | +19.4 | +19.7 | +16.1 |
-| | h = 3 | +11.9 | +22.6 | +17.2 | +6.3 |
-| 2022–2025 | h = 0 | −7.1 | −10.1 | −7.5 | −9.3 |
-| | h = 3 | −3.7 | −9.8 | −4.9 | −2.5 |
+![Figure 4](figures/fig4_cumulative_gain_by_series.png)
 
-*Source: outputs/tables/rq2_by_period.csv.*
+**Figure 4.** Cumulative accuracy gain by application series, constructed as in Figure 3, at the same-quarter (a) and three-quarter (b) leads. Shaded: the pandemic (2020–21) and the test window (2023–25). *Source: outputs/tables/rq2_predictions.csv.*
 
 **Before 2020, the narrower series were the better predictors.** In direct comparisons with the all-applications model, Holm-adjusted across 24 comparisons:
 
@@ -215,19 +204,32 @@ The same-quarter advantage holds when the comparison is restricted to 2013–201
 
 **After 2020, the advantage vanished.** No series improved on the benchmark from 2022 on, and the narrower series did slightly worse than total applications. High-propensity applications at the three-quarter lead were 5.9% less accurate than the all-applications model (Holm-adjusted p = 0.07).
 
+**How much weight the models put on applications.** Apart from the first estimates in 2010, which rest on short samples, the estimated weight on all applications at the three-quarter lead stayed between about 0.11 and 0.20 through 2021, averaging 0.18 over 2010–2019. Once the pandemic surge entered the estimation sample it rose sharply, peaking at 0.41 in 2022, and has since settled at about 0.32–0.34, roughly double its pre-2020 level. Put in elasticity terms:
+
+- **Before 2020:** a 10% year-over-year rise in applications was associated with a rise of about 1.8% in establishment births three quarters later.
+- **Models estimated through the pandemic:** they assume roughly 3.3%.
+
+The narrower series moved much less (Figure 5). Indexed to each series' own 2010–2019 average, the weight on all applications averaged 193 over 2022–2025. The weights on the narrower series averaged 132 (planned wages), 112 (high-propensity) and 111 (corporate).
+
+![Figure 5](figures/fig5_weight_paths_indexed.png)
+
+**Figure 5.** Estimated weight on applications at a three-quarter lead, from each expanding-window re-estimation, by series. Each series is indexed to its own 2010–2019 average (= 100). Estimates are dated by forecast quarter; each uses data through three quarters earlier. The 2010 estimates rest on short samples. *Source: outputs/tables/rq2_coefficient_paths_h3.csv.*
+
 This bears directly on the most natural explanation for the breakdown. Dinlersoz et al. (2021; Census CES Working Paper 21-01) document that the 2020 surge was concentrated among applications more likely to remain nonemployers. If that compositional shift were the cause, filtering for employer intent should have preserved the signal. It did not. Moreover, the high-propensity series' estimated weight barely changed after 2020 (+12%, against +93% for total applications), yet its forecasts still deteriorated. So a pandemic-inflated weight cannot be the whole story either. The relationship itself appears to have changed.
 
-*Source: outputs/tables/rq2_vs_BA_direct.csv, rq2_hba_definition_check.csv, rq2_coefficient_paths_h3.csv; figures rq2_cumulative_gain_h3.png, rq2_coefficient_paths_h3.png.*
+*Source: outputs/tables/rq2_vs_BA_direct.csv, rq2_hba_definition_check.csv, rq2_coefficient_paths_h3.csv, phase5x_bfs_coefficient_path_h3.csv.*
 
 ### 6.6 New-firm share and the mechanism (exploratory)
 
-If applications predict births because they track new firms, gains should be larger where new firms account for more new establishments. Across states, the 2010–2019 same-quarter gain from applications is positively rank-correlated with the state's new-firm share (Spearman ρ = 0.37, Holm p = 0.014; Figure 3). The three-quarter-lead correlation is weak (ρ = 0.11, p = 0.44). After 2020 there is no relationship. This analysis is exploratory and cross-sectional, and the new-firm share comes from a different statistical system than the outcome.
+If applications predict births because they track new firms, gains should be larger where new firms account for more new establishments. Across states, the 2010–2019 same-quarter gain from applications is positively rank-correlated with the state's new-firm share (Spearman ρ = 0.37, Holm p = 0.014; Figure 6). The three-quarter-lead correlation is weak (ρ = 0.11, p = 0.44). After 2020 there is no relationship. This analysis is exploratory and cross-sectional, and the new-firm share comes from a different statistical system than the outcome.
 
-**Figure 3.** State forecasting gain from applications versus share of new establishments from new firms, 2010–2019. `../outputs/figures/rq4_gain_vs_new_firm_share.png`
+![Figure 6](figures/fig6_gain_vs_new_firm_share.png)
+
+**Figure 6.** State accuracy gain from applications over 2010–2019, against the share of new establishments belonging to new firms (Business Dynamics Statistics, 2010–2019 average). One point per state (51). Holm adjustment is across the two leads. *Source: outputs/tables/rq4_state_data.csv, rq4_correlations.csv.*
 
 ### 6.7 Robustness
 
-**Table 5. Robustness, test window**
+**Table 3. Robustness, test window**
 
 | Variant | h = 3 accuracy (%) | h = 3 information test, two-way p | Best ML accuracy (%) |
 |---|---|---|---|
@@ -238,7 +240,7 @@ If applications predict births because they track new firms, gains should be lar
 
 *Notes: Winsorizing clips at fixed 1st/99th percentiles from the development window. The seasonally adjusted variant is not a valid real-time exercise, because seasonal factors are estimated with later data; it is reported only as a check. Source: outputs/tables/phase5x_robustness_comparisons.csv.*
 
-The results do not depend on the treatment of seasonality or on a few extreme quarters (Table 5).
+The results do not depend on the treatment of seasonality or on a few extreme quarters (Table 3).
 
 ## 7. Discussion
 
@@ -257,14 +259,24 @@ Separating these explanations is a natural next step.
 
 ## 8. A pre-registered test with new data
 
-The interpretation in Section 7 was formed after seeing the 2023–2025 results, and the test window is short. The only clean test is data no one has seen. Before BLS published any 2026 establishment-birth data, I committed forecasts for 2026Q1–Q3 for all 51 states. The commit carries the hash `8e0751c9…841fc` and the tag `prereg-live-forecasts-2026`.
+The interpretation in Section 7 was formed after seeing the 2023–2025 results, and the test window is short. The only clean test is data no one has seen. Before BLS published any 2026 establishment-birth data, I committed forecasts for 2026Q1–Q3 for all 51 states, under the tag `prereg-live-forecasts-2026`. The forecast file's SHA-256 hash is `8e0751c9…841fc`. [VERIFY: add the public timestamp record and its date once posted.]
 
-The forecasts were produced with exactly the procedure above, in two variants: one estimated on all data, and one excluding 2020–2022 from estimation. The pre-registered readings are:
+The forecasts were produced with exactly the procedure above, in two variants: one estimated on all data, and one excluding 2020–2022 from estimation (Figure 7). The pre-registered readings are:
 
 - **The paper's claim:** applications still do not improve forecasts.
 - **An alternative:** excluding the pandemic years from estimation helps.
 
 The scoring code was committed with the forecasts. 2026Q1 is scheduled for release on 28 October 2026.
+
+![Figure 7](figures/fig7_live_forecasts_2026.png)
+
+**Figure 7.** Pre-registered forecasts for 2026Q1–Q3, committed before BLS published any 2026 data. Each point is the average forecast across the 51 states, with equal weights as in the evaluation. Filled points: models estimated on all data. Hollow points: models estimated excluding 2020–2022. The pre-registered test compares state-level squared errors, not these averages. [Actual values to be added as each quarter is published.] *Source: outputs/live_forecasts/live_forecasts_2026Q1-Q3.csv.*
+
+Before the first release, I recorded one fact that bears on how to read it (project research log, 15 October 2026).
+
+- **What the narrower series did.** Total applications rose sharply through 2025, by 21 log points year over year nationally in 2025Q4. High-propensity applications rose by only 1–5 log points over 2025Q2–Q4, and applications with planned wages fell.
+- **Why it matters.** Models estimated on all data weight total applications about twice as heavily as before 2020, so they turn that rise into the high 2026 forecasts in Figure 7.
+- **Two causes to separate.** A shortfall of actual births against those forecasts would therefore reflect two things: the post-2020 change documented above, and a 2025 shift in which kinds of applications are rising. The frozen forecasts from the high-propensity series, which are among the pre-registered secondary comparisons, help separate the two.
 
 *[Results to be added as each quarter is published. Report every quarter regardless of outcome.]*
 
@@ -368,3 +380,33 @@ U.S. Bureau of Labor Statistics. Business Employment Dynamics. https://www.bls.g
 U.S. Census Bureau. Business Formation Statistics: Methodology; Definitions. https://www.census.gov/econ/bfs/ (data retrieved 14 October 2026).
 
 U.S. Census Bureau. Business Dynamics Statistics. https://www.census.gov/programs-surveys/bds.html (data retrieved 15 October 2026).
+
+---
+
+## Appendix: additional tables
+
+**Table A1. Information tests (Clark–West, one-sided p-values), test window**
+
+| Comparison | Naive | By state | By quarter | Two-way | Wild bootstrap (quarter) |
+|---|---|---|---|---|---|
+| Applications, h = 0 | 0.47 | 0.47 | 0.48 | 0.48 | 0.49 |
+| Applications, h = 1 | 0.012 | 0.040 | 0.19 | 0.20 | 0.19 |
+| Applications, h = 2 | 0.005 | 0.018 | 0.15 | 0.16 | 0.16 |
+| Applications, h = 3 | 0.0003 | 0.008 | 0.057 | 0.076 | 0.067 |
+| Applications, h = 4 | 0.008 | 0.030 | 0.13 | 0.15 | 0.15 |
+| Elastic net | 0.0001 | 0.003 | 0.037 | 0.052 | 0.048 |
+
+*Source: outputs/tables/phase5_comparisons.csv.*
+
+**Table A2. Accuracy vs. benchmark by application series (% of benchmark MSE)**
+
+| Period | Lead | All (BA) | High-propensity (HBA) | Planned wages (WBA) | Corporate (CBA) |
+|---|---|---|---|---|---|
+| 2010–2019 | h = 0 | +2.6 | +7.3 | +5.3 | +4.6 |
+| | h = 3 | +0.8 | +3.9 | +4.5 | +1.8 |
+| 2020–2021 | h = 0 | +11.3 | +19.4 | +19.7 | +16.1 |
+| | h = 3 | +11.9 | +22.6 | +17.2 | +6.3 |
+| 2022–2025 | h = 0 | −7.1 | −10.1 | −7.5 | −9.3 |
+| | h = 3 | −3.7 | −9.8 | −4.9 | −2.5 |
+
+*Source: outputs/tables/rq2_by_period.csv.*

@@ -310,3 +310,27 @@ Implications:
 Addendum 3 and the frozen forecasts are unchanged.
 
 **AI-use record:** Claude (Opus 5.5) proposed the figure set, wrote the figure script, captions and review notes, found the draft's coefficient-range error and the 2025 divergence, and wrote this entry. Not yet reviewed by the author.
+
+## 2026-10-15: Figures placed in the draft
+
+The author approved the proposed placements and kept Figure 3 as its own figure. The author also delegated the public-timestamp decision ("go with your best judgement"), then explicitly authorized posting.
+
+**Draft changes:**
+
+- All seven figures placed, with captions.
+- Tables renumbered:
+  - main text: 1 (test window), 2 (by period), 3 (robustness);
+  - appendix: A1 (information-test p-values, formerly Table 2) and A2 (accuracy by series, formerly Table 4).
+- The paragraph on the weight given to applications moved from Section 6.4 to 6.5, so that figure numbers follow the order of first mention.
+- Section 6.2 now also notes that naive inference overstates in the accuracy comparison too. The naive test says same-quarter applications made forecasts significantly worse (p = 0.03); the robust test does not (two-way p = 0.26). Both numbers come from the committed `phase5_comparisons.csv`.
+- Fixed a wrong cross-reference: the seasonally adjusted check is in Section 6.7, not 6.6.
+- Section 8:
+  - corrected "the commit carries the hash" (the SHA-256 is the forecast file's);
+  - added Figure 7;
+  - added the 2025 composition observation recorded in the entry above.
+
+**Reproducibility:** a full `run_all.py` re-run (9 steps, the figure step included) passed `verify_outputs.py`: 34 tables and 21 figure files, 0 problems. The manuscript figures were byte-identical. Ten tables differed only in the 15th–16th significant digit (random-forest parallel summation) and were restored to the committed copies.
+
+**Public timestamp: not yet posted.** A hash-only public gist was prepared. It contains the forecast file's SHA-256, commit 7a36fe1 (the tag `prereg-live-forecasts-2026`) and commit 9fb1904, with no project name, paths, data or results. Claude Code's permission system blocked the upload twice, the second time after the author's explicit authorization. The author needs to post it, or add a permission rule. Section 8 carries a [VERIFY] placeholder for the link. Deadline: before BLS publishes 2026Q1 on 2026-10-28.
+
+**AI-use record:** Claude (Opus 5.5) placed the figures, edited the draft text and wrote this entry. Not yet reviewed by the author.
