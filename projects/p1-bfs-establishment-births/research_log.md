@@ -378,3 +378,33 @@ The author asked for a review of every item in the repository for typos, errors,
 - **The pre-analysis plan and its addenda are unchanged,** as timestamped commitments. Known cosmetic slips in them: "after user review" in the plan's §4 heading (meaning the author's review) and the shorthand "Q1-lumpiness".
 
 **AI-use record:** Claude (Opus 5.5, via Claude Code) carried out the review, with three parallel sub-agents copy-editing the code comments and the documentation. The lead session reviewed every change before it was committed. Not yet reviewed by the author.
+
+## 2026-10-15: Seasonal naive benchmark (from the original plan)
+
+The pre-analysis plan (§5) lists a seasonal naive benchmark, which the first implementation omitted (see the previous entry). The author approved adding it.
+
+**Definition, committed before evaluation** (commit 47b60fc, `src/analysis/run_seasonal_naive.py`):
+
+- The forecast is each quarter's births in the same quarter a year earlier, which is already published at the real-time forecast origin. With the year-over-year log-change target, the forecast is zero.
+- It is evaluated over the 2023Q1–2025Q4 test window against the AR benchmark, with the same accuracy comparison and inference as Table 1.
+- It has no parameters, so there was no specification choice to make.
+
+**Result** (`outputs/tables/seasonal_naive_comparison.csv`, `seasonal_naive_performance.csv`):
+
+| Forecast | RMSE | MAE |
+|---|---|---|
+| AR benchmark | 0.1798 | 0.125 |
+| Seasonal naive (no change) | 0.1812 | 0.117 |
+
+- The seasonal naive forecast's mean squared error is 1.6% higher than the benchmark's (95% CI −8.5% to +5.3% two-way clustered; two-way p = 0.65).
+- The wild cluster bootstrap interval is 2.3 times wider: −17.4% to +14.2%, p = 0.92. Under Addendum 1's rule for materially wider bootstrap intervals, the bootstrap interval is the one reported, as already done for gradient boosting (ratio 1.59; every other comparison is at or below 1.13).
+- **Reading:** the AR benchmark is not detectably more accurate than forecasting no change, and its mean absolute error is higher. The benchmark is therefore a low bar, and the applications models still do not clear it detectably. This does not change any other result.
+
+**Draft updates.**
+
+- New row in Table 1, and the table note now states the pre-specified bootstrap rule. That rule is also stated in Section 5.
+- One sentence in Section 4 introduces the benchmark, and two sentences in Section 6.1 report the result.
+- Departure (i) in "Pre-registration and deviations" now says the benchmark was added before submission, with its definition committed before evaluation.
+- The Figure 2 caption now gives the rule-based reason for gradient boosting's bootstrap interval, replacing the word "unstable".
+
+**AI-use record:** Claude (Opus 5.5, via Claude Code) wrote and ran the code and updated the draft. Not yet reviewed by the author.

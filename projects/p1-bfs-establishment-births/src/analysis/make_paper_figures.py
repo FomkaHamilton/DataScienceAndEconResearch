@@ -191,7 +191,7 @@ def fig_test_window_intervals() -> None:
             naive_se = est / r["naive_t"]
             y = len(comps) - 1 - i
             if stat == "mse" and comp == "gb":
-                # The two-way clustered SE is unstable for this model (Table 1), so use the wild cluster bootstrap interval.
+                # The bootstrap interval is materially wider than the two-way clustered one for this model (Addendum 1; Table 1), so use it.
                 lo, hi = r["wcb_ci95_low_pct"], r["wcb_ci95_high_pct"]
             else:
                 robust_se = est / r["two_way_t"]

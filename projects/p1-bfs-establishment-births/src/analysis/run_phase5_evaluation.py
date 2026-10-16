@@ -22,8 +22,9 @@ Disclosed deviations from the pre-analysis plan (PAP), per its Sec. 8:
      not implemented (no reference implementation). Cluster-robust tests
      (by state, by quarter, and two-way) and a wild cluster bootstrap by
      quarter, for the few-cluster case, are used instead.
-  4. The seasonal naive benchmark listed in the PAP is not estimated. With
-     a year-over-year target it amounts to forecasting zero change.
+  4. The seasonal naive benchmark listed in the PAP is not estimated here.
+     It was added before submission in run_seasonal_naive.py (with a
+     year-over-year target it amounts to forecasting zero change).
   5. The Giacomini & White (2006) fallback is not implemented. For the
      tree-based models, only the unadjusted accuracy comparison is
      interpreted (the Clark-West adjustment does not suit them).

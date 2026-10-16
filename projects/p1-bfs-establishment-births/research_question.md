@@ -48,7 +48,7 @@ The paper's framing changed accordingly. It no longer argues that applications a
 
 - The Model Confidence Set and the Qu–Timmermann–Zhu / Akgun et al. panel tests were not implemented, because no vetted reference implementation was available. Holm–Bonferroni correction and cluster-robust tests (clustered by state, by quarter and two-way, with a wild cluster bootstrap) were used instead.
 - BFS enters the models at quarterly frequency, with the full quarter treated as available shortly after it ends, so the bridge-equation and ARDL specifications coincide (documented in `src/cleaning/build_forecast_dataset.py`).
-- The seasonal naive benchmark listed in the pre-analysis plan was not estimated; with a year-over-year target it amounts to forecasting no change.
+- The seasonal naive benchmark listed in the pre-analysis plan was omitted from the first implementation and added before submission (`src/analysis/run_seasonal_naive.py`, definition committed before evaluation); with a year-over-year target it forecasts no change. It is reported in Table 1 of the manuscript.
 - The Giacomini & White (2006) fallback was not implemented. For the tree-based models, only the unadjusted accuracy comparison is interpreted, because the Clark–West adjustment does not suit them.
 
 ## Data revisions and real-time handling
