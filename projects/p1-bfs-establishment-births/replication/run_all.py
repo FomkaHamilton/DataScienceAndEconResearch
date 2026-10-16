@@ -39,6 +39,7 @@ PIPELINE = [
     "src/analysis/exploratory_analysis.py",
     "src/cleaning/build_forecast_dataset.py",
     "src/analysis/run_phase5_evaluation.py",  # primary results
+    "src/analysis/run_seasonal_naive.py",  # seasonal naive benchmark (plan Sec. 5)
     "src/analysis/run_phase5_extensions.py",  # Addendum 1
     "src/analysis/run_rq2.py",  # Addendum 2
     "src/analysis/make_live_forecasts.py",  # Addendum 3: checks the frozen forecasts, never overwrites
