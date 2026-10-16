@@ -1,15 +1,16 @@
 """
 Check that regenerated outputs match the committed ones.
 
-Compares every tracked CSV under data/processed/ and outputs/tables/
-against its version in git HEAD: same columns and shape, identical
-non-numeric values, and numeric values equal within a tolerance. Also
-checks that every tracked figure (outputs/figures and
-manuscript/figures) was regenerated.
+Compares every tracked CSV under data/processed/ and outputs/ (the
+tables and the live-forecast file) against its version in git HEAD: same
+columns and shape, identical non-numeric values, and numeric values equal
+within a tolerance. Also checks that every tracked figure (outputs/figures
+and manuscript/figures) is present; figures are not compared image by
+image.
 
     python replication/verify_outputs.py [--rtol 1e-6] [--atol 1e-9]
 
-Exits with status 1 if anything differs.
+Exits with status 1 if anything differs or is missing.
 """
 
 import argparse

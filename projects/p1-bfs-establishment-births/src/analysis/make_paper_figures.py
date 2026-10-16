@@ -1,19 +1,20 @@
 """
-Figures for the manuscript (manuscript/draft_v1.md).
+Figures for the manuscript (manuscript/).
 
 Presentation only: every figure is drawn from committed output tables,
 the committed analysis panel, or the frozen live-forecast file. Nothing
 is re-estimated here, and the live-forecast file is only read.
 
-Figures are sized for a printed page (6.5 in wide), carry no titles or
-footnotes (those belong in the manuscript captions), and are written as
-PNG (300 dpi) and PDF (vector, TrueType fonts) to manuscript/figures/.
+Figures are sized for a printed page (6.5 in wide), carry no figure
+titles or notes (those belong in the manuscript captions), and are
+written as PNG (300 dpi) and PDF (vector, TrueType fonts) to
+manuscript/figures/.
 
-Colour: all business applications (BA) and establishment births are
-drawn in ink; colour is used only to tell the narrower application
-series apart (dataviz reference palette slots 1-3, validated all-pairs
-on white; aqua is below 3:1 contrast, so every coloured line is also
-labelled directly).
+Color: all business applications (BA) and establishment births are
+drawn in black; color is used only to tell the narrower application
+series apart. The three series colors were checked pairwise for
+distinguishability on white; the green (CBA) is below 3:1 contrast, so
+every colored line is also labeled directly.
 
 Usage:
     python make_paper_figures.py
@@ -190,7 +191,7 @@ def fig_test_window_intervals() -> None:
             naive_se = est / r["naive_t"]
             y = len(comps) - 1 - i
             if stat == "mse" and comp == "gb":
-                # Two-way clustered SE unstable for this model (Table 1): use the wild cluster bootstrap interval.
+                # The two-way clustered SE is unstable for this model (Table 1), so use the wild cluster bootstrap interval.
                 lo, hi = r["wcb_ci95_low_pct"], r["wcb_ci95_high_pct"]
             else:
                 robust_se = est / r["two_way_t"]
@@ -239,7 +240,7 @@ def _cumulative_gains(preds: pd.DataFrame, series: str, h: int) -> pd.DataFrame:
 
 
 def _check_against_committed(preds: pd.DataFrame) -> None:
-    """The BA h3 quarterly gains must equal the committed Addendum 1 / Addendum 2 tables."""
+    """The BA h3 quarterly gains must equal the committed Addendum 2 table (rq2_quarterly_gains_h3.csv)."""
     q = _cumulative_gains(preds, "BA", 3)
     ref = pd.read_csv(TABLE_DIR / "rq2_quarterly_gains_h3.csv").query("series == 'BA'")
     m = q.merge(ref, on=["year", "quarter"], suffixes=("", "_ref"))

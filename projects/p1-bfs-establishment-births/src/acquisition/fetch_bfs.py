@@ -21,12 +21,10 @@ from pathlib import Path
 
 import requests
 
+from user_agent import user_agent
+
 SOURCE_URL = "https://www.census.gov/econ/bfs/csv/bfs_monthly.csv"
 RAW_DIR = Path(__file__).resolve().parents[2] / "data" / "raw" / "bfs"
-USER_AGENT = (
-    "DataScienceAndEconResearch/0.1 "
-    "(independent research project; contact: thomas.hamilton@plexusworldwide.com)"
-)
 
 
 def fetch(retrieval_date: date | None = None) -> Path:
@@ -44,7 +42,7 @@ def fetch(retrieval_date: date | None = None) -> Path:
         print(f"Already retrieved today: {out_path}")
         return out_path
 
-    resp = requests.get(SOURCE_URL, headers={"User-Agent": USER_AGENT}, timeout=60)
+    resp = requests.get(SOURCE_URL, headers={"User-Agent": user_agent()}, timeout=60)
     resp.raise_for_status()
     out_path.write_bytes(resp.content)
     print(f"Saved {len(resp.content):,} bytes to {out_path}")

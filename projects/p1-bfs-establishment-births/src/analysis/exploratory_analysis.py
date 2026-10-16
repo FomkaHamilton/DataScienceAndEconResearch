@@ -1,13 +1,13 @@
 """
-Phase 3 exploratory analysis (DEVELOPMENT WINDOW ONLY).
+Phase 3 exploratory analysis (development window only).
 
-This script enforces the pre-analysis-plan discipline from
-research_question.md: it loads the integrated panel, immediately drops
-every row with in_test_window == True, and never touches them again. No
-forecast is evaluated here -- this is descriptive/correlational only,
-meant to answer the Phase 3 gate question: is a BFS-applications ->
-BED-establishment-births signal plausibly present at all, before
-committing to a full model-comparison design in Phase 4/5?
+This script enforces the test-window lock (windows defined in
+pre_analysis_plan.md Sec. 1): it loads the integrated panel, immediately
+drops every row with in_test_window == True, and never uses them again. No forecast is evaluated here. The
+analysis is descriptive and correlational only, and answers the Phase 3
+gate question: is a signal from business applications (BFS) to
+establishment births (BED) plausibly present at all, before committing
+to a full model-comparison design in Phases 4-5?
 
 Outputs:
   outputs/figures/national_bfs_vs_bed_yoy.png
@@ -36,8 +36,9 @@ TABLE_DIR = PROJECT_ROOT / "outputs" / "tables"
 
 MAX_LAG = 4  # quarters
 
-# Chart chrome and series colors from the dataviz reference palette
-# (slots 1-2 validated together: CVD and contrast checks pass, light mode).
+# Chart colors (background, text, gridlines, two series). The two series
+# colors were checked together for color-vision-deficiency
+# distinguishability and contrast on the light background.
 SURFACE, INK, INK_2, GRID = "#fcfcfb", "#0b0b0b", "#52514e", "#e1e0d9"
 COLOR_BIRTHS, COLOR_APPS = "#2a78d6", "#eb6834"
 
@@ -62,7 +63,7 @@ def load_development_panel() -> pd.DataFrame:
         f"Loaded {n_total:,} total rows; dropped {n_total - len(df):,} "
         f"test-window (2023Q1+) rows. Using {len(df):,} development-window rows only."
     )
-    print("TEST WINDOW REMAINS LOCKED: not loaded for any analysis beyond this filter.")
+    print("Test window excluded: no test-window rows are used beyond this filter.")
     return df
 
 
@@ -90,9 +91,9 @@ def national_sanity_check(nsa_nat: pd.DataFrame) -> pd.DataFrame:
 
 
 def pooled_state_lag_correlations(nsa_states: pd.DataFrame) -> pd.DataFrame:
-    """Same lag-correlation idea, pooled across states, after within-state demeaning
-    (removes level differences across states; still a descriptive correlation, not a
-    model -- formal panel tests come in Phase 5)."""
+    """Same lag correlations, pooled across states after within-state demeaning
+    (removes level differences across states). Still a descriptive correlation,
+    not a model; formal panel tests are in Phase 5."""
     df = nsa_states.copy()
     for col in ["births_yoy", "BA_BA_yoy"]:
         df[f"{col}_demeaned"] = df.groupby("geo")[col].transform(lambda s: s - s.mean())
@@ -148,7 +149,7 @@ def main() -> None:
     print("\nPooled state-level (within-state-demeaned) lag-correlation table:")
     print(pooled_corr.to_string(index=False))
 
-    # --- Example state plots: 3 largest (by mean births) + 1 small state ---
+    # --- Example state plots: 3 largest and the smallest (by mean births) ---
     mean_births = states.groupby("geo")["births"].mean().sort_values(ascending=False)
     example_states = list(mean_births.head(3).index) + [mean_births.index[-1]]
     fig, axes = plt.subplots(len(example_states), 1, figsize=(10, 2.8 * len(example_states)),

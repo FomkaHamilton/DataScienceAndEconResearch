@@ -1,14 +1,14 @@
-# Literature Search Protocol — Project 1
+# Literature Search Protocol: Project 1
 
-Written before searching, per the program's research-integrity rules (verify before relying on memory; no fabricated citations).
+Written before any searching, following the program's research-integrity rules (verify sources rather than relying on memory; no fabricated citations).
 
 ## Scope
 
 Two linked searches:
 
-**A. Content literature** — business formation / applications as a leading indicator; business/establishment dynamics forecasting.
+**A. Content literature:** business formation and business applications as leading indicators; forecasting of business and establishment dynamics.
 
-**B. Methods literature** — forecast evaluation for nested/non-nested models in short panels; econometric-vs-ML forecasting comparisons; MIDAS/bridge equations for mixed-frequency forecasting.
+**B. Methods literature:** forecast evaluation for nested and non-nested models in short panels; comparisons of econometric and ML forecasting; MIDAS and bridge equations for mixed-frequency forecasting.
 
 ## Sources to search
 
@@ -17,11 +17,11 @@ Two linked searches:
 - SSRN
 - RePEc / IDEAS / EconPapers
 - Census CES (Center for Economic Studies) working paper series
-- Federal Reserve working paper series (Board FEDS, regional Reserve Banks — esp. Atlanta, which covers BFS-adjacent work)
+- Federal Reserve working paper series (Board FEDS and the regional Reserve Banks, especially Atlanta, which publishes work related to the BFS)
 - Journal sites directly: *Journal of Forecasting*, *International Journal of Forecasting*, *Journal of Business & Economic Statistics*, *Journal of Applied Econometrics*
-- EconLit, if accessible (AEA journal/article search); otherwise treat RePEc/IDEAS coverage as the practical substitute and say so
+- EconLit, if accessible (AEA journal and article search); otherwise RePEc/IDEAS coverage is used as the practical substitute, and this is stated
 
-## Search strings (starting set; expand as needed)
+## Search strings (starting set, expanded as needed)
 
 **A. Content:**
 - "business applications" "establishment births" state
@@ -41,23 +41,23 @@ Two linked searches:
 - machine learning versus econometric forecasting panel
 - random forest gradient boosting macroeconomic forecasting state panel
 
-## Inclusion / exclusion
+## Inclusion and exclusion criteria
 
 - Include: peer-reviewed articles, NBER/Fed/Census working papers, and recent (2024–2026) preprints with a verifiable landing page.
-- Exclude: blog posts, non-bibliographic sources, anything that cannot be confirmed on an official landing page.
-- No fabrication: a paper not found on a real landing page is not reported as existing. Mark anything uncertain as UNVERIFIED rather than omitting the uncertainty.
+- Exclude: blog posts, non-bibliographic sources, and anything that cannot be confirmed on an official landing page.
+- No fabrication: a paper not found on an official landing page is not reported as existing. Anything uncertain is marked UNVERIFIED rather than having the uncertainty omitted.
 
 ## Extraction fields (per the program's literature-review standard)
 
-For each included paper: full citation, research question, data, methodology, identification strategy (if any), main findings, limitations, how it relates to Project 1, and what gap (if any) remains after it.
+For each included paper: full citation, research question, data, methodology, identification strategy (if any), main findings, limitations, relation to Project 1, and any gap that remains after it.
 
 ## Gate question (decisive for whether Project 1 proceeds as designed)
 
 > Does any existing, findable paper forecast or nowcast **state-level** BED (or QCEW) establishment births/dynamics from **state-level** BFS business-application data, with an **out-of-sample econometric-vs-ML comparison**?
 
-- If **yes**: document it fully, and decide whether Project 1 becomes an explicit extension/replication of that paper (and say so), or whether to pivot to Candidate 2 from the roadmap.
-- If **no**: proceed to Phase 2 (data acquisition), and use the content/methods literature found here to finalize the model list and evaluation approach in the pre-analysis plan (Phase 4).
+- If **yes**: document the paper fully, and decide whether Project 1 becomes an explicit extension or replication of it (stated as such) or pivots to Candidate 2 from the [roadmap](../../../roadmap/01_research_roadmap.md).
+- If **no**: proceed to Phase 2 (data acquisition), and use the content and methods literature found here to finalize the model list and evaluation approach in the pre-analysis plan (Phase 4).
 
 ## Retrieval date
 
-Searches conducted 2026-10-14 onward. Each finding is dated in the extraction table.
+Searches were conducted from 2026-10-14 onward. The [extraction table](extraction_table.md) records the date of the review.

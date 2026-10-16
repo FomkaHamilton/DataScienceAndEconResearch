@@ -59,7 +59,7 @@ def new_firm_share() -> pd.Series:
 def correlate(gain: pd.Series, share: pd.Series) -> dict:
     d = pd.concat([gain.rename("gain"), share], axis=1).dropna()
     rho, p = spearmanr(d["new_firm_share"], d["gain"])
-    # OLS check: gain (percentage points) on share in percentage points.
+    # OLS check: gain (% of benchmark MSE) on the share in percentage points.
     ols = sm.OLS(d["gain"], sm.add_constant(100 * d["new_firm_share"])).fit(cov_type="HC1")
     return {
         "n_states": len(d), "spearman_rho": rho, "spearman_p": p,

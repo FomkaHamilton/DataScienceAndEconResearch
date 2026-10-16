@@ -14,10 +14,9 @@ project's analysis is state-level, so this script keeps naics_sector ==
 downstream rather than baked in here.
 
 Series kept: BA_BA (all applications), BA_HBA (high-propensity), BA_WBA
-(planned-wage), BA_CBA (corporate) -- the four predictor series used for
-RQ1/RQ2 -- plus the BF_* "business formation" projection series Census
-itself publishes, kept for context/comparison even though they are not
-currently used as predictors.
+(planned wages), and BA_CBA (corporate), the four predictor series used
+for RQ1/RQ2, plus the BF_* business formation projection series Census
+publishes, kept for context although they are not used as predictors.
 
 Output: data/processed/bfs_state_applications.csv
 

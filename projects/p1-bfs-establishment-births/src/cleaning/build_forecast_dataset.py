@@ -1,38 +1,40 @@
 """
 Build the forecast task table for Phase 5, implementing the real-time
-information-set convention from pre_analysis_plan.md Sec. 3 and the
-horizon structure from Sec. 6.
+information-set convention from the pre-analysis plan (PAP;
+pre_analysis_plan.md) Sec. 3 and the horizon structure from Sec. 6.
 
-REAL-TIME CONVENTION (an implementation detail not pinned to the exact
-day in the PAP -- stated here explicitly, as the PAP's own Sec. 8 says
-any necessary deviation/elaboration must be disclosed, not silent):
+Real-time convention. The PAP does not pin this down to the exact day,
+so it is stated here explicitly; the PAP's Sec. 8 requires any necessary
+deviation or elaboration to be disclosed:
   - BED establishment births publish with an effective ~3-quarter lag.
     At a real-time origin anchored to target quarter Q, the most recent
-    OWN-HISTORY lag of births actually available is Q-3. Benchmark
-    (no-BFS) models therefore use births_yoy lags 3, 4, 5.
-  - BFS applications publish with a ~2-week lag -- at quarterly
-    granularity this means the full quarter Q's BFS figure is available
-    very shortly after Q ends, so it is treated as available at lag 0
+    own-history lag of births available is Q-3. Benchmark (no-BFS)
+    models therefore use births_yoy lags 3, 4, 5.
+  - BFS applications publish with a ~2-week lag. At quarterly
+    granularity, the full quarter Q's BFS figure is available very
+    shortly after Q ends, so it is treated as available at lag 0
     relative to target Q. BFS-augmented models can therefore use BFS
     lags 0 through 4 relative to the target quarter.
   - Under this convention, "ARDL" and "bridge equation" (distinguished
-    in the PAP to handle a monthly-vs-quarterly frequency mismatch)
-    collapse to the same specification, because BFS's own within-quarter
-    monthly detail is not being partially used (the whole quarter is
-    just "available" by assumption). This is a disclosed simplification,
-    not a silent substitution -- see research_log.md.
+    in the PAP to handle the monthly-vs-quarterly frequency mismatch)
+    collapse to the same specification, because no partial-quarter
+    monthly BFS detail is used (the whole quarter is available by
+    assumption). This is a disclosed simplification, not a silent
+    substitution; see research_log.md.
 
-HORIZON (h = 0..4): the single BFS lag (relative to the target quarter)
+Horizon (h = 0..4): the single BFS lag (relative to the target quarter)
 used as the added predictor in each primary nested comparison, matching
-the lag structure already used in Phase 3's exploratory correlations.
-ML models additionally get a "kitchen sink" feature set with every lag
-at once (ML's natural strength), reported as a separate, not primary-per-
-horizon comparison.
+the lag structure used in the Phase 3 exploratory correlations. ML
+models also get a combined feature set with every lag at once, reported
+as a separate comparison rather than one per horizon.
 
-Seasonality handling (PAP Sec. 4): quarter-of-TARGET dummies included as
-features (the primary/structural fix). Winsorized versions and the SA
-(seasonally adjusted) series are built as separate, parallel feature
-sets for the sensitivity check / robustness line.
+Seasonality handling (PAP Sec. 4): the quarter of the target
+(`quarter_target`) is included for the quarter-of-year dummies (the
+primary, structural fix). The seasonally adjusted (SA) series is built
+as a separate, parallel set of rows for the robustness line. Winsorized
+columns (*_w) are also written for reference; the winsorizing
+sensitivity check in run_phase5_extensions.py applies the same fixed
+bounds to the raw columns itself and does not read them.
 
 Output: data/processed/forecast_dataset.csv
 """
@@ -49,8 +51,8 @@ OWN_LAGS = [3, 4, 5]  # births_yoy lags available in real time (benchmark)
 BFS_LAGS = [0, 1, 2, 3, 4]  # BFS lags available in real time (h = 0..4)
 BFS_SERIES = ["BA_BA", "BA_HBA", "BA_WBA", "BA_CBA"]
 
-# Winsorization thresholds, fixed from the development window ONLY
-# (pre_analysis_plan.md Sec. 4, item 3) -- never recomputed on test data.
+# Winsorization thresholds, fixed from the development window only
+# (pre_analysis_plan.md Sec. 4, item 3) and never recomputed on test data.
 WINSOR_BOUNDS = {
     "births_yoy": (-0.4739, 0.5795),
     "BA_BA_yoy": (-0.2389, 0.5491),
@@ -71,9 +73,8 @@ def _build_for_seasonal_adj(panel: pd.DataFrame, seasonal_adj: str) -> pd.DataFr
     for s in BFS_SERIES:
         df[f"{s}_yoy"] = _yoy(df, s, ["geo"])
 
-    # Winsorized versions (dev-window-fixed bounds; applies to both windows
-    # identically -- the thresholds themselves are never re-derived from
-    # test data, only the function application is).
+    # Winsorized versions. The fixed development-window bounds are applied
+    # to both windows; the thresholds are never re-derived from test data.
     for col, (lo, hi) in WINSOR_BOUNDS.items():
         if col in df.columns:
             df[f"{col}_w"] = df[col].clip(lower=lo, upper=hi)
@@ -87,12 +88,12 @@ def _build_for_seasonal_adj(panel: pd.DataFrame, seasonal_adj: str) -> pd.DataFr
     for s in BFS_SERIES:
         for lag in BFS_LAGS:
             df[f"{s}_yoy_lag{lag}"] = g[f"{s}_yoy"].shift(lag)
-    # Winsorized BA_BA lag-0 feature, for the sensitivity check (only BA_BA
-    # is winsorized per the PAP; other series aren't part of the
-    # winsorizing sensitivity check).
+    # Winsorized BA_BA lag-0 feature. Only BA_BA has fixed bounds: the
+    # winsorizing sensitivity check covers the primary comparisons, which
+    # use BA_BA only.
     df["BA_BA_yoy_w_lag0"] = g["BA_BA_yoy_w"].shift(0)
 
-    df["quarter_target"] = df["quarter"]  # quarter of the TARGET being forecast
+    df["quarter_target"] = df["quarter"]  # quarter of the target being forecast
     df["seasonal_adj"] = seasonal_adj
     return df
 

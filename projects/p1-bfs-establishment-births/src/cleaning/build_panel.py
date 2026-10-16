@@ -3,13 +3,13 @@ Build the integrated quarterly state panel from the cleaned BFS and BED
 files: aggregates BFS from monthly to quarterly, merges with BED
 establishment births/deaths, and writes one analysis-ready file.
 
-This file keeps the FULL history (2004-2026) with an explicit
-`in_test_window` flag -- it does not delete the test-window rows, since
-MANIFEST/provenance transparency matters more than deletion. But per the
-pre-analysis-plan discipline in research_question.md, Phase 3 (exploratory
-analysis) code must filter `in_test_window == False` before computing or
-plotting anything. The test window is locked until the Phase 4
-pre-analysis plan is committed -- see DEVELOPMENT_END below.
+The file keeps the full overlapping history (2004Q3-2025Q4 in the
+committed data) with an explicit `in_test_window` flag. Test-window rows
+are flagged rather than deleted, so the committed file documents all the
+data used. The test window stayed locked until the pre-analysis plan
+was committed (windows defined in pre_analysis_plan.md Sec. 1), so the
+Phase 3 exploratory code filters to `in_test_window == False` before
+computing or plotting anything. See DEVELOPMENT_END_* below.
 
 Output: data/processed/analysis_panel_quarterly.csv
 One row per (state, year, quarter), wide on series.
@@ -27,7 +27,7 @@ PROJECT_ROOT = Path(__file__).resolve().parents[2]
 PROCESSED_DIR = PROJECT_ROOT / "data" / "processed"
 
 # Development window ends here; 2023Q1 onward is the locked test window.
-# Matches research_question.md / the approved research plan.
+# Matches pre_analysis_plan.md Sec. 1 and the approved research plan.
 DEVELOPMENT_END_YEAR = 2022
 DEVELOPMENT_END_QUARTER = 4
 

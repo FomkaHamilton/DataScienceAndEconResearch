@@ -1,23 +1,24 @@
-# Research Roadmap — Phase 1: Question Selection
+# Research Roadmap: Question Selection (Program Phase 1)
 
-*Drafted 2026-10-14. Status: **proposal for the author's decision.** Nothing here is analysis; no data has been modeled.*
-*Every dataset, journal, and literature claim below was checked against current sources on 2026-10-14. Evidence and URLs are in [sources_verified_2026-10-14.md](sources_verified_2026-10-14.md). Items marked **UNVERIFIED** were not confirmed.*
+*Drafted 2026-10-14 with AI assistance (see the AI-use record in [../research_log.md](../research_log.md)) as a proposal for the author's decision. Decided the same day: Candidate 1 was approved as Project 1 and Candidate 3 as Project 2. This document is kept as the original proposal; it contains no analysis, and no data had been modeled when it was written.*
+
+*Every dataset, journal and literature claim below was checked against current sources on 2026-10-14. Evidence and URLs are in [sources_verified_2026-10-14.md](sources_verified_2026-10-14.md). Items marked UNVERIFIED were not confirmed.*
 
 ---
 
 ## 1. How the shortlist was built
 
-I started from your interest areas, wrote a draft set of candidate questions, and then ran three checks before ranking anything:
+The shortlist started from the author's interest areas. A draft set of candidate questions was written, and three checks were run before anything was ranked:
 
 1. **Literature crowding.** Has someone already done essentially this, recently?
 2. **Data reality.** Does a public, reproducible source actually contain the variables at the needed frequency and geography, today?
 3. **Venue fit.** Is there a legitimate, realistic journal for an unaffiliated first-time author?
 
-Several candidates that looked good on paper failed one of these checks. Those findings are reported below rather than hidden.
+Several candidates that looked promising failed at least one of these checks; those results are reported below rather than omitted.
 
 ---
 
-## 2. The shortlist (8 candidates + 1 rejected direction)
+## 2. The shortlist (8 candidates and 1 rejected direction)
 
 Track: **DS** = applied data science / forecasting, **EM** = applied econometrics.
 
@@ -28,11 +29,11 @@ Track: **DS** = applied data science / forecasting, **EM** = applied econometric
   - BED state births are published about 7 months after the quarter ends.
   - BFS state data arrive within weeks.
   - A validated nowcast gives state policymakers and analysts a timely read on business formation.
-  - Separately, it tests a contested claim: that ML generally beats econometric models in forecasting.
+  - Separately, it tests a contested claim: that ML generally outperforms econometric models in forecasting.
 - **Mechanism:** An EIN application is an early, mechanical step on the path to an employer establishment. The signal is diluted because:
   - most applications never become employers;
   - about a third of establishment births come from *existing* firms (Decker & Haltiwanger 2022 FEDS Note).
-- **What's known:**
+- **What is known:**
   - Bayard et al. (2018) built the BFS.
   - Asturias, Dinlersoz, Haltiwanger, Hutchinson & Plumb (2024, NBER w33224) show applications lead national indicators, using a dynamic factor model.
   - Decker & Haltiwanger (2023, BPEA) relate application surges to employer entry, descriptively.
@@ -59,11 +60,11 @@ Track: **DS** = applied data science / forecasting, **EM** = applied econometric
   - tuning leakage;
   - multiple comparisons across models × states;
   - small effective sample per state.
-- **Crowding:** Low–Medium. Risk: the Census/Haltiwanger team extends to states first.
+- **Crowding:** Low–Medium. Risk: the Census research group (Haltiwanger and coauthors) extends its work to states first.
 - **Venues:**
   - *Journal of Forecasting*
   - *Business Economics* (NABE; explicitly welcomes practitioners)
-  - *International Journal of Forecasting* (research note — stretch)
+  - *International Journal of Forecasting* (research note; stretch target)
   - *Small Business Economics* (stretch)
   - *Empirical Economics*
   - a short version in *Economics Bulletin*
@@ -76,7 +77,7 @@ Track: **DS** = applied data science / forecasting, **EM** = applied econometric
   - distributional analysis of price changes;
   - firms' pricing and targeting.
 - **Mechanism:** Standard demand theory. Digital subscriptions may shift from luxury toward necessity as they substitute for cable/satellite TV.
-- **What's known:**
+- **What is known:**
   - Structural pay-TV demand (Crawford & Yurukoglu 2012).
   - Cord-cutting behavior (Prince & Greenstein 2017; Malone, Nevo, Nolan & Williams 2023).
   - The CE Engel-curve method (Aguiar & Bils 2015).
@@ -116,8 +117,8 @@ Track: **DS** = applied data science / forecasting, **EM** = applied econometric
 - **Mechanism:**
   - Liquidity constraints plus lumpy obligations (rent, utilities).
   - Precautionary behavior.
-  - Volatility that households can predict vs volatility they can't.
-- **What's known:**
+  - Volatility that households can predict vs. volatility they cannot.
+- **What is known:**
   - Leete & Bania (2010): SIPP, income shocks → food insufficiency.
   - Dahl, DeLeire & Mok (2014): imputation strongly attenuates the link.
   - Heflin (2016): within-household changes, 2008 SIPP.
@@ -142,7 +143,7 @@ Track: **DS** = applied data science / forecasting, **EM** = applied econometric
   - seam bias;
   - attrition;
   - annual outcome vs monthly exposure timing.
-- **Honest identification verdict:** Within-household FE gives *strong associational* evidence, not a causal effect of volatility. The paper must be written that way unless a credible quasi-experiment is found.
+- **Identification assessment:** within-household fixed effects give *strong associational* evidence, not a causal effect of volatility. The paper must be written that way unless a credible quasi-experiment is found.
 - **Crowding:** Medium. The gap is real but modest.
 - **Venues:**
   - *Journal of Family and Economic Issues*
@@ -151,11 +152,11 @@ Track: **DS** = applied data science / forecasting, **EM** = applied econometric
   - *Journal of Consumer Affairs*
   - *Empirical Economics*
 
-### Candidate 4 (EM): Minimum wages and establishment entry/exit — heterogeneity-robust staggered DiD
+### Candidate 4 (EM): Minimum wages and establishment entry/exit (heterogeneity-robust staggered DiD)
 
 - **Question:** Do state minimum-wage increases (2010–2023) change establishment entry and exit rates, once estimated with heterogeneity-robust staggered DiD? Do answers differ between border-pair and commuting-zone designs?
 - **Why it matters:** Business dynamism is a channel distinct from employment levels. The border-design debate (Jha, Neumark & Rodriguez-Lopez 2024 vs Dube, Reich et al. 2024/26; Jardim et al. 2024) has not been carried to entry/exit outcomes.
-- **What's known:**
+- **What is known:**
   - Meer & West (2016): job growth.
   - Aaronson et al. (2018): restaurant entry and exit both rise.
   - Chava et al. (2023); Luca & Luca.
@@ -179,8 +180,8 @@ Track: **DS** = applied data science / forecasting, **EM** = applied econometric
 ### Candidate 5 (EM): Quantity response to the 2022 state gasoline tax holidays
 
 - **Question:** How much did taxable gasoline volumes respond to the 2022 tax suspensions (GA, MD, CT, NY, FL), and how much of the response reflects cross-border shifting and timing rather than consumption?
-- **Why it matters:** Price elasticity of demand and tax incidence. This is your pricing interest in a public-data setting.
-- **What's known:** This is a **heavily studied area.**
+- **Why it matters:** Price elasticity of demand and tax incidence. It addresses the author's interest in pricing, in a public-data setting.
+- **What is known:** This is a heavily studied area.
   - Davis & Kilian (2011); Li, Linn & Muehlegger (2014); Coglianese et al. (2017).
   - **Bates & Kim (2024, JAE) and Kilian & Zhou (2024, JPubE) already update tax-based elasticities past 2010.**
   - The holiday papers found (Tsvetanov 2024; Bradt & Taylor 2026, Dallas Fed) study *prices / pass-through*, not quantities. That is the only open gap.
@@ -195,7 +196,7 @@ Track: **DS** = applied data science / forecasting, **EM** = applied econometric
 ### Candidate 6 (EM): SNAP churn and state recertification policy (SIPP + SNAP Policy Database)
 
 - **Question:** Do longer state certification periods reduce SNAP exits among still-eligible households? This is the public-program analogue of customer retention.
-- **What's known:** Credible causal work uses administrative data and dominates:
+- **What is known:** Credible causal work uses administrative data and dominates the literature:
   - Ribar et al. (2008);
   - Gray (2019, JPubE);
   - Homonoff & Somerville (2021, AEJ: Policy);
@@ -210,14 +211,14 @@ Track: **DS** = applied data science / forecasting, **EM** = applied econometric
 
 ### Candidate 7 (DS): Inflation inequality across household groups, 2021–2025
 
-- **Verdict: saturated.**
+- **Verdict:** saturated.
   - BLS now publishes official research CPIs by income quintile (R-CPI-I, Dec 2005–Dec 2025).
   - CBO (2025), the Cleveland Fed (2025), BLS/BEA (Gindelsky & Martin 2026), Fed (Orchard 2025), and Cavallo & Kryvtsov (2024) cover the episode.
 - A CE-weighted replication would add nothing. It remains a fine *skills exercise* but not a paper.
 
 ### Candidate 8 (DS/EM): Promotional dynamics with Dominick's scanner data
 
-- **Verdict: weak for a first paper.**
+- **Verdict:** weak for a first paper.
   - The data are 1989–97 and heavily mined. Recent uses are as methods benchmarks.
   - Terms say "academic research purposes only". **Eligibility for an unaffiliated researcher is UNVERIFIED.**
   - Modern scanner data (NielsenIQ via Kilts) are **closed to independent researchers**: institutional subscription required, and all coauthors must be academic.
@@ -227,7 +228,7 @@ Track: **DS** = applied data science / forecasting, **EM** = applied econometric
 No public, reproducible, *real* longitudinal customer dataset of publication quality was identified.
 
 - Common public churn datasets are synthetic, very small, or competition data with redistribution terms.
-- **Implication:** your retention interest is best served through *analogues* with public data:
+- **Implication:** the author's interest in customer retention is best served through public-data *analogues*:
   - SNAP spells (Candidate 6);
   - business survival (BDS/BED);
   - subscription *spending* (Candidate 2).
@@ -237,7 +238,7 @@ No public, reproducible, *real* longitudinal customer dataset of publication qua
 
 ## 3. Ranking
 
-Scores are my judgments on a 1–5 scale (5 = best), informed by the verification above. They are not measurements, and the total is unweighted. If you weight learning value or publication potential more heavily, the ordering shifts slightly but the top three do not change.
+Scores are judgments made when drafting this roadmap, on a 1–5 scale (5 = best), informed by the verification above. They are not measurements, and the total is unweighted. If learning value or publication potential is weighted more heavily, the ordering shifts slightly, but the top three do not change.
 
 | # | Candidate | Track | Feasibility | Research value | Econometric depth | Data access | Reproducibility | Publication potential | Learning value | **Total /35** |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -254,30 +255,30 @@ Scores are my judgments on a 1–5 scale (5 = best), informed by the verificatio
 
 ## 4. Recommendations
 
-### First project (complete the full research cycle): **Candidate 1 — BFS → state establishment births**
+### First project (complete the full research cycle): Candidate 1, BFS → state establishment births
 
 Why this one:
 
-- **Fewest ways to fail before the end.**
+- **Lowest risk of failing before completion.**
   - Two official public files, small data, no licensing.
   - A prediction question with a clear scoring rule, so no causal identification is required.
   - It produces a usable result whichever way it comes out: "applications help," "they don't," and "ML doesn't beat ARDL here" are all reportable.
-- **Not trivial.** Doing forecast evaluation correctly is real econometrics:
+- **Not trivial.** Doing forecast evaluation correctly requires substantive econometrics:
   - real information sets at each forecast origin;
   - nested-model tests;
   - multiple-comparison control;
   - revision and seasonal-adjustment look-ahead issues.
 - **It is the one place where the "econometrics vs ML" comparison answers a substantive question** (is this indicator useful, and does flexibility help with short noisy panels?) rather than being a generic horse race. The generic horse race is crowded; see Goulet Coulombe et al. 2022, Medeiros et al. 2021, M4/M5.
-- **It uses your professional strengths:** forecasting and business analytics.
+- **It draws on the author's professional experience** in forecasting and business analytics.
 - **It has a credible practitioner venue** (*Business Economics*) and a credible field venue (*Journal of Forecasting*).
 
-Main risk: being scooped by the Census/Haltiwanger group. Mitigation:
+Main risk: the Census research group (Haltiwanger and coauthors) could publish a state-level analysis first. Mitigation:
 
 - move steadily;
 - post a preprint (SSRN + MPRA) once results are stable;
 - frame the contribution around the cross-state panel, the timing design, and the application-series decomposition.
 
-### Ambitious parallel econometrics project: **Candidate 3 — Income volatility & material hardship (SIPP 2018+)**
+### Parallel econometrics project: Candidate 3, income volatility and material hardship (SIPP 2018+)
 
 Why this one over the alternatives:
 
@@ -287,14 +288,14 @@ Why this one over the alternatives:
   - imputation handling, seam bias, attrition;
   - fixed effects and event studies;
   - careful separation of level, shock, and volatility.
-- **Fits your consumer/household-economics interests,** and has realistic SSCI/EconLit venues.
-- **Honest limitation, stated up front:** absent a credible quasi-experiment, this will be a rigorous *associational* paper. Part of the development work is searching for exogenous variation in income stability, and abandoning causal language if none is found.
+- **Fits the author's interests in consumer and household economics,** and has realistic SSCI/EconLit venues.
+- **Limitation, stated up front:** absent a credible quasi-experiment, this will be a rigorous *associational* paper. Part of the development work is searching for exogenous variation in income stability, and abandoning causal language if none is found.
 
-**Alternate for the econometrics track:** Candidate 4 (minimum wage & dynamism).
+**Alternate for the econometrics track:** Candidate 4 (minimum wage and business dynamism).
 
 - It shares data infrastructure with Candidate 1 (BED/BDS/QCEW), which would build a coherent "business dynamics" research identity.
 - It offers the deepest training in modern staggered DiD.
-- I rank it second only because Kuroki (2025) is close and the literature is contested. Check Kuroki's methods before deciding.
+- It ranks second only because Kuroki (2025) is close and the literature is contested. Kuroki's methods should be checked before deciding.
 
 **Second DS paper (later):** Candidate 2 (CE subscriptions) is a strong follow-on once the full cycle has been completed once.
 
@@ -302,7 +303,7 @@ Why this one over the alternatives:
 
 ## 5. A note on replications as a career tool
 
-Replication journals are realistic, respected first outlets. Two important constraints (verified):
+Replication journals are realistic and respected first outlets. Two constraints (verified):
 
 - **JAE Replication Section** only accepts replications of papers in JAE or one of nine listed journals: Econometrica, AER, JPE, QJE, REStat, REStud, J. Econometrics, JBES, Economic Journal. It has a 12-page limit (per April 2025 rules; current status UNVERIFIED).
 - **Journal of Comments and Replications in Economics** (ZBW) accepts broad replications. It has no fees, but requires push-button code from raw public data.
@@ -311,10 +312,12 @@ Project 1 includes a replication step: reproduce the national "applications lead
 
 ---
 
-## 6. Decisions needed from you
+## 6. Decisions requested from the author
 
-1. **Approve, change, or reject** the first-project recommendation (Candidate 1).
-2. **Choose the econometrics-track project:** Candidate 3 (SIPP volatility) or Candidate 4 (minimum wage & dynamism).
-3. **Version control:** OK to `git init` this folder and, later, create a GitHub repository? A public repo is the usual reproducibility standard. Also note that this folder is in OneDrive: git works there but can occasionally conflict with sync. A non-synced path plus a GitHub remote is cleaner.
+All three were decided on 2026-10-14; see [../research_log.md](../research_log.md).
 
-The draft plan for Candidate 1 is in [02_project1_research_plan.md](02_project1_research_plan.md). It is written so it can be adopted or discarded depending on decision 1.
+1. **Approve, change or reject** the first-project recommendation (Candidate 1). *Decision: approved.*
+2. **Choose the econometrics-track project:** Candidate 3 (SIPP volatility) or Candidate 4 (minimum wage and business dynamism). *Decision: Candidate 3.*
+3. **Version control:** whether to initialize a git repository in this folder and, later, create a GitHub repository. A public repository is the usual reproducibility standard. This folder was in OneDrive at the time: git works there but can conflict with sync, so a non-synced path with a GitHub remote is cleaner. *Decision: the repository was moved to a local, non-synced path with a private GitHub remote.*
+
+The draft plan for Candidate 1 is in [02_project1_research_plan.md](02_project1_research_plan.md). It was written so it could be adopted or discarded depending on decision 1; it was adopted and has since been superseded by the project's [research_question.md](../projects/p1-bfs-establishment-births/research_question.md).

@@ -55,7 +55,7 @@ PERIODS = [
     ("locked_test", 2023, 2025),
 ]
 
-# Chart chrome (dataviz reference palette).
+# Chart colors, shared with exploratory_analysis.py.
 SURFACE, INK, INK_2, GRID, SERIES = "#fcfcfb", "#0b0b0b", "#52514e", "#e1e0d9", "#2a78d6"
 SHADE = "#efeee9"
 
@@ -69,7 +69,7 @@ def _summary(comp: pd.DataFrame, models: list[str]) -> pd.DataFrame:
     return comp[comp["comparison"].isin(models)][keep].round(4)
 
 
-# ---------------------------------------------------------------- C ----
+# ---- Analysis C: detectable effects ----
 
 def analysis_c() -> pd.DataFrame:
     """Detectable effects for the locked test window, from the primary
@@ -94,7 +94,7 @@ def analysis_c() -> pd.DataFrame:
     return out
 
 
-# ---------------------------------------------------------------- B ----
+# ---- Analysis B: forecast performance over time ----
 
 def coefficient_path(
     nsa: pd.DataFrame, states: list[str], eval_q: list[int], h: int = 3, series: str = "BA_BA"
@@ -238,7 +238,7 @@ def analysis_b(fc: pd.DataFrame, states: list[str]) -> pd.DataFrame:
     return by_period
 
 
-# ---------------------------------------------------------------- A ----
+# ---- Analysis A: robustness checks ----
 
 def analysis_a(fc: pd.DataFrame, states: list[str]) -> pd.DataFrame:
     nsa = fc[fc["seasonal_adj"] == "Not seasonally adjusted"].copy()

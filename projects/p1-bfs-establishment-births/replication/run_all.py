@@ -2,9 +2,10 @@
 One-command reproduction of Project 1's results.
 
     python replication/run_all.py          # exact: from the committed processed data
-    python replication/run_all.py --full   # also re-download raw data and rebuild it
+    python replication/run_all.py --full   # first re-download raw data and rebuild the processed files
 
-Exact mode reproduces the committed numbers; check with
+Exact mode reproduces the committed numbers (up to floating-point noise
+in the random forest's parallel tree summation); check with
 replication/verify_outputs.py afterwards.
 
 Full mode downloads the *current* data from Census and BLS. Both revise

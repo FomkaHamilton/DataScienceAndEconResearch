@@ -119,8 +119,9 @@ def comparisons(sub: pd.DataFrame) -> pd.DataFrame:
 
 
 def direct_vs_ba(sub: pd.DataFrame, label: str, h: int) -> dict:
-    """Accuracy of the series-S model vs. the BA model (not nested, so the
-    plain accuracy difference; two-way clustered and bootstrap)."""
+    """Accuracy of the series-S model vs. the BA model. The models are not
+    nested, so this uses the plain accuracy difference, with two-way
+    clustered and wild cluster bootstrap inference."""
     ref, mod = f"pred_{model_name('BA', h)}", f"pred_{model_name(label, h)}"
     s = sub.dropna(subset=[TARGET, ref, mod])
     d = (s[TARGET] - s[ref]) ** 2 - (s[TARGET] - s[mod]) ** 2  # + = S more accurate than BA
@@ -243,7 +244,7 @@ def main() -> None:
     print("\n[D2] Direct comparison vs. the BA model (+ = series more accurate than BA):")
     print(direct.round(3).to_string(index=False), flush=True)
 
-    # ---- descriptive: quarterly gains and coefficient paths at lead 3 ----
+    # ---- Descriptive: quarterly gains and coefficient paths at lead 3 ----
     gains, coefs = [], []
     for label, col in SERIES.items():
         d = loss_difference(merged, TARGET, f"pred_{model_name(label, 3)}", "mse")

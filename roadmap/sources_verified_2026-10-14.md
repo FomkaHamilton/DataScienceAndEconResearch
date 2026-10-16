@@ -1,8 +1,8 @@
-# Verification Log — 2026-10-14
+# Verification Log, 2026-10-14
 
-**What this is.** This log records where each factual claim in the roadmap was checked.
+**Purpose.** This log records where each factual claim in the [roadmap](01_research_roadmap.md) was checked.
 
-**How it was produced.** The checking was done by AI research agents (Claude) using live web search and fetch. Every item still needs your own spot-check before it goes into a manuscript.
+**How it was produced.** The checks were carried out by AI research agents (Claude) using live web search and page retrieval. Every item still requires a spot-check by the author before it is used in a manuscript.
 
 **Status labels:**
 - **verified**: confirmed on an official page.
@@ -10,7 +10,7 @@
 - **[search-index]**: confirmed only from a search engine's snippet of an official page.
 - **UNVERIFIED**: not confirmed.
 
-Wiley, Taylor & Francis and Elsevier author pages blocked automated access, so check those in a browser before relying on them.
+Wiley, Taylor & Francis and Elsevier author pages blocked automated access, so those pages should be checked in a browser before they are relied on.
 
 ---
 
@@ -107,9 +107,9 @@ Wiley, Taylor & Francis and Elsevier author pages blocked automated access, so c
 
 ---
 
-## B. Literature anchors (confirmed via landing pages by the scan agents)
+## B. Literature anchors (confirmed on landing pages by the AI search agents)
 
-None of these has yet been read in full by you or me; that happens in each project's Phase 1. Citation details must be re-checked against the publisher page before they enter a `.bib` file.
+As of 2026-10-14, none of these had been read in full by the author or the AI assistant; full reading was scheduled for each project's Phase 1 literature review. Citation details must be re-checked against the publisher page before they enter a `.bib` file.
 
 **Project 1 (BFS):**
 - Bayard et al. 2018, NBER w24364: https://www.nber.org/papers/w24364
@@ -124,7 +124,7 @@ None of these has yet been read in full by you or me; that happens in each proje
 - Medeiros et al. 2021, JBES, doi:10.1080/07350015.2019.1637745
 - Makridakis et al., M5 results, IJF 38(4) 2022: https://www.sciencedirect.com/science/article/pii/S0169207021001874
 
-Method anchors cited in the plan, **not yet verified by an agent; verify in Phase 1**:
+Method anchors cited in the plan, not verified by an agent on 2026-10-14 (to be verified in Phase 1; for Project 1 they were subsequently confirmed in the [literature extraction table](../projects/p1-bfs-establishment-births/literature/extraction_table.md)):
 - Diebold & Mariano (1995)
 - Clark & West (2007)
 - Hansen, Lunde & Nason (2011)

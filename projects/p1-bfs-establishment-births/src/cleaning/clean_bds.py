@@ -4,17 +4,17 @@ establishment entry" series, for RQ4.
 
 new_firm_share = estabs_entry[firm age 0] / sum(estabs_entry, all firm ages)
 
-This measures, per state-year, what share of new establishments are
-genuinely new firms (their first year of existence) vs. new
-establishments opened by already-existing firms. Decker & Haltiwanger
-(2022) find ~36% of establishment births nationally come from existing
-firms; RQ4 asks whether BFS's predictive value for BED establishment
-births is larger in states/years where new-firm share is higher (BFS
-applications should track genuinely new firms more closely than an
-existing firm's decision to open another location).
+This measures, per state-year, what share of new establishments belong to
+new firms (in their first year of existence) rather than to existing
+firms opening another location. Decker & Haltiwanger (2022) find ~36% of
+establishment births nationally come from existing firms. RQ4 asks
+whether BFS's predictive value for BED establishment births is larger in
+states where the new-firm share is higher, since business applications
+should track new firms more closely than an existing firm's decision to
+open another location.
 
-Note: BDS's reference year runs roughly March-to-March and is annual --
-this is a cross-sectional/annual covariate for RQ4, not part of the core
+Note: BDS is annual, with a reference year running roughly March to
+March. The share is an annual covariate for RQ4, not part of the core
 quarterly forecasting panel (BFS/BED).
 
 Output: data/processed/bds_state_new_firm_share.csv
@@ -35,7 +35,7 @@ PROCESSED_DIR = PROJECT_ROOT / "data" / "processed"
 NEW_FIRM_FAGE = "a) 0"
 # The denominator includes every firm-age category, including "Left
 # Censored" (firms that already existed when BDS begins, so their exact
-# age is unknown). Those are old firms opening new locations, which is
+# age is unknown). These are old firms opening new locations, which is
 # exactly the "not a new firm" case. An earlier version excluded them,
 # which overstated the new-firm share (2010-19 mean 0.69 instead of 0.61);
 # corrected 2026-10-15, before this file was used in any analysis.

@@ -5,16 +5,16 @@ state-level establishment births/deaths panel.
 Reads the raw files downloaded by src/acquisition/fetch_bed.py and selects
 only the series this project needs:
   - geography: national total + all 50 states + DC + PR + VI (msa_code
-    00000, county_code 000 -- i.e. state-level geography, not MSA/county)
+    00000, county_code 000, i.e. state-level geography, not MSA/county)
   - industry: total private (industry_code 000000)
-  - unit of analysis: establishment (not employment)
+  - unit of analysis: establishment (unitanalysis_code 1)
   - data element: number of establishments (not employment)
   - size class: all size classes combined (00)
   - data class: establishment births (07) and establishment deaths (08)
   - periodicity: quarterly
   - both seasonal adjustments (S, U) and both rate/level (L, R) are kept,
-    so the primary-spec vs. robustness-spec choice can be made downstream
-    in analysis code, not baked in here.
+    so the choice between primary and robustness specifications is made
+    downstream in analysis code, not baked in here.
 
 Output: data/processed/bed_state_establishment_births_deaths.csv
 One row per (state, dataclass, seasonal, ratelevel, year, quarter).
@@ -80,7 +80,7 @@ def build_target_series(raw_dir: Path) -> pd.DataFrame:
     )
     dataclass = _read_lookup(raw_dir, "bd.dataclass")
     # bd.seasonal's code column is "seasonal_code", but bd.series calls the
-    # same field "seasonal" -- rename so the merge key matches.
+    # same field "seasonal"; rename so the merge key matches.
     seasonal = _read_lookup(raw_dir, "bd.seasonal").rename(
         columns={"seasonal_code": "seasonal"}
     )
@@ -112,8 +112,8 @@ def build_target_series(raw_dir: Path) -> pd.DataFrame:
 
 def load_bed(raw_dir: Path) -> pd.DataFrame:
     """Read one BED raw-file folder and return the tidy state births/deaths
-    table, without writing anything (used directly by the live-forecast
-    evaluation, which must not overwrite the committed processed file)."""
+    table without writing anything. Used directly by the live-forecast
+    evaluation, which must not overwrite the committed processed file."""
     print(f"Reading raw BED files from {raw_dir}")
 
     target = build_target_series(raw_dir)

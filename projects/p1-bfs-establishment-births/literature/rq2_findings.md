@@ -1,8 +1,8 @@
-# RQ2 Findings — Which Business-Application Series Carries the Signal?
+# Research Question 2 (RQ2): Which Business-Application Series Carries the Signal?
 
 *2026-10-15. Run exactly as specified in [pre_analysis_plan_addendum_2.md](../pre_analysis_plan_addendum_2.md), which was committed (d07a3b4) before any RQ2 model was estimated. Regression models only. The all-applications (BA) forecasts reproduce the Addendum 1 run exactly (3,264 state-quarters, maximum difference 1e-16). Not yet reviewed by the author.*
 
-Accuracy differences are in % of mean squared error. "+" means the model is more accurate than the comparison. Results at the 3-quarter lead (h=3) and same-quarter lead (h=0) are the pre-specified ones; the rest are in the tables.
+Accuracy differences are in % of mean squared error (MSE). "+" means the model is more accurate than the comparison. Results at the 3-quarter lead (h=3) and same-quarter lead (h=0) are the pre-specified ones; results at other leads are in the linked tables.
 
 The four series:
 
@@ -11,7 +11,7 @@ The four series:
 - **WBA:** applications with planned wages.
 - **CBA:** corporate applications.
 
-HBA, WBA and CBA are the narrower series Census builds to flag likely employers. Their exact definitions and nesting are still being confirmed from Census documentation; see §6.
+HBA, WBA and CBA are the narrower series Census builds to flag likely employers. Their definitions and nesting, as confirmed from Census documentation, are set out in §6.
 
 ## Summary
 
@@ -29,22 +29,22 @@ HBA, WBA and CBA are the narrower series Census builds to flag likely employers.
 4. **The estimated weight is not the whole story.** All applications' weight roughly doubled after the pandemic entered the training data, but high-propensity applications' weight barely moved (+12%). Their forecasts still got worse. So the earlier hypothesis that the models are simply over-weighting applications cannot explain the breakdown on its own; the relationship itself appears to have changed.
 5. **Locked test window, pre-specified family:** no series significantly improves forecasts. Holm-adjusted information tests over 4 series × 2 leads all have p ≥ 0.54.
 
-## D1 — Locked test window, 2023Q1–2025Q4 (pre-specified in the original plan)
+## D1: Locked test window, 2023Q1–2025Q4 (pre-specified in the original plan)
 
-| Series | h=0 accuracy vs benchmark | h=3 accuracy vs benchmark | h=3 info test, two-way p | Holm-adjusted (8 tests) |
+| Series | h=0 accuracy vs. benchmark | h=3 accuracy vs. benchmark | h=3 information test, two-way p | Holm-adjusted (8 tests) |
 |---|---|---|---|---|
 | BA (all) | −3.0% | +1.6% | 0.076 | 0.60 |
 | HBA (high-propensity) | −5.2% | −3.3% | 0.28 | 1.00 |
 | WBA (planned wages) | −4.3% | −3.3% | 0.31 | 1.00 |
 | CBA (corporate) | −10.2% | −3.1% | 0.54 | 1.00 |
 
-No series beats the benchmark. All applications is the least-bad series at both leads.
+No series significantly beats the benchmark. All applications performs best of the four series at both leads.
 
-Per Addendum 2, the locked-window results do not change which series is the paper's primary predictor (BA, fixed in advance).
+As specified in Addendum 2, the locked-window results do not change which series is the paper's primary predictor (BA, fixed in advance).
 
 Full table: [rq2_test_window_comparisons.csv](../outputs/tables/rq2_test_window_comparisons.csv). Holm family: [rq2_test_window_holm.csv](../outputs/tables/rq2_test_window_holm.csv).
 
-## D2 — Over time (new in Addendum 2)
+## D2: Over time (new in Addendum 2)
 
 ### Accuracy vs. the benchmark (% of benchmark MSE)
 
@@ -90,7 +90,7 @@ Figures:
 ## Verdict against Addendum 2's pre-stated rules
 
 - **"Supports composition"** required HBA and/or WBA to have a post-pandemic accuracy difference at or above zero while BA's was negative, *and* the head-to-head comparison to favor them. **Not met:** both are negative after 2020, and the head-to-head comparisons favor BA.
-- **"No support"** required all four series to deteriorate by similar amounts. All four did deteriorate. HBA deteriorated more than BA (−9.8% vs −3.7% at h=3); WBA and CBA by similar amounts.
+- **"No support"** required all four series to deteriorate by similar amounts. All four did deteriorate. HBA deteriorated more than BA (−9.8% vs. −3.7% at h=3); WBA and CBA deteriorated by similar amounts.
 - **Overall: no support for the composition explanation.**
 - **Partial exception:** the weight-based prediction (that the narrower series' weights would rise less) did hold. But the decision rule rests on accuracy, and accuracy contradicts it.
 
@@ -120,12 +120,12 @@ Sources, checked 2026-10-15:
 
 **Definitions** (Census Methodology page):
 
-- **BA:** EIN applications, excluding tax liens, estates, trusts, certain financial filings, applications without a state/county geocode, and applications in low-transition industries.
+- **BA:** applications for an Employer Identification Number (EIN), excluding tax liens, estates, trusts, certain financial filings, applications without a state/county geocode, and applications in low-transition industries.
 - **HBA:** "Business Applications (BA) that have a high propensity of turning into businesses with payroll," identified from IRS Form SS-4 characteristics. An application qualifies if any of these holds:
   - it is from a corporation;
   - it indicates hiring employees;
   - it gives a first wages-paid date;
-  - it is in one of a listed set of industries (NAICS 72, 237, 238, 312, 321, 322, 332, 44, 452, 5411, 5413, 6111, 621, 623).
+  - it is in one of a listed set of industries (North American Industry Classification System, NAICS, codes 72, 237, 238, 312, 321, 322, 332, 44, 452, 5411, 5413, 6111, 621, 623).
 - **WBA:** HBA "that indicate a first wages-paid date."
 - **CBA:** HBA "from a corporation or personal service corporation."
 
@@ -140,7 +140,7 @@ Sources, checked 2026-10-15:
    - Whether WBA and CBA were also redefined is not stated by Census.
    - **Check:** re-running the head-to-head comparisons on 2013–2019 forecasts only (every forecast target in the new-definition period; table below) leaves the same-quarter advantage intact. The 3-quarter-lead advantage shrinks. Full table: [rq2_hba_definition_check.csv](../outputs/tables/rq2_hba_definition_check.csv).
 2. **2025 annual update (published February 2026):** Census "removed internet sales applications from both CBA and HBA time series" after "noticing a spike in these cases."
-   - Our data were downloaded 2026-10-14, after this revision, so the HBA and CBA series used here already exclude them.
+   - The data used here were downloaded on 2026-10-14, after this revision, so the HBA and CBA series used here already exclude them.
    - Census does not say this revision touched BA.
    - The date of the spike is not stated.
    - **Relevance:** the narrower series lost their advantage after 2020 even with that spike removed.

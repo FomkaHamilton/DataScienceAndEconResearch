@@ -1,5 +1,5 @@
 """
-Phase 5: fit all pre-specified models (pre_analysis_plan.md) with genuine
+Phase 5: fit all pre-specified models (pre_analysis_plan.md) with
 expanding-window, real-time-consistent re-estimation through the test
 window (2023Q1-2025Q4), then evaluate.
 
@@ -9,28 +9,35 @@ t' <= t - 3, because BED establishment births publish with a roughly
 3-quarter lag. This is what makes the expanding window real-time
 consistent rather than "fit once on all earlier rows".
 
-DISCLOSED DEVIATIONS FROM THE PAP (per its Sec. 8):
+Disclosed deviations from the pre-analysis plan (PAP), per its Sec. 8:
   1. "ARDL" and "bridge equation" collapse to one specification under the
      real-time convention in build_forecast_dataset.py (BFS is treated as
      available for the whole quarter once its ~2-week lag passes, so there
      is no partial-quarter bridging left to do).
   2. The Hansen-Lunde-Nason (2011) Model Confidence Set is not
      implemented: no vetted Python reference implementation was available,
-     and a bespoke bootstrap risks an unverifiable bug. Substituted with
-     Holm-Bonferroni across the primary comparisons.
+     and a bespoke bootstrap risks an unverifiable bug. Holm-Bonferroni
+     adjustment across the primary comparisons is used instead.
   3. The Qu, Timmermann & Zhu (2024) / Akgun et al. (2024) panel tests are
-     not implemented (no reference implementation). Substituted with
-     cluster-robust tests (by state, by quarter, and two-way) and a wild
-     cluster bootstrap by quarter for the few-cluster case.
+     not implemented (no reference implementation). Cluster-robust tests
+     (by state, by quarter, and two-way) and a wild cluster bootstrap by
+     quarter, for the few-cluster case, are used instead.
+  4. The seasonal naive benchmark listed in the PAP is not estimated. With
+     a year-over-year target it amounts to forecasting zero change.
+  5. The Giacomini & White (2006) fallback is not implemented. For the
+     tree-based models, only the unadjusted accuracy comparison is
+     interpreted (the Clark-West adjustment does not suit them).
+  All five are also listed in the paper (manuscript/, "Pre-registration
+  and deviations").
 
-CORRECTIONS TO THE FIRST PHASE 5 RUN (commit 24013c8). Found while
+Corrections to the first Phase 5 run (commit 24013c8), found while
 preparing pre_analysis_plan_addendum_1.md. None let test-window data into
 training. Disclosed in research_log.md and literature/phase5_findings.md.
   C1. Machine-learning tuning folds were not time-ordered. The tuning
-      data was sorted by state, so TimeSeriesSplit cut it into
-      alphabetical blocks of states, each spanning 2006-2022. Now:
-      forward-chaining folds over whole quarters, with a gap matching the
-      real-time label rule. Affects ML models only.
+      data were sorted by state, so TimeSeriesSplit cut them into
+      alphabetical blocks of states, each spanning 2006-2022. The folds
+      are now forward-chaining over whole quarters, with a gap matching
+      the real-time label rule. Affects ML models only.
   C2. The "best ML model" used in the primary comparison and in the
       combination forecast was hard-coded to random forest. It is now
       chosen by development-window cross-validation error, as intended.
@@ -40,8 +47,8 @@ training. Disclosed in research_log.md and literature/phase5_findings.md.
       comparisons differed in two ways at once. Both statistics are now
       reported under every inference method, which isolates the effect
       of clustering.
-  Also: the ElasticNet scaler is now fit on each tuning training fold
-  only (it was fit on the whole development window).
+  Also corrected: the elastic-net scaler is now fit on each tuning
+  training fold only (it had been fit on the whole development window).
 
 Usage:
     python run_phase5_evaluation.py
@@ -143,8 +150,8 @@ def expanding_window_predict(
     predictions.
 
     eval_quarters: quarter codes (year*4 + quarter) to forecast; defaults
-    to the locked test window. include_quarter=False drops the
-    quarter-of-year indicator (seasonally adjusted line).
+    to the test-window quarters. include_quarter=False drops the
+    quarter-of-year dummies (used for the seasonally adjusted series).
     """
     df = df.copy()
     df["qd"] = qdate(df["year"], df["quarter"])
@@ -384,8 +391,8 @@ def loss_difference(df: pd.DataFrame, target_col: str, model_col: str, kind: str
     """Benchmark loss minus model loss (positive = model better).
     kind="mse": plain squared-error difference (actual accuracy).
     kind="cw": Clark & West (2007) adjusted difference for nested models,
-    which corrects the larger model's penalty from estimating extra
-    parameters."""
+    which corrects for the noise the larger model adds by estimating
+    parameters that are zero under the null."""
     e1 = df[target_col] - df["pred_benchmark"]
     e2 = df[target_col] - df[model_col]
     if kind == "mse":
