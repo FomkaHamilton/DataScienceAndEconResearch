@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite the archived release."
+title: "Business applications and state establishment births: replication code and data"
+type: software
+authors:
+  - given-names: Thomas
+    family-names: Hamilton
+    affiliation: Independent Researcher
+repository-code: "https://github.com/FomkaHamilton/DataScienceAndEconResearch"
+license: MIT
+abstract: >-
+  Code, processed data and outputs that reproduce every table and figure in
+  "Business Applications as a Leading Indicator of New Establishments: Evidence
+  from U.S. States That the Relationship Changed After 2020", together with the
+  pre-analysis plan, its addenda, and the pre-registered live forecasts for
+  2026Q1-Q3.
+keywords:
+  - business formation
+  - business applications
+  - establishment births
+  - forecast evaluation
+  - nowcasting
+  - reproducibility

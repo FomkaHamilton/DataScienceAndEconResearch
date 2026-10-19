@@ -56,6 +56,8 @@ On Windows, clone to a short path (for example `C:\src\...`). Long paths can exc
 
 `run_all.py` starts from the committed processed data, so it reproduces the committed numbers. Some tables may differ from the committed files in about the 15th–16th significant digit, because the random forest sums its trees in parallel and the order varies between runs. `verify_outputs.py` treats these as matches; they are not substantive. `run_all.py --full` re-downloads the raw data first; because Census and BLS revise their data, that can give slightly different numbers. The download scripts identify themselves to Census and BLS with a contact address, read from the `RESEARCH_CONTACT_EMAIL` environment variable (or from a `.env` file at the repository root, which git ignores), so set it before using `--full`. See [data/MANIFEST.md](data/MANIFEST.md) for sources, retrieval dates and checksums.
 
+**Word version of the manuscript.** The Markdown file `manuscript/draft_v1.md` is the master copy. To build a Word version (written to the git-ignored `manuscript/submission/` folder), run `pip install -r requirements-manuscript.txt` from the repository root, then `python projects/p1-bfs-establishment-births/manuscript/build_docx.py`.
+
 ## AI-use record
 
 AI assistance is recorded, entry by entry, in this project's [research_log.md](research_log.md).

@@ -1,19 +1,34 @@
 <!--
-DRAFT v1, 2026-10-15. Figures placed and text copy-edited the same day.
+DRAFT v1. Figures placed and text copy-edited 2026-10-15; restructured for the
+Journal of Forecasting (title page, statements, Wiley AI disclosures) 2026-10-19.
 Not yet reviewed by the author.
-Target format: Journal of Forecasting (full research article). Verify current
-author guidelines, length limits, and the AI-disclosure policy before submission.
-Every number below comes from a committed output table or figure; sources are
-listed in the "Source" notes under each table and figure. Items marked
-[VERIFY] need checking before submission.
+Free Format applies at first submission (any consistent reference style; APA at
+acceptance). Every number below comes from a committed output table or figure;
+sources are listed in the "Source" notes under each table and figure. Text in
+square brackets needs the author's input or confirmation before submission.
+Word version: python manuscript/build_docx.py (requirements-manuscript.txt).
 -->
 
 # Business Applications as a Leading Indicator of New Establishments: Evidence from U.S. States That the Relationship Changed After 2020
 
-**Thomas Hamilton**, Independent Researcher
-[Corresponding-author email and ORCID iD to be added.]
+**Running title:** Applications and Establishment Births
 
-*Working draft, October 2026*
+**Thomas Hamilton**, Independent Researcher, [City, State], USA\
+Correspondence: [email address]; ORCID: [ORCID iD]
+
+**Acknowledgments.** The author used Claude (Anthropic; models Claude Opus 5.5 and Claude Sonnet 5, accessed through the Claude Code tool in October 2026) to draft and edit the manuscript text. [Confirm after your rewrite and adjust the description, for example: "to produce a first draft of the manuscript, which the author rewrote."] The author reviewed and revised all text and takes full responsibility for the content. The use of the same tool in the research itself is described in Section 4.
+
+**Data availability statement.** The code, processed data and outputs that support the findings of this study are openly available in Zenodo at https://doi.org/[DOI to be added] and on GitHub at https://github.com/FomkaHamilton/DataScienceAndEconResearch. The raw data are publicly available from the U.S. Census Bureau (Business Formation Statistics; Business Dynamics Statistics) and the U.S. Bureau of Labor Statistics (Business Employment Dynamics); retrieval dates and checksums are listed in the repository's data manifest.
+
+**Funding statement.** The author received no funding for this research.
+
+**Conflict of interest disclosure.** The author declares no conflicts of interest. [Confirm.]
+
+**Ethics approval statement.** Not applicable: the study uses publicly available, aggregate government statistics and involves no human participants.
+
+**Permission to reproduce material from other sources.** Not applicable.
+
+<!-- pagebreak -->
 
 ## Abstract
 
@@ -21,7 +36,7 @@ New business applications are published within weeks of being filed, whereas cou
 
 **Keywords:** business formation; leading indicators; nowcasting; forecast evaluation; cross-sectional dependence; machine learning
 
-**JEL codes:** C53, E32, L26, M13, R11 [VERIFY whether the journal requests JEL codes]
+**JEL codes:** C53, E32, L26, M13, R11
 
 ## 1. Introduction
 
@@ -78,6 +93,8 @@ Figure 1 shows both series at the national level. Applications surged in 2020 an
 **Real time.** BED births appear about three quarters after the reference quarter, whereas applications appear within weeks. A forecast for quarter t is therefore estimated only on rows whose own target quarter is at least three quarters earlier (t − 3 or before), and uses only lags of births at least three quarters old. Each model is re-estimated for every forecast quarter on an expanding window.
 
 **Windows.** The development window runs to 2022Q4. The test window, 2023Q1–2025Q4, comprises 12 quarters × 51 states = 612 forecasts and was not used until the evaluation design had been committed. Section 6.4 extends the same procedure back to 2010; those years are pseudo-out-of-sample, because they informed exploratory choices.
+
+**Use of AI tools in the research.** The research was carried out with an AI assistant, Claude (Anthropic; models Claude Opus 5.5 and Claude Sonnet 5, accessed through the Claude Code tool in October 2026). The assistant searched and screened the literature, wrote and ran the data-acquisition and analysis code, and checked outputs against the committed results. The author set the research question, approved the design and each follow-up analysis before it was run, and [reviewed the code and results; confirm after your review]. Every citation was checked against a publisher, registry or agency page, and a dated record of the assistant's contributions is kept in the project's research log.
 
 ## 5. Evaluation and inference
 
@@ -208,7 +225,7 @@ Third, for forecast evaluation with state panels, the dependence structure is no
 
 ## 8. A pre-registered test with new data
 
-The interpretation in Section 7 was formed after the 2023–2025 results had been seen, and the test window is short. A clean test requires data that did not exist when the interpretation was formed. Before BLS published any 2026 establishment-birth data, I committed forecasts for 2026Q1–Q3 for all 51 states to the project repository under the tag `prereg-live-forecasts-2026`; the SHA-256 hash of the forecast file is `8e0751c9…841fc`. [VERIFY: add the public timestamp record and its date once posted.]
+The interpretation in Section 7 was formed after the 2023–2025 results had been seen, and the test window is short. A clean test requires data that did not exist when the interpretation was formed. Before BLS published any 2026 establishment-birth data, I committed forecasts for 2026Q1–Q3 for all 51 states to the project repository under the tag `prereg-live-forecasts-2026`; the SHA-256 hash of the forecast file is `8e0751c9…841fc`. [Add the link to the public timestamp record and its date once it is posted.]
 
 The forecasts were produced with exactly the procedure described above, in two variants: one estimated on all available data and one excluding 2020–2022 from estimation (Figure 7). Two readings were registered in advance. The first is the paper's claim, that applications still do not improve forecasts; the second is an alternative, that excluding the pandemic years from estimation improves the applications model. The scoring code was committed with the forecasts, and 2026Q1 is scheduled for release on 28 October 2026.
 
@@ -230,19 +247,17 @@ Business applications looked like a natural early indicator of state establishme
 
 ---
 
-## Data and code availability
-
-All code, processed data, outputs, and the pre-analysis plan with its four addenda are available in the project repository [repository URL; VERIFY: currently private, decide on public release before submission]. A single command (`replication/run_all.py`) regenerates every table and figure from the committed data. On 15 October 2026, a fresh clone with a new, pinned environment reproduced every table and figure committed at that point, with a largest numeric difference of 1.1e-14. After the final analyses and the manuscript figures were added, a full re-run reproduced all 36 tables and every figure, the manuscript figures byte for byte, and confirmed that the pre-registered forecast file is regenerated exactly. The raw data are public from the Census Bureau and BLS; retrieval dates and SHA-256 checksums are listed in `data/MANIFEST.md`.
-
-## Use of AI tools
-
-[VERIFY wording against the target journal's current policy.] This research used an AI assistant (Claude, Anthropic), through the Claude Code tool, for literature discovery and verification, for writing and running analysis code, and for drafting text. The author directed the research, made all substantive decisions recorded in the project log, and is responsible for the content. Every citation was checked against a publisher or repository page. A dated record of AI contributions is kept in the project's research log.
-
 ## Pre-registration and deviations
 
 The pre-analysis plan and its four addenda are in the repository, each committed before the analyses it governs. The plan states that any departure from it will be disclosed in the paper. The departures are as follows. (i) The seasonal naive benchmark listed in the plan was omitted from the first implementation. It was added before submission, with its definition committed to the repository before it was evaluated, and is reported in Table 1; because it has no parameters, adding it involved no specification choices. (ii) The plan distinguished an autoregressive distributed-lag model from a bridge equation for monthly applications; under the real-time convention used here, in which a quarter's applications are available shortly after it ends, the two specifications coincide. (iii) The model confidence set and the panel tests of Qu, Timmermann and Zhu (2024) and Akgun et al. (2024) were replaced as described in Section 5. (iv) The Giacomini and White (2006) test, named as a fallback where nesting is in doubt, was not implemented; its asymptotic theory requires a finite, rolling estimation window, whereas the forecasts here use expanding windows. For the tree-based models only the unadjusted accuracy comparison is reported (Section 6.3). (v) Addendum 4 anticipated reporting the new-firm-share analysis in an appendix; it is reported in Section 6.6 and labeled as exploratory.
 
 Three errors in an earlier run of the main evaluation were found and corrected before this draft: the machine-learning tuning folds were not time-ordered, the best machine-learning model had been fixed in advance rather than selected, and the dependence-robust tests had been applied to a different statistic from the naive test they were compared with. None involved test data leaking into training. The corrections are documented in `literature/phase5_findings.md`.
+
+## Reproducibility
+
+All code, processed data, outputs, and the pre-analysis plan with its four addenda are in the replication package (see the data availability statement). A single command (`replication/run_all.py`) regenerates every table and figure from the committed data. On 15 October 2026, a fresh clone with a new, pinned environment reproduced every table and figure committed at that point, with a largest numeric difference of 1.1e-14. After the final analyses and the manuscript figures were added, a full re-run reproduced all 36 tables and every figure, the manuscript figures byte for byte, and confirmed that the pre-registered forecast file is regenerated exactly. Retrieval dates and SHA-256 checksums of the raw data are listed in `data/MANIFEST.md`.
+
+<!-- pagebreak -->
 
 ## References
 
@@ -302,7 +317,7 @@ U.S. Census Bureau. Business Formation Statistics. https://www.census.gov/econ/b
 
 U.S. Census Bureau. Business Dynamics Statistics. https://www.census.gov/programs-surveys/bds.html (data retrieved 15 October 2026).
 
----
+<!-- pagebreak -->
 
 ## Appendix: Additional tables
 

@@ -1,0 +1,2 @@
+# Optional: only needed to build the Word version of a manuscript, not for reproducing results.
+pypandoc-binary==1.17

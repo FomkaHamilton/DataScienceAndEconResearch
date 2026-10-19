@@ -55,9 +55,14 @@ python -m venv .venv
 .venv\Scripts\activate                     # Windows (macOS/Linux: source .venv/bin/activate)
 pip install -r requirements.txt            # pinned versions used for all committed results
 pip install -r requirements-notebooks.txt  # optional: adds Jupyter for exploratory notebooks
+pip install -r requirements-manuscript.txt # optional: builds Word versions of manuscripts
 ```
 
 Each project has a one-command reproduction script; see its README (for example, [Project 1](projects/p1-bfs-establishment-births/README.md#reproduce)).
+
+## License and citation
+
+The code in this repository is released under the [MIT License](LICENSE). The manuscripts, figures and written documentation are copyright (c) 2026 Thomas Hamilton, all rights reserved, so that journal publication options remain open. The processed data are derived from public U.S. government statistics (Census Bureau and Bureau of Labor Statistics). To cite the replication materials, use [CITATION.cff](CITATION.cff); GitHub's "Cite this repository" button reads it.
 
 ## AI assistance disclosure
 

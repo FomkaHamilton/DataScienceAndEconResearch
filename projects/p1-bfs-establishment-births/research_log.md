@@ -446,3 +446,33 @@ Before planning submission, three independent checks were run: bibliographic det
 **No result changed.** All edits concern how prior work is described.
 
 **AI-use record:** Claude (Opus 5.5, via Claude Code) ran the checks with three parallel sub-agents, re-verified the key findings and applied the corrections. Not yet reviewed by the author.
+
+## 2026-10-19: Release and submission preparation (Journal of Forecasting)
+
+The author approved the preparation steps for public release and submission. The target journal's current requirements were verified on 2026-10-15 (see the previous entry).
+
+**Public-release files** (the repository stays private until the author makes it public):
+
+- `LICENSE`: the MIT License, for the code. The root README states that the manuscripts, figures and written documentation are not covered (all rights reserved), so that journal options remain open.
+- `CITATION.cff`: citation metadata, which GitHub's "Cite this repository" button reads. Zenodo also reads it when archiving a release. The ORCID iD is to be added.
+
+**Manuscript restructured for the Journal of Forecasting.** No result or number changed.
+
+- **Title page:**
+  - a running title of under 40 characters ("Applications and Establishment Births");
+  - placeholders for the author's location, email and ORCID iD;
+  - the statements the journal asks for: data availability, funding, conflict of interest, ethics approval, and permission to reproduce material.
+- **AI disclosure split as Wiley's guidelines require:**
+  - help with drafting and editing goes in the Acknowledgments;
+  - research use (literature, code, analysis) goes in a Methods paragraph at the end of Section 4.
+
+  Both give the tool, models, dates of use, role and oversight. Both contain bracketed confirmations that become true only after the author's review and rewrite.
+- **The former "Data and code availability" and "Use of AI tools" sections** were replaced by the title-page statements and a "Reproducibility" section.
+- **Remaining markers:** all [VERIFY] markers are resolved. The remaining bracketed items need the author's input: location, email, ORCID iD, Zenodo DOI, gist link, and the confirmations above.
+
+**Word build.** `manuscript/build_docx.py` (pandoc 3.9 via `pypandoc-binary`, pinned in `requirements-manuscript.txt`) converts the Markdown master to Word.
+
+- It embeds the 7 figures and turns the page-break markers into page breaks.
+- Output goes to `manuscript/submission/`, which is git-ignored and also holds the local cover-letter draft, the author's submission checklist and the gist text.
+
+**AI-use record:** Claude (Opus 5.5, via Claude Code) prepared the files, restructured the manuscript, drafted the cover letter and checklist, and verified Wiley's AI-disclosure rules and Zenodo's archiving procedure against their official pages. Not yet reviewed by the author.

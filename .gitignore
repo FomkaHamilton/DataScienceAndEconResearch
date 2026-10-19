@@ -45,3 +45,6 @@ projects/**/outputs/figures/*
 !projects/p1-bfs-establishment-births/outputs/figures/rq2_cumulative_gain_h3.png
 !projects/p1-bfs-establishment-births/outputs/figures/rq2_coefficient_paths_h3.png
 !projects/p1-bfs-establishment-births/outputs/figures/rq4_gain_vs_new_firm_share.png
+
+# --- Manuscript submission working files (local only: cover letter, checklist, built Word files) ---
+projects/**/manuscript/submission/
