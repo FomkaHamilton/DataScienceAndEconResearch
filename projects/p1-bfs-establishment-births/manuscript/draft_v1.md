@@ -14,7 +14,7 @@ Word version: python manuscript/build_docx.py (requirements-manuscript.txt).
 **Running title:** Applications and Establishment Births
 
 **Thomas Hamilton**, Independent Researcher, [City, State], USA\
-Correspondence: [email address]; ORCID: [ORCID iD]
+Correspondence: [email address]; ORCID: https://orcid.org/0009-0003-4603-3481
 
 **Acknowledgments.** The author used Claude (Anthropic; models Claude Opus 5.5 and Claude Sonnet 5, accessed through the Claude Code tool in October 2026) to draft and edit the manuscript text. [Confirm after your rewrite and adjust the description, for example: "to produce a first draft of the manuscript, which the author rewrote."] The author reviewed and revised all text and takes full responsibility for the content. The use of the same tool in the research itself is described in Section 4.
 

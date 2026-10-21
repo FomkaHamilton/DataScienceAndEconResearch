@@ -6,6 +6,7 @@ authors:
   - given-names: Thomas
     family-names: Hamilton
     affiliation: Independent Researcher
+    orcid: "https://orcid.org/0009-0003-4603-3481"
 repository-code: "https://github.com/FomkaHamilton/DataScienceAndEconResearch"
 license: MIT
 abstract: >-
