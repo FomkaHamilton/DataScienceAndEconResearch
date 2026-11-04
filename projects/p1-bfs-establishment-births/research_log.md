@@ -566,3 +566,78 @@ The author asked for a full double-check before submission. Independent checks w
 - The README now gives activation commands for each shell, the reset command after a run, the live-forecast scoring steps, and up-to-date status.
 
 **AI-use record:** Claude (Opus 5.5, via Claude Code) ran the checks with parallel sub-agents, re-verified the findings and applied the corrections. Not yet reviewed by the author.
+
+## 2026-11-04: Pre-submission audit, part 2 (code audit, web scan, mock referee)
+
+**Code audit: no bug changes any reported number.** An independent rebuild reproduced:
+
+- the forecasts and the ML tuning, to about 1e-15;
+- all 18 rows of the inference table, including the Clark–West statistics, the clustered and two-way standard errors, the wild bootstrap and Holm;
+- RQ4 and the 2026Q1 scoring.
+
+The audit found no look-ahead in the forecasts. It raised the following issues:
+
+- **Two deviations from the plan, now disclosed as (vii) and (viii):**
+  - h is the lag of applications at a common forecast origin, not a forecast horizon; the figure labels that said "three quarters ahead" now read "applications lagged three quarters";
+  - a single machine-learning comparison was run, not one each at h = 0 and h = 3.
+- **Over-statements corrected:**
+  - "real-time" is now "pseudo-real-time";
+  - "before BLS published any 2026 data" is now "any 2026 establishment-birth data";
+  - Figure 2's caption now notes that the combination is also omitted from panel (a);
+  - the size of the revision to 2025 is now given over the 51 states: on average 1.0%, 0.5%, 0.4% and 0.6% for 2025Q1–Q4. The earlier entry's +1.7% averaged all 54 BED geographies, including the Virgin Islands.
+- **Section 8 was incomplete,** and is now corrected:
+  - the high-propensity model at h = 0 was 8.4% worse than the benchmark in 2026Q1;
+  - the benchmark estimated without 2020–22 also improved, by 3.4%. Against it (a comparison not pre-registered), the applications models estimated without 2020–22 were still 3.7% (h = 0) and 2.4% (h = 3) worse, so the H2 gain is largely generic.
+- **Timing evidence restated precisely:** the repository was private, and GitHub's push record is not an independent registry.
+- **Open, not yet acted on:** inference with only 12 quarterly clusters, and the serial correlation induced by overlapping year-over-year targets. A t(G−1) reference distribution or HAC standard errors computed on cross-state means move every p-value toward the null; no conclusion flips.
+
+**Web scan.**
+
+- BLS's 2026Q2 release is scheduled for 27 January 2027; no date for 2026Q3 has been announced.
+- The 2025 revision is BLS's standard annual revision.
+- Census's annual BFS update on 12 November 2026 revises the seasonally adjusted series.
+- The co-editors-in-chief of the Journal of Forecasting are Ngai Hang Chan and Hans-Jörg von Mettenheim. The cover letter now addresses them; their names are to be re-verified on submission day.
+- No new competing literature was found. Decker (2026, NBER WP 34924, footnote 31: preliminary, national, birth-death model) is now cited; the footnote was read directly.
+
+**Mock referee report.** It predicts a likely desk rejection as the paper stands: placeholders, and repository files marked "not yet reviewed by the author". It recommends major revision. Its three main points were re-verified today from the committed prediction files:
+
+1. **The benchmark against a no-change (seasonal naive) forecast.** Positive values mean the benchmark is better.
+
+   | Period | MSE | MAE | Mean error (actual − forecast) |
+   |---|---|---|---|
+   | 2010–19 | −0.5% | −9.5% | +0.048 |
+   | 2020–21 | +15.4% | +6.0% | not computed |
+   | 2022 | −11.3% | −10.1% | not computed |
+   | 2023–25 | +1.6% | −7.0% | −0.078 |
+
+   Mean absolute error is part of the pre-specified estimand.
+
+2. **The change after 2020, split by period.** Gain from all applications over the benchmark, in % of benchmark MSE:
+
+   | Lead | 2010–19 | 2020–21 | 2022 | 2023–25 |
+   |---|---|---|---|---|
+   | h = 0 | +2.6 | +11.3 | −16.0 | −3.0 |
+   | h = 3 | +0.8 | +11.9 | −15.0 | +1.6 |
+   | h = 4 | +0.2 | +3.2 | +9.3 | +0.8 |
+
+   Excluding 2021Q2–2022Q1, the net gain at h = 3 over 2010–25 is −2.2%.
+
+   Tests of change (quarterly cross-state mean loss differential regressed on a period dummy, Newey–West with 3 lags), 2010–19 vs. 2022–25:
+
+   | Series and lead | p |
+   |---|---|
+   | All applications, h = 0 | 0.058 |
+   | All applications, h = 3 | 0.49 |
+   | High-propensity, h = 0 | 0.014 |
+   | Planned wages, h = 0 | 0.023 |
+   | Corporate, h = 0 | < 0.001 |
+
+   Against 2023–25 alone: all applications at h = 3, p = 0.82; high-propensity at h = 0, p = 0.034.
+
+   The breakdown at h = 3 is concentrated in 2022; the robust change is in the narrower series at h = 0.
+
+3. **Census's state-level projected business formations** (BF_PBF4Q, BF_PBF8Q) are in the BFS file and are not used.
+
+All of these analyses were computed after the main results had been seen, so if they are reported they must be labeled post hoc. The author's decision on reframing and on any new analyses is pending. No change to the paper's framing has been made.
+
+**AI-use record:** Claude (Opus 5.5, via Claude Code) ran the audit with parallel sub-agents, re-verified the findings and applied the corrections. Not yet reviewed by the author.

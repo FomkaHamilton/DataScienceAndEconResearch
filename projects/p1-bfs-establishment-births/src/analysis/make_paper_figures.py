@@ -23,6 +23,9 @@ Usage:
 from pathlib import Path
 
 import matplotlib
+
+matplotlib.use("Agg")  # select the non-interactive backend before pyplot is imported
+
 import matplotlib.dates
 import matplotlib.pyplot as plt
 import matplotlib.ticker
@@ -30,7 +33,6 @@ import numpy as np
 import pandas as pd
 from matplotlib.lines import Line2D
 
-matplotlib.use("Agg")
 plt.rcParams.update({"pdf.fonttype": 42, "ps.fonttype": 42, "font.size": 8})
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
@@ -263,7 +265,7 @@ def fig_cumulative_ba(preds: pd.DataFrame) -> None:
 
 def fig_cumulative_by_series(preds: pd.DataFrame) -> None:
     fig, axes = plt.subplots(1, 2, figsize=(WIDTH, 3.0), sharey=True, facecolor=SURFACE)
-    for ax, h, title in [(axes[0], 0, "(a) Same quarter (h = 0)"), (axes[1], 3, "(b) Three quarters ahead (h = 3)")]:
+    for ax, h, title in [(axes[0], 0, "(a) Same quarter (h = 0)"), (axes[1], 3, "(b) Applications lagged three quarters (h = 3)")]:
         _style(ax)
         _shade_periods(ax, labels=False)  # panels too narrow for labels; the caption names the shaded periods
         ends = {}
@@ -325,7 +327,7 @@ def fig_new_firm_share() -> None:
     d = pd.read_csv(TABLE_DIR / "rq4_state_data.csv")
     r = pd.read_csv(TABLE_DIR / "rq4_correlations.csv").query("role == 'primary'").set_index("lead")
     fig, axes = plt.subplots(1, 2, figsize=(WIDTH, 2.9), sharey=True, facecolor=SURFACE)
-    for ax, h, name in [(axes[0], 0, "Same quarter (h = 0)"), (axes[1], 3, "Three quarters ahead (h = 3)")]:
+    for ax, h, name in [(axes[0], 0, "Same quarter (h = 0)"), (axes[1], 3, "Applications lagged three quarters (h = 3)")]:
         _style(ax)
         ax.grid(axis="x", color=GRID, linewidth=0.5)
         ax.scatter(100 * d["new_firm_share_2010_19"], d[f"gain_BA_h{h}_2010_19"], s=16, color=INK,
