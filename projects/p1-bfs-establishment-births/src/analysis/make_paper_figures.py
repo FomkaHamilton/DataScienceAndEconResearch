@@ -353,12 +353,25 @@ def fig_live_forecasts() -> None:
     rows = [("benchmark", "Benchmark"), ("BA_h0", "Applications, h = 0"), ("BA_h3", "Applications, h = 3")]
     quarters = sorted(set(zip(nat["year"], nat["quarter"])))
 
+    # Actual values, from the most recent BLS release scored so far (export_live_actuals.py).
+    # Each release's file covers every 2026 quarter published by then, computed within that release.
+    actual_files = sorted(LIVE_FILE.parent.glob("actuals_*.csv"))
+    actual = {}
+    if actual_files:
+        a = pd.read_csv(actual_files[-1])
+        actual = (a.groupby(["year", "quarter"])["actual_births_yoy"].mean() * 100).to_dict()
+
     fig, axes = plt.subplots(1, len(quarters), figsize=(WIDTH, 2.2), sharey=True, sharex=True, facecolor=SURFACE)
     for ax, (y, q) in zip(axes, quarters):
         _style(ax, zero=None)
         ax.grid(axis="y", visible=False)
         ax.grid(axis="x", color=GRID, linewidth=0.5)
         ax.axvline(0, color=INK_2, linewidth=0.6, zorder=1)
+        if (y, q) in actual:
+            ax.axvline(actual[(y, q)], color=INK, linewidth=1.1, linestyle=(0, (4, 2)), zorder=2)
+        else:
+            ax.text(0.98, 0.04, "not yet published", transform=ax.transAxes, ha="right", va="bottom",
+                    fontsize=6.5, color=INK_2)
         for i, (m, _) in enumerate(rows):
             yy = len(rows) - 1 - i
             v = nat[(nat["year"] == y) & (nat["quarter"] == q) & (nat["model"] == m)].set_index("training")["yoy"]
@@ -379,7 +392,9 @@ def fig_live_forecasts() -> None:
         Line2D([], [], linestyle="none", marker="o", markersize=5, color=SURFACE, markeredgecolor=INK,
                markeredgewidth=1.1, label="Estimated excluding 2020–22"),
     ]
-    fig.legend(handles=handles, loc="upper left", bbox_to_anchor=(0.01, 1.0), ncol=2, frameon=False,
+    if actual:
+        handles.append(Line2D([], [], color=INK, linewidth=1.1, linestyle=(0, (4, 2)), label="Actual"))
+    fig.legend(handles=handles, loc="upper left", bbox_to_anchor=(0.01, 1.0), ncol=len(handles), frameon=False,
                fontsize=7.5, labelcolor=INK)
     fig.tight_layout(rect=(0, 0, 1, 0.88), w_pad=1.0)
     _save(fig, "fig7_live_forecasts_2026")

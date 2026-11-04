@@ -476,3 +476,46 @@ The author approved the preparation steps for public release and submission. The
 - Output goes to `manuscript/submission/`, which is git-ignored and also holds the local cover-letter draft, the author's submission checklist and the gist text.
 
 **AI-use record:** Claude (Opus 5.5, via Claude Code) prepared the files, restructured the manuscript, drafted the cover letter and checklist, and verified Wiley's AI-disclosure rules and Zenodo's archiving procedure against their official pages. Not yet reviewed by the author.
+
+## 2026-11-04: Live forecasts, 2026Q1 scored (Addendum 3)
+
+BLS published the 2026Q1 Business Employment Dynamics data on 28 October 2026. No session took place between 21 October and 4 November, so the release was downloaded and scored on 4 November.
+
+**Data.** Retrieved with `src/acquisition/fetch_bed.py` into `data/raw/bed/2026-11-04/`. SHA-256 checksums: `bd.data.1.AllItems` 8fd11308f099f6a1b8b89661b3696e895ad464fb1f452098ea8960a865ed159e; `bd.series` 5a7f48dd14eecfe53bdf0772a6b33260cd9f3bf90778f599d5a9b5577f0087c2. The release contains 2026Q1 births for all 50 states and DC.
+
+- **Revisions to 2025.** The release revised 2025 state births levels. The average revision by quarter was +1.7% (2025Q1), +0.5% (2025Q2), +0.4% (2025Q3) and +0.7% (2025Q4); no earlier quarter changed.
+- **As pre-registered,** the actual values are computed within the new release. The paper's main analysis continues to use the vintage retrieved on 14 October 2026.
+
+**Scoring.** Scored with the committed script `src/analysis/evaluate_live_forecasts.py`, unchanged; output in `outputs/live_forecasts/evaluation_2026-11-04.csv`. This was the script's first use on real data. An independent recomputation in a separate script reproduced every primary number exactly.
+
+- **Actual outcome.** Establishment births were essentially flat: an average change of +0.8 log points across the 51 states (median +0.3).
+- **Forecasts for comparison** (average across states, log points):
+  - all-data applications models: 4.0 (h = 3) and 4.2 (h = 0);
+  - the same models estimated excluding 2020–22: 1.9 and 2.5;
+  - benchmark: 2.5 on all data, 0.9 excluding 2020–22.
+
+| Pre-registered comparison | Accuracy difference (% of reference MSE) | States where the model was better | Pre-registered reading |
+|---|---|---|---|
+| H1: BA h = 3, all data, vs. benchmark | −6.7 | 41% | Consistent with the paper |
+| H1: BA h = 0, all data, vs. benchmark | −7.6 | 41% | Consistent with the paper |
+| H2: BA h = 3 excluding 2020–22 vs. all data | +7.3 | 61% | Supports H2 |
+| H2: BA h = 0 excluding 2020–22 vs. all data | +6.9 | 65% | Supports H2 |
+
+**Secondary comparisons** (reported, not read):
+
+- High-propensity applications at h = 3 (all data) were about as accurate as the benchmark: +0.6%, better in 55% of states.
+- All applications at h = 1 (all data) were much worse: −37.3%.
+- The benchmark estimated excluding 2020–22 was 3.4% more accurate than the all-data benchmark.
+
+These patterns match the observation recorded on 15 October, before any 2026 data existed: the 2025 rise in total applications lay outside the employer-intent series. With one quarter and common national shocks, all of these readings are descriptive, not tests.
+
+**Figure 7.** A new script, `src/analysis/export_live_actuals.py`, writes the state-level actual values to `outputs/live_forecasts/actuals_2026-11-04.csv`. It uses the scoring script's own `actuals_from_release()` and does not modify the scoring script. Figure 7 now marks the actual 2026Q1 average and labels 2026Q2–Q3 as not yet published.
+
+**Public timestamp.** The hash-only public gist was not posted before the 2026Q1 release (it is pending the author).
+
+- **Evidence of timing for 2026Q1** is the repository history plus GitHub's server-side activity log. That log records the push of the forecast commit 7a36fe1 at 2026-10-15T14:28:02Z, 13 days before the release.
+- **A snapshot** of the log, retrieved through the GitHub API on 4 November, is saved as `outputs/live_forecasts/github_push_log_retrieved_2026-11-04.json`.
+- **For 2026Q2 and 2026Q3,** a gist posted now still predates the outcome data.
+- **The paper must state this plainly.**
+
+**AI-use record:** Claude (Opus 5.5, via Claude Code) downloaded and scored the release, recomputed the scores independently, exported the actual values, updated Figure 7 and wrote this entry. Not yet reviewed by the author.
