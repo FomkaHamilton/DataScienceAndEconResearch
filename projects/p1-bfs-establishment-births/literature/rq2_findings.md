@@ -17,7 +17,7 @@ HBA, WBA and CBA are the narrower series Census builds to flag likely employers.
 
 1. **Before 2020, the narrower series were better predictors than all applications.** This is consistent with what they were designed to do:
    - Head to head, high-propensity applications beat all applications at h=0 (+4.8%, Holm-adjusted p < 0.001, better in 96% of states).
-   - Applications with planned wages beat them at h=3 (+3.7%, Holm-adjusted p = 0.012 two-way, < 0.001 bootstrap).
+   - Applications with planned wages beat them at h=3 (+3.7%, Holm-adjusted p = 0.011 two-way, < 0.001 bootstrap).
    - These years are pseudo-out-of-sample.
    - **The same-quarter (h=0) advantage survives Census's 2012 redefinition of high-propensity applications; the 3-quarter-lead advantage is weaker after it.** Restricting to 2013–2019 (§6):
      - h=0: high-propensity +4.7%, planned wages +4.7% (both p < 0.001).
@@ -66,7 +66,7 @@ Bold marks the best series in each row. The information test at h=3 is highly si
 | Period | Series | h | Difference | 95% CI | Holm p (two-way / bootstrap) | States where it beat BA |
 |---|---|---|---|---|---|---|
 | 2010–19 | HBA | 0 | +4.8% | +3.0 to +6.5 | <0.001 / <0.001 | 96% |
-| 2010–19 | WBA | 3 | +3.7% | +1.6 to +5.7 | 0.012 / <0.001 | 78% |
+| 2010–19 | WBA | 3 | +3.7% | +1.6 to +5.7 | 0.011 / <0.001 | 78% |
 | 2010–19 | HBA | 3 | +3.1% | +0.7 to +5.5 | 0.22 / 0.10 | 73% |
 | 2022–25 | HBA | 3 | −5.9% | −9.9 to −2.0 | 0.07 / 0.06 | 18% |
 | 2023–25 (locked) | CBA | 0 | −7.0% | −11.1 to −3.0 | 0.016 / 0.044 | 31% |

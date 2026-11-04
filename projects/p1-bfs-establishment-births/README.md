@@ -1,6 +1,6 @@
 # Project 1: Business Applications and State Establishment Births
 
-**Status (2026-10-15):** data acquisition, exploratory analysis, the pre-analysis plan and Addenda 1–4, the primary evaluation, the robustness analyses, and the RQ2 and RQ4 analyses are complete. Manuscript draft v1, with 7 figures, is in [manuscript/draft_v1.md](manuscript/draft_v1.md). Pre-registered live forecasts for 2026Q1–Q3 will first be scored when BLS publishes 2026Q1 data on 2026-10-28.
+**Status (2026-11-04):** data acquisition, exploratory analysis, the pre-analysis plan and Addenda 1–4, the primary evaluation, the robustness analyses, and the RQ2 and RQ4 analyses are complete. Manuscript draft v1, with 7 figures, is in [manuscript/draft_v1.md](manuscript/draft_v1.md). The pre-registered live forecasts for 2026Q1 were scored after BLS published the data on 2026-10-28; 2026Q2 and 2026Q3 follow when published (expected around late January and late April 2027).
 
 Paper title: *Business Applications as a Leading Indicator of New Establishments: Evidence from U.S. States That the Relationship Changed After 2020*. Target journal: *Journal of Forecasting*.
 
@@ -32,29 +32,55 @@ Each phase ends with a gate: a check, stated in advance in the [research plan](.
 | 5. Baseline and full model set | Done (corrected run; the three errors found in the first run are documented in the findings). See [literature/phase5_findings.md](literature/phase5_findings.md). |
 | 6. Robustness and sensitivity | Done via [Addendum 1](pre_analysis_plan_addendum_1.md): seasonally adjusted series, winsorizing, performance over time, detectable effects. |
 | 7. Secondary and exploratory questions | RQ2 done via [Addendum 2](pre_analysis_plan_addendum_2.md) ([findings](literature/rq2_findings.md)); RQ4 done via [Addendum 4](pre_analysis_plan_addendum_4.md) ([findings](literature/rq4_findings.md)). |
-| 7b. Live forecasts | Forecasts for 2026Q1–Q3 pre-registered via [Addendum 3](pre_analysis_plan_addendum_3.md) (commit 7a36fe1, tag `prereg-live-forecasts-2026`). First scoring when BLS publishes 2026Q1 on 2026-10-28. |
-| 8. Reproducibility audit | Passed 2026-10-15. A fresh clone at commit a131fb8, with the pinned environment and one command, reproduced all 31 tables committed at the time (maximum difference 1.1e-14) and all 6 figures. The latest full re-run (2026-10-15) passed with 36 tables and 21 figure files (7 analysis figures, plus 7 manuscript figures in PNG and PDF). See [Reproduce](#reproduce). |
+| 7b. Live forecasts | Forecasts for 2026Q1–Q3 pre-registered via [Addendum 3](pre_analysis_plan_addendum_3.md) (commit 7a36fe1, tag `prereg-live-forecasts-2026`). 2026Q1 scored on 2026-11-04 ([evaluation](outputs/live_forecasts/evaluation_2026-11-04.csv)): applications again did not improve forecasts (H1 consistent with the paper), and estimating without 2020–22 helped (H2 supported). 2026Q2–Q3 to follow. |
+| 8. Reproducibility audit | Passed 2026-10-15. A fresh clone at commit a131fb8, with the pinned environment and one command, reproduced all 31 tables committed at the time (maximum difference 1.1e-14) and all 6 figures. A second fresh-clone audit on 2026-11-04 (commit 0115b2f) passed with 36 tables and 21 figure files (7 analysis figures, plus 7 manuscript figures in PNG and PDF), the figures byte for byte. See [Reproduce](#reproduce). |
 | 9. Drafting | In progress. Draft v1 with 7 figures: [manuscript/draft_v1.md](manuscript/draft_v1.md). |
 | 10. Submission | Not started |
 
 ## Reproduce
 
-Tested with Python 3.12.10. Package versions are pinned in [`requirements.txt`](../../requirements.txt).
+Tested with Python 3.12.10 on Windows. The direct dependencies are pinned in [`requirements.txt`](../../requirements.txt); [`requirements-lock.txt`](../../requirements-lock.txt) pins every package, including indirect dependencies, for an exact replica. Other Python versions may work but have not been tested.
 
-From the repository root:
+1. Clone the repository with git (the output check below needs a git clone, not a downloaded ZIP file). On Windows, clone to a short path, for example `C:\src\...`: long paths can exceed the Windows 260-character limit inside `.git` and `.venv`.
+2. From the repository root, create and activate a virtual environment, then install the packages:
+
+   ```bash
+   python -m venv .venv
+   # Activate it (choose the line for your shell):
+   #   Windows Command Prompt:  .venv\Scripts\activate
+   #   Windows PowerShell:      .venv\Scripts\Activate.ps1
+   #   Git Bash on Windows:     source .venv/Scripts/activate
+   #   macOS or Linux:          source .venv/bin/activate
+   pip install -r requirements-lock.txt
+   ```
+
+3. Run the pipeline and check the results:
+
+   ```bash
+   cd projects/p1-bfs-establishment-births
+   python replication/run_all.py          # about 5 minutes; regenerates every table and figure
+   python replication/verify_outputs.py   # compares the regenerated outputs with the committed ones
+   ```
+
+   The check should end with "0 problem(s)".
+
+**What to expect.** `run_all.py` starts from the committed processed data, so it reproduces the committed numbers.
+
+- **Floating-point noise:** some tables differ from the committed files in about the 15th–16th significant digit, because the random forest sums its trees in parallel and the order varies between runs. `verify_outputs.py` counts these as matches. Afterwards `git status` shows those tables as modified; `git checkout -- outputs` restores the committed copies.
+- **Figures:** they are reported as byte-identical when the libraries and fonts match.
+- **`run_all.py --full`:** re-downloads the raw data first. Because Census and BLS revise their data, that can give slightly different numbers. The download scripts identify themselves to Census and BLS with a contact address, read from the `RESEARCH_CONTACT_EMAIL` environment variable (or from a `.env` file at the repository root, which git ignores), so set it before using `--full`.
+
+See [data/MANIFEST.md](data/MANIFEST.md) for sources, retrieval dates and checksums.
+
+**Scoring the live forecasts.** After BLS publishes a 2026 quarter:
 
 ```bash
-python -m venv .venv
-.venv\Scripts\activate                 # Windows (macOS/Linux: source .venv/bin/activate)
-pip install -r requirements.txt
-cd projects/p1-bfs-establishment-births
-python replication/run_all.py          # about 5 minutes; regenerates every table and figure
-python replication/verify_outputs.py   # checks that the regenerated outputs match the committed ones
+python src/acquisition/fetch_bed.py
+python src/analysis/evaluate_live_forecasts.py data/raw/bed/<date>
+python src/analysis/export_live_actuals.py data/raw/bed/<date>
 ```
 
-On Windows, clone to a short path (for example `C:\src\...`). Long paths can exceed the Windows 260-character path limit inside `.git` and `.venv`.
-
-`run_all.py` starts from the committed processed data, so it reproduces the committed numbers. Some tables may differ from the committed files in about the 15th–16th significant digit, because the random forest sums its trees in parallel and the order varies between runs. `verify_outputs.py` treats these as matches; they are not substantive. `run_all.py --full` re-downloads the raw data first; because Census and BLS revise their data, that can give slightly different numbers. The download scripts identify themselves to Census and BLS with a contact address, read from the `RESEARCH_CONTACT_EMAIL` environment variable (or from a `.env` file at the repository root, which git ignores), so set it before using `--full`. See [data/MANIFEST.md](data/MANIFEST.md) for sources, retrieval dates and checksums.
+The first command downloads the release, the second scores the frozen forecasts with the pre-registered rules (`outputs/live_forecasts/evaluation_<date>.csv`), and the third saves the state-level actual values that Figure 7 shows.
 
 **Word version of the manuscript.** The Markdown file `manuscript/draft_v1.md` is the master copy. To build a Word version (written to the git-ignored `manuscript/submission/` folder), run `pip install -r requirements-manuscript.txt` from the repository root, then `python projects/p1-bfs-establishment-births/manuscript/build_docx.py`.
 

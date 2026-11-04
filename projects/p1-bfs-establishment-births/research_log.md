@@ -519,3 +519,50 @@ These patterns match the observation recorded on 15 October, before any 2026 dat
 - **The paper must state this plainly.**
 
 **AI-use record:** Claude (Opus 5.5, via Claude Code) downloaded and scored the release, recomputed the scores independently, exported the actual values, updated Figure 7 and wrote this entry. Not yet reviewed by the author.
+
+## 2026-11-04: Pre-submission audit, part 1 (number trace and fresh clone)
+
+The author asked for a full double-check before submission. Independent checks were run in parallel: a code audit, a number trace, a mock referee report, a scan of new literature and releases, and a fresh-clone reproduction. The lead session re-verified each finding before acting on it.
+
+**Number trace.** About 305 numbers in the manuscript (outside Section 8) were traced to the output tables. About 301 were exact. Corrections:
+
+- **Four wrong numbers:**
+  - Table 1, h = 1 interval upper bound: +6.5, not +6.6.
+  - Section 6.5, Holm-adjusted p for planned-wage applications at h = 3: 0.011, not 0.012. The same error is corrected in `literature/rq2_findings.md`.
+  - Introduction: the robust information-test p-value is 0.076 (0.067 by bootstrap), not "about 0.07".
+  - Section 6.2: the smallest Holm-adjusted primary p-value is 0.15 two-way (0.14 by bootstrap), not 0.14.
+- **Nine claims narrowed to what the tables support:**
+  - the "four quarters contribute more than the entire net gain" claim holds at h = 3 only;
+  - the 2020–21 gains are 11–20% at leads 0–3 only;
+  - from 2022 there is a small, non-significant gain at h = 4 (3.5%), and the text now says so;
+  - "after 2020" is replaced by "from 2022 onward" where the result is for 2022–2025;
+  - the weight settles at 0.31–0.34;
+  - "the narrower series mostly did slightly worse";
+  - "unadjusted p < 0.001" for the 2013–2019 check;
+  - the elasticities are stated in log points;
+  - the publication lag is stated consistently.
+
+**Test-window breach found and disclosed.** The seasonality diagnostic recorded in the 2026-10-15 Phase 4 entry above, which motivated the quarter-of-year indicator, is reproduced only on the full 2004–2025 sample. That sample includes the 2023–2025 test window, and the diagnostic was run before the pre-analysis plan was committed.
+
+- It concerns the timing of quarter-to-quarter spikes, not forecast accuracy.
+- Restricted to the development window it gives the same result: 21.2% versus 21.5% of state first quarters with a jump above 40%, and 33 of 38 versus 36 of 41 joint jumps in a first quarter.
+- The manuscript now reports the development-window figures and lists this as deviation (vi).
+- The pre-analysis plan and the Phase 3 findings are left as written.
+
+**2025 revision.** The 2026Q1 release revised 2025 births levels (by 0.4–1.7% on average, by quarter). The Limitations section now says so; the main analysis keeps the 14 October vintage.
+
+**Fresh-clone audit at commit 0115b2f: passed.**
+
+- The pinned install took 116 seconds.
+- `run_all.py` completed all 10 steps in 4.6 minutes.
+- `verify_outputs.py` reported 36 tables and 21 figure files, 0 problems.
+- Every output was rewritten during the run, and all 21 figure files were byte-identical to the committed versions.
+- The Word build also worked.
+
+**Follow-ups from the audit:**
+
+- Added `requirements-lock.txt`, with all 32 packages, including indirect dependencies, recorded from a clean environment.
+- `verify_outputs.py` now reports, for information, whether each figure is byte-identical, and documents that it needs a git clone.
+- The README now gives activation commands for each shell, the reset command after a run, the live-forecast scoring steps, and up-to-date status.
+
+**AI-use record:** Claude (Opus 5.5, via Claude Code) ran the checks with parallel sub-agents, re-verified the findings and applied the corrections. Not yet reviewed by the author.

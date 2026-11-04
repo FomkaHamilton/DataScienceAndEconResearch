@@ -8,14 +8,14 @@ The author's working instructions for the AI research assistant, including the c
 
 | Project | Track | Status (2026-10-15) |
 |---|---|---|
-| [Project 1](projects/p1-bfs-establishment-births/README.md): Census business applications (BFS) and BLS state establishment births (BED) | Data science | Main analyses complete; manuscript draft v1 written; pre-registered live forecasts awaiting outcome data |
+| [Project 1](projects/p1-bfs-establishment-births/README.md): Census business applications (BFS) and BLS state establishment births (BED) | Data science | Main analyses complete; manuscript draft v1 written; pre-registered live forecasts being scored (2026Q1 done) |
 | Project 2: Household income volatility and material hardship (Census SIPP 2018+ panels) | Econometrics | Approved 2026-10-14; not started |
 
 **Project 1.** Do state-level business applications from the Census Bureau's Business Formation Statistics (BFS) improve out-of-sample forecasts of state establishment births in the BLS Business Employment Dynamics (BED), and do machine-learning methods add value over econometric benchmarks? The question is predictive only; the project makes no causal claims.
 
 - Paper (draft v1): *Business Applications as a Leading Indicator of New Establishments: Evidence from U.S. States That the Relationship Changed After 2020* ([manuscript/draft_v1.md](projects/p1-bfs-establishment-births/manuscript/draft_v1.md)). Target journal: *Journal of Forecasting*.
 - Main finding: no detectable forecasting gain in the locked 2023–2025 test window, and a relationship that is regime-dependent over 2010–2025 (modest but real before 2020, large in 2020–21, absent in 2022–25). See the [project README](projects/p1-bfs-establishment-births/README.md) for a fuller summary.
-- Forecasts for 2026Q1–Q3 were pre-registered (tag `prereg-live-forecasts-2026`) and will first be scored when BLS publishes 2026Q1 data on 2026-10-28.
+- Forecasts for 2026Q1–Q3 were pre-registered (tag `prereg-live-forecasts-2026`) and are scored as BLS publishes each quarter; 2026Q1 was scored on 2026-11-04.
 
 **Project 2.** Using within-household variation (household fixed effects) in the Census Survey of Income and Program Participation (SIPP) 2018+ panels, is month-to-month income volatility associated with material hardship, holding income level fixed? The analysis is associational unless a credible quasi-experiment is identified during the design phase.
 
@@ -53,7 +53,7 @@ Raw data files are not committed (see `.gitignore`). Small processed files built
 ```bash
 python -m venv .venv
 .venv\Scripts\activate                     # Windows (macOS/Linux: source .venv/bin/activate)
-pip install -r requirements.txt            # pinned versions used for all committed results
+pip install -r requirements.txt            # pinned direct dependencies (requirements-lock.txt pins everything)
 pip install -r requirements-notebooks.txt  # optional: adds Jupyter for exploratory notebooks
 pip install -r requirements-manuscript.txt # optional: builds Word versions of manuscripts
 ```

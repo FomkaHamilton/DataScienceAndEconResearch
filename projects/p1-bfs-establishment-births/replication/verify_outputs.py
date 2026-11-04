@@ -5,12 +5,15 @@ Compares every tracked CSV under data/processed/ and outputs/ (the
 tables and the live-forecast file) against its version in git HEAD: same
 columns and shape, identical non-numeric values, and numeric values equal
 within a tolerance. Also checks that every tracked figure (outputs/figures
-and manuscript/figures) is present; figures are not compared image by
-image.
+and manuscript/figures) is present, and reports, for information only,
+whether each figure file is byte-identical to the committed version.
+
+Requires git and a clone of the repository (it reads the committed
+versions with `git show`); it does not work on a downloaded ZIP archive.
 
     python replication/verify_outputs.py [--rtol 1e-6] [--atol 1e-9]
 
-Exits with status 1 if anything differs or is missing.
+Exits with status 1 if a table differs or any tracked file is missing.
 """
 
 import argparse
@@ -78,12 +81,22 @@ def main() -> None:
             print(f"DIFFERS  {f}: {result}")
             failures += 1
 
+    identical = 0
     for f in figures:
-        exists = (repo_root / f).exists()
-        print(f"{'present ' if exists else 'MISSING '} {f}")
-        failures += 0 if exists else 1
+        path = repo_root / f
+        if not path.exists():
+            print(f"MISSING  {f}")
+            failures += 1
+            continue
+        committed = subprocess.run(["git", "show", f"HEAD:{f}"], cwd=PROJECT, check=True, capture_output=True).stdout
+        same = path.read_bytes() == committed
+        identical += same
+        print(f"{'identical' if same else 'present  '} {f}")
 
     print(f"\n{len(csvs)} tables and {len(figures)} figures checked; {failures} problem(s).")
+    print(f"{identical} of {len(figures)} figure files are byte-identical to the committed versions "
+          "(informational: fonts and libraries can differ across machines, so differing figures "
+          "are not counted as problems).")
     sys.exit(1 if failures else 0)
 
 
