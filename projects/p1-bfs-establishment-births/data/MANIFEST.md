@@ -50,6 +50,15 @@ This manifest documents every acquisition (source, retrieval date, parameters an
 - **Built by:** `src/cleaning/build_forecast_dataset.py` from the integrated panel, implementing the pseudo-real-time information set and forecast horizons of the pre-analysis plan (§3 and §6). The conventions are documented in the script's header.
 - **Output:** `data/processed/forecast_dataset.csv` (8,772 rows, NSA and SA series as separate rows): year-over-year log changes of establishment births and of the four BFS series, with the lags used by the forecasting models, winsorized versions for reference, and the `in_test_window` flag.
 
+## 6. Later BED release (28 October 2026)
+
+- **Retrieved:** 2026-11-04, via `src/acquisition/fetch_bed.py`, into `data/raw/bed/2026-11-04/` (same files as Section 2). This release added 2026Q1 and revised 2025.
+- **Uses:**
+  - scoring the pre-registered live forecasts (Addendum 3), which reads the raw folder directly;
+  - the BED revision check of Addendum 5 (item G3), which re-scores the test-window forecasts against this release.
+- **Extract:** `src/cleaning/extract_bed_vintage.py` writes `data/processed/bed_state_births_nsa_2026-11-04.csv`, 7,260 rows: establishment births, levels, not seasonally adjusted, for the same 54 geographies as Section 2, 1992Q3–2026Q1. The extract is committed so that the revision check can be reproduced without the 255 MB raw file.
+- **Not used** to rebuild the panel or the forecast dataset: the analysis vintage remains the 2026-10-14 pull.
+
 ## Reproducing from scratch
 
 Use the one-command pipeline, [../replication/run_all.py](../replication/run_all.py):
@@ -67,5 +76,7 @@ Re-downloading creates new dated raw files rather than overwriting earlier pulls
 | `raw/bed/2026-10-14/bd.data.1.AllItems` | 2026-10-14 | `88ff1e867c714f85d68d565f14b1a98e616e6eb91d894544743d58623bcd4055` |
 | `raw/bed/2026-10-14/bd.series` | 2026-10-14 | `ea09556dc0e36a37b3946c56913a2007125e1f61e70938482b64f8768da7a8ed` |
 | `raw/bds/bds2023_st_fa_2026-10-15.csv` | 2026-10-15 | `adb23fccea76d1cbcc27291b43054f366151f146174979c11b9eeadedd9c679b` |
+| `raw/bed/2026-11-04/bd.data.1.AllItems` (later release, Section 6) | 2026-11-04 | `8fd11308f099f6a1b8b89661b3696e895ad464fb1f452098ea8960a865ed159e` |
+| `raw/bed/2026-11-04/bd.series` (later release, Section 6) | 2026-11-04 | `5a7f48dd14eecfe53bdf0772a6b33260cd9f3bf90778f599d5a9b5577f0087c2` |
 
 The raw files are not committed: BED alone is 253 MB, and the agencies host the files publicly. A freshly downloaded file that matches these checksums is the same vintage.

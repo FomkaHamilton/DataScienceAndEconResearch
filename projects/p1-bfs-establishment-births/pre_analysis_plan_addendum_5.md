@@ -140,3 +140,12 @@ These follow the author's decision:
 - Every result from items A–G is reported in the paper or its online appendix, whatever it shows.
 - Items B–E and G are labeled not pre-specified; item F is the only new confirmatory test.
 - If any item cannot be implemented as written, the deviation is recorded in a dated note at the end of this file and in the paper.
+
+## Implementation notes (2026-11-09)
+
+*Added after items A–G were run. Every item was implemented as written. These notes record choices the text left open, and one diagnostic.*
+
+1. **Item C, PBF4Q.** The Holm adjustment of the PBF4Q tests of change runs across its five leads, within each statistic and contrast. The 20-test families of item C cover the four application series only.
+2. **Items A, E and G1, the two-way clustered variance.** In 17 of the comparisons against the no-change forecast, all on squared error, the two-way variance (state + quarter − heteroskedasticity-robust) is smaller than both one-way clustered variances. This happens because the loss differential is negatively correlated within states, and it makes the two-way p-value unreliable. The output tables flag these comparisons (`two_way_below_one_way`), and the paper reports the wild bootstrap p-value for them. No comparison against the benchmark or the state-applications model is affected, in these tables or in the paper's primary tables (checked).
+3. **Item F.** The run reproduces the frozen Addendum 3 benchmark forecasts for 2026Q2–Q3 to within 1e-16, which is floating-point rounding, with identical training sizes.
+4. **Items D and G1, the test window.** The 2023–25 forecasts of the over-time run are identical to the test-window forecasts (checked: maximum difference 0), so the test-window results of item G1 are its 2023–25 rows.

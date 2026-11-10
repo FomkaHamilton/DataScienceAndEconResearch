@@ -1,0 +1,7261 @@
+state_name,year,quarter,births
+Alabama,1992,3,
+Alabama,1992,4,
+Alabama,1993,1,
+Alabama,1993,2,2840.0
+Alabama,1993,3,2843.0
+Alabama,1993,4,2702.0
+Alabama,1994,1,3235.0
+Alabama,1994,2,3105.0
+Alabama,1994,3,3064.0
+Alabama,1994,4,2719.0
+Alabama,1995,1,3310.0
+Alabama,1995,2,3385.0
+Alabama,1995,3,1823.0
+Alabama,1995,4,1752.0
+Alabama,1996,1,3093.0
+Alabama,1996,2,2320.0
+Alabama,1996,3,3483.0
+Alabama,1996,4,2498.0
+Alabama,1997,1,2687.0
+Alabama,1997,2,2769.0
+Alabama,1997,3,2710.0
+Alabama,1997,4,2709.0
+Alabama,1998,1,2725.0
+Alabama,1998,2,2907.0
+Alabama,1998,3,2426.0
+Alabama,1998,4,2768.0
+Alabama,1999,1,3538.0
+Alabama,1999,2,2702.0
+Alabama,1999,3,1842.0
+Alabama,1999,4,2614.0
+Alabama,2000,1,2675.0
+Alabama,2000,2,2534.0
+Alabama,2000,3,2598.0
+Alabama,2000,4,2353.0
+Alabama,2001,1,2712.0
+Alabama,2001,2,2984.0
+Alabama,2001,3,2689.0
+Alabama,2001,4,2351.0
+Alabama,2002,1,2551.0
+Alabama,2002,2,2544.0
+Alabama,2002,3,2418.0
+Alabama,2002,4,2393.0
+Alabama,2003,1,2895.0
+Alabama,2003,2,2300.0
+Alabama,2003,3,2275.0
+Alabama,2003,4,2586.0
+Alabama,2004,1,2909.0
+Alabama,2004,2,2611.0
+Alabama,2004,3,2430.0
+Alabama,2004,4,2435.0
+Alabama,2005,1,2972.0
+Alabama,2005,2,2642.0
+Alabama,2005,3,2591.0
+Alabama,2005,4,2612.0
+Alabama,2006,1,2886.0
+Alabama,2006,2,2642.0
+Alabama,2006,3,2439.0
+Alabama,2006,4,2820.0
+Alabama,2007,1,3026.0
+Alabama,2007,2,2590.0
+Alabama,2007,3,2490.0
+Alabama,2007,4,2663.0
+Alabama,2008,1,2690.0
+Alabama,2008,2,2413.0
+Alabama,2008,3,2344.0
+Alabama,2008,4,2047.0
+Alabama,2009,1,2370.0
+Alabama,2009,2,2133.0
+Alabama,2009,3,1898.0
+Alabama,2009,4,2031.0
+Alabama,2010,1,2369.0
+Alabama,2010,2,2216.0
+Alabama,2010,3,2150.0
+Alabama,2010,4,2192.0
+Alabama,2011,1,2483.0
+Alabama,2011,2,2203.0
+Alabama,2011,3,2241.0
+Alabama,2011,4,2355.0
+Alabama,2012,1,2630.0
+Alabama,2012,2,2313.0
+Alabama,2012,3,2271.0
+Alabama,2012,4,2197.0
+Alabama,2013,1,2616.0
+Alabama,2013,2,2428.0
+Alabama,2013,3,2227.0
+Alabama,2013,4,2135.0
+Alabama,2014,1,2510.0
+Alabama,2014,2,2269.0
+Alabama,2014,3,2198.0
+Alabama,2014,4,2182.0
+Alabama,2015,1,2601.0
+Alabama,2015,2,2333.0
+Alabama,2015,3,2224.0
+Alabama,2015,4,2327.0
+Alabama,2016,1,2733.0
+Alabama,2016,2,2405.0
+Alabama,2016,3,2405.0
+Alabama,2016,4,2302.0
+Alabama,2017,1,2796.0
+Alabama,2017,2,2396.0
+Alabama,2017,3,2512.0
+Alabama,2017,4,2349.0
+Alabama,2018,1,2732.0
+Alabama,2018,2,2569.0
+Alabama,2018,3,2378.0
+Alabama,2018,4,2446.0
+Alabama,2019,1,3416.0
+Alabama,2019,2,2741.0
+Alabama,2019,3,2826.0
+Alabama,2019,4,2662.0
+Alabama,2020,1,3520.0
+Alabama,2020,2,2596.0
+Alabama,2020,3,2219.0
+Alabama,2020,4,2703.0
+Alabama,2021,1,3504.0
+Alabama,2021,2,3869.0
+Alabama,2021,3,3760.0
+Alabama,2021,4,3865.0
+Alabama,2022,1,4239.0
+Alabama,2022,2,6006.0
+Alabama,2022,3,4487.0
+Alabama,2022,4,4473.0
+Alabama,2023,1,5097.0
+Alabama,2023,2,4514.0
+Alabama,2023,3,4266.0
+Alabama,2023,4,4088.0
+Alabama,2024,1,4297.0
+Alabama,2024,2,3501.0
+Alabama,2024,3,3589.0
+Alabama,2024,4,3573.0
+Alabama,2025,1,4454.0
+Alabama,2025,2,3866.0
+Alabama,2025,3,3868.0
+Alabama,2025,4,4344.0
+Alabama,2026,1,4294.0
+Alaska,1992,3,
+Alaska,1992,4,
+Alaska,1993,1,
+Alaska,1993,2,717.0
+Alaska,1993,3,598.0
+Alaska,1993,4,467.0
+Alaska,1994,1,451.0
+Alaska,1994,2,706.0
+Alaska,1994,3,647.0
+Alaska,1994,4,439.0
+Alaska,1995,1,448.0
+Alaska,1995,2,675.0
+Alaska,1995,3,572.0
+Alaska,1995,4,438.0
+Alaska,1996,1,468.0
+Alaska,1996,2,705.0
+Alaska,1996,3,587.0
+Alaska,1996,4,459.0
+Alaska,1997,1,450.0
+Alaska,1997,2,684.0
+Alaska,1997,3,606.0
+Alaska,1997,4,427.0
+Alaska,1998,1,457.0
+Alaska,1998,2,644.0
+Alaska,1998,3,540.0
+Alaska,1998,4,401.0
+Alaska,1999,1,468.0
+Alaska,1999,2,591.0
+Alaska,1999,3,566.0
+Alaska,1999,4,409.0
+Alaska,2000,1,435.0
+Alaska,2000,2,638.0
+Alaska,2000,3,506.0
+Alaska,2000,4,385.0
+Alaska,2001,1,440.0
+Alaska,2001,2,671.0
+Alaska,2001,3,568.0
+Alaska,2001,4,441.0
+Alaska,2002,1,480.0
+Alaska,2002,2,665.0
+Alaska,2002,3,502.0
+Alaska,2002,4,425.0
+Alaska,2003,1,455.0
+Alaska,2003,2,662.0
+Alaska,2003,3,547.0
+Alaska,2003,4,419.0
+Alaska,2004,1,485.0
+Alaska,2004,2,657.0
+Alaska,2004,3,513.0
+Alaska,2004,4,416.0
+Alaska,2005,1,443.0
+Alaska,2005,2,663.0
+Alaska,2005,3,543.0
+Alaska,2005,4,406.0
+Alaska,2006,1,432.0
+Alaska,2006,2,606.0
+Alaska,2006,3,516.0
+Alaska,2006,4,424.0
+Alaska,2007,1,420.0
+Alaska,2007,2,602.0
+Alaska,2007,3,506.0
+Alaska,2007,4,389.0
+Alaska,2008,1,455.0
+Alaska,2008,2,613.0
+Alaska,2008,3,528.0
+Alaska,2008,4,387.0
+Alaska,2009,1,438.0
+Alaska,2009,2,593.0
+Alaska,2009,3,486.0
+Alaska,2009,4,397.0
+Alaska,2010,1,423.0
+Alaska,2010,2,556.0
+Alaska,2010,3,483.0
+Alaska,2010,4,365.0
+Alaska,2011,1,420.0
+Alaska,2011,2,581.0
+Alaska,2011,3,525.0
+Alaska,2011,4,409.0
+Alaska,2012,1,437.0
+Alaska,2012,2,653.0
+Alaska,2012,3,523.0
+Alaska,2012,4,400.0
+Alaska,2013,1,479.0
+Alaska,2013,2,520.0
+Alaska,2013,3,495.0
+Alaska,2013,4,332.0
+Alaska,2014,1,433.0
+Alaska,2014,2,537.0
+Alaska,2014,3,517.0
+Alaska,2014,4,405.0
+Alaska,2015,1,463.0
+Alaska,2015,2,557.0
+Alaska,2015,3,458.0
+Alaska,2015,4,426.0
+Alaska,2016,1,363.0
+Alaska,2016,2,584.0
+Alaska,2016,3,482.0
+Alaska,2016,4,409.0
+Alaska,2017,1,408.0
+Alaska,2017,2,593.0
+Alaska,2017,3,519.0
+Alaska,2017,4,438.0
+Alaska,2018,1,449.0
+Alaska,2018,2,566.0
+Alaska,2018,3,527.0
+Alaska,2018,4,361.0
+Alaska,2019,1,386.0
+Alaska,2019,2,609.0
+Alaska,2019,3,553.0
+Alaska,2019,4,429.0
+Alaska,2020,1,440.0
+Alaska,2020,2,551.0
+Alaska,2020,3,570.0
+Alaska,2020,4,570.0
+Alaska,2021,1,612.0
+Alaska,2021,2,887.0
+Alaska,2021,3,774.0
+Alaska,2021,4,584.0
+Alaska,2022,1,676.0
+Alaska,2022,2,905.0
+Alaska,2022,3,707.0
+Alaska,2022,4,592.0
+Alaska,2023,1,624.0
+Alaska,2023,2,686.0
+Alaska,2023,3,589.0
+Alaska,2023,4,600.0
+Alaska,2024,1,554.0
+Alaska,2024,2,704.0
+Alaska,2024,3,605.0
+Alaska,2024,4,484.0
+Alaska,2025,1,604.0
+Alaska,2025,2,724.0
+Alaska,2025,3,507.0
+Alaska,2025,4,498.0
+Alaska,2026,1,606.0
+Arizona,1992,3,
+Arizona,1992,4,
+Arizona,1993,1,
+Arizona,1993,2,2951.0
+Arizona,1993,3,2767.0
+Arizona,1993,4,2559.0
+Arizona,1994,1,3351.0
+Arizona,1994,2,3542.0
+Arizona,1994,3,3064.0
+Arizona,1994,4,3277.0
+Arizona,1995,1,3501.0
+Arizona,1995,2,3842.0
+Arizona,1995,3,3042.0
+Arizona,1995,4,3781.0
+Arizona,1996,1,4077.0
+Arizona,1996,2,3476.0
+Arizona,1996,3,3185.0
+Arizona,1996,4,3210.0
+Arizona,1997,1,3471.0
+Arizona,1997,2,3493.0
+Arizona,1997,3,3449.0
+Arizona,1997,4,3558.0
+Arizona,1998,1,3705.0
+Arizona,1998,2,3412.0
+Arizona,1998,3,2871.0
+Arizona,1998,4,3252.0
+Arizona,1999,1,2918.0
+Arizona,1999,2,3696.0
+Arizona,1999,3,2895.0
+Arizona,1999,4,4267.0
+Arizona,2000,1,4472.0
+Arizona,2000,2,3214.0
+Arizona,2000,3,3502.0
+Arizona,2000,4,4476.0
+Arizona,2001,1,3868.0
+Arizona,2001,2,3002.0
+Arizona,2001,3,3417.0
+Arizona,2001,4,3939.0
+Arizona,2002,1,4067.0
+Arizona,2002,2,3723.0
+Arizona,2002,3,3303.0
+Arizona,2002,4,4073.0
+Arizona,2003,1,3452.0
+Arizona,2003,2,2159.0
+Arizona,2003,3,4169.0
+Arizona,2003,4,3362.0
+Arizona,2004,1,3304.0
+Arizona,2004,2,2785.0
+Arizona,2004,3,3123.0
+Arizona,2004,4,4575.0
+Arizona,2005,1,4384.0
+Arizona,2005,2,5437.0
+Arizona,2005,3,4460.0
+Arizona,2005,4,5536.0
+Arizona,2006,1,6187.0
+Arizona,2006,2,5258.0
+Arizona,2006,3,3919.0
+Arizona,2006,4,5157.0
+Arizona,2007,1,4969.0
+Arizona,2007,2,4737.0
+Arizona,2007,3,3674.0
+Arizona,2007,4,4942.0
+Arizona,2008,1,4161.0
+Arizona,2008,2,4121.0
+Arizona,2008,3,3713.0
+Arizona,2008,4,4351.0
+Arizona,2009,1,4576.0
+Arizona,2009,2,3767.0
+Arizona,2009,3,3054.0
+Arizona,2009,4,4237.0
+Arizona,2010,1,3833.0
+Arizona,2010,2,3241.0
+Arizona,2010,3,3544.0
+Arizona,2010,4,4093.0
+Arizona,2011,1,3829.0
+Arizona,2011,2,3597.0
+Arizona,2011,3,3478.0
+Arizona,2011,4,4064.0
+Arizona,2012,1,3871.0
+Arizona,2012,2,3746.0
+Arizona,2012,3,3253.0
+Arizona,2012,4,4455.0
+Arizona,2013,1,4078.0
+Arizona,2013,2,3441.0
+Arizona,2013,3,3226.0
+Arizona,2013,4,4062.0
+Arizona,2014,1,4019.0
+Arizona,2014,2,3815.0
+Arizona,2014,3,3267.0
+Arizona,2014,4,4237.0
+Arizona,2015,1,4113.0
+Arizona,2015,2,3664.0
+Arizona,2015,3,4598.0
+Arizona,2015,4,5089.0
+Arizona,2016,1,4445.0
+Arizona,2016,2,4033.0
+Arizona,2016,3,3844.0
+Arizona,2016,4,4819.0
+Arizona,2017,1,4825.0
+Arizona,2017,2,4035.0
+Arizona,2017,3,4182.0
+Arizona,2017,4,4726.0
+Arizona,2018,1,4640.0
+Arizona,2018,2,4159.0
+Arizona,2018,3,4089.0
+Arizona,2018,4,4969.0
+Arizona,2019,1,5411.0
+Arizona,2019,2,4454.0
+Arizona,2019,3,4255.0
+Arizona,2019,4,5051.0
+Arizona,2020,1,5340.0
+Arizona,2020,2,4589.0
+Arizona,2020,3,5739.0
+Arizona,2020,4,5671.0
+Arizona,2021,1,6384.0
+Arizona,2021,2,5992.0
+Arizona,2021,3,5623.0
+Arizona,2021,4,7924.0
+Arizona,2022,1,7874.0
+Arizona,2022,2,6049.0
+Arizona,2022,3,4998.0
+Arizona,2022,4,9351.0
+Arizona,2023,1,5705.0
+Arizona,2023,2,8135.0
+Arizona,2023,3,5569.0
+Arizona,2023,4,8871.0
+Arizona,2024,1,7481.0
+Arizona,2024,2,5875.0
+Arizona,2024,3,6364.0
+Arizona,2024,4,7315.0
+Arizona,2025,1,8795.0
+Arizona,2025,2,6376.0
+Arizona,2025,3,5562.0
+Arizona,2025,4,6040.0
+Arizona,2026,1,6690.0
+Arkansas,1992,3,
+Arkansas,1992,4,
+Arkansas,1993,1,
+Arkansas,1993,2,1622.0
+Arkansas,1993,3,1873.0
+Arkansas,1993,4,1241.0
+Arkansas,1994,1,1714.0
+Arkansas,1994,2,1934.0
+Arkansas,1994,3,1601.0
+Arkansas,1994,4,1768.0
+Arkansas,1995,1,2044.0
+Arkansas,1995,2,1696.0
+Arkansas,1995,3,1572.0
+Arkansas,1995,4,1889.0
+Arkansas,1996,1,2098.0
+Arkansas,1996,2,1828.0
+Arkansas,1996,3,1632.0
+Arkansas,1996,4,1541.0
+Arkansas,1997,1,2057.0
+Arkansas,1997,2,1815.0
+Arkansas,1997,3,1683.0
+Arkansas,1997,4,1761.0
+Arkansas,1998,1,1610.0
+Arkansas,1998,2,1957.0
+Arkansas,1998,3,1866.0
+Arkansas,1998,4,1453.0
+Arkansas,1999,1,1939.0
+Arkansas,1999,2,1800.0
+Arkansas,1999,3,1724.0
+Arkansas,1999,4,1761.0
+Arkansas,2000,1,1944.0
+Arkansas,2000,2,1829.0
+Arkansas,2000,3,1772.0
+Arkansas,2000,4,1713.0
+Arkansas,2001,1,1953.0
+Arkansas,2001,2,1795.0
+Arkansas,2001,3,1720.0
+Arkansas,2001,4,1884.0
+Arkansas,2002,1,1825.0
+Arkansas,2002,2,1786.0
+Arkansas,2002,3,1734.0
+Arkansas,2002,4,1806.0
+Arkansas,2003,1,1763.0
+Arkansas,2003,2,1863.0
+Arkansas,2003,3,1617.0
+Arkansas,2003,4,1905.0
+Arkansas,2004,1,2043.0
+Arkansas,2004,2,1825.0
+Arkansas,2004,3,1818.0
+Arkansas,2004,4,2049.0
+Arkansas,2005,1,2071.0
+Arkansas,2005,2,1707.0
+Arkansas,2005,3,1822.0
+Arkansas,2005,4,1834.0
+Arkansas,2006,1,3550.0
+Arkansas,2006,2,2297.0
+Arkansas,2006,3,1911.0
+Arkansas,2006,4,2020.0
+Arkansas,2007,1,2190.0
+Arkansas,2007,2,1593.0
+Arkansas,2007,3,1999.0
+Arkansas,2007,4,2088.0
+Arkansas,2008,1,2729.0
+Arkansas,2008,2,1975.0
+Arkansas,2008,3,1866.0
+Arkansas,2008,4,2029.0
+Arkansas,2009,1,2223.0
+Arkansas,2009,2,1700.0
+Arkansas,2009,3,1713.0
+Arkansas,2009,4,1799.0
+Arkansas,2010,1,1781.0
+Arkansas,2010,2,2232.0
+Arkansas,2010,3,1708.0
+Arkansas,2010,4,997.0
+Arkansas,2011,1,2926.0
+Arkansas,2011,2,1897.0
+Arkansas,2011,3,1835.0
+Arkansas,2011,4,2084.0
+Arkansas,2012,1,2092.0
+Arkansas,2012,2,1790.0
+Arkansas,2012,3,1757.0
+Arkansas,2012,4,1896.0
+Arkansas,2013,1,2010.0
+Arkansas,2013,2,1860.0
+Arkansas,2013,3,1806.0
+Arkansas,2013,4,1552.0
+Arkansas,2014,1,1836.0
+Arkansas,2014,2,1661.0
+Arkansas,2014,3,1531.0
+Arkansas,2014,4,1975.0
+Arkansas,2015,1,2135.0
+Arkansas,2015,2,1851.0
+Arkansas,2015,3,1916.0
+Arkansas,2015,4,2057.0
+Arkansas,2016,1,2068.0
+Arkansas,2016,2,1770.0
+Arkansas,2016,3,1843.0
+Arkansas,2016,4,2011.0
+Arkansas,2017,1,2052.0
+Arkansas,2017,2,1843.0
+Arkansas,2017,3,1788.0
+Arkansas,2017,4,1936.0
+Arkansas,2018,1,2090.0
+Arkansas,2018,2,1802.0
+Arkansas,2018,3,1929.0
+Arkansas,2018,4,2123.0
+Arkansas,2019,1,2300.0
+Arkansas,2019,2,1911.0
+Arkansas,2019,3,1865.0
+Arkansas,2019,4,2062.0
+Arkansas,2020,1,2315.0
+Arkansas,2020,2,1803.0
+Arkansas,2020,3,1917.0
+Arkansas,2020,4,2232.0
+Arkansas,2021,1,2640.0
+Arkansas,2021,2,2507.0
+Arkansas,2021,3,2241.0
+Arkansas,2021,4,2857.0
+Arkansas,2022,1,3722.0
+Arkansas,2022,2,2681.0
+Arkansas,2022,3,3273.0
+Arkansas,2022,4,2826.0
+Arkansas,2023,1,3475.0
+Arkansas,2023,2,2875.0
+Arkansas,2023,3,2517.0
+Arkansas,2023,4,2468.0
+Arkansas,2024,1,3265.0
+Arkansas,2024,2,2546.0
+Arkansas,2024,3,2522.0
+Arkansas,2024,4,2500.0
+Arkansas,2025,1,3015.0
+Arkansas,2025,2,2500.0
+Arkansas,2025,3,2536.0
+Arkansas,2025,4,2652.0
+Arkansas,2026,1,2758.0
+California,1992,3,
+California,1992,4,
+California,1993,1,
+California,1993,2,25210.0
+California,1993,3,27448.0
+California,1993,4,26105.0
+California,1994,1,30901.0
+California,1994,2,24458.0
+California,1994,3,25856.0
+California,1994,4,27019.0
+California,1995,1,29433.0
+California,1995,2,22876.0
+California,1995,3,27857.0
+California,1995,4,30452.0
+California,1996,1,32920.0
+California,1996,2,27515.0
+California,1996,3,28587.0
+California,1996,4,31090.0
+California,1997,1,33052.0
+California,1997,2,30984.0
+California,1997,3,23550.0
+California,1997,4,19996.0
+California,1998,1,47594.0
+California,1998,2,39356.0
+California,1998,3,33191.0
+California,1998,4,32253.0
+California,1999,1,35411.0
+California,1999,2,32098.0
+California,1999,3,25707.0
+California,1999,4,45115.0
+California,2000,1,38311.0
+California,2000,2,33954.0
+California,2000,3,33935.0
+California,2000,4,33965.0
+California,2001,1,42631.0
+California,2001,2,35334.0
+California,2001,3,35969.0
+California,2001,4,38471.0
+California,2002,1,40799.0
+California,2002,2,38769.0
+California,2002,3,37568.0
+California,2002,4,40660.0
+California,2003,1,40240.0
+California,2003,2,38195.0
+California,2003,3,36911.0
+California,2003,4,39880.0
+California,2004,1,39824.0
+California,2004,2,34577.0
+California,2004,3,40590.0
+California,2004,4,41446.0
+California,2005,1,42050.0
+California,2005,2,39414.0
+California,2005,3,39957.0
+California,2005,4,41320.0
+California,2006,1,42968.0
+California,2006,2,38619.0
+California,2006,3,37996.0
+California,2006,4,41486.0
+California,2007,1,41714.0
+California,2007,2,39326.0
+California,2007,3,39334.0
+California,2007,4,45295.0
+California,2008,1,41735.0
+California,2008,2,40813.0
+California,2008,3,39909.0
+California,2008,4,42210.0
+California,2009,1,39344.0
+California,2009,2,36616.0
+California,2009,3,36027.0
+California,2009,4,36314.0
+California,2010,1,32703.0
+California,2010,2,31908.0
+California,2010,3,33971.0
+California,2010,4,37948.0
+California,2011,1,35201.0
+California,2011,2,36791.0
+California,2011,3,28226.0
+California,2011,4,36433.0
+California,2012,1,55505.0
+California,2012,2,41157.0
+California,2012,3,30106.0
+California,2012,4,41165.0
+California,2013,1,29384.0
+California,2013,2,47034.0
+California,2013,3,33726.0
+California,2013,4,42861.0
+California,2014,1,40784.0
+California,2014,2,35364.0
+California,2014,3,39412.0
+California,2014,4,42865.0
+California,2015,1,42953.0
+California,2015,2,40305.0
+California,2015,3,40435.0
+California,2015,4,49449.0
+California,2016,1,44002.0
+California,2016,2,43223.0
+California,2016,3,44261.0
+California,2016,4,45412.0
+California,2017,1,45462.0
+California,2017,2,44567.0
+California,2017,3,43153.0
+California,2017,4,50514.0
+California,2018,1,44120.0
+California,2018,2,44606.0
+California,2018,3,43432.0
+California,2018,4,49361.0
+California,2019,1,44264.0
+California,2019,2,44759.0
+California,2019,3,42978.0
+California,2019,4,52135.0
+California,2020,1,49036.0
+California,2020,2,36511.0
+California,2020,3,42156.0
+California,2020,4,52187.0
+California,2021,1,45743.0
+California,2021,2,51393.0
+California,2021,3,50756.0
+California,2021,4,64316.0
+California,2022,1,50288.0
+California,2022,2,52798.0
+California,2022,3,53217.0
+California,2022,4,57855.0
+California,2023,1,54978.0
+California,2023,2,50191.0
+California,2023,3,47839.0
+California,2023,4,56937.0
+California,2024,1,60204.0
+California,2024,2,53329.0
+California,2024,3,53500.0
+California,2024,4,59196.0
+California,2025,1,74416.0
+California,2025,2,56281.0
+California,2025,3,57724.0
+California,2025,4,75282.0
+California,2026,1,59912.0
+Colorado,1992,3,
+Colorado,1992,4,
+Colorado,1993,1,
+Colorado,1993,2,3677.0
+Colorado,1993,3,3448.0
+Colorado,1993,4,3854.0
+Colorado,1994,1,4196.0
+Colorado,1994,2,4094.0
+Colorado,1994,3,3792.0
+Colorado,1994,4,4159.0
+Colorado,1995,1,4076.0
+Colorado,1995,2,4067.0
+Colorado,1995,3,3890.0
+Colorado,1995,4,4113.0
+Colorado,1996,1,4280.0
+Colorado,1996,2,4056.0
+Colorado,1996,3,3925.0
+Colorado,1996,4,4434.0
+Colorado,1997,1,4782.0
+Colorado,1997,2,4380.0
+Colorado,1997,3,4277.0
+Colorado,1997,4,4703.0
+Colorado,1998,1,4571.0
+Colorado,1998,2,4192.0
+Colorado,1998,3,4193.0
+Colorado,1998,4,4753.0
+Colorado,1999,1,4563.0
+Colorado,1999,2,4868.0
+Colorado,1999,3,4381.0
+Colorado,1999,4,5119.0
+Colorado,2000,1,5225.0
+Colorado,2000,2,5299.0
+Colorado,2000,3,4922.0
+Colorado,2000,4,5259.0
+Colorado,2001,1,5238.0
+Colorado,2001,2,4702.0
+Colorado,2001,3,4572.0
+Colorado,2001,4,5077.0
+Colorado,2002,1,4949.0
+Colorado,2002,2,4858.0
+Colorado,2002,3,4197.0
+Colorado,2002,4,5091.0
+Colorado,2003,1,4841.0
+Colorado,2003,2,4529.0
+Colorado,2003,3,4480.0
+Colorado,2003,4,5645.0
+Colorado,2004,1,4916.0
+Colorado,2004,2,5090.0
+Colorado,2004,3,4508.0
+Colorado,2004,4,5741.0
+Colorado,2005,1,5342.0
+Colorado,2005,2,4992.0
+Colorado,2005,3,5051.0
+Colorado,2005,4,5639.0
+Colorado,2006,1,5246.0
+Colorado,2006,2,5123.0
+Colorado,2006,3,5107.0
+Colorado,2006,4,5991.0
+Colorado,2007,1,5298.0
+Colorado,2007,2,5025.0
+Colorado,2007,3,4960.0
+Colorado,2007,4,5950.0
+Colorado,2008,1,5199.0
+Colorado,2008,2,4715.0
+Colorado,2008,3,4497.0
+Colorado,2008,4,5140.0
+Colorado,2009,1,4440.0
+Colorado,2009,2,3940.0
+Colorado,2009,3,3517.0
+Colorado,2009,4,4725.0
+Colorado,2010,1,4281.0
+Colorado,2010,2,4033.0
+Colorado,2010,3,3674.0
+Colorado,2010,4,5138.0
+Colorado,2011,1,4390.0
+Colorado,2011,2,3968.0
+Colorado,2011,3,4109.0
+Colorado,2011,4,4820.0
+Colorado,2012,1,4609.0
+Colorado,2012,2,4452.0
+Colorado,2012,3,4309.0
+Colorado,2012,4,4861.0
+Colorado,2013,1,4889.0
+Colorado,2013,2,4491.0
+Colorado,2013,3,4416.0
+Colorado,2013,4,5377.0
+Colorado,2014,1,5030.0
+Colorado,2014,2,5100.0
+Colorado,2014,3,5102.0
+Colorado,2014,4,5518.0
+Colorado,2015,1,5209.0
+Colorado,2015,2,5071.0
+Colorado,2015,3,5230.0
+Colorado,2015,4,5685.0
+Colorado,2016,1,5641.0
+Colorado,2016,2,5934.0
+Colorado,2016,3,5528.0
+Colorado,2016,4,5830.0
+Colorado,2017,1,5642.0
+Colorado,2017,2,5496.0
+Colorado,2017,3,5108.0
+Colorado,2017,4,6183.0
+Colorado,2018,1,5916.0
+Colorado,2018,2,5715.0
+Colorado,2018,3,5220.0
+Colorado,2018,4,6480.0
+Colorado,2019,1,6303.0
+Colorado,2019,2,6325.0
+Colorado,2019,3,5304.0
+Colorado,2019,4,7128.0
+Colorado,2020,1,6661.0
+Colorado,2020,2,6001.0
+Colorado,2020,3,6384.0
+Colorado,2020,4,7576.0
+Colorado,2021,1,7555.0
+Colorado,2021,2,8093.0
+Colorado,2021,3,8313.0
+Colorado,2021,4,8653.0
+Colorado,2022,1,8355.0
+Colorado,2022,2,8380.0
+Colorado,2022,3,3869.0
+Colorado,2022,4,11541.0
+Colorado,2023,1,7586.0
+Colorado,2023,2,10286.0
+Colorado,2023,3,8349.0
+Colorado,2023,4,8653.0
+Colorado,2024,1,7483.0
+Colorado,2024,2,6710.0
+Colorado,2024,3,6009.0
+Colorado,2024,4,7999.0
+Colorado,2025,1,7374.0
+Colorado,2025,2,7686.0
+Colorado,2025,3,7688.0
+Colorado,2025,4,8936.0
+Colorado,2026,1,8087.0
+Connecticut,1992,3,
+Connecticut,1992,4,
+Connecticut,1993,1,
+Connecticut,1993,2,2118.0
+Connecticut,1993,3,1940.0
+Connecticut,1993,4,2389.0
+Connecticut,1994,1,1864.0
+Connecticut,1994,2,2605.0
+Connecticut,1994,3,2297.0
+Connecticut,1994,4,2336.0
+Connecticut,1995,1,2378.0
+Connecticut,1995,2,2108.0
+Connecticut,1995,3,2425.0
+Connecticut,1995,4,2258.0
+Connecticut,1996,1,2264.0
+Connecticut,1996,2,2398.0
+Connecticut,1996,3,2094.0
+Connecticut,1996,4,2484.0
+Connecticut,1997,1,2387.0
+Connecticut,1997,2,2470.0
+Connecticut,1997,3,2377.0
+Connecticut,1997,4,2322.0
+Connecticut,1998,1,2214.0
+Connecticut,1998,2,2447.0
+Connecticut,1998,3,2172.0
+Connecticut,1998,4,2195.0
+Connecticut,1999,1,2316.0
+Connecticut,1999,2,2356.0
+Connecticut,1999,3,2270.0
+Connecticut,1999,4,2124.0
+Connecticut,2000,1,2511.0
+Connecticut,2000,2,2457.0
+Connecticut,2000,3,2425.0
+Connecticut,2000,4,2209.0
+Connecticut,2001,1,2489.0
+Connecticut,2001,2,2290.0
+Connecticut,2001,3,1982.0
+Connecticut,2001,4,2042.0
+Connecticut,2002,1,2241.0
+Connecticut,2002,2,2284.0
+Connecticut,2002,3,1947.0
+Connecticut,2002,4,1919.0
+Connecticut,2003,1,2106.0
+Connecticut,2003,2,2061.0
+Connecticut,2003,3,1755.0
+Connecticut,2003,4,2058.0
+Connecticut,2004,1,2140.0
+Connecticut,2004,2,2191.0
+Connecticut,2004,3,1943.0
+Connecticut,2004,4,1938.0
+Connecticut,2005,1,2294.0
+Connecticut,2005,2,2243.0
+Connecticut,2005,3,1969.0
+Connecticut,2005,4,2179.0
+Connecticut,2006,1,2424.0
+Connecticut,2006,2,2349.0
+Connecticut,2006,3,1948.0
+Connecticut,2006,4,2032.0
+Connecticut,2007,1,2453.0
+Connecticut,2007,2,2252.0
+Connecticut,2007,3,1993.0
+Connecticut,2007,4,2089.0
+Connecticut,2008,1,2218.0
+Connecticut,2008,2,2037.0
+Connecticut,2008,3,1949.0
+Connecticut,2008,4,1838.0
+Connecticut,2009,1,1907.0
+Connecticut,2009,2,1776.0
+Connecticut,2009,3,1665.0
+Connecticut,2009,4,1720.0
+Connecticut,2010,1,1925.0
+Connecticut,2010,2,1825.0
+Connecticut,2010,3,1821.0
+Connecticut,2010,4,1910.0
+Connecticut,2011,1,2102.0
+Connecticut,2011,2,2041.0
+Connecticut,2011,3,1819.0
+Connecticut,2011,4,1955.0
+Connecticut,2012,1,2163.0
+Connecticut,2012,2,2345.0
+Connecticut,2012,3,1938.0
+Connecticut,2012,4,1977.0
+Connecticut,2013,1,2206.0
+Connecticut,2013,2,2092.0
+Connecticut,2013,3,2062.0
+Connecticut,2013,4,1934.0
+Connecticut,2014,1,2167.0
+Connecticut,2014,2,2099.0
+Connecticut,2014,3,2055.0
+Connecticut,2014,4,1985.0
+Connecticut,2015,1,2047.0
+Connecticut,2015,2,2359.0
+Connecticut,2015,3,2259.0
+Connecticut,2015,4,2067.0
+Connecticut,2016,1,2194.0
+Connecticut,2016,2,2207.0
+Connecticut,2016,3,2008.0
+Connecticut,2016,4,1923.0
+Connecticut,2017,1,2375.0
+Connecticut,2017,2,2269.0
+Connecticut,2017,3,2149.0
+Connecticut,2017,4,2168.0
+Connecticut,2018,1,2357.0
+Connecticut,2018,2,2374.0
+Connecticut,2018,3,2250.0
+Connecticut,2018,4,2147.0
+Connecticut,2019,1,2563.0
+Connecticut,2019,2,2298.0
+Connecticut,2019,3,2271.0
+Connecticut,2019,4,2083.0
+Connecticut,2020,1,7005.0
+Connecticut,2020,2,2396.0
+Connecticut,2020,3,3257.0
+Connecticut,2020,4,3548.0
+Connecticut,2021,1,3936.0
+Connecticut,2021,2,4317.0
+Connecticut,2021,3,4291.0
+Connecticut,2021,4,4247.0
+Connecticut,2022,1,4576.0
+Connecticut,2022,2,4179.0
+Connecticut,2022,3,4192.0
+Connecticut,2022,4,4044.0
+Connecticut,2023,1,4589.0
+Connecticut,2023,2,4138.0
+Connecticut,2023,3,3678.0
+Connecticut,2023,4,3445.0
+Connecticut,2024,1,3843.0
+Connecticut,2024,2,4188.0
+Connecticut,2024,3,3820.0
+Connecticut,2024,4,3409.0
+Connecticut,2025,1,4752.0
+Connecticut,2025,2,3839.0
+Connecticut,2025,3,3779.0
+Connecticut,2025,4,3565.0
+Connecticut,2026,1,4217.0
+Delaware,1992,3,
+Delaware,1992,4,
+Delaware,1993,1,
+Delaware,1993,2,586.0
+Delaware,1993,3,587.0
+Delaware,1993,4,569.0
+Delaware,1994,1,620.0
+Delaware,1994,2,659.0
+Delaware,1994,3,611.0
+Delaware,1994,4,567.0
+Delaware,1995,1,684.0
+Delaware,1995,2,612.0
+Delaware,1995,3,571.0
+Delaware,1995,4,569.0
+Delaware,1996,1,888.0
+Delaware,1996,2,749.0
+Delaware,1996,3,801.0
+Delaware,1996,4,768.0
+Delaware,1997,1,735.0
+Delaware,1997,2,717.0
+Delaware,1997,3,674.0
+Delaware,1997,4,807.0
+Delaware,1998,1,683.0
+Delaware,1998,2,806.0
+Delaware,1998,3,727.0
+Delaware,1998,4,593.0
+Delaware,1999,1,874.0
+Delaware,1999,2,738.0
+Delaware,1999,3,688.0
+Delaware,1999,4,742.0
+Delaware,2000,1,882.0
+Delaware,2000,2,1017.0
+Delaware,2000,3,845.0
+Delaware,2000,4,793.0
+Delaware,2001,1,836.0
+Delaware,2001,2,732.0
+Delaware,2001,3,590.0
+Delaware,2001,4,613.0
+Delaware,2002,1,743.0
+Delaware,2002,2,753.0
+Delaware,2002,3,757.0
+Delaware,2002,4,647.0
+Delaware,2003,1,785.0
+Delaware,2003,2,761.0
+Delaware,2003,3,622.0
+Delaware,2003,4,754.0
+Delaware,2004,1,1655.0
+Delaware,2004,2,787.0
+Delaware,2004,3,662.0
+Delaware,2004,4,747.0
+Delaware,2005,1,740.0
+Delaware,2005,2,756.0
+Delaware,2005,3,693.0
+Delaware,2005,4,810.0
+Delaware,2006,1,1039.0
+Delaware,2006,2,840.0
+Delaware,2006,3,697.0
+Delaware,2006,4,677.0
+Delaware,2007,1,784.0
+Delaware,2007,2,815.0
+Delaware,2007,3,680.0
+Delaware,2007,4,662.0
+Delaware,2008,1,864.0
+Delaware,2008,2,770.0
+Delaware,2008,3,696.0
+Delaware,2008,4,632.0
+Delaware,2009,1,641.0
+Delaware,2009,2,586.0
+Delaware,2009,3,532.0
+Delaware,2009,4,647.0
+Delaware,2010,1,673.0
+Delaware,2010,2,756.0
+Delaware,2010,3,619.0
+Delaware,2010,4,681.0
+Delaware,2011,1,696.0
+Delaware,2011,2,691.0
+Delaware,2011,3,749.0
+Delaware,2011,4,682.0
+Delaware,2012,1,780.0
+Delaware,2012,2,746.0
+Delaware,2012,3,718.0
+Delaware,2012,4,793.0
+Delaware,2013,1,793.0
+Delaware,2013,2,721.0
+Delaware,2013,3,660.0
+Delaware,2013,4,697.0
+Delaware,2014,1,950.0
+Delaware,2014,2,786.0
+Delaware,2014,3,744.0
+Delaware,2014,4,738.0
+Delaware,2015,1,797.0
+Delaware,2015,2,786.0
+Delaware,2015,3,807.0
+Delaware,2015,4,732.0
+Delaware,2016,1,931.0
+Delaware,2016,2,881.0
+Delaware,2016,3,796.0
+Delaware,2016,4,630.0
+Delaware,2017,1,732.0
+Delaware,2017,2,753.0
+Delaware,2017,3,935.0
+Delaware,2017,4,961.0
+Delaware,2018,1,1024.0
+Delaware,2018,2,836.0
+Delaware,2018,3,891.0
+Delaware,2018,4,806.0
+Delaware,2019,1,781.0
+Delaware,2019,2,924.0
+Delaware,2019,3,1008.0
+Delaware,2019,4,806.0
+Delaware,2020,1,760.0
+Delaware,2020,2,791.0
+Delaware,2020,3,1123.0
+Delaware,2020,4,851.0
+Delaware,2021,1,917.0
+Delaware,2021,2,1175.0
+Delaware,2021,3,1200.0
+Delaware,2021,4,1275.0
+Delaware,2022,1,1229.0
+Delaware,2022,2,1200.0
+Delaware,2022,3,1297.0
+Delaware,2022,4,1266.0
+Delaware,2023,1,1127.0
+Delaware,2023,2,1048.0
+Delaware,2023,3,1192.0
+Delaware,2023,4,1357.0
+Delaware,2024,1,1075.0
+Delaware,2024,2,1302.0
+Delaware,2024,3,1177.0
+Delaware,2024,4,1174.0
+Delaware,2025,1,1193.0
+Delaware,2025,2,1347.0
+Delaware,2025,3,1267.0
+Delaware,2025,4,1089.0
+Delaware,2026,1,1202.0
+District of Columbia,2000,1,1180.0
+District of Columbia,2000,2,857.0
+District of Columbia,2000,3,686.0
+District of Columbia,2000,4,738.0
+District of Columbia,2001,1,926.0
+District of Columbia,2001,2,695.0
+District of Columbia,2001,3,661.0
+District of Columbia,2001,4,723.0
+District of Columbia,2002,1,881.0
+District of Columbia,2002,2,676.0
+District of Columbia,2002,3,638.0
+District of Columbia,2002,4,703.0
+District of Columbia,2003,1,923.0
+District of Columbia,2003,2,624.0
+District of Columbia,2003,3,674.0
+District of Columbia,2003,4,753.0
+District of Columbia,2004,1,847.0
+District of Columbia,2004,2,714.0
+District of Columbia,2004,3,705.0
+District of Columbia,2004,4,710.0
+District of Columbia,2005,1,874.0
+District of Columbia,2005,2,728.0
+District of Columbia,2005,3,730.0
+District of Columbia,2005,4,743.0
+District of Columbia,2006,1,866.0
+District of Columbia,2006,2,727.0
+District of Columbia,2006,3,689.0
+District of Columbia,2006,4,653.0
+District of Columbia,2007,1,964.0
+District of Columbia,2007,2,729.0
+District of Columbia,2007,3,680.0
+District of Columbia,2007,4,740.0
+District of Columbia,2008,1,808.0
+District of Columbia,2008,2,569.0
+District of Columbia,2008,3,702.0
+District of Columbia,2008,4,652.0
+District of Columbia,2009,1,766.0
+District of Columbia,2009,2,668.0
+District of Columbia,2009,3,669.0
+District of Columbia,2009,4,732.0
+District of Columbia,2010,1,757.0
+District of Columbia,2010,2,630.0
+District of Columbia,2010,3,615.0
+District of Columbia,2010,4,771.0
+District of Columbia,2011,1,893.0
+District of Columbia,2011,2,781.0
+District of Columbia,2011,3,748.0
+District of Columbia,2011,4,819.0
+District of Columbia,2012,1,920.0
+District of Columbia,2012,2,787.0
+District of Columbia,2012,3,814.0
+District of Columbia,2012,4,881.0
+District of Columbia,2013,1,993.0
+District of Columbia,2013,2,853.0
+District of Columbia,2013,3,962.0
+District of Columbia,2013,4,931.0
+District of Columbia,2014,1,1107.0
+District of Columbia,2014,2,874.0
+District of Columbia,2014,3,832.0
+District of Columbia,2014,4,662.0
+District of Columbia,2015,1,938.0
+District of Columbia,2015,2,969.0
+District of Columbia,2015,3,860.0
+District of Columbia,2015,4,904.0
+District of Columbia,2016,1,929.0
+District of Columbia,2016,2,993.0
+District of Columbia,2016,3,830.0
+District of Columbia,2016,4,1040.0
+District of Columbia,2017,1,1171.0
+District of Columbia,2017,2,1053.0
+District of Columbia,2017,3,1065.0
+District of Columbia,2017,4,1030.0
+District of Columbia,2018,1,1248.0
+District of Columbia,2018,2,1095.0
+District of Columbia,2018,3,1114.0
+District of Columbia,2018,4,1118.0
+District of Columbia,2019,1,1229.0
+District of Columbia,2019,2,1094.0
+District of Columbia,2019,3,1195.0
+District of Columbia,2019,4,1223.0
+District of Columbia,2020,1,1352.0
+District of Columbia,2020,2,961.0
+District of Columbia,2020,3,1187.0
+District of Columbia,2020,4,1299.0
+District of Columbia,2021,1,1494.0
+District of Columbia,2021,2,1641.0
+District of Columbia,2021,3,1799.0
+District of Columbia,2021,4,1753.0
+District of Columbia,2022,1,1967.0
+District of Columbia,2022,2,1741.0
+District of Columbia,2022,3,1728.0
+District of Columbia,2022,4,1603.0
+District of Columbia,2023,1,1744.0
+District of Columbia,2023,2,800.0
+District of Columbia,2023,3,2255.0
+District of Columbia,2023,4,1672.0
+District of Columbia,2024,1,1605.0
+District of Columbia,2024,2,1379.0
+District of Columbia,2024,3,1270.0
+District of Columbia,2024,4,1487.0
+District of Columbia,2025,1,1844.0
+District of Columbia,2025,2,1466.0
+District of Columbia,2025,3,1513.0
+District of Columbia,2025,4,1575.0
+District of Columbia,2026,1,1759.0
+Florida,1992,3,
+Florida,1992,4,
+Florida,1993,1,
+Florida,1993,2,11694.0
+Florida,1993,3,11982.0
+Florida,1993,4,12380.0
+Florida,1994,1,15384.0
+Florida,1994,2,12399.0
+Florida,1994,3,12052.0
+Florida,1994,4,12371.0
+Florida,1995,1,16282.0
+Florida,1995,2,12903.0
+Florida,1995,3,10959.0
+Florida,1995,4,12734.0
+Florida,1996,1,21891.0
+Florida,1996,2,12856.0
+Florida,1996,3,11713.0
+Florida,1996,4,18532.0
+Florida,1997,1,16837.0
+Florida,1997,2,13901.0
+Florida,1997,3,10619.0
+Florida,1997,4,12191.0
+Florida,1998,1,14241.0
+Florida,1998,2,20272.0
+Florida,1998,3,12016.0
+Florida,1998,4,15623.0
+Florida,1999,1,9025.0
+Florida,1999,2,20379.0
+Florida,1999,3,12030.0
+Florida,1999,4,14374.0
+Florida,2000,1,18820.0
+Florida,2000,2,13767.0
+Florida,2000,3,14474.0
+Florida,2000,4,16230.0
+Florida,2001,1,24097.0
+Florida,2001,2,14776.0
+Florida,2001,3,14686.0
+Florida,2001,4,15729.0
+Florida,2002,1,18524.0
+Florida,2002,2,16691.0
+Florida,2002,3,15237.0
+Florida,2002,4,18817.0
+Florida,2003,1,19588.0
+Florida,2003,2,15661.0
+Florida,2003,3,14035.0
+Florida,2003,4,17854.0
+Florida,2004,1,26945.0
+Florida,2004,2,19592.0
+Florida,2004,3,17026.0
+Florida,2004,4,20404.0
+Florida,2005,1,21502.0
+Florida,2005,2,21584.0
+Florida,2005,3,20690.0
+Florida,2005,4,24070.0
+Florida,2006,1,22669.0
+Florida,2006,2,20903.0
+Florida,2006,3,16648.0
+Florida,2006,4,21093.0
+Florida,2007,1,22006.0
+Florida,2007,2,19783.0
+Florida,2007,3,17909.0
+Florida,2007,4,19107.0
+Florida,2008,1,21179.0
+Florida,2008,2,17767.0
+Florida,2008,3,15271.0
+Florida,2008,4,18197.0
+Florida,2009,1,18765.0
+Florida,2009,2,14900.0
+Florida,2009,3,13951.0
+Florida,2009,4,18037.0
+Florida,2010,1,17729.0
+Florida,2010,2,16326.0
+Florida,2010,3,14979.0
+Florida,2010,4,19172.0
+Florida,2011,1,18326.0
+Florida,2011,2,17873.0
+Florida,2011,3,15072.0
+Florida,2011,4,19467.0
+Florida,2012,1,19121.0
+Florida,2012,2,18300.0
+Florida,2012,3,15818.0
+Florida,2012,4,18670.0
+Florida,2013,1,20349.0
+Florida,2013,2,17287.0
+Florida,2013,3,16687.0
+Florida,2013,4,18905.0
+Florida,2014,1,19957.0
+Florida,2014,2,18167.0
+Florida,2014,3,16696.0
+Florida,2014,4,19774.0
+Florida,2015,1,20858.0
+Florida,2015,2,19389.0
+Florida,2015,3,17775.0
+Florida,2015,4,21046.0
+Florida,2016,1,21408.0
+Florida,2016,2,17846.0
+Florida,2016,3,18362.0
+Florida,2016,4,21064.0
+Florida,2017,1,21183.0
+Florida,2017,2,19001.0
+Florida,2017,3,15750.0
+Florida,2017,4,20507.0
+Florida,2018,1,23046.0
+Florida,2018,2,22084.0
+Florida,2018,3,16832.0
+Florida,2018,4,22194.0
+Florida,2019,1,24712.0
+Florida,2019,2,23201.0
+Florida,2019,3,18919.0
+Florida,2019,4,22822.0
+Florida,2020,1,25709.0
+Florida,2020,2,21661.0
+Florida,2020,3,24319.0
+Florida,2020,4,23426.0
+Florida,2021,1,31253.0
+Florida,2021,2,31780.0
+Florida,2021,3,30718.0
+Florida,2021,4,34442.0
+Florida,2022,1,32186.0
+Florida,2022,2,31321.0
+Florida,2022,3,25924.0
+Florida,2022,4,30252.0
+Florida,2023,1,30406.0
+Florida,2023,2,32873.0
+Florida,2023,3,24874.0
+Florida,2023,4,27774.0
+Florida,2024,1,30311.0
+Florida,2024,2,30764.0
+Florida,2024,3,24622.0
+Florida,2024,4,28608.0
+Florida,2025,1,29798.0
+Florida,2025,2,24776.0
+Florida,2025,3,24040.0
+Florida,2025,4,28839.0
+Florida,2026,1,29258.0
+Georgia,1992,3,
+Georgia,1992,4,
+Georgia,1993,1,
+Georgia,1993,2,5398.0
+Georgia,1993,3,5217.0
+Georgia,1993,4,5577.0
+Georgia,1994,1,6053.0
+Georgia,1994,2,5150.0
+Georgia,1994,3,5306.0
+Georgia,1994,4,5793.0
+Georgia,1995,1,6286.0
+Georgia,1995,2,6036.0
+Georgia,1995,3,4712.0
+Georgia,1995,4,6104.0
+Georgia,1996,1,6991.0
+Georgia,1996,2,6539.0
+Georgia,1996,3,5054.0
+Georgia,1996,4,6042.0
+Georgia,1997,1,6926.0
+Georgia,1997,2,6183.0
+Georgia,1997,3,5083.0
+Georgia,1997,4,8544.0
+Georgia,1998,1,7963.0
+Georgia,1998,2,6996.0
+Georgia,1998,3,6252.0
+Georgia,1998,4,7472.0
+Georgia,1999,1,7948.0
+Georgia,1999,2,7525.0
+Georgia,1999,3,6748.0
+Georgia,1999,4,7137.0
+Georgia,2000,1,8446.0
+Georgia,2000,2,8261.0
+Georgia,2000,3,7590.0
+Georgia,2000,4,7842.0
+Georgia,2001,1,7165.0
+Georgia,2001,2,7210.0
+Georgia,2001,3,7727.0
+Georgia,2001,4,7564.0
+Georgia,2002,1,7782.0
+Georgia,2002,2,7321.0
+Georgia,2002,3,7067.0
+Georgia,2002,4,6498.0
+Georgia,2003,1,7436.0
+Georgia,2003,2,6356.0
+Georgia,2003,3,6037.0
+Georgia,2003,4,5571.0
+Georgia,2004,1,8147.0
+Georgia,2004,2,7924.0
+Georgia,2004,3,6256.0
+Georgia,2004,4,8076.0
+Georgia,2005,1,8213.0
+Georgia,2005,2,7531.0
+Georgia,2005,3,6859.0
+Georgia,2005,4,7059.0
+Georgia,2006,1,8291.0
+Georgia,2006,2,7651.0
+Georgia,2006,3,6845.0
+Georgia,2006,4,8292.0
+Georgia,2007,1,8037.0
+Georgia,2007,2,6836.0
+Georgia,2007,3,6803.0
+Georgia,2007,4,8049.0
+Georgia,2008,1,8319.0
+Georgia,2008,2,6807.0
+Georgia,2008,3,5686.0
+Georgia,2008,4,6778.0
+Georgia,2009,1,6467.0
+Georgia,2009,2,5494.0
+Georgia,2009,3,5057.0
+Georgia,2009,4,6391.0
+Georgia,2010,1,6630.0
+Georgia,2010,2,6229.0
+Georgia,2010,3,5861.0
+Georgia,2010,4,6528.0
+Georgia,2011,1,6792.0
+Georgia,2011,2,6118.0
+Georgia,2011,3,5871.0
+Georgia,2011,4,6556.0
+Georgia,2012,1,7395.0
+Georgia,2012,2,6232.0
+Georgia,2012,3,5822.0
+Georgia,2012,4,6707.0
+Georgia,2013,1,7108.0
+Georgia,2013,2,6061.0
+Georgia,2013,3,5802.0
+Georgia,2013,4,6790.0
+Georgia,2014,1,7550.0
+Georgia,2014,2,6392.0
+Georgia,2014,3,6145.0
+Georgia,2014,4,7324.0
+Georgia,2015,1,7893.0
+Georgia,2015,2,6924.0
+Georgia,2015,3,6207.0
+Georgia,2015,4,8305.0
+Georgia,2016,1,7002.0
+Georgia,2016,2,8840.0
+Georgia,2016,3,7076.0
+Georgia,2016,4,8146.0
+Georgia,2017,1,8521.0
+Georgia,2017,2,6509.0
+Georgia,2017,3,6261.0
+Georgia,2017,4,7913.0
+Georgia,2018,1,8596.0
+Georgia,2018,2,7860.0
+Georgia,2018,3,7398.0
+Georgia,2018,4,4417.0
+Georgia,2019,1,11929.0
+Georgia,2019,2,8192.0
+Georgia,2019,3,8851.0
+Georgia,2019,4,8827.0
+Georgia,2020,1,8173.0
+Georgia,2020,2,8680.0
+Georgia,2020,3,8988.0
+Georgia,2020,4,8549.0
+Georgia,2021,1,12370.0
+Georgia,2021,2,11744.0
+Georgia,2021,3,11598.0
+Georgia,2021,4,13921.0
+Georgia,2022,1,13048.0
+Georgia,2022,2,12324.0
+Georgia,2022,3,10925.0
+Georgia,2022,4,12041.0
+Georgia,2023,1,13022.0
+Georgia,2023,2,10493.0
+Georgia,2023,3,9857.0
+Georgia,2023,4,10987.0
+Georgia,2024,1,12028.0
+Georgia,2024,2,9931.0
+Georgia,2024,3,9815.0
+Georgia,2024,4,10097.0
+Georgia,2025,1,11332.0
+Georgia,2025,2,9042.0
+Georgia,2025,3,9475.0
+Georgia,2025,4,10370.0
+Georgia,2026,1,10652.0
+Hawaii,1992,3,
+Hawaii,1992,4,
+Hawaii,1993,1,
+Hawaii,1993,2,798.0
+Hawaii,1993,3,764.0
+Hawaii,1993,4,841.0
+Hawaii,1994,1,823.0
+Hawaii,1994,2,782.0
+Hawaii,1994,3,778.0
+Hawaii,1994,4,842.0
+Hawaii,1995,1,992.0
+Hawaii,1995,2,700.0
+Hawaii,1995,3,711.0
+Hawaii,1995,4,751.0
+Hawaii,1996,1,872.0
+Hawaii,1996,2,740.0
+Hawaii,1996,3,758.0
+Hawaii,1996,4,726.0
+Hawaii,1997,1,824.0
+Hawaii,1997,2,718.0
+Hawaii,1997,3,785.0
+Hawaii,1997,4,857.0
+Hawaii,1998,1,799.0
+Hawaii,1998,2,764.0
+Hawaii,1998,3,796.0
+Hawaii,1998,4,651.0
+Hawaii,1999,1,814.0
+Hawaii,1999,2,780.0
+Hawaii,1999,3,749.0
+Hawaii,1999,4,744.0
+Hawaii,2000,1,949.0
+Hawaii,2000,2,805.0
+Hawaii,2000,3,802.0
+Hawaii,2000,4,823.0
+Hawaii,2001,1,844.0
+Hawaii,2001,2,850.0
+Hawaii,2001,3,765.0
+Hawaii,2001,4,808.0
+Hawaii,2002,1,849.0
+Hawaii,2002,2,662.0
+Hawaii,2002,3,785.0
+Hawaii,2002,4,735.0
+Hawaii,2003,1,836.0
+Hawaii,2003,2,694.0
+Hawaii,2003,3,800.0
+Hawaii,2003,4,836.0
+Hawaii,2004,1,859.0
+Hawaii,2004,2,664.0
+Hawaii,2004,3,789.0
+Hawaii,2004,4,837.0
+Hawaii,2005,1,844.0
+Hawaii,2005,2,765.0
+Hawaii,2005,3,828.0
+Hawaii,2005,4,886.0
+Hawaii,2006,1,869.0
+Hawaii,2006,2,782.0
+Hawaii,2006,3,766.0
+Hawaii,2006,4,828.0
+Hawaii,2007,1,916.0
+Hawaii,2007,2,781.0
+Hawaii,2007,3,756.0
+Hawaii,2007,4,848.0
+Hawaii,2008,1,801.0
+Hawaii,2008,2,706.0
+Hawaii,2008,3,799.0
+Hawaii,2008,4,791.0
+Hawaii,2009,1,723.0
+Hawaii,2009,2,634.0
+Hawaii,2009,3,648.0
+Hawaii,2009,4,788.0
+Hawaii,2010,1,765.0
+Hawaii,2010,2,620.0
+Hawaii,2010,3,720.0
+Hawaii,2010,4,832.0
+Hawaii,2011,1,778.0
+Hawaii,2011,2,702.0
+Hawaii,2011,3,706.0
+Hawaii,2011,4,795.0
+Hawaii,2012,1,792.0
+Hawaii,2012,2,755.0
+Hawaii,2012,3,828.0
+Hawaii,2012,4,839.0
+Hawaii,2013,1,856.0
+Hawaii,2013,2,720.0
+Hawaii,2013,3,736.0
+Hawaii,2013,4,799.0
+Hawaii,2014,1,828.0
+Hawaii,2014,2,726.0
+Hawaii,2014,3,753.0
+Hawaii,2014,4,863.0
+Hawaii,2015,1,897.0
+Hawaii,2015,2,773.0
+Hawaii,2015,3,809.0
+Hawaii,2015,4,932.0
+Hawaii,2016,1,867.0
+Hawaii,2016,2,851.0
+Hawaii,2016,3,804.0
+Hawaii,2016,4,894.0
+Hawaii,2017,1,951.0
+Hawaii,2017,2,862.0
+Hawaii,2017,3,879.0
+Hawaii,2017,4,956.0
+Hawaii,2018,1,1053.0
+Hawaii,2018,2,927.0
+Hawaii,2018,3,863.0
+Hawaii,2018,4,1112.0
+Hawaii,2019,1,1013.0
+Hawaii,2019,2,920.0
+Hawaii,2019,3,912.0
+Hawaii,2019,4,1007.0
+Hawaii,2020,1,1000.0
+Hawaii,2020,2,777.0
+Hawaii,2020,3,1393.0
+Hawaii,2020,4,1344.0
+Hawaii,2021,1,1370.0
+Hawaii,2021,2,1482.0
+Hawaii,2021,3,1514.0
+Hawaii,2021,4,1744.0
+Hawaii,2022,1,1587.0
+Hawaii,2022,2,1315.0
+Hawaii,2022,3,1431.0
+Hawaii,2022,4,1522.0
+Hawaii,2023,1,1492.0
+Hawaii,2023,2,1209.0
+Hawaii,2023,3,1169.0
+Hawaii,2023,4,1307.0
+Hawaii,2024,1,1331.0
+Hawaii,2024,2,1214.0
+Hawaii,2024,3,1212.0
+Hawaii,2024,4,1264.0
+Hawaii,2025,1,1167.0
+Hawaii,2025,2,1205.0
+Hawaii,2025,3,1090.0
+Hawaii,2025,4,1296.0
+Hawaii,2026,1,1733.0
+Idaho,1992,3,
+Idaho,1992,4,
+Idaho,1993,1,
+Idaho,1993,2,1160.0
+Idaho,1993,3,1105.0
+Idaho,1993,4,1093.0
+Idaho,1994,1,1088.0
+Idaho,1994,2,1297.0
+Idaho,1994,3,1187.0
+Idaho,1994,4,1050.0
+Idaho,1995,1,986.0
+Idaho,1995,2,1226.0
+Idaho,1995,3,1192.0
+Idaho,1995,4,1044.0
+Idaho,1996,1,1075.0
+Idaho,1996,2,1291.0
+Idaho,1996,3,1164.0
+Idaho,1996,4,1077.0
+Idaho,1997,1,1140.0
+Idaho,1997,2,1249.0
+Idaho,1997,3,1332.0
+Idaho,1997,4,1229.0
+Idaho,1998,1,1173.0
+Idaho,1998,2,1313.0
+Idaho,1998,3,1142.0
+Idaho,1998,4,1127.0
+Idaho,1999,1,1256.0
+Idaho,1999,2,1270.0
+Idaho,1999,3,1322.0
+Idaho,1999,4,1120.0
+Idaho,2000,1,1301.0
+Idaho,2000,2,1510.0
+Idaho,2000,3,1361.0
+Idaho,2000,4,1272.0
+Idaho,2001,1,1403.0
+Idaho,2001,2,1382.0
+Idaho,2001,3,1170.0
+Idaho,2001,4,1107.0
+Idaho,2002,1,1172.0
+Idaho,2002,2,1337.0
+Idaho,2002,3,1238.0
+Idaho,2002,4,1216.0
+Idaho,2003,1,1346.0
+Idaho,2003,2,1457.0
+Idaho,2003,3,1254.0
+Idaho,2003,4,1299.0
+Idaho,2004,1,1386.0
+Idaho,2004,2,1571.0
+Idaho,2004,3,1466.0
+Idaho,2004,4,1497.0
+Idaho,2005,1,1572.0
+Idaho,2005,2,1758.0
+Idaho,2005,3,1752.0
+Idaho,2005,4,1703.0
+Idaho,2006,1,1675.0
+Idaho,2006,2,2031.0
+Idaho,2006,3,1712.0
+Idaho,2006,4,1654.0
+Idaho,2007,1,1563.0
+Idaho,2007,2,1796.0
+Idaho,2007,3,1427.0
+Idaho,2007,4,1446.0
+Idaho,2008,1,1614.0
+Idaho,2008,2,1334.0
+Idaho,2008,3,1315.0
+Idaho,2008,4,1255.0
+Idaho,2009,1,1172.0
+Idaho,2009,2,1154.0
+Idaho,2009,3,1069.0
+Idaho,2009,4,1139.0
+Idaho,2010,1,1189.0
+Idaho,2010,2,1240.0
+Idaho,2010,3,1253.0
+Idaho,2010,4,1239.0
+Idaho,2011,1,1145.0
+Idaho,2011,2,1285.0
+Idaho,2011,3,1276.0
+Idaho,2011,4,1221.0
+Idaho,2012,1,1249.0
+Idaho,2012,2,1406.0
+Idaho,2012,3,1252.0
+Idaho,2012,4,1213.0
+Idaho,2013,1,1414.0
+Idaho,2013,2,1734.0
+Idaho,2013,3,1432.0
+Idaho,2013,4,1368.0
+Idaho,2014,1,1553.0
+Idaho,2014,2,1391.0
+Idaho,2014,3,1707.0
+Idaho,2014,4,1403.0
+Idaho,2015,1,1819.0
+Idaho,2015,2,1684.0
+Idaho,2015,3,1587.0
+Idaho,2015,4,1577.0
+Idaho,2016,1,1778.0
+Idaho,2016,2,1634.0
+Idaho,2016,3,1784.0
+Idaho,2016,4,1644.0
+Idaho,2017,1,1822.0
+Idaho,2017,2,1780.0
+Idaho,2017,3,1801.0
+Idaho,2017,4,1773.0
+Idaho,2018,1,1950.0
+Idaho,2018,2,2170.0
+Idaho,2018,3,2043.0
+Idaho,2018,4,2023.0
+Idaho,2019,1,2306.0
+Idaho,2019,2,2243.0
+Idaho,2019,3,2081.0
+Idaho,2019,4,2188.0
+Idaho,2020,1,2221.0
+Idaho,2020,2,2067.0
+Idaho,2020,3,2532.0
+Idaho,2020,4,2692.0
+Idaho,2021,1,3205.0
+Idaho,2021,2,3269.0
+Idaho,2021,3,3216.0
+Idaho,2021,4,3456.0
+Idaho,2022,1,3267.0
+Idaho,2022,2,3203.0
+Idaho,2022,3,3261.0
+Idaho,2022,4,3073.0
+Idaho,2023,1,3120.0
+Idaho,2023,2,3068.0
+Idaho,2023,3,3018.0
+Idaho,2023,4,3589.0
+Idaho,2024,1,2936.0
+Idaho,2024,2,2906.0
+Idaho,2024,3,2583.0
+Idaho,2024,4,2916.0
+Idaho,2025,1,3029.0
+Idaho,2025,2,3331.0
+Idaho,2025,3,3074.0
+Idaho,2025,4,3279.0
+Idaho,2026,1,3350.0
+Illinois,1992,3,
+Illinois,1992,4,
+Illinois,1993,1,
+Illinois,1993,2,6881.0
+Illinois,1993,3,6749.0
+Illinois,1993,4,7708.0
+Illinois,1994,1,7669.0
+Illinois,1994,2,8324.0
+Illinois,1994,3,6980.0
+Illinois,1994,4,4012.0
+Illinois,1995,1,11458.0
+Illinois,1995,2,8242.0
+Illinois,1995,3,7381.0
+Illinois,1995,4,7937.0
+Illinois,1996,1,7287.0
+Illinois,1996,2,6669.0
+Illinois,1996,3,6065.0
+Illinois,1996,4,7422.0
+Illinois,1997,1,6372.0
+Illinois,1997,2,8286.0
+Illinois,1997,3,6805.0
+Illinois,1997,4,7440.0
+Illinois,1998,1,7498.0
+Illinois,1998,2,7689.0
+Illinois,1998,3,6556.0
+Illinois,1998,4,7834.0
+Illinois,1999,1,7203.0
+Illinois,1999,2,7054.0
+Illinois,1999,3,6204.0
+Illinois,1999,4,7857.0
+Illinois,2000,1,7662.0
+Illinois,2000,2,7561.0
+Illinois,2000,3,6822.0
+Illinois,2000,4,7779.0
+Illinois,2001,1,6622.0
+Illinois,2001,2,8003.0
+Illinois,2001,3,6068.0
+Illinois,2001,4,7185.0
+Illinois,2002,1,6929.0
+Illinois,2002,2,7400.0
+Illinois,2002,3,6256.0
+Illinois,2002,4,7492.0
+Illinois,2003,1,7069.0
+Illinois,2003,2,7211.0
+Illinois,2003,3,6603.0
+Illinois,2003,4,7021.0
+Illinois,2004,1,7783.0
+Illinois,2004,2,7479.0
+Illinois,2004,3,6250.0
+Illinois,2004,4,8185.0
+Illinois,2005,1,7353.0
+Illinois,2005,2,8717.0
+Illinois,2005,3,7837.0
+Illinois,2005,4,9010.0
+Illinois,2006,1,8177.0
+Illinois,2006,2,8131.0
+Illinois,2006,3,6699.0
+Illinois,2006,4,8342.0
+Illinois,2007,1,7835.0
+Illinois,2007,2,7039.0
+Illinois,2007,3,5939.0
+Illinois,2007,4,7642.0
+Illinois,2008,1,7426.0
+Illinois,2008,2,7926.0
+Illinois,2008,3,7049.0
+Illinois,2008,4,7626.0
+Illinois,2009,1,5619.0
+Illinois,2009,2,7819.0
+Illinois,2009,3,5961.0
+Illinois,2009,4,7877.0
+Illinois,2010,1,7122.0
+Illinois,2010,2,6651.0
+Illinois,2010,3,6063.0
+Illinois,2010,4,8736.0
+Illinois,2011,1,6674.0
+Illinois,2011,2,7489.0
+Illinois,2011,3,7309.0
+Illinois,2011,4,7091.0
+Illinois,2012,1,7488.0
+Illinois,2012,2,6515.0
+Illinois,2012,3,7443.0
+Illinois,2012,4,5629.0
+Illinois,2013,1,6682.0
+Illinois,2013,2,6469.0
+Illinois,2013,3,6376.0
+Illinois,2013,4,7094.0
+Illinois,2014,1,8751.0
+Illinois,2014,2,7533.0
+Illinois,2014,3,6622.0
+Illinois,2014,4,9031.0
+Illinois,2015,1,8768.0
+Illinois,2015,2,9902.0
+Illinois,2015,3,7418.0
+Illinois,2015,4,9563.0
+Illinois,2016,1,6075.0
+Illinois,2016,2,8589.0
+Illinois,2016,3,6808.0
+Illinois,2016,4,9494.0
+Illinois,2017,1,9784.0
+Illinois,2017,2,8455.0
+Illinois,2017,3,7361.0
+Illinois,2017,4,9243.0
+Illinois,2018,1,8209.0
+Illinois,2018,2,9119.0
+Illinois,2018,3,7537.0
+Illinois,2018,4,8576.0
+Illinois,2019,1,8150.0
+Illinois,2019,2,7972.0
+Illinois,2019,3,7047.0
+Illinois,2019,4,8517.0
+Illinois,2020,1,9202.0
+Illinois,2020,2,8007.0
+Illinois,2020,3,8897.0
+Illinois,2020,4,9060.0
+Illinois,2021,1,9574.0
+Illinois,2021,2,10705.0
+Illinois,2021,3,10242.0
+Illinois,2021,4,11196.0
+Illinois,2022,1,11004.0
+Illinois,2022,2,9877.0
+Illinois,2022,3,9396.0
+Illinois,2022,4,10155.0
+Illinois,2023,1,10494.0
+Illinois,2023,2,9338.0
+Illinois,2023,3,8260.0
+Illinois,2023,4,8908.0
+Illinois,2024,1,9779.0
+Illinois,2024,2,8967.0
+Illinois,2024,3,8353.0
+Illinois,2024,4,9292.0
+Illinois,2025,1,9850.0
+Illinois,2025,2,8860.0
+Illinois,2025,3,8581.0
+Illinois,2025,4,9412.0
+Illinois,2026,1,9170.0
+Indiana,1992,3,
+Indiana,1992,4,
+Indiana,1993,1,
+Indiana,1993,2,3401.0
+Indiana,1993,3,2876.0
+Indiana,1993,4,3553.0
+Indiana,1994,1,3778.0
+Indiana,1994,2,3226.0
+Indiana,1994,3,3722.0
+Indiana,1994,4,3117.0
+Indiana,1995,1,4002.0
+Indiana,1995,2,3281.0
+Indiana,1995,3,3248.0
+Indiana,1995,4,3104.0
+Indiana,1996,1,3677.0
+Indiana,1996,2,3724.0
+Indiana,1996,3,3183.0
+Indiana,1996,4,3245.0
+Indiana,1997,1,3857.0
+Indiana,1997,2,3477.0
+Indiana,1997,3,3135.0
+Indiana,1997,4,3839.0
+Indiana,1998,1,3654.0
+Indiana,1998,2,3547.0
+Indiana,1998,3,2996.0
+Indiana,1998,4,3806.0
+Indiana,1999,1,3690.0
+Indiana,1999,2,3531.0
+Indiana,1999,3,2817.0
+Indiana,1999,4,3170.0
+Indiana,2000,1,3817.0
+Indiana,2000,2,3805.0
+Indiana,2000,3,2567.0
+Indiana,2000,4,3158.0
+Indiana,2001,1,3773.0
+Indiana,2001,2,3768.0
+Indiana,2001,3,2812.0
+Indiana,2001,4,3297.0
+Indiana,2002,1,3499.0
+Indiana,2002,2,3528.0
+Indiana,2002,3,3068.0
+Indiana,2002,4,2959.0
+Indiana,2003,1,3696.0
+Indiana,2003,2,3444.0
+Indiana,2003,3,2932.0
+Indiana,2003,4,3361.0
+Indiana,2004,1,3632.0
+Indiana,2004,2,3664.0
+Indiana,2004,3,3146.0
+Indiana,2004,4,3156.0
+Indiana,2005,1,4193.0
+Indiana,2005,2,3440.0
+Indiana,2005,3,3331.0
+Indiana,2005,4,3667.0
+Indiana,2006,1,3436.0
+Indiana,2006,2,3272.0
+Indiana,2006,3,2886.0
+Indiana,2006,4,3359.0
+Indiana,2007,1,3857.0
+Indiana,2007,2,3310.0
+Indiana,2007,3,3021.0
+Indiana,2007,4,2836.0
+Indiana,2008,1,3404.0
+Indiana,2008,2,3535.0
+Indiana,2008,3,3471.0
+Indiana,2008,4,3194.0
+Indiana,2009,1,3142.0
+Indiana,2009,2,2414.0
+Indiana,2009,3,2321.0
+Indiana,2009,4,2689.0
+Indiana,2010,1,3046.0
+Indiana,2010,2,2712.0
+Indiana,2010,3,2834.0
+Indiana,2010,4,3928.0
+Indiana,2011,1,3776.0
+Indiana,2011,2,3089.0
+Indiana,2011,3,3025.0
+Indiana,2011,4,3157.0
+Indiana,2012,1,3451.0
+Indiana,2012,2,3176.0
+Indiana,2012,3,2890.0
+Indiana,2012,4,3112.0
+Indiana,2013,1,3375.0
+Indiana,2013,2,3022.0
+Indiana,2013,3,2842.0
+Indiana,2013,4,2758.0
+Indiana,2014,1,3161.0
+Indiana,2014,2,3069.0
+Indiana,2014,3,2844.0
+Indiana,2014,4,3251.0
+Indiana,2015,1,3348.0
+Indiana,2015,2,3023.0
+Indiana,2015,3,2964.0
+Indiana,2015,4,3526.0
+Indiana,2016,1,3408.0
+Indiana,2016,2,3141.0
+Indiana,2016,3,2896.0
+Indiana,2016,4,2817.0
+Indiana,2017,1,3382.0
+Indiana,2017,2,3008.0
+Indiana,2017,3,3181.0
+Indiana,2017,4,3162.0
+Indiana,2018,1,3522.0
+Indiana,2018,2,3764.0
+Indiana,2018,3,3269.0
+Indiana,2018,4,3592.0
+Indiana,2019,1,3865.0
+Indiana,2019,2,3538.0
+Indiana,2019,3,3123.0
+Indiana,2019,4,3537.0
+Indiana,2020,1,3357.0
+Indiana,2020,2,3403.0
+Indiana,2020,3,3452.0
+Indiana,2020,4,4027.0
+Indiana,2021,1,4714.0
+Indiana,2021,2,4946.0
+Indiana,2021,3,4403.0
+Indiana,2021,4,5050.0
+Indiana,2022,1,5284.0
+Indiana,2022,2,4817.0
+Indiana,2022,3,4689.0
+Indiana,2022,4,4559.0
+Indiana,2023,1,4394.0
+Indiana,2023,2,4850.0
+Indiana,2023,3,4005.0
+Indiana,2023,4,4035.0
+Indiana,2024,1,4485.0
+Indiana,2024,2,4094.0
+Indiana,2024,3,3938.0
+Indiana,2024,4,3970.0
+Indiana,2025,1,4469.0
+Indiana,2025,2,3940.0
+Indiana,2025,3,3987.0
+Indiana,2025,4,4162.0
+Indiana,2026,1,4388.0
+Iowa,1992,3,
+Iowa,1992,4,
+Iowa,1993,1,
+Iowa,1993,2,1833.0
+Iowa,1993,3,1934.0
+Iowa,1993,4,1479.0
+Iowa,1994,1,1780.0
+Iowa,1994,2,1933.0
+Iowa,1994,3,1566.0
+Iowa,1994,4,1735.0
+Iowa,1995,1,1693.0
+Iowa,1995,2,1625.0
+Iowa,1995,3,1657.0
+Iowa,1995,4,1658.0
+Iowa,1996,1,1551.0
+Iowa,1996,2,1712.0
+Iowa,1996,3,1637.0
+Iowa,1996,4,1750.0
+Iowa,1997,1,1686.0
+Iowa,1997,2,1694.0
+Iowa,1997,3,2120.0
+Iowa,1997,4,1620.0
+Iowa,1998,1,1926.0
+Iowa,1998,2,1716.0
+Iowa,1998,3,1974.0
+Iowa,1998,4,1438.0
+Iowa,1999,1,1589.0
+Iowa,1999,2,2137.0
+Iowa,1999,3,1524.0
+Iowa,1999,4,1912.0
+Iowa,2000,1,1197.0
+Iowa,2000,2,1127.0
+Iowa,2000,3,2878.0
+Iowa,2000,4,1740.0
+Iowa,2001,1,1718.0
+Iowa,2001,2,1763.0
+Iowa,2001,3,1469.0
+Iowa,2001,4,1437.0
+Iowa,2002,1,2029.0
+Iowa,2002,2,1881.0
+Iowa,2002,3,1503.0
+Iowa,2002,4,1704.0
+Iowa,2003,1,1757.0
+Iowa,2003,2,1623.0
+Iowa,2003,3,1549.0
+Iowa,2003,4,1782.0
+Iowa,2004,1,1730.0
+Iowa,2004,2,1762.0
+Iowa,2004,3,1691.0
+Iowa,2004,4,1860.0
+Iowa,2005,1,1704.0
+Iowa,2005,2,1896.0
+Iowa,2005,3,1656.0
+Iowa,2005,4,1952.0
+Iowa,2006,1,1858.0
+Iowa,2006,2,1714.0
+Iowa,2006,3,1585.0
+Iowa,2006,4,1644.0
+Iowa,2007,1,1840.0
+Iowa,2007,2,1817.0
+Iowa,2007,3,1672.0
+Iowa,2007,4,1746.0
+Iowa,2008,1,1690.0
+Iowa,2008,2,1654.0
+Iowa,2008,3,1600.0
+Iowa,2008,4,1752.0
+Iowa,2009,1,1560.0
+Iowa,2009,2,1591.0
+Iowa,2009,3,1313.0
+Iowa,2009,4,1705.0
+Iowa,2010,1,1309.0
+Iowa,2010,2,716.0
+Iowa,2010,3,993.0
+Iowa,2010,4,1884.0
+Iowa,2011,1,1346.0
+Iowa,2011,2,1525.0
+Iowa,2011,3,1494.0
+Iowa,2011,4,1926.0
+Iowa,2012,1,2213.0
+Iowa,2012,2,1779.0
+Iowa,2012,3,1584.0
+Iowa,2012,4,2013.0
+Iowa,2013,1,2037.0
+Iowa,2013,2,1897.0
+Iowa,2013,3,1928.0
+Iowa,2013,4,1961.0
+Iowa,2014,1,1802.0
+Iowa,2014,2,1896.0
+Iowa,2014,3,1698.0
+Iowa,2014,4,1886.0
+Iowa,2015,1,1890.0
+Iowa,2015,2,1806.0
+Iowa,2015,3,1848.0
+Iowa,2015,4,1923.0
+Iowa,2016,1,2188.0
+Iowa,2016,2,1912.0
+Iowa,2016,3,1798.0
+Iowa,2016,4,1884.0
+Iowa,2017,1,1932.0
+Iowa,2017,2,1948.0
+Iowa,2017,3,1928.0
+Iowa,2017,4,2086.0
+Iowa,2018,1,2002.0
+Iowa,2018,2,1900.0
+Iowa,2018,3,1905.0
+Iowa,2018,4,1941.0
+Iowa,2019,1,2010.0
+Iowa,2019,2,2156.0
+Iowa,2019,3,1945.0
+Iowa,2019,4,2066.0
+Iowa,2020,1,2833.0
+Iowa,2020,2,1755.0
+Iowa,2020,3,1792.0
+Iowa,2020,4,1943.0
+Iowa,2021,1,2148.0
+Iowa,2021,2,2534.0
+Iowa,2021,3,2306.0
+Iowa,2021,4,2486.0
+Iowa,2022,1,2795.0
+Iowa,2022,2,2432.0
+Iowa,2022,3,2290.0
+Iowa,2022,4,2369.0
+Iowa,2023,1,2511.0
+Iowa,2023,2,2245.0
+Iowa,2023,3,2112.0
+Iowa,2023,4,2365.0
+Iowa,2024,1,2586.0
+Iowa,2024,2,2100.0
+Iowa,2024,3,2278.0
+Iowa,2024,4,2376.0
+Iowa,2025,1,2729.0
+Iowa,2025,2,2183.0
+Iowa,2025,3,846.0
+Iowa,2025,4,3107.0
+Iowa,2026,1,2623.0
+Kansas,1992,3,
+Kansas,1992,4,
+Kansas,1993,1,
+Kansas,1993,2,1804.0
+Kansas,1993,3,2006.0
+Kansas,1993,4,1833.0
+Kansas,1994,1,2086.0
+Kansas,1994,2,2016.0
+Kansas,1994,3,1767.0
+Kansas,1994,4,1432.0
+Kansas,1995,1,2404.0
+Kansas,1995,2,1797.0
+Kansas,1995,3,1679.0
+Kansas,1995,4,1829.0
+Kansas,1996,1,2014.0
+Kansas,1996,2,2107.0
+Kansas,1996,3,1757.0
+Kansas,1996,4,1789.0
+Kansas,1997,1,2157.0
+Kansas,1997,2,2095.0
+Kansas,1997,3,1984.0
+Kansas,1997,4,1699.0
+Kansas,1998,1,2393.0
+Kansas,1998,2,1801.0
+Kansas,1998,3,1954.0
+Kansas,1998,4,2015.0
+Kansas,1999,1,2201.0
+Kansas,1999,2,2075.0
+Kansas,1999,3,2199.0
+Kansas,1999,4,1889.0
+Kansas,2000,1,2239.0
+Kansas,2000,2,2488.0
+Kansas,2000,3,2733.0
+Kansas,2000,4,1434.0
+Kansas,2001,1,2361.0
+Kansas,2001,2,1996.0
+Kansas,2001,3,1396.0
+Kansas,2001,4,1542.0
+Kansas,2002,1,1736.0
+Kansas,2002,2,2367.0
+Kansas,2002,3,1882.0
+Kansas,2002,4,1795.0
+Kansas,2003,1,2031.0
+Kansas,2003,2,1729.0
+Kansas,2003,3,1710.0
+Kansas,2003,4,2019.0
+Kansas,2004,1,2022.0
+Kansas,2004,2,1827.0
+Kansas,2004,3,1879.0
+Kansas,2004,4,1890.0
+Kansas,2005,1,1906.0
+Kansas,2005,2,2015.0
+Kansas,2005,3,1414.0
+Kansas,2005,4,2066.0
+Kansas,2006,1,1442.0
+Kansas,2006,2,1779.0
+Kansas,2006,3,2042.0
+Kansas,2006,4,1647.0
+Kansas,2007,1,1966.0
+Kansas,2007,2,1939.0
+Kansas,2007,3,1601.0
+Kansas,2007,4,1939.0
+Kansas,2008,1,1988.0
+Kansas,2008,2,1944.0
+Kansas,2008,3,1506.0
+Kansas,2008,4,1983.0
+Kansas,2009,1,1743.0
+Kansas,2009,2,1556.0
+Kansas,2009,3,1536.0
+Kansas,2009,4,1574.0
+Kansas,2010,1,1757.0
+Kansas,2010,2,1517.0
+Kansas,2010,3,1183.0
+Kansas,2010,4,1954.0
+Kansas,2011,1,1844.0
+Kansas,2011,2,1780.0
+Kansas,2011,3,1549.0
+Kansas,2011,4,1826.0
+Kansas,2012,1,1900.0
+Kansas,2012,2,1798.0
+Kansas,2012,3,1505.0
+Kansas,2012,4,1869.0
+Kansas,2013,1,1846.0
+Kansas,2013,2,1830.0
+Kansas,2013,3,1788.0
+Kansas,2013,4,1836.0
+Kansas,2014,1,1981.0
+Kansas,2014,2,1753.0
+Kansas,2014,3,1681.0
+Kansas,2014,4,1748.0
+Kansas,2015,1,1966.0
+Kansas,2015,2,2004.0
+Kansas,2015,3,1818.0
+Kansas,2015,4,2002.0
+Kansas,2016,1,3701.0
+Kansas,2016,2,1829.0
+Kansas,2016,3,1928.0
+Kansas,2016,4,1881.0
+Kansas,2017,1,2142.0
+Kansas,2017,2,1792.0
+Kansas,2017,3,1776.0
+Kansas,2017,4,1712.0
+Kansas,2018,1,2000.0
+Kansas,2018,2,1899.0
+Kansas,2018,3,1840.0
+Kansas,2018,4,1816.0
+Kansas,2019,1,1943.0
+Kansas,2019,2,1841.0
+Kansas,2019,3,2195.0
+Kansas,2019,4,1900.0
+Kansas,2020,1,1947.0
+Kansas,2020,2,1838.0
+Kansas,2020,3,2095.0
+Kansas,2020,4,2201.0
+Kansas,2021,1,2581.0
+Kansas,2021,2,2645.0
+Kansas,2021,3,2748.0
+Kansas,2021,4,2790.0
+Kansas,2022,1,3017.0
+Kansas,2022,2,3671.0
+Kansas,2022,3,3314.0
+Kansas,2022,4,2932.0
+Kansas,2023,1,3205.0
+Kansas,2023,2,2849.0
+Kansas,2023,3,2706.0
+Kansas,2023,4,2586.0
+Kansas,2024,1,3728.0
+Kansas,2024,2,2783.0
+Kansas,2024,3,2471.0
+Kansas,2024,4,2470.0
+Kansas,2025,1,3199.0
+Kansas,2025,2,2802.0
+Kansas,2025,3,2646.0
+Kansas,2025,4,2532.0
+Kansas,2026,1,3072.0
+Kentucky,1992,3,
+Kentucky,1992,4,
+Kentucky,1993,1,
+Kentucky,1993,2,2273.0
+Kentucky,1993,3,2057.0
+Kentucky,1993,4,1829.0
+Kentucky,1994,1,2275.0
+Kentucky,1994,2,2146.0
+Kentucky,1994,3,2082.0
+Kentucky,1994,4,2079.0
+Kentucky,1995,1,2465.0
+Kentucky,1995,2,2260.0
+Kentucky,1995,3,2151.0
+Kentucky,1995,4,1948.0
+Kentucky,1996,1,2429.0
+Kentucky,1996,2,2251.0
+Kentucky,1996,3,2433.0
+Kentucky,1996,4,2211.0
+Kentucky,1997,1,2467.0
+Kentucky,1997,2,2276.0
+Kentucky,1997,3,2424.0
+Kentucky,1997,4,2174.0
+Kentucky,1998,1,2469.0
+Kentucky,1998,2,2619.0
+Kentucky,1998,3,2468.0
+Kentucky,1998,4,2019.0
+Kentucky,1999,1,2599.0
+Kentucky,1999,2,2401.0
+Kentucky,1999,3,2112.0
+Kentucky,1999,4,2003.0
+Kentucky,2000,1,2488.0
+Kentucky,2000,2,1691.0
+Kentucky,2000,3,2146.0
+Kentucky,2000,4,1955.0
+Kentucky,2001,1,2683.0
+Kentucky,2001,2,2203.0
+Kentucky,2001,3,1939.0
+Kentucky,2001,4,2430.0
+Kentucky,2002,1,2425.0
+Kentucky,2002,2,2185.0
+Kentucky,2002,3,1893.0
+Kentucky,2002,4,2217.0
+Kentucky,2003,1,2141.0
+Kentucky,2003,2,1999.0
+Kentucky,2003,3,2012.0
+Kentucky,2003,4,2135.0
+Kentucky,2004,1,2416.0
+Kentucky,2004,2,2182.0
+Kentucky,2004,3,2088.0
+Kentucky,2004,4,2376.0
+Kentucky,2005,1,2481.0
+Kentucky,2005,2,2220.0
+Kentucky,2005,3,2224.0
+Kentucky,2005,4,2275.0
+Kentucky,2006,1,2493.0
+Kentucky,2006,2,1211.0
+Kentucky,2006,3,2350.0
+Kentucky,2006,4,2867.0
+Kentucky,2007,1,2493.0
+Kentucky,2007,2,2094.0
+Kentucky,2007,3,2059.0
+Kentucky,2007,4,2416.0
+Kentucky,2008,1,2252.0
+Kentucky,2008,2,2083.0
+Kentucky,2008,3,2085.0
+Kentucky,2008,4,2060.0
+Kentucky,2009,1,2087.0
+Kentucky,2009,2,1758.0
+Kentucky,2009,3,1714.0
+Kentucky,2009,4,2002.0
+Kentucky,2010,1,2056.0
+Kentucky,2010,2,1812.0
+Kentucky,2010,3,1759.0
+Kentucky,2010,4,2008.0
+Kentucky,2011,1,2032.0
+Kentucky,2011,2,1974.0
+Kentucky,2011,3,1960.0
+Kentucky,2011,4,2088.0
+Kentucky,2012,1,2268.0
+Kentucky,2012,2,2060.0
+Kentucky,2012,3,2082.0
+Kentucky,2012,4,2533.0
+Kentucky,2013,1,2719.0
+Kentucky,2013,2,2445.0
+Kentucky,2013,3,2536.0
+Kentucky,2013,4,2484.0
+Kentucky,2014,1,2716.0
+Kentucky,2014,2,2644.0
+Kentucky,2014,3,2495.0
+Kentucky,2014,4,2512.0
+Kentucky,2015,1,2568.0
+Kentucky,2015,2,2360.0
+Kentucky,2015,3,2476.0
+Kentucky,2015,4,2522.0
+Kentucky,2016,1,2177.0
+Kentucky,2016,2,3015.0
+Kentucky,2016,3,2579.0
+Kentucky,2016,4,2166.0
+Kentucky,2017,1,2313.0
+Kentucky,2017,2,3145.0
+Kentucky,2017,3,2310.0
+Kentucky,2017,4,1771.0
+Kentucky,2018,1,3141.0
+Kentucky,2018,2,2686.0
+Kentucky,2018,3,2337.0
+Kentucky,2018,4,2600.0
+Kentucky,2019,1,3022.0
+Kentucky,2019,2,2631.0
+Kentucky,2019,3,2551.0
+Kentucky,2019,4,2522.0
+Kentucky,2020,1,3992.0
+Kentucky,2020,2,2312.0
+Kentucky,2020,3,2736.0
+Kentucky,2020,4,2664.0
+Kentucky,2021,1,3212.0
+Kentucky,2021,2,3890.0
+Kentucky,2021,3,3624.0
+Kentucky,2021,4,4064.0
+Kentucky,2022,1,3982.0
+Kentucky,2022,2,3602.0
+Kentucky,2022,3,3688.0
+Kentucky,2022,4,3559.0
+Kentucky,2023,1,4113.0
+Kentucky,2023,2,3543.0
+Kentucky,2023,3,3375.0
+Kentucky,2023,4,3350.0
+Kentucky,2024,1,3908.0
+Kentucky,2024,2,3322.0
+Kentucky,2024,3,3373.0
+Kentucky,2024,4,3396.0
+Kentucky,2025,1,3613.0
+Kentucky,2025,2,3385.0
+Kentucky,2025,3,3267.0
+Kentucky,2025,4,3250.0
+Kentucky,2026,1,4120.0
+Louisiana,1992,3,
+Louisiana,1992,4,
+Louisiana,1993,1,
+Louisiana,1993,2,2533.0
+Louisiana,1993,3,2376.0
+Louisiana,1993,4,2292.0
+Louisiana,1994,1,3041.0
+Louisiana,1994,2,2664.0
+Louisiana,1994,3,2448.0
+Louisiana,1994,4,2385.0
+Louisiana,1995,1,2971.0
+Louisiana,1995,2,2448.0
+Louisiana,1995,3,1891.0
+Louisiana,1995,4,2051.0
+Louisiana,1996,1,2941.0
+Louisiana,1996,2,2701.0
+Louisiana,1996,3,2487.0
+Louisiana,1996,4,2312.0
+Louisiana,1997,1,2868.0
+Louisiana,1997,2,2364.0
+Louisiana,1997,3,2788.0
+Louisiana,1997,4,2793.0
+Louisiana,1998,1,2924.0
+Louisiana,1998,2,2767.0
+Louisiana,1998,3,2820.0
+Louisiana,1998,4,2329.0
+Louisiana,1999,1,2993.0
+Louisiana,1999,2,2588.0
+Louisiana,1999,3,2746.0
+Louisiana,1999,4,2635.0
+Louisiana,2000,1,3093.0
+Louisiana,2000,2,2603.0
+Louisiana,2000,3,2539.0
+Louisiana,2000,4,2576.0
+Louisiana,2001,1,2824.0
+Louisiana,2001,2,2630.0
+Louisiana,2001,3,2312.0
+Louisiana,2001,4,2474.0
+Louisiana,2002,1,2974.0
+Louisiana,2002,2,2443.0
+Louisiana,2002,3,2351.0
+Louisiana,2002,4,2522.0
+Louisiana,2003,1,2689.0
+Louisiana,2003,2,2555.0
+Louisiana,2003,3,2329.0
+Louisiana,2003,4,2368.0
+Louisiana,2004,1,3118.0
+Louisiana,2004,2,2532.0
+Louisiana,2004,3,2280.0
+Louisiana,2004,4,2782.0
+Louisiana,2005,1,2902.0
+Louisiana,2005,2,2350.0
+Louisiana,2005,3,2091.0
+Louisiana,2005,4,2837.0
+Louisiana,2006,1,3216.0
+Louisiana,2006,2,2757.0
+Louisiana,2006,3,2673.0
+Louisiana,2006,4,3230.0
+Louisiana,2007,1,3264.0
+Louisiana,2007,2,2651.0
+Louisiana,2007,3,2745.0
+Louisiana,2007,4,2959.0
+Louisiana,2008,1,3004.0
+Louisiana,2008,2,2386.0
+Louisiana,2008,3,2321.0
+Louisiana,2008,4,2685.0
+Louisiana,2009,1,2870.0
+Louisiana,2009,2,2190.0
+Louisiana,2009,3,2145.0
+Louisiana,2009,4,2233.0
+Louisiana,2010,1,2785.0
+Louisiana,2010,2,2100.0
+Louisiana,2010,3,2352.0
+Louisiana,2010,4,2510.0
+Louisiana,2011,1,2845.0
+Louisiana,2011,2,2432.0
+Louisiana,2011,3,2363.0
+Louisiana,2011,4,2512.0
+Louisiana,2012,1,3085.0
+Louisiana,2012,2,2394.0
+Louisiana,2012,3,2254.0
+Louisiana,2012,4,2395.0
+Louisiana,2013,1,3072.0
+Louisiana,2013,2,2392.0
+Louisiana,2013,3,2327.0
+Louisiana,2013,4,2605.0
+Louisiana,2014,1,2813.0
+Louisiana,2014,2,2314.0
+Louisiana,2014,3,2252.0
+Louisiana,2014,4,2622.0
+Louisiana,2015,1,2972.0
+Louisiana,2015,2,2347.0
+Louisiana,2015,3,2223.0
+Louisiana,2015,4,2557.0
+Louisiana,2016,1,2984.0
+Louisiana,2016,2,2173.0
+Louisiana,2016,3,2130.0
+Louisiana,2016,4,2376.0
+Louisiana,2017,1,2982.0
+Louisiana,2017,2,2413.0
+Louisiana,2017,3,2358.0
+Louisiana,2017,4,2439.0
+Louisiana,2018,1,3002.0
+Louisiana,2018,2,2454.0
+Louisiana,2018,3,2401.0
+Louisiana,2018,4,2779.0
+Louisiana,2019,1,2935.0
+Louisiana,2019,2,2452.0
+Louisiana,2019,3,2222.0
+Louisiana,2019,4,2454.0
+Louisiana,2020,1,2638.0
+Louisiana,2020,2,1667.0
+Louisiana,2020,3,2277.0
+Louisiana,2020,4,2834.0
+Louisiana,2021,1,3716.0
+Louisiana,2021,2,2952.0
+Louisiana,2021,3,2847.0
+Louisiana,2021,4,3560.0
+Louisiana,2022,1,4402.0
+Louisiana,2022,2,3335.0
+Louisiana,2022,3,2886.0
+Louisiana,2022,4,3041.0
+Louisiana,2023,1,4569.0
+Louisiana,2023,2,2908.0
+Louisiana,2023,3,2649.0
+Louisiana,2023,4,3246.0
+Louisiana,2024,1,4222.0
+Louisiana,2024,2,2725.0
+Louisiana,2024,3,2664.0
+Louisiana,2024,4,3093.0
+Louisiana,2025,1,3846.0
+Louisiana,2025,2,2792.0
+Louisiana,2025,3,2618.0
+Louisiana,2025,4,2902.0
+Louisiana,2026,1,3854.0
+Maine,1992,3,
+Maine,1992,4,
+Maine,1993,1,
+Maine,1993,2,954.0
+Maine,1993,3,958.0
+Maine,1993,4,1001.0
+Maine,1994,1,1025.0
+Maine,1994,2,1055.0
+Maine,1994,3,1045.0
+Maine,1994,4,1065.0
+Maine,1995,1,881.0
+Maine,1995,2,1182.0
+Maine,1995,3,953.0
+Maine,1995,4,1015.0
+Maine,1996,1,852.0
+Maine,1996,2,1033.0
+Maine,1996,3,1060.0
+Maine,1996,4,1019.0
+Maine,1997,1,787.0
+Maine,1997,2,1203.0
+Maine,1997,3,1134.0
+Maine,1997,4,1072.0
+Maine,1998,1,1100.0
+Maine,1998,2,1286.0
+Maine,1998,3,1061.0
+Maine,1998,4,1099.0
+Maine,1999,1,1025.0
+Maine,1999,2,1091.0
+Maine,1999,3,1082.0
+Maine,1999,4,1052.0
+Maine,2000,1,1162.0
+Maine,2000,2,1095.0
+Maine,2000,3,1066.0
+Maine,2000,4,1038.0
+Maine,2001,1,1093.0
+Maine,2001,2,1066.0
+Maine,2001,3,1137.0
+Maine,2001,4,1041.0
+Maine,2002,1,1159.0
+Maine,2002,2,1093.0
+Maine,2002,3,1036.0
+Maine,2002,4,946.0
+Maine,2003,1,1051.0
+Maine,2003,2,1018.0
+Maine,2003,3,1031.0
+Maine,2003,4,1003.0
+Maine,2004,1,1005.0
+Maine,2004,2,1162.0
+Maine,2004,3,1198.0
+Maine,2004,4,1188.0
+Maine,2005,1,1070.0
+Maine,2005,2,1117.0
+Maine,2005,3,946.0
+Maine,2005,4,1254.0
+Maine,2006,1,1123.0
+Maine,2006,2,1121.0
+Maine,2006,3,947.0
+Maine,2006,4,942.0
+Maine,2007,1,1166.0
+Maine,2007,2,1032.0
+Maine,2007,3,1099.0
+Maine,2007,4,973.0
+Maine,2008,1,1053.0
+Maine,2008,2,1107.0
+Maine,2008,3,987.0
+Maine,2008,4,1135.0
+Maine,2009,1,915.0
+Maine,2009,2,919.0
+Maine,2009,3,895.0
+Maine,2009,4,976.0
+Maine,2010,1,904.0
+Maine,2010,2,1002.0
+Maine,2010,3,905.0
+Maine,2010,4,917.0
+Maine,2011,1,928.0
+Maine,2011,2,1099.0
+Maine,2011,3,970.0
+Maine,2011,4,957.0
+Maine,2012,1,899.0
+Maine,2012,2,1026.0
+Maine,2012,3,920.0
+Maine,2012,4,923.0
+Maine,2013,1,911.0
+Maine,2013,2,1033.0
+Maine,2013,3,953.0
+Maine,2013,4,1011.0
+Maine,2014,1,897.0
+Maine,2014,2,996.0
+Maine,2014,3,999.0
+Maine,2014,4,940.0
+Maine,2015,1,1026.0
+Maine,2015,2,1122.0
+Maine,2015,3,1022.0
+Maine,2015,4,1030.0
+Maine,2016,1,1005.0
+Maine,2016,2,1071.0
+Maine,2016,3,1063.0
+Maine,2016,4,1341.0
+Maine,2017,1,1500.0
+Maine,2017,2,1171.0
+Maine,2017,3,1314.0
+Maine,2017,4,1116.0
+Maine,2018,1,1155.0
+Maine,2018,2,1159.0
+Maine,2018,3,909.0
+Maine,2018,4,1234.0
+Maine,2019,1,1139.0
+Maine,2019,2,1308.0
+Maine,2019,3,1015.0
+Maine,2019,4,1196.0
+Maine,2020,1,1084.0
+Maine,2020,2,1143.0
+Maine,2020,3,1333.0
+Maine,2020,4,1537.0
+Maine,2021,1,1737.0
+Maine,2021,2,2036.0
+Maine,2021,3,2094.0
+Maine,2021,4,2000.0
+Maine,2022,1,2145.0
+Maine,2022,2,1930.0
+Maine,2022,3,1969.0
+Maine,2022,4,1668.0
+Maine,2023,1,1811.0
+Maine,2023,2,1758.0
+Maine,2023,3,1583.0
+Maine,2023,4,1588.0
+Maine,2024,1,1688.0
+Maine,2024,2,1787.0
+Maine,2024,3,1568.0
+Maine,2024,4,1610.0
+Maine,2025,1,2107.0
+Maine,2025,2,1963.0
+Maine,2025,3,1675.0
+Maine,2025,4,1684.0
+Maine,2026,1,1750.0
+Maryland,1992,3,
+Maryland,1992,4,
+Maryland,1993,1,
+Maryland,1993,2,3410.0
+Maryland,1993,3,3358.0
+Maryland,1993,4,3668.0
+Maryland,1994,1,3506.0
+Maryland,1994,2,3433.0
+Maryland,1994,3,3308.0
+Maryland,1994,4,3634.0
+Maryland,1995,1,3884.0
+Maryland,1995,2,3545.0
+Maryland,1995,3,3329.0
+Maryland,1995,4,3559.0
+Maryland,1996,1,3900.0
+Maryland,1996,2,3878.0
+Maryland,1996,3,3607.0
+Maryland,1996,4,3884.0
+Maryland,1997,1,4037.0
+Maryland,1997,2,4025.0
+Maryland,1997,3,3795.0
+Maryland,1997,4,4065.0
+Maryland,1998,1,4182.0
+Maryland,1998,2,3775.0
+Maryland,1998,3,3712.0
+Maryland,1998,4,3960.0
+Maryland,1999,1,4001.0
+Maryland,1999,2,3757.0
+Maryland,1999,3,3550.0
+Maryland,1999,4,4161.0
+Maryland,2000,1,4356.0
+Maryland,2000,2,3964.0
+Maryland,2000,3,3652.0
+Maryland,2000,4,2832.0
+Maryland,2001,1,3608.0
+Maryland,2001,2,5162.0
+Maryland,2001,3,2862.0
+Maryland,2001,4,4631.0
+Maryland,2002,1,4483.0
+Maryland,2002,2,3884.0
+Maryland,2002,3,3036.0
+Maryland,2002,4,4146.0
+Maryland,2003,1,4105.0
+Maryland,2003,2,3395.0
+Maryland,2003,3,3970.0
+Maryland,2003,4,3325.0
+Maryland,2004,1,3999.0
+Maryland,2004,2,4257.0
+Maryland,2004,3,4007.0
+Maryland,2004,4,4168.0
+Maryland,2005,1,4560.0
+Maryland,2005,2,4326.0
+Maryland,2005,3,3956.0
+Maryland,2005,4,4043.0
+Maryland,2006,1,4410.0
+Maryland,2006,2,4433.0
+Maryland,2006,3,3408.0
+Maryland,2006,4,3846.0
+Maryland,2007,1,4204.0
+Maryland,2007,2,2727.0
+Maryland,2007,3,4368.0
+Maryland,2007,4,3973.0
+Maryland,2008,1,4039.0
+Maryland,2008,2,3905.0
+Maryland,2008,3,3452.0
+Maryland,2008,4,3625.0
+Maryland,2009,1,3758.0
+Maryland,2009,2,3549.0
+Maryland,2009,3,2867.0
+Maryland,2009,4,3280.0
+Maryland,2010,1,3696.0
+Maryland,2010,2,3705.0
+Maryland,2010,3,3232.0
+Maryland,2010,4,3433.0
+Maryland,2011,1,3650.0
+Maryland,2011,2,3826.0
+Maryland,2011,3,3558.0
+Maryland,2011,4,3803.0
+Maryland,2012,1,4588.0
+Maryland,2012,2,3797.0
+Maryland,2012,3,2940.0
+Maryland,2012,4,3780.0
+Maryland,2013,1,4272.0
+Maryland,2013,2,3534.0
+Maryland,2013,3,3432.0
+Maryland,2013,4,3661.0
+Maryland,2014,1,3806.0
+Maryland,2014,2,4131.0
+Maryland,2014,3,3434.0
+Maryland,2014,4,3849.0
+Maryland,2015,1,3467.0
+Maryland,2015,2,4372.0
+Maryland,2015,3,4219.0
+Maryland,2015,4,4118.0
+Maryland,2016,1,4113.0
+Maryland,2016,2,3847.0
+Maryland,2016,3,3426.0
+Maryland,2016,4,4150.0
+Maryland,2017,1,4143.0
+Maryland,2017,2,3955.0
+Maryland,2017,3,3606.0
+Maryland,2017,4,4040.0
+Maryland,2018,1,4103.0
+Maryland,2018,2,4138.0
+Maryland,2018,3,3705.0
+Maryland,2018,4,3605.0
+Maryland,2019,1,3885.0
+Maryland,2019,2,3710.0
+Maryland,2019,3,3769.0
+Maryland,2019,4,4339.0
+Maryland,2020,1,3392.0
+Maryland,2020,2,3040.0
+Maryland,2020,3,2216.0
+Maryland,2020,4,3403.0
+Maryland,2021,1,4172.0
+Maryland,2021,2,4705.0
+Maryland,2021,3,5287.0
+Maryland,2021,4,3565.0
+Maryland,2022,1,7021.0
+Maryland,2022,2,5030.0
+Maryland,2022,3,5202.0
+Maryland,2022,4,5096.0
+Maryland,2023,1,6075.0
+Maryland,2023,2,5124.0
+Maryland,2023,3,4869.0
+Maryland,2023,4,4694.0
+Maryland,2024,1,5071.0
+Maryland,2024,2,9409.0
+Maryland,2024,3,4892.0
+Maryland,2024,4,5029.0
+Maryland,2025,1,5497.0
+Maryland,2025,2,4487.0
+Maryland,2025,3,4554.0
+Maryland,2025,4,4589.0
+Maryland,2026,1,5247.0
+Massachusetts,1992,3,
+Massachusetts,1992,4,
+Massachusetts,1993,1,
+Massachusetts,1993,2,4293.0
+Massachusetts,1993,3,4097.0
+Massachusetts,1993,4,4544.0
+Massachusetts,1994,1,4180.0
+Massachusetts,1994,2,4106.0
+Massachusetts,1994,3,4504.0
+Massachusetts,1994,4,4349.0
+Massachusetts,1995,1,4710.0
+Massachusetts,1995,2,4306.0
+Massachusetts,1995,3,3946.0
+Massachusetts,1995,4,4117.0
+Massachusetts,1996,1,4212.0
+Massachusetts,1996,2,4697.0
+Massachusetts,1996,3,4167.0
+Massachusetts,1996,4,4372.0
+Massachusetts,1997,1,4582.0
+Massachusetts,1997,2,4681.0
+Massachusetts,1997,3,5240.0
+Massachusetts,1997,4,4164.0
+Massachusetts,1998,1,4283.0
+Massachusetts,1998,2,5213.0
+Massachusetts,1998,3,4324.0
+Massachusetts,1998,4,2805.0
+Massachusetts,1999,1,6115.0
+Massachusetts,1999,2,4958.0
+Massachusetts,1999,3,4104.0
+Massachusetts,1999,4,4246.0
+Massachusetts,2000,1,4644.0
+Massachusetts,2000,2,4142.0
+Massachusetts,2000,3,5399.0
+Massachusetts,2000,4,5030.0
+Massachusetts,2001,1,4782.0
+Massachusetts,2001,2,4531.0
+Massachusetts,2001,3,3965.0
+Massachusetts,2001,4,4343.0
+Massachusetts,2002,1,5128.0
+Massachusetts,2002,2,4843.0
+Massachusetts,2002,3,4275.0
+Massachusetts,2002,4,4668.0
+Massachusetts,2003,1,5027.0
+Massachusetts,2003,2,4266.0
+Massachusetts,2003,3,4395.0
+Massachusetts,2003,4,4310.0
+Massachusetts,2004,1,4893.0
+Massachusetts,2004,2,4446.0
+Massachusetts,2004,3,4092.0
+Massachusetts,2004,4,4702.0
+Massachusetts,2005,1,4919.0
+Massachusetts,2005,2,5069.0
+Massachusetts,2005,3,4206.0
+Massachusetts,2005,4,4424.0
+Massachusetts,2006,1,4292.0
+Massachusetts,2006,2,5128.0
+Massachusetts,2006,3,3907.0
+Massachusetts,2006,4,4318.0
+Massachusetts,2007,1,4808.0
+Massachusetts,2007,2,4358.0
+Massachusetts,2007,3,4372.0
+Massachusetts,2007,4,4298.0
+Massachusetts,2008,1,4873.0
+Massachusetts,2008,2,4187.0
+Massachusetts,2008,3,4024.0
+Massachusetts,2008,4,3977.0
+Massachusetts,2009,1,3914.0
+Massachusetts,2009,2,4079.0
+Massachusetts,2009,3,3611.0
+Massachusetts,2009,4,3941.0
+Massachusetts,2010,1,4531.0
+Massachusetts,2010,2,3805.0
+Massachusetts,2010,3,4281.0
+Massachusetts,2010,4,4788.0
+Massachusetts,2011,1,4376.0
+Massachusetts,2011,2,4590.0
+Massachusetts,2011,3,6540.0
+Massachusetts,2011,4,4503.0
+Massachusetts,2012,1,5428.0
+Massachusetts,2012,2,5084.0
+Massachusetts,2012,3,5190.0
+Massachusetts,2012,4,5129.0
+Massachusetts,2013,1,5249.0
+Massachusetts,2013,2,5310.0
+Massachusetts,2013,3,5784.0
+Massachusetts,2013,4,4484.0
+Massachusetts,2014,1,6157.0
+Massachusetts,2014,2,5964.0
+Massachusetts,2014,3,6222.0
+Massachusetts,2014,4,7570.0
+Massachusetts,2015,1,5942.0
+Massachusetts,2015,2,6411.0
+Massachusetts,2015,3,6136.0
+Massachusetts,2015,4,5748.0
+Massachusetts,2016,1,5370.0
+Massachusetts,2016,2,6911.0
+Massachusetts,2016,3,5301.0
+Massachusetts,2016,4,6279.0
+Massachusetts,2017,1,7099.0
+Massachusetts,2017,2,6412.0
+Massachusetts,2017,3,6162.0
+Massachusetts,2017,4,6080.0
+Massachusetts,2018,1,6534.0
+Massachusetts,2018,2,6400.0
+Massachusetts,2018,3,6528.0
+Massachusetts,2018,4,6435.0
+Massachusetts,2019,1,6584.0
+Massachusetts,2019,2,5565.0
+Massachusetts,2019,3,5520.0
+Massachusetts,2019,4,6483.0
+Massachusetts,2020,1,6827.0
+Massachusetts,2020,2,4462.0
+Massachusetts,2020,3,7694.0
+Massachusetts,2020,4,6233.0
+Massachusetts,2021,1,8014.0
+Massachusetts,2021,2,13114.0
+Massachusetts,2021,3,9627.0
+Massachusetts,2021,4,8429.0
+Massachusetts,2022,1,8811.0
+Massachusetts,2022,2,7351.0
+Massachusetts,2022,3,5652.0
+Massachusetts,2022,4,5240.0
+Massachusetts,2023,1,5474.0
+Massachusetts,2023,2,5740.0
+Massachusetts,2023,3,5353.0
+Massachusetts,2023,4,4869.0
+Massachusetts,2024,1,5011.0
+Massachusetts,2024,2,5445.0
+Massachusetts,2024,3,4860.0
+Massachusetts,2024,4,6116.0
+Massachusetts,2025,1,6554.0
+Massachusetts,2025,2,5562.0
+Massachusetts,2025,3,7363.0
+Massachusetts,2025,4,8550.0
+Massachusetts,2026,1,8997.0
+Michigan,1992,3,
+Michigan,1992,4,
+Michigan,1993,1,
+Michigan,1993,2,5014.0
+Michigan,1993,3,5079.0
+Michigan,1993,4,4559.0
+Michigan,1994,1,5188.0
+Michigan,1994,2,6794.0
+Michigan,1994,3,5696.0
+Michigan,1994,4,4611.0
+Michigan,1995,1,4697.0
+Michigan,1995,2,7523.0
+Michigan,1995,3,5588.0
+Michigan,1995,4,6069.0
+Michigan,1996,1,6748.0
+Michigan,1996,2,6317.0
+Michigan,1996,3,5385.0
+Michigan,1996,4,5984.0
+Michigan,1997,1,5875.0
+Michigan,1997,2,5763.0
+Michigan,1997,3,4970.0
+Michigan,1997,4,3155.0
+Michigan,1998,1,9146.0
+Michigan,1998,2,3909.0
+Michigan,1998,3,3319.0
+Michigan,1998,4,5288.0
+Michigan,1999,1,4365.0
+Michigan,1999,2,5691.0
+Michigan,1999,3,5378.0
+Michigan,1999,4,5727.0
+Michigan,2000,1,6681.0
+Michigan,2000,2,7743.0
+Michigan,2000,3,5865.0
+Michigan,2000,4,5834.0
+Michigan,2001,1,4311.0
+Michigan,2001,2,4625.0
+Michigan,2001,3,6645.0
+Michigan,2001,4,5554.0
+Michigan,2002,1,5486.0
+Michigan,2002,2,6729.0
+Michigan,2002,3,5445.0
+Michigan,2002,4,6110.0
+Michigan,2003,1,5633.0
+Michigan,2003,2,5640.0
+Michigan,2003,3,4508.0
+Michigan,2003,4,6642.0
+Michigan,2004,1,5845.0
+Michigan,2004,2,6273.0
+Michigan,2004,3,5233.0
+Michigan,2004,4,5853.0
+Michigan,2005,1,5949.0
+Michigan,2005,2,6486.0
+Michigan,2005,3,5162.0
+Michigan,2005,4,5420.0
+Michigan,2006,1,5599.0
+Michigan,2006,2,5511.0
+Michigan,2006,3,4699.0
+Michigan,2006,4,5454.0
+Michigan,2007,1,5293.0
+Michigan,2007,2,5081.0
+Michigan,2007,3,4590.0
+Michigan,2007,4,5262.0
+Michigan,2008,1,5448.0
+Michigan,2008,2,5187.0
+Michigan,2008,3,3837.0
+Michigan,2008,4,5078.0
+Michigan,2009,1,2595.0
+Michigan,2009,2,6429.0
+Michigan,2009,3,3970.0
+Michigan,2009,4,4593.0
+Michigan,2010,1,4361.0
+Michigan,2010,2,4259.0
+Michigan,2010,3,3852.0
+Michigan,2010,4,4610.0
+Michigan,2011,1,4366.0
+Michigan,2011,2,4947.0
+Michigan,2011,3,4515.0
+Michigan,2011,4,4513.0
+Michigan,2012,1,4842.0
+Michigan,2012,2,3928.0
+Michigan,2012,3,4231.0
+Michigan,2012,4,4308.0
+Michigan,2013,1,4854.0
+Michigan,2013,2,5321.0
+Michigan,2013,3,4684.0
+Michigan,2013,4,4573.0
+Michigan,2014,1,4924.0
+Michigan,2014,2,5264.0
+Michigan,2014,3,4099.0
+Michigan,2014,4,4916.0
+Michigan,2015,1,4527.0
+Michigan,2015,2,4609.0
+Michigan,2015,3,3973.0
+Michigan,2015,4,4740.0
+Michigan,2016,1,4695.0
+Michigan,2016,2,4631.0
+Michigan,2016,3,4227.0
+Michigan,2016,4,4321.0
+Michigan,2017,1,4741.0
+Michigan,2017,2,4557.0
+Michigan,2017,3,4257.0
+Michigan,2017,4,4303.0
+Michigan,2018,1,5100.0
+Michigan,2018,2,4872.0
+Michigan,2018,3,4635.0
+Michigan,2018,4,5157.0
+Michigan,2019,1,5087.0
+Michigan,2019,2,5483.0
+Michigan,2019,3,4435.0
+Michigan,2019,4,5385.0
+Michigan,2020,1,9630.0
+Michigan,2020,2,4187.0
+Michigan,2020,3,5317.0
+Michigan,2020,4,5462.0
+Michigan,2021,1,7065.0
+Michigan,2021,2,7691.0
+Michigan,2021,3,7140.0
+Michigan,2021,4,7868.0
+Michigan,2022,1,8064.0
+Michigan,2022,2,7718.0
+Michigan,2022,3,6411.0
+Michigan,2022,4,6624.0
+Michigan,2023,1,7597.0
+Michigan,2023,2,7448.0
+Michigan,2023,3,6712.0
+Michigan,2023,4,5889.0
+Michigan,2024,1,7459.0
+Michigan,2024,2,6907.0
+Michigan,2024,3,6188.0
+Michigan,2024,4,5802.0
+Michigan,2025,1,7001.0
+Michigan,2025,2,6501.0
+Michigan,2025,3,5709.0
+Michigan,2025,4,5732.0
+Michigan,2026,1,4231.0
+Minnesota,1992,3,
+Minnesota,1992,4,
+Minnesota,1993,1,
+Minnesota,1993,2,2478.0
+Minnesota,1993,3,2481.0
+Minnesota,1993,4,3218.0
+Minnesota,1994,1,4137.0
+Minnesota,1994,2,3213.0
+Minnesota,1994,3,2647.0
+Minnesota,1994,4,3972.0
+Minnesota,1995,1,3328.0
+Minnesota,1995,2,3258.0
+Minnesota,1995,3,3119.0
+Minnesota,1995,4,3659.0
+Minnesota,1996,1,3573.0
+Minnesota,1996,2,3606.0
+Minnesota,1996,3,3265.0
+Minnesota,1996,4,3561.0
+Minnesota,1997,1,3225.0
+Minnesota,1997,2,3758.0
+Minnesota,1997,3,3961.0
+Minnesota,1997,4,3876.0
+Minnesota,1998,1,3185.0
+Minnesota,1998,2,3696.0
+Minnesota,1998,3,2792.0
+Minnesota,1998,4,2641.0
+Minnesota,1999,1,2864.0
+Minnesota,1999,2,3597.0
+Minnesota,1999,3,2638.0
+Minnesota,1999,4,3073.0
+Minnesota,2000,1,3084.0
+Minnesota,2000,2,3376.0
+Minnesota,2000,3,4128.0
+Minnesota,2000,4,4362.0
+Minnesota,2001,1,3291.0
+Minnesota,2001,2,2426.0
+Minnesota,2001,3,2239.0
+Minnesota,2001,4,4041.0
+Minnesota,2002,1,3195.0
+Minnesota,2002,2,5085.0
+Minnesota,2002,3,3370.0
+Minnesota,2002,4,2973.0
+Minnesota,2003,1,2947.0
+Minnesota,2003,2,4702.0
+Minnesota,2003,3,3294.0
+Minnesota,2003,4,3174.0
+Minnesota,2004,1,2380.0
+Minnesota,2004,2,3210.0
+Minnesota,2004,3,4247.0
+Minnesota,2004,4,3784.0
+Minnesota,2005,1,2202.0
+Minnesota,2005,2,2069.0
+Minnesota,2005,3,3472.0
+Minnesota,2005,4,4194.0
+Minnesota,2006,1,3862.0
+Minnesota,2006,2,3624.0
+Minnesota,2006,3,2465.0
+Minnesota,2006,4,2606.0
+Minnesota,2007,1,3235.0
+Minnesota,2007,2,2597.0
+Minnesota,2007,3,8054.0
+Minnesota,2007,4,3970.0
+Minnesota,2008,1,3673.0
+Minnesota,2008,2,2569.0
+Minnesota,2008,3,2288.0
+Minnesota,2008,4,3169.0
+Minnesota,2009,1,2791.0
+Minnesota,2009,2,3152.0
+Minnesota,2009,3,3153.0
+Minnesota,2009,4,1837.0
+Minnesota,2010,1,3826.0
+Minnesota,2010,2,2072.0
+Minnesota,2010,3,2633.0
+Minnesota,2010,4,3008.0
+Minnesota,2011,1,4069.0
+Minnesota,2011,2,3788.0
+Minnesota,2011,3,4184.0
+Minnesota,2011,4,2793.0
+Minnesota,2012,1,3913.0
+Minnesota,2012,2,1892.0
+Minnesota,2012,3,4072.0
+Minnesota,2012,4,3055.0
+Minnesota,2013,1,3346.0
+Minnesota,2013,2,3177.0
+Minnesota,2013,3,2805.0
+Minnesota,2013,4,2390.0
+Minnesota,2014,1,1962.0
+Minnesota,2014,2,4857.0
+Minnesota,2014,3,3163.0
+Minnesota,2014,4,2704.0
+Minnesota,2015,1,3337.0
+Minnesota,2015,2,3950.0
+Minnesota,2015,3,2929.0
+Minnesota,2015,4,3201.0
+Minnesota,2016,1,3368.0
+Minnesota,2016,2,3155.0
+Minnesota,2016,3,2925.0
+Minnesota,2016,4,3226.0
+Minnesota,2017,1,3330.0
+Minnesota,2017,2,3294.0
+Minnesota,2017,3,3148.0
+Minnesota,2017,4,3112.0
+Minnesota,2018,1,3520.0
+Minnesota,2018,2,3680.0
+Minnesota,2018,3,3272.0
+Minnesota,2018,4,3311.0
+Minnesota,2019,1,3301.0
+Minnesota,2019,2,4001.0
+Minnesota,2019,3,3496.0
+Minnesota,2019,4,3481.0
+Minnesota,2020,1,3668.0
+Minnesota,2020,2,2846.0
+Minnesota,2020,3,3284.0
+Minnesota,2020,4,3873.0
+Minnesota,2021,1,4456.0
+Minnesota,2021,2,4752.0
+Minnesota,2021,3,4507.0
+Minnesota,2021,4,5052.0
+Minnesota,2022,1,4104.0
+Minnesota,2022,2,4930.0
+Minnesota,2022,3,4600.0
+Minnesota,2022,4,4977.0
+Minnesota,2023,1,4668.0
+Minnesota,2023,2,4754.0
+Minnesota,2023,3,3627.0
+Minnesota,2023,4,5123.0
+Minnesota,2024,1,4591.0
+Minnesota,2024,2,4170.0
+Minnesota,2024,3,4666.0
+Minnesota,2024,4,4037.0
+Minnesota,2025,1,4035.0
+Minnesota,2025,2,4692.0
+Minnesota,2025,3,4413.0
+Minnesota,2025,4,4320.0
+Minnesota,2026,1,4754.0
+Mississippi,1992,3,
+Mississippi,1992,4,
+Mississippi,1993,1,
+Mississippi,1993,2,1513.0
+Mississippi,1993,3,1400.0
+Mississippi,1993,4,1611.0
+Mississippi,1994,1,1456.0
+Mississippi,1994,2,1457.0
+Mississippi,1994,3,1389.0
+Mississippi,1994,4,1299.0
+Mississippi,1995,1,1379.0
+Mississippi,1995,2,1937.0
+Mississippi,1995,3,1481.0
+Mississippi,1995,4,1233.0
+Mississippi,1996,1,1789.0
+Mississippi,1996,2,1569.0
+Mississippi,1996,3,1401.0
+Mississippi,1996,4,1337.0
+Mississippi,1997,1,1895.0
+Mississippi,1997,2,1496.0
+Mississippi,1997,3,1956.0
+Mississippi,1997,4,1327.0
+Mississippi,1998,1,1616.0
+Mississippi,1998,2,1485.0
+Mississippi,1998,3,1665.0
+Mississippi,1998,4,1665.0
+Mississippi,1999,1,1925.0
+Mississippi,1999,2,1626.0
+Mississippi,1999,3,1540.0
+Mississippi,1999,4,1605.0
+Mississippi,2000,1,1595.0
+Mississippi,2000,2,1485.0
+Mississippi,2000,3,1482.0
+Mississippi,2000,4,1635.0
+Mississippi,2001,1,1509.0
+Mississippi,2001,2,1348.0
+Mississippi,2001,3,1410.0
+Mississippi,2001,4,1403.0
+Mississippi,2002,1,1738.0
+Mississippi,2002,2,1445.0
+Mississippi,2002,3,1480.0
+Mississippi,2002,4,1392.0
+Mississippi,2003,1,1739.0
+Mississippi,2003,2,1401.0
+Mississippi,2003,3,1393.0
+Mississippi,2003,4,1471.0
+Mississippi,2004,1,1722.0
+Mississippi,2004,2,1509.0
+Mississippi,2004,3,1459.0
+Mississippi,2004,4,1438.0
+Mississippi,2005,1,1744.0
+Mississippi,2005,2,1405.0
+Mississippi,2005,3,1369.0
+Mississippi,2005,4,1710.0
+Mississippi,2006,1,1950.0
+Mississippi,2006,2,1721.0
+Mississippi,2006,3,1521.0
+Mississippi,2006,4,1656.0
+Mississippi,2007,1,1877.0
+Mississippi,2007,2,1609.0
+Mississippi,2007,3,1543.0
+Mississippi,2007,4,1568.0
+Mississippi,2008,1,1721.0
+Mississippi,2008,2,1457.0
+Mississippi,2008,3,1168.0
+Mississippi,2008,4,1266.0
+Mississippi,2009,1,1583.0
+Mississippi,2009,2,1187.0
+Mississippi,2009,3,1137.0
+Mississippi,2009,4,1207.0
+Mississippi,2010,1,1471.0
+Mississippi,2010,2,1283.0
+Mississippi,2010,3,1319.0
+Mississippi,2010,4,1304.0
+Mississippi,2011,1,1593.0
+Mississippi,2011,2,1216.0
+Mississippi,2011,3,1315.0
+Mississippi,2011,4,1346.0
+Mississippi,2012,1,1560.0
+Mississippi,2012,2,1171.0
+Mississippi,2012,3,1229.0
+Mississippi,2012,4,1362.0
+Mississippi,2013,1,1390.0
+Mississippi,2013,2,1208.0
+Mississippi,2013,3,1219.0
+Mississippi,2013,4,1311.0
+Mississippi,2014,1,1448.0
+Mississippi,2014,2,1354.0
+Mississippi,2014,3,1248.0
+Mississippi,2014,4,1319.0
+Mississippi,2015,1,1538.0
+Mississippi,2015,2,1322.0
+Mississippi,2015,3,1272.0
+Mississippi,2015,4,1346.0
+Mississippi,2016,1,1562.0
+Mississippi,2016,2,1292.0
+Mississippi,2016,3,1370.0
+Mississippi,2016,4,1529.0
+Mississippi,2017,1,1571.0
+Mississippi,2017,2,1346.0
+Mississippi,2017,3,1305.0
+Mississippi,2017,4,1320.0
+Mississippi,2018,1,1431.0
+Mississippi,2018,2,1352.0
+Mississippi,2018,3,1273.0
+Mississippi,2018,4,1349.0
+Mississippi,2019,1,1453.0
+Mississippi,2019,2,1279.0
+Mississippi,2019,3,1253.0
+Mississippi,2019,4,1278.0
+Mississippi,2020,1,1376.0
+Mississippi,2020,2,1197.0
+Mississippi,2020,3,1387.0
+Mississippi,2020,4,1572.0
+Mississippi,2021,1,1773.0
+Mississippi,2021,2,1895.0
+Mississippi,2021,3,1920.0
+Mississippi,2021,4,1862.0
+Mississippi,2022,1,2101.0
+Mississippi,2022,2,2237.0
+Mississippi,2022,3,2142.0
+Mississippi,2022,4,2048.0
+Mississippi,2023,1,1952.0
+Mississippi,2023,2,2064.0
+Mississippi,2023,3,1924.0
+Mississippi,2023,4,1718.0
+Mississippi,2024,1,1991.0
+Mississippi,2024,2,1800.0
+Mississippi,2024,3,1981.0
+Mississippi,2024,4,1881.0
+Mississippi,2025,1,1799.0
+Mississippi,2025,2,1770.0
+Mississippi,2025,3,1626.0
+Mississippi,2025,4,1737.0
+Mississippi,2026,1,2056.0
+Missouri,1992,3,
+Missouri,1992,4,
+Missouri,1993,1,
+Missouri,1993,2,3662.0
+Missouri,1993,3,3562.0
+Missouri,1993,4,3857.0
+Missouri,1994,1,3400.0
+Missouri,1994,2,3755.0
+Missouri,1994,3,3774.0
+Missouri,1994,4,3923.0
+Missouri,1995,1,3401.0
+Missouri,1995,2,3501.0
+Missouri,1995,3,3263.0
+Missouri,1995,4,3340.0
+Missouri,1996,1,3744.0
+Missouri,1996,2,4266.0
+Missouri,1996,3,3729.0
+Missouri,1996,4,3766.0
+Missouri,1997,1,4107.0
+Missouri,1997,2,3729.0
+Missouri,1997,3,3015.0
+Missouri,1997,4,4417.0
+Missouri,1998,1,3878.0
+Missouri,1998,2,4228.0
+Missouri,1998,3,3365.0
+Missouri,1998,4,3384.0
+Missouri,1999,1,3694.0
+Missouri,1999,2,4290.0
+Missouri,1999,3,3737.0
+Missouri,1999,4,3698.0
+Missouri,2000,1,2899.0
+Missouri,2000,2,3714.0
+Missouri,2000,3,3550.0
+Missouri,2000,4,3047.0
+Missouri,2001,1,3219.0
+Missouri,2001,2,3868.0
+Missouri,2001,3,3114.0
+Missouri,2001,4,2698.0
+Missouri,2002,1,4217.0
+Missouri,2002,2,4429.0
+Missouri,2002,3,3481.0
+Missouri,2002,4,3588.0
+Missouri,2003,1,3358.0
+Missouri,2003,2,4190.0
+Missouri,2003,3,2796.0
+Missouri,2003,4,3140.0
+Missouri,2004,1,3671.0
+Missouri,2004,2,4454.0
+Missouri,2004,3,3075.0
+Missouri,2004,4,3226.0
+Missouri,2005,1,4218.0
+Missouri,2005,2,4087.0
+Missouri,2005,3,3697.0
+Missouri,2005,4,4131.0
+Missouri,2006,1,3463.0
+Missouri,2006,2,4812.0
+Missouri,2006,3,3229.0
+Missouri,2006,4,4590.0
+Missouri,2007,1,3150.0
+Missouri,2007,2,3758.0
+Missouri,2007,3,3683.0
+Missouri,2007,4,2807.0
+Missouri,2008,1,4018.0
+Missouri,2008,2,4072.0
+Missouri,2008,3,2105.0
+Missouri,2008,4,4342.0
+Missouri,2009,1,3686.0
+Missouri,2009,2,3342.0
+Missouri,2009,3,3303.0
+Missouri,2009,4,3112.0
+Missouri,2010,1,2389.0
+Missouri,2010,2,4552.0
+Missouri,2010,3,3733.0
+Missouri,2010,4,3538.0
+Missouri,2011,1,3999.0
+Missouri,2011,2,3982.0
+Missouri,2011,3,3807.0
+Missouri,2011,4,3904.0
+Missouri,2012,1,3870.0
+Missouri,2012,2,4457.0
+Missouri,2012,3,4149.0
+Missouri,2012,4,4388.0
+Missouri,2013,1,4840.0
+Missouri,2013,2,3664.0
+Missouri,2013,3,3964.0
+Missouri,2013,4,3793.0
+Missouri,2014,1,4651.0
+Missouri,2014,2,4542.0
+Missouri,2014,3,3931.0
+Missouri,2014,4,5072.0
+Missouri,2015,1,5550.0
+Missouri,2015,2,5030.0
+Missouri,2015,3,4393.0
+Missouri,2015,4,4995.0
+Missouri,2016,1,5594.0
+Missouri,2016,2,5380.0
+Missouri,2016,3,3431.0
+Missouri,2016,4,4728.0
+Missouri,2017,1,7160.0
+Missouri,2017,2,7102.0
+Missouri,2017,3,5888.0
+Missouri,2017,4,4666.0
+Missouri,2018,1,5410.0
+Missouri,2018,2,6463.0
+Missouri,2018,3,5658.0
+Missouri,2018,4,5344.0
+Missouri,2019,1,6336.0
+Missouri,2019,2,5945.0
+Missouri,2019,3,6339.0
+Missouri,2019,4,6163.0
+Missouri,2020,1,6114.0
+Missouri,2020,2,5592.0
+Missouri,2020,3,6688.0
+Missouri,2020,4,6713.0
+Missouri,2021,1,7623.0
+Missouri,2021,2,7727.0
+Missouri,2021,3,8048.0
+Missouri,2021,4,8004.0
+Missouri,2022,1,8429.0
+Missouri,2022,2,10506.0
+Missouri,2022,3,7659.0
+Missouri,2022,4,7267.0
+Missouri,2023,1,8377.0
+Missouri,2023,2,7242.0
+Missouri,2023,3,6971.0
+Missouri,2023,4,7841.0
+Missouri,2024,1,8405.0
+Missouri,2024,2,9304.0
+Missouri,2024,3,7086.0
+Missouri,2024,4,8257.0
+Missouri,2025,1,8234.0
+Missouri,2025,2,8547.0
+Missouri,2025,3,7022.0
+Missouri,2025,4,8134.0
+Missouri,2026,1,9326.0
+Montana,1992,3,
+Montana,1992,4,
+Montana,1993,1,
+Montana,1993,2,911.0
+Montana,1993,3,818.0
+Montana,1993,4,784.0
+Montana,1994,1,829.0
+Montana,1994,2,1016.0
+Montana,1994,3,992.0
+Montana,1994,4,804.0
+Montana,1995,1,736.0
+Montana,1995,2,883.0
+Montana,1995,3,889.0
+Montana,1995,4,846.0
+Montana,1996,1,855.0
+Montana,1996,2,1066.0
+Montana,1996,3,1127.0
+Montana,1996,4,822.0
+Montana,1997,1,683.0
+Montana,1997,2,1033.0
+Montana,1997,3,1048.0
+Montana,1997,4,994.0
+Montana,1998,1,1221.0
+Montana,1998,2,959.0
+Montana,1998,3,920.0
+Montana,1998,4,724.0
+Montana,1999,1,904.0
+Montana,1999,2,1033.0
+Montana,1999,3,938.0
+Montana,1999,4,667.0
+Montana,2000,1,898.0
+Montana,2000,2,946.0
+Montana,2000,3,937.0
+Montana,2000,4,717.0
+Montana,2001,1,1053.0
+Montana,2001,2,1045.0
+Montana,2001,3,908.0
+Montana,2001,4,815.0
+Montana,2002,1,983.0
+Montana,2002,2,1057.0
+Montana,2002,3,1090.0
+Montana,2002,4,1121.0
+Montana,2003,1,787.0
+Montana,2003,2,1104.0
+Montana,2003,3,1104.0
+Montana,2003,4,1170.0
+Montana,2004,1,931.0
+Montana,2004,2,1404.0
+Montana,2004,3,1023.0
+Montana,2004,4,1163.0
+Montana,2005,1,972.0
+Montana,2005,2,1074.0
+Montana,2005,3,1074.0
+Montana,2005,4,1089.0
+Montana,2006,1,1003.0
+Montana,2006,2,1192.0
+Montana,2006,3,1032.0
+Montana,2006,4,1098.0
+Montana,2007,1,1003.0
+Montana,2007,2,1084.0
+Montana,2007,3,1059.0
+Montana,2007,4,1048.0
+Montana,2008,1,932.0
+Montana,2008,2,932.0
+Montana,2008,3,877.0
+Montana,2008,4,990.0
+Montana,2009,1,790.0
+Montana,2009,2,816.0
+Montana,2009,3,789.0
+Montana,2009,4,898.0
+Montana,2010,1,733.0
+Montana,2010,2,808.0
+Montana,2010,3,793.0
+Montana,2010,4,1021.0
+Montana,2011,1,800.0
+Montana,2011,2,903.0
+Montana,2011,3,876.0
+Montana,2011,4,1086.0
+Montana,2012,1,862.0
+Montana,2012,2,1033.0
+Montana,2012,3,901.0
+Montana,2012,4,1091.0
+Montana,2013,1,904.0
+Montana,2013,2,909.0
+Montana,2013,3,1008.0
+Montana,2013,4,995.0
+Montana,2014,1,854.0
+Montana,2014,2,825.0
+Montana,2014,3,1009.0
+Montana,2014,4,929.0
+Montana,2015,1,1194.0
+Montana,2015,2,1134.0
+Montana,2015,3,1011.0
+Montana,2015,4,1130.0
+Montana,2016,1,779.0
+Montana,2016,2,1242.0
+Montana,2016,3,986.0
+Montana,2016,4,1097.0
+Montana,2017,1,1024.0
+Montana,2017,2,1024.0
+Montana,2017,3,1098.0
+Montana,2017,4,1276.0
+Montana,2018,1,1100.0
+Montana,2018,2,1218.0
+Montana,2018,3,1197.0
+Montana,2018,4,1419.0
+Montana,2019,1,1207.0
+Montana,2019,2,1127.0
+Montana,2019,3,1299.0
+Montana,2019,4,1476.0
+Montana,2020,1,1236.0
+Montana,2020,2,1329.0
+Montana,2020,3,1484.0
+Montana,2020,4,1780.0
+Montana,2021,1,1742.0
+Montana,2021,2,2088.0
+Montana,2021,3,1921.0
+Montana,2021,4,2170.0
+Montana,2022,1,1890.0
+Montana,2022,2,1858.0
+Montana,2022,3,1915.0
+Montana,2022,4,1894.0
+Montana,2023,1,1781.0
+Montana,2023,2,1737.0
+Montana,2023,3,1641.0
+Montana,2023,4,1778.0
+Montana,2024,1,1660.0
+Montana,2024,2,1620.0
+Montana,2024,3,1547.0
+Montana,2024,4,1713.0
+Montana,2025,1,1465.0
+Montana,2025,2,1619.0
+Montana,2025,3,1538.0
+Montana,2025,4,1728.0
+Montana,2026,1,1550.0
+Nebraska,1992,3,
+Nebraska,1992,4,
+Nebraska,1993,1,
+Nebraska,1993,2,796.0
+Nebraska,1993,3,1137.0
+Nebraska,1993,4,1119.0
+Nebraska,1994,1,963.0
+Nebraska,1994,2,838.0
+Nebraska,1994,3,856.0
+Nebraska,1994,4,1149.0
+Nebraska,1995,1,1020.0
+Nebraska,1995,2,1016.0
+Nebraska,1995,3,903.0
+Nebraska,1995,4,1100.0
+Nebraska,1996,1,1196.0
+Nebraska,1996,2,915.0
+Nebraska,1996,3,1111.0
+Nebraska,1996,4,956.0
+Nebraska,1997,1,1220.0
+Nebraska,1997,2,999.0
+Nebraska,1997,3,1102.0
+Nebraska,1997,4,1187.0
+Nebraska,1998,1,1033.0
+Nebraska,1998,2,1150.0
+Nebraska,1998,3,1004.0
+Nebraska,1998,4,1123.0
+Nebraska,1999,1,1061.0
+Nebraska,1999,2,1131.0
+Nebraska,1999,3,1081.0
+Nebraska,1999,4,1099.0
+Nebraska,2000,1,1174.0
+Nebraska,2000,2,1193.0
+Nebraska,2000,3,1132.0
+Nebraska,2000,4,1115.0
+Nebraska,2001,1,1095.0
+Nebraska,2001,2,1148.0
+Nebraska,2001,3,989.0
+Nebraska,2001,4,1260.0
+Nebraska,2002,1,1186.0
+Nebraska,2002,2,1214.0
+Nebraska,2002,3,935.0
+Nebraska,2002,4,1146.0
+Nebraska,2003,1,1222.0
+Nebraska,2003,2,1127.0
+Nebraska,2003,3,925.0
+Nebraska,2003,4,1228.0
+Nebraska,2004,1,1152.0
+Nebraska,2004,2,1159.0
+Nebraska,2004,3,1101.0
+Nebraska,2004,4,1222.0
+Nebraska,2005,1,1247.0
+Nebraska,2005,2,1277.0
+Nebraska,2005,3,1124.0
+Nebraska,2005,4,1234.0
+Nebraska,2006,1,1129.0
+Nebraska,2006,2,1241.0
+Nebraska,2006,3,1154.0
+Nebraska,2006,4,1270.0
+Nebraska,2007,1,1252.0
+Nebraska,2007,2,1175.0
+Nebraska,2007,3,1012.0
+Nebraska,2007,4,1397.0
+Nebraska,2008,1,1218.0
+Nebraska,2008,2,1093.0
+Nebraska,2008,3,1110.0
+Nebraska,2008,4,1267.0
+Nebraska,2009,1,1032.0
+Nebraska,2009,2,1029.0
+Nebraska,2009,3,922.0
+Nebraska,2009,4,1153.0
+Nebraska,2010,1,1023.0
+Nebraska,2010,2,1067.0
+Nebraska,2010,3,1074.0
+Nebraska,2010,4,1305.0
+Nebraska,2011,1,1173.0
+Nebraska,2011,2,1082.0
+Nebraska,2011,3,1074.0
+Nebraska,2011,4,1259.0
+Nebraska,2012,1,5396.0
+Nebraska,2012,2,1924.0
+Nebraska,2012,3,1728.0
+Nebraska,2012,4,1930.0
+Nebraska,2013,1,1655.0
+Nebraska,2013,2,1681.0
+Nebraska,2013,3,1548.0
+Nebraska,2013,4,1916.0
+Nebraska,2014,1,1731.0
+Nebraska,2014,2,1643.0
+Nebraska,2014,3,1578.0
+Nebraska,2014,4,1741.0
+Nebraska,2015,1,1579.0
+Nebraska,2015,2,1589.0
+Nebraska,2015,3,1571.0
+Nebraska,2015,4,1721.0
+Nebraska,2016,1,1642.0
+Nebraska,2016,2,1632.0
+Nebraska,2016,3,1460.0
+Nebraska,2016,4,1575.0
+Nebraska,2017,1,1675.0
+Nebraska,2017,2,1618.0
+Nebraska,2017,3,1458.0
+Nebraska,2017,4,1664.0
+Nebraska,2018,1,1581.0
+Nebraska,2018,2,1794.0
+Nebraska,2018,3,1528.0
+Nebraska,2018,4,1677.0
+Nebraska,2019,1,1685.0
+Nebraska,2019,2,1531.0
+Nebraska,2019,3,1131.0
+Nebraska,2019,4,1617.0
+Nebraska,2020,1,1932.0
+Nebraska,2020,2,1448.0
+Nebraska,2020,3,1687.0
+Nebraska,2020,4,1816.0
+Nebraska,2021,1,1909.0
+Nebraska,2021,2,1958.0
+Nebraska,2021,3,1836.0
+Nebraska,2021,4,1777.0
+Nebraska,2022,1,1922.0
+Nebraska,2022,2,1534.0
+Nebraska,2022,3,2533.0
+Nebraska,2022,4,2334.0
+Nebraska,2023,1,2151.0
+Nebraska,2023,2,1879.0
+Nebraska,2023,3,1883.0
+Nebraska,2023,4,1878.0
+Nebraska,2024,1,1746.0
+Nebraska,2024,2,1806.0
+Nebraska,2024,3,1667.0
+Nebraska,2024,4,1859.0
+Nebraska,2025,1,1985.0
+Nebraska,2025,2,1973.0
+Nebraska,2025,3,1735.0
+Nebraska,2025,4,1882.0
+Nebraska,2026,1,1880.0
+Nevada,1992,3,
+Nevada,1992,4,
+Nevada,1993,1,
+Nevada,1993,2,1343.0
+Nevada,1993,3,1465.0
+Nevada,1993,4,1520.0
+Nevada,1994,1,1899.0
+Nevada,1994,2,1573.0
+Nevada,1994,3,1537.0
+Nevada,1994,4,1468.0
+Nevada,1995,1,1699.0
+Nevada,1995,2,1735.0
+Nevada,1995,3,1582.0
+Nevada,1995,4,1620.0
+Nevada,1996,1,2062.0
+Nevada,1996,2,1662.0
+Nevada,1996,3,1732.0
+Nevada,1996,4,1866.0
+Nevada,1997,1,2083.0
+Nevada,1997,2,1825.0
+Nevada,1997,3,1782.0
+Nevada,1997,4,1895.0
+Nevada,1998,1,1940.0
+Nevada,1998,2,1766.0
+Nevada,1998,3,1765.0
+Nevada,1998,4,2004.0
+Nevada,1999,1,2099.0
+Nevada,1999,2,1759.0
+Nevada,1999,3,1784.0
+Nevada,1999,4,1998.0
+Nevada,2000,1,2179.0
+Nevada,2000,2,1881.0
+Nevada,2000,3,1881.0
+Nevada,2000,4,2053.0
+Nevada,2001,1,2341.0
+Nevada,2001,2,1960.0
+Nevada,2001,3,1858.0
+Nevada,2001,4,1983.0
+Nevada,2002,1,2154.0
+Nevada,2002,2,1888.0
+Nevada,2002,3,1986.0
+Nevada,2002,4,2176.0
+Nevada,2003,1,2295.0
+Nevada,2003,2,1902.0
+Nevada,2003,3,2032.0
+Nevada,2003,4,2334.0
+Nevada,2004,1,2686.0
+Nevada,2004,2,2281.0
+Nevada,2004,3,2241.0
+Nevada,2004,4,2592.0
+Nevada,2005,1,2551.0
+Nevada,2005,2,2355.0
+Nevada,2005,3,2347.0
+Nevada,2005,4,2644.0
+Nevada,2006,1,2579.0
+Nevada,2006,2,2386.0
+Nevada,2006,3,2176.0
+Nevada,2006,4,2620.0
+Nevada,2007,1,2592.0
+Nevada,2007,2,2271.0
+Nevada,2007,3,2212.0
+Nevada,2007,4,2517.0
+Nevada,2008,1,2443.0
+Nevada,2008,2,2095.0
+Nevada,2008,3,2032.0
+Nevada,2008,4,2078.0
+Nevada,2009,1,2066.0
+Nevada,2009,2,1719.0
+Nevada,2009,3,1629.0
+Nevada,2009,4,1951.0
+Nevada,2010,1,1999.0
+Nevada,2010,2,1875.0
+Nevada,2010,3,1815.0
+Nevada,2010,4,2091.0
+Nevada,2011,1,2110.0
+Nevada,2011,2,1913.0
+Nevada,2011,3,1804.0
+Nevada,2011,4,2100.0
+Nevada,2012,1,2182.0
+Nevada,2012,2,2037.0
+Nevada,2012,3,1881.0
+Nevada,2012,4,2102.0
+Nevada,2013,1,2318.0
+Nevada,2013,2,2197.0
+Nevada,2013,3,2043.0
+Nevada,2013,4,2214.0
+Nevada,2014,1,2317.0
+Nevada,2014,2,2119.0
+Nevada,2014,3,2024.0
+Nevada,2014,4,2412.0
+Nevada,2015,1,2525.0
+Nevada,2015,2,2295.0
+Nevada,2015,3,2154.0
+Nevada,2015,4,2544.0
+Nevada,2016,1,2694.0
+Nevada,2016,2,2375.0
+Nevada,2016,3,2262.0
+Nevada,2016,4,2515.0
+Nevada,2017,1,2609.0
+Nevada,2017,2,2394.0
+Nevada,2017,3,2376.0
+Nevada,2017,4,2561.0
+Nevada,2018,1,2901.0
+Nevada,2018,2,2538.0
+Nevada,2018,3,2621.0
+Nevada,2018,4,2876.0
+Nevada,2019,1,2922.0
+Nevada,2019,2,2731.0
+Nevada,2019,3,2594.0
+Nevada,2019,4,2957.0
+Nevada,2020,1,2892.0
+Nevada,2020,2,2738.0
+Nevada,2020,3,3377.0
+Nevada,2020,4,4117.0
+Nevada,2021,1,4381.0
+Nevada,2021,2,4300.0
+Nevada,2021,3,4348.0
+Nevada,2021,4,4856.0
+Nevada,2022,1,4886.0
+Nevada,2022,2,4746.0
+Nevada,2022,3,4766.0
+Nevada,2022,4,4088.0
+Nevada,2023,1,4158.0
+Nevada,2023,2,3927.0
+Nevada,2023,3,3943.0
+Nevada,2023,4,3707.0
+Nevada,2024,1,4076.0
+Nevada,2024,2,3646.0
+Nevada,2024,3,3373.0
+Nevada,2024,4,3458.0
+Nevada,2025,1,3655.0
+Nevada,2025,2,3607.0
+Nevada,2025,3,3680.0
+Nevada,2025,4,3872.0
+Nevada,2026,1,3979.0
+New Hampshire,1992,3,
+New Hampshire,1992,4,
+New Hampshire,1993,1,
+New Hampshire,1993,2,1207.0
+New Hampshire,1993,3,1093.0
+New Hampshire,1993,4,1054.0
+New Hampshire,1994,1,1125.0
+New Hampshire,1994,2,1110.0
+New Hampshire,1994,3,1183.0
+New Hampshire,1994,4,1125.0
+New Hampshire,1995,1,1111.0
+New Hampshire,1995,2,1255.0
+New Hampshire,1995,3,1142.0
+New Hampshire,1995,4,1142.0
+New Hampshire,1996,1,1160.0
+New Hampshire,1996,2,1247.0
+New Hampshire,1996,3,1104.0
+New Hampshire,1996,4,1159.0
+New Hampshire,1997,1,1317.0
+New Hampshire,1997,2,1153.0
+New Hampshire,1997,3,1248.0
+New Hampshire,1997,4,874.0
+New Hampshire,1998,1,1488.0
+New Hampshire,1998,2,1581.0
+New Hampshire,1998,3,1207.0
+New Hampshire,1998,4,1054.0
+New Hampshire,1999,1,1255.0
+New Hampshire,1999,2,1313.0
+New Hampshire,1999,3,1224.0
+New Hampshire,1999,4,1206.0
+New Hampshire,2000,1,1319.0
+New Hampshire,2000,2,1368.0
+New Hampshire,2000,3,1175.0
+New Hampshire,2000,4,1311.0
+New Hampshire,2001,1,1485.0
+New Hampshire,2001,2,1240.0
+New Hampshire,2001,3,1058.0
+New Hampshire,2001,4,1171.0
+New Hampshire,2002,1,1219.0
+New Hampshire,2002,2,1233.0
+New Hampshire,2002,3,1137.0
+New Hampshire,2002,4,1089.0
+New Hampshire,2003,1,1199.0
+New Hampshire,2003,2,1226.0
+New Hampshire,2003,3,1104.0
+New Hampshire,2003,4,1247.0
+New Hampshire,2004,1,1288.0
+New Hampshire,2004,2,1289.0
+New Hampshire,2004,3,1238.0
+New Hampshire,2004,4,933.0
+New Hampshire,2005,1,1453.0
+New Hampshire,2005,2,1307.0
+New Hampshire,2005,3,1154.0
+New Hampshire,2005,4,1077.0
+New Hampshire,2006,1,1464.0
+New Hampshire,2006,2,1299.0
+New Hampshire,2006,3,1177.0
+New Hampshire,2006,4,1116.0
+New Hampshire,2007,1,1279.0
+New Hampshire,2007,2,1201.0
+New Hampshire,2007,3,1064.0
+New Hampshire,2007,4,1054.0
+New Hampshire,2008,1,1239.0
+New Hampshire,2008,2,1218.0
+New Hampshire,2008,3,1185.0
+New Hampshire,2008,4,1023.0
+New Hampshire,2009,1,1073.0
+New Hampshire,2009,2,1024.0
+New Hampshire,2009,3,913.0
+New Hampshire,2009,4,943.0
+New Hampshire,2010,1,1070.0
+New Hampshire,2010,2,1170.0
+New Hampshire,2010,3,1063.0
+New Hampshire,2010,4,961.0
+New Hampshire,2011,1,1111.0
+New Hampshire,2011,2,1152.0
+New Hampshire,2011,3,1180.0
+New Hampshire,2011,4,1012.0
+New Hampshire,2012,1,1231.0
+New Hampshire,2012,2,1257.0
+New Hampshire,2012,3,1087.0
+New Hampshire,2012,4,1054.0
+New Hampshire,2013,1,1093.0
+New Hampshire,2013,2,1210.0
+New Hampshire,2013,3,1095.0
+New Hampshire,2013,4,1041.0
+New Hampshire,2014,1,1117.0
+New Hampshire,2014,2,1169.0
+New Hampshire,2014,3,1104.0
+New Hampshire,2014,4,1060.0
+New Hampshire,2015,1,1250.0
+New Hampshire,2015,2,1274.0
+New Hampshire,2015,3,1211.0
+New Hampshire,2015,4,1141.0
+New Hampshire,2016,1,1250.0
+New Hampshire,2016,2,1291.0
+New Hampshire,2016,3,1133.0
+New Hampshire,2016,4,1063.0
+New Hampshire,2017,1,1285.0
+New Hampshire,2017,2,1300.0
+New Hampshire,2017,3,1122.0
+New Hampshire,2017,4,1184.0
+New Hampshire,2018,1,1393.0
+New Hampshire,2018,2,1381.0
+New Hampshire,2018,3,1306.0
+New Hampshire,2018,4,1141.0
+New Hampshire,2019,1,1296.0
+New Hampshire,2019,2,1436.0
+New Hampshire,2019,3,1337.0
+New Hampshire,2019,4,1218.0
+New Hampshire,2020,1,1509.0
+New Hampshire,2020,2,1371.0
+New Hampshire,2020,3,1661.0
+New Hampshire,2020,4,1712.0
+New Hampshire,2021,1,2020.0
+New Hampshire,2021,2,2409.0
+New Hampshire,2021,3,2171.0
+New Hampshire,2021,4,2113.0
+New Hampshire,2022,1,2472.0
+New Hampshire,2022,2,2170.0
+New Hampshire,2022,3,2226.0
+New Hampshire,2022,4,1835.0
+New Hampshire,2023,1,2175.0
+New Hampshire,2023,2,1914.0
+New Hampshire,2023,3,1835.0
+New Hampshire,2023,4,1623.0
+New Hampshire,2024,1,2037.0
+New Hampshire,2024,2,1809.0
+New Hampshire,2024,3,1616.0
+New Hampshire,2024,4,1440.0
+New Hampshire,2025,1,1692.0
+New Hampshire,2025,2,1388.0
+New Hampshire,2025,3,1544.0
+New Hampshire,2025,4,1466.0
+New Hampshire,2026,1,1640.0
+New Jersey,1992,3,
+New Jersey,1992,4,
+New Jersey,1993,1,
+New Jersey,1993,2,6321.0
+New Jersey,1993,3,5439.0
+New Jersey,1993,4,4813.0
+New Jersey,1994,1,5431.0
+New Jersey,1994,2,7757.0
+New Jersey,1994,3,6316.0
+New Jersey,1994,4,6474.0
+New Jersey,1995,1,6084.0
+New Jersey,1995,2,6606.0
+New Jersey,1995,3,5267.0
+New Jersey,1995,4,6263.0
+New Jersey,1996,1,8948.0
+New Jersey,1996,2,4557.0
+New Jersey,1996,3,6137.0
+New Jersey,1996,4,6923.0
+New Jersey,1997,1,6421.0
+New Jersey,1997,2,6467.0
+New Jersey,1997,3,5087.0
+New Jersey,1997,4,5471.0
+New Jersey,1998,1,11831.0
+New Jersey,1998,2,4696.0
+New Jersey,1998,3,6583.0
+New Jersey,1998,4,5013.0
+New Jersey,1999,1,12502.0
+New Jersey,1999,2,8942.0
+New Jersey,1999,3,6790.0
+New Jersey,1999,4,6391.0
+New Jersey,2000,1,11415.0
+New Jersey,2000,2,6971.0
+New Jersey,2000,3,4930.0
+New Jersey,2000,4,9235.0
+New Jersey,2001,1,6862.0
+New Jersey,2001,2,8133.0
+New Jersey,2001,3,6931.0
+New Jersey,2001,4,3250.0
+New Jersey,2002,1,9940.0
+New Jersey,2002,2,6388.0
+New Jersey,2002,3,5609.0
+New Jersey,2002,4,6933.0
+New Jersey,2003,1,9442.0
+New Jersey,2003,2,7116.0
+New Jersey,2003,3,6609.0
+New Jersey,2003,4,7525.0
+New Jersey,2004,1,7016.0
+New Jersey,2004,2,6908.0
+New Jersey,2004,3,7689.0
+New Jersey,2004,4,7049.0
+New Jersey,2005,1,8042.0
+New Jersey,2005,2,8212.0
+New Jersey,2005,3,7692.0
+New Jersey,2005,4,6869.0
+New Jersey,2006,1,8771.0
+New Jersey,2006,2,7490.0
+New Jersey,2006,3,7091.0
+New Jersey,2006,4,7133.0
+New Jersey,2007,1,7259.0
+New Jersey,2007,2,6492.0
+New Jersey,2007,3,7990.0
+New Jersey,2007,4,6552.0
+New Jersey,2008,1,7054.0
+New Jersey,2008,2,7959.0
+New Jersey,2008,3,6129.0
+New Jersey,2008,4,5300.0
+New Jersey,2009,1,6748.0
+New Jersey,2009,2,7055.0
+New Jersey,2009,3,5551.0
+New Jersey,2009,4,5824.0
+New Jersey,2010,1,6341.0
+New Jersey,2010,2,6122.0
+New Jersey,2010,3,5809.0
+New Jersey,2010,4,6626.0
+New Jersey,2011,1,6829.0
+New Jersey,2011,2,6828.0
+New Jersey,2011,3,5926.0
+New Jersey,2011,4,6011.0
+New Jersey,2012,1,7362.0
+New Jersey,2012,2,6546.0
+New Jersey,2012,3,5679.0
+New Jersey,2012,4,6221.0
+New Jersey,2013,1,6524.0
+New Jersey,2013,2,6920.0
+New Jersey,2013,3,5990.0
+New Jersey,2013,4,6354.0
+New Jersey,2014,1,6644.0
+New Jersey,2014,2,6440.0
+New Jersey,2014,3,5996.0
+New Jersey,2014,4,5728.0
+New Jersey,2015,1,7000.0
+New Jersey,2015,2,7404.0
+New Jersey,2015,3,6213.0
+New Jersey,2015,4,8165.0
+New Jersey,2016,1,6943.0
+New Jersey,2016,2,5997.0
+New Jersey,2016,3,5588.0
+New Jersey,2016,4,8253.0
+New Jersey,2017,1,6508.0
+New Jersey,2017,2,6376.0
+New Jersey,2017,3,5473.0
+New Jersey,2017,4,6603.0
+New Jersey,2018,1,7926.0
+New Jersey,2018,2,6652.0
+New Jersey,2018,3,6066.0
+New Jersey,2018,4,6599.0
+New Jersey,2019,1,7431.0
+New Jersey,2019,2,6694.0
+New Jersey,2019,3,5918.0
+New Jersey,2019,4,9974.0
+New Jersey,2020,1,9560.0
+New Jersey,2020,2,6015.0
+New Jersey,2020,3,7513.0
+New Jersey,2020,4,9023.0
+New Jersey,2021,1,12984.0
+New Jersey,2021,2,10005.0
+New Jersey,2021,3,9953.0
+New Jersey,2021,4,20415.0
+New Jersey,2022,1,9088.0
+New Jersey,2022,2,9440.0
+New Jersey,2022,3,8889.0
+New Jersey,2022,4,13421.0
+New Jersey,2023,1,8820.0
+New Jersey,2023,2,8157.0
+New Jersey,2023,3,8506.0
+New Jersey,2023,4,11862.0
+New Jersey,2024,1,8377.0
+New Jersey,2024,2,7620.0
+New Jersey,2024,3,7059.0
+New Jersey,2024,4,15807.0
+New Jersey,2025,1,8726.0
+New Jersey,2025,2,7807.0
+New Jersey,2025,3,7568.0
+New Jersey,2025,4,12116.0
+New Jersey,2026,1,8636.0
+New Mexico,1992,3,
+New Mexico,1992,4,
+New Mexico,1993,1,
+New Mexico,1993,2,1208.0
+New Mexico,1993,3,1196.0
+New Mexico,1993,4,1284.0
+New Mexico,1994,1,1506.0
+New Mexico,1994,2,1453.0
+New Mexico,1994,3,1305.0
+New Mexico,1994,4,983.0
+New Mexico,1995,1,1931.0
+New Mexico,1995,2,1427.0
+New Mexico,1995,3,1311.0
+New Mexico,1995,4,1440.0
+New Mexico,1996,1,1228.0
+New Mexico,1996,2,1254.0
+New Mexico,1996,3,1193.0
+New Mexico,1996,4,1222.0
+New Mexico,1997,1,1540.0
+New Mexico,1997,2,1369.0
+New Mexico,1997,3,1236.0
+New Mexico,1997,4,1469.0
+New Mexico,1998,1,1338.0
+New Mexico,1998,2,1245.0
+New Mexico,1998,3,1237.0
+New Mexico,1998,4,1385.0
+New Mexico,1999,1,1364.0
+New Mexico,1999,2,1310.0
+New Mexico,1999,3,1257.0
+New Mexico,1999,4,1126.0
+New Mexico,2000,1,1362.0
+New Mexico,2000,2,1375.0
+New Mexico,2000,3,1308.0
+New Mexico,2000,4,1255.0
+New Mexico,2001,1,1430.0
+New Mexico,2001,2,1321.0
+New Mexico,2001,3,1180.0
+New Mexico,2001,4,1206.0
+New Mexico,2002,1,1369.0
+New Mexico,2002,2,1107.0
+New Mexico,2002,3,1203.0
+New Mexico,2002,4,1373.0
+New Mexico,2003,1,1350.0
+New Mexico,2003,2,1231.0
+New Mexico,2003,3,1208.0
+New Mexico,2003,4,1341.0
+New Mexico,2004,1,1492.0
+New Mexico,2004,2,1235.0
+New Mexico,2004,3,1283.0
+New Mexico,2004,4,1311.0
+New Mexico,2005,1,1590.0
+New Mexico,2005,2,1269.0
+New Mexico,2005,3,1413.0
+New Mexico,2005,4,1491.0
+New Mexico,2006,1,1654.0
+New Mexico,2006,2,1512.0
+New Mexico,2006,3,1306.0
+New Mexico,2006,4,1532.0
+New Mexico,2007,1,1620.0
+New Mexico,2007,2,1377.0
+New Mexico,2007,3,1360.0
+New Mexico,2007,4,1455.0
+New Mexico,2008,1,1595.0
+New Mexico,2008,2,1325.0
+New Mexico,2008,3,1280.0
+New Mexico,2008,4,1311.0
+New Mexico,2009,1,1405.0
+New Mexico,2009,2,1127.0
+New Mexico,2009,3,1066.0
+New Mexico,2009,4,1190.0
+New Mexico,2010,1,1281.0
+New Mexico,2010,2,1150.0
+New Mexico,2010,3,1151.0
+New Mexico,2010,4,1342.0
+New Mexico,2011,1,1111.0
+New Mexico,2011,2,1256.0
+New Mexico,2011,3,1134.0
+New Mexico,2011,4,1197.0
+New Mexico,2012,1,1367.0
+New Mexico,2012,2,1267.0
+New Mexico,2012,3,1122.0
+New Mexico,2012,4,827.0
+New Mexico,2013,1,1386.0
+New Mexico,2013,2,1196.0
+New Mexico,2013,3,1212.0
+New Mexico,2013,4,1145.0
+New Mexico,2014,1,1567.0
+New Mexico,2014,2,1204.0
+New Mexico,2014,3,1167.0
+New Mexico,2014,4,1774.0
+New Mexico,2015,1,1732.0
+New Mexico,2015,2,1321.0
+New Mexico,2015,3,1262.0
+New Mexico,2015,4,1207.0
+New Mexico,2016,1,1549.0
+New Mexico,2016,2,1222.0
+New Mexico,2016,3,1240.0
+New Mexico,2016,4,1357.0
+New Mexico,2017,1,1401.0
+New Mexico,2017,2,1355.0
+New Mexico,2017,3,1372.0
+New Mexico,2017,4,1287.0
+New Mexico,2018,1,1479.0
+New Mexico,2018,2,1270.0
+New Mexico,2018,3,1297.0
+New Mexico,2018,4,1372.0
+New Mexico,2019,1,1414.0
+New Mexico,2019,2,1236.0
+New Mexico,2019,3,1526.0
+New Mexico,2019,4,1559.0
+New Mexico,2020,1,1691.0
+New Mexico,2020,2,1168.0
+New Mexico,2020,3,1409.0
+New Mexico,2020,4,1531.0
+New Mexico,2021,1,1645.0
+New Mexico,2021,2,1622.0
+New Mexico,2021,3,2045.0
+New Mexico,2021,4,1873.0
+New Mexico,2022,1,2042.0
+New Mexico,2022,2,1952.0
+New Mexico,2022,3,1942.0
+New Mexico,2022,4,1922.0
+New Mexico,2023,1,2039.0
+New Mexico,2023,2,1862.0
+New Mexico,2023,3,1632.0
+New Mexico,2023,4,1473.0
+New Mexico,2024,1,1848.0
+New Mexico,2024,2,1420.0
+New Mexico,2024,3,1645.0
+New Mexico,2024,4,1574.0
+New Mexico,2025,1,1792.0
+New Mexico,2025,2,1753.0
+New Mexico,2025,3,1540.0
+New Mexico,2025,4,1670.0
+New Mexico,2026,1,1697.0
+New York,1992,3,
+New York,1992,4,
+New York,1993,1,
+New York,1993,2,13663.0
+New York,1993,3,12636.0
+New York,1993,4,13395.0
+New York,1994,1,14112.0
+New York,1994,2,14137.0
+New York,1994,3,13552.0
+New York,1994,4,14504.0
+New York,1995,1,15710.0
+New York,1995,2,14226.0
+New York,1995,3,13249.0
+New York,1995,4,14126.0
+New York,1996,1,16404.0
+New York,1996,2,15538.0
+New York,1996,3,15203.0
+New York,1996,4,15526.0
+New York,1997,1,16705.0
+New York,1997,2,15533.0
+New York,1997,3,13344.0
+New York,1997,4,16487.0
+New York,1998,1,17381.0
+New York,1998,2,15399.0
+New York,1998,3,13929.0
+New York,1998,4,16265.0
+New York,1999,1,21663.0
+New York,1999,2,17231.0
+New York,1999,3,15455.0
+New York,1999,4,16263.0
+New York,2000,1,17739.0
+New York,2000,2,15938.0
+New York,2000,3,15541.0
+New York,2000,4,15916.0
+New York,2001,1,16432.0
+New York,2001,2,16533.0
+New York,2001,3,13648.0
+New York,2001,4,13195.0
+New York,2002,1,15845.0
+New York,2002,2,13148.0
+New York,2002,3,14403.0
+New York,2002,4,12279.0
+New York,2003,1,14084.0
+New York,2003,2,13564.0
+New York,2003,3,9855.0
+New York,2003,4,12421.0
+New York,2004,1,13995.0
+New York,2004,2,13648.0
+New York,2004,3,15280.0
+New York,2004,4,11727.0
+New York,2005,1,14119.0
+New York,2005,2,15668.0
+New York,2005,3,13102.0
+New York,2005,4,11787.0
+New York,2006,1,14285.0
+New York,2006,2,15034.0
+New York,2006,3,14014.0
+New York,2006,4,12519.0
+New York,2007,1,14419.0
+New York,2007,2,15559.0
+New York,2007,3,12364.0
+New York,2007,4,12568.0
+New York,2008,1,14477.0
+New York,2008,2,13667.0
+New York,2008,3,12383.0
+New York,2008,4,11754.0
+New York,2009,1,12636.0
+New York,2009,2,15037.0
+New York,2009,3,10658.0
+New York,2009,4,12057.0
+New York,2010,1,12930.0
+New York,2010,2,13797.0
+New York,2010,3,13582.0
+New York,2010,4,13758.0
+New York,2011,1,16020.0
+New York,2011,2,14219.0
+New York,2011,3,12908.0
+New York,2011,4,12770.0
+New York,2012,1,14947.0
+New York,2012,2,14155.0
+New York,2012,3,13479.0
+New York,2012,4,12834.0
+New York,2013,1,14285.0
+New York,2013,2,14594.0
+New York,2013,3,15185.0
+New York,2013,4,12985.0
+New York,2014,1,14254.0
+New York,2014,2,14499.0
+New York,2014,3,14290.0
+New York,2014,4,13610.0
+New York,2015,1,15652.0
+New York,2015,2,14940.0
+New York,2015,3,14660.0
+New York,2015,4,14395.0
+New York,2016,1,15416.0
+New York,2016,2,15048.0
+New York,2016,3,13824.0
+New York,2016,4,13921.0
+New York,2017,1,15144.0
+New York,2017,2,14417.0
+New York,2017,3,14699.0
+New York,2017,4,14640.0
+New York,2018,1,14374.0
+New York,2018,2,13640.0
+New York,2018,3,15087.0
+New York,2018,4,14311.0
+New York,2019,1,15009.0
+New York,2019,2,14480.0
+New York,2019,3,14291.0
+New York,2019,4,15519.0
+New York,2020,1,12664.0
+New York,2020,2,9749.0
+New York,2020,3,11188.0
+New York,2020,4,17817.0
+New York,2021,1,15291.0
+New York,2021,2,21214.0
+New York,2021,3,19399.0
+New York,2021,4,20328.0
+New York,2022,1,18566.0
+New York,2022,2,28015.0
+New York,2022,3,19545.0
+New York,2022,4,15476.0
+New York,2023,1,18888.0
+New York,2023,2,17917.0
+New York,2023,3,17207.0
+New York,2023,4,16270.0
+New York,2024,1,17430.0
+New York,2024,2,16623.0
+New York,2024,3,15406.0
+New York,2024,4,17032.0
+New York,2025,1,16361.0
+New York,2025,2,13080.0
+New York,2025,3,16730.0
+New York,2025,4,15665.0
+New York,2026,1,16545.0
+North Carolina,1992,3,
+North Carolina,1992,4,
+North Carolina,1993,1,
+North Carolina,1993,2,4208.0
+North Carolina,1993,3,4106.0
+North Carolina,1993,4,4150.0
+North Carolina,1994,1,4315.0
+North Carolina,1994,2,4670.0
+North Carolina,1994,3,4443.0
+North Carolina,1994,4,4583.0
+North Carolina,1995,1,4798.0
+North Carolina,1995,2,4724.0
+North Carolina,1995,3,4310.0
+North Carolina,1995,4,5199.0
+North Carolina,1996,1,5089.0
+North Carolina,1996,2,4668.0
+North Carolina,1996,3,4770.0
+North Carolina,1996,4,5250.0
+North Carolina,1997,1,5832.0
+North Carolina,1997,2,5528.0
+North Carolina,1997,3,5779.0
+North Carolina,1997,4,4813.0
+North Carolina,1998,1,4064.0
+North Carolina,1998,2,7236.0
+North Carolina,1998,3,5213.0
+North Carolina,1998,4,5338.0
+North Carolina,1999,1,5283.0
+North Carolina,1999,2,5641.0
+North Carolina,1999,3,5667.0
+North Carolina,1999,4,5365.0
+North Carolina,2000,1,6476.0
+North Carolina,2000,2,5702.0
+North Carolina,2000,3,4903.0
+North Carolina,2000,4,5027.0
+North Carolina,2001,1,5229.0
+North Carolina,2001,2,5653.0
+North Carolina,2001,3,3856.0
+North Carolina,2001,4,5057.0
+North Carolina,2002,1,5919.0
+North Carolina,2002,2,10835.0
+North Carolina,2002,3,4771.0
+North Carolina,2002,4,4930.0
+North Carolina,2003,1,6123.0
+North Carolina,2003,2,5146.0
+North Carolina,2003,3,4556.0
+North Carolina,2003,4,5363.0
+North Carolina,2004,1,5845.0
+North Carolina,2004,2,5853.0
+North Carolina,2004,3,3970.0
+North Carolina,2004,4,5008.0
+North Carolina,2005,1,5879.0
+North Carolina,2005,2,5796.0
+North Carolina,2005,3,4615.0
+North Carolina,2005,4,5516.0
+North Carolina,2006,1,6719.0
+North Carolina,2006,2,6789.0
+North Carolina,2006,3,5338.0
+North Carolina,2006,4,11264.0
+North Carolina,2007,1,8431.0
+North Carolina,2007,2,6655.0
+North Carolina,2007,3,6169.0
+North Carolina,2007,4,6639.0
+North Carolina,2008,1,6863.0
+North Carolina,2008,2,5601.0
+North Carolina,2008,3,5281.0
+North Carolina,2008,4,5309.0
+North Carolina,2009,1,5690.0
+North Carolina,2009,2,5024.0
+North Carolina,2009,3,4588.0
+North Carolina,2009,4,5588.0
+North Carolina,2010,1,5729.0
+North Carolina,2010,2,4143.0
+North Carolina,2010,3,6260.0
+North Carolina,2010,4,6143.0
+North Carolina,2011,1,6927.0
+North Carolina,2011,2,5535.0
+North Carolina,2011,3,5607.0
+North Carolina,2011,4,5528.0
+North Carolina,2012,1,6978.0
+North Carolina,2012,2,5868.0
+North Carolina,2012,3,5603.0
+North Carolina,2012,4,6062.0
+North Carolina,2013,1,6342.0
+North Carolina,2013,2,5282.0
+North Carolina,2013,3,5683.0
+North Carolina,2013,4,5548.0
+North Carolina,2014,1,6117.0
+North Carolina,2014,2,5987.0
+North Carolina,2014,3,5909.0
+North Carolina,2014,4,5579.0
+North Carolina,2015,1,7216.0
+North Carolina,2015,2,6342.0
+North Carolina,2015,3,6358.0
+North Carolina,2015,4,6570.0
+North Carolina,2016,1,7518.0
+North Carolina,2016,2,6988.0
+North Carolina,2016,3,6429.0
+North Carolina,2016,4,5787.0
+North Carolina,2017,1,7564.0
+North Carolina,2017,2,6908.0
+North Carolina,2017,3,6155.0
+North Carolina,2017,4,5163.0
+North Carolina,2018,1,8120.0
+North Carolina,2018,2,7896.0
+North Carolina,2018,3,6402.0
+North Carolina,2018,4,5702.0
+North Carolina,2019,1,8062.0
+North Carolina,2019,2,7579.0
+North Carolina,2019,3,6733.0
+North Carolina,2019,4,5978.0
+North Carolina,2020,1,7890.0
+North Carolina,2020,2,7274.0
+North Carolina,2020,3,8340.0
+North Carolina,2020,4,7757.0
+North Carolina,2021,1,14536.0
+North Carolina,2021,2,10091.0
+North Carolina,2021,3,9764.0
+North Carolina,2021,4,8300.0
+North Carolina,2022,1,13229.0
+North Carolina,2022,2,10473.0
+North Carolina,2022,3,9279.0
+North Carolina,2022,4,9717.0
+North Carolina,2023,1,12017.0
+North Carolina,2023,2,9629.0
+North Carolina,2023,3,8197.0
+North Carolina,2023,4,11949.0
+North Carolina,2024,1,10028.0
+North Carolina,2024,2,10262.0
+North Carolina,2024,3,8637.0
+North Carolina,2024,4,9267.0
+North Carolina,2025,1,9594.0
+North Carolina,2025,2,8733.0
+North Carolina,2025,3,8857.0
+North Carolina,2025,4,9881.0
+North Carolina,2026,1,10313.0
+North Dakota,1992,3,
+North Dakota,1992,4,
+North Dakota,1993,1,
+North Dakota,1993,2,417.0
+North Dakota,1993,3,393.0
+North Dakota,1993,4,380.0
+North Dakota,1994,1,386.0
+North Dakota,1994,2,489.0
+North Dakota,1994,3,421.0
+North Dakota,1994,4,427.0
+North Dakota,1995,1,395.0
+North Dakota,1995,2,454.0
+North Dakota,1995,3,406.0
+North Dakota,1995,4,446.0
+North Dakota,1996,1,415.0
+North Dakota,1996,2,449.0
+North Dakota,1996,3,427.0
+North Dakota,1996,4,419.0
+North Dakota,1997,1,400.0
+North Dakota,1997,2,464.0
+North Dakota,1997,3,431.0
+North Dakota,1997,4,434.0
+North Dakota,1998,1,284.0
+North Dakota,1998,2,585.0
+North Dakota,1998,3,516.0
+North Dakota,1998,4,342.0
+North Dakota,1999,1,323.0
+North Dakota,1999,2,479.0
+North Dakota,1999,3,442.0
+North Dakota,1999,4,486.0
+North Dakota,2000,1,427.0
+North Dakota,2000,2,415.0
+North Dakota,2000,3,381.0
+North Dakota,2000,4,377.0
+North Dakota,2001,1,432.0
+North Dakota,2001,2,451.0
+North Dakota,2001,3,374.0
+North Dakota,2001,4,373.0
+North Dakota,2002,1,367.0
+North Dakota,2002,2,479.0
+North Dakota,2002,3,370.0
+North Dakota,2002,4,402.0
+North Dakota,2003,1,380.0
+North Dakota,2003,2,488.0
+North Dakota,2003,3,434.0
+North Dakota,2003,4,440.0
+North Dakota,2004,1,419.0
+North Dakota,2004,2,519.0
+North Dakota,2004,3,430.0
+North Dakota,2004,4,396.0
+North Dakota,2005,1,500.0
+North Dakota,2005,2,533.0
+North Dakota,2005,3,474.0
+North Dakota,2005,4,507.0
+North Dakota,2006,1,506.0
+North Dakota,2006,2,561.0
+North Dakota,2006,3,491.0
+North Dakota,2006,4,502.0
+North Dakota,2007,1,480.0
+North Dakota,2007,2,556.0
+North Dakota,2007,3,505.0
+North Dakota,2007,4,496.0
+North Dakota,2008,1,479.0
+North Dakota,2008,2,561.0
+North Dakota,2008,3,491.0
+North Dakota,2008,4,456.0
+North Dakota,2009,1,410.0
+North Dakota,2009,2,470.0
+North Dakota,2009,3,421.0
+North Dakota,2009,4,484.0
+North Dakota,2010,1,425.0
+North Dakota,2010,2,595.0
+North Dakota,2010,3,575.0
+North Dakota,2010,4,670.0
+North Dakota,2011,1,571.0
+North Dakota,2011,2,778.0
+North Dakota,2011,3,887.0
+North Dakota,2011,4,846.0
+North Dakota,2012,1,969.0
+North Dakota,2012,2,1078.0
+North Dakota,2012,3,918.0
+North Dakota,2012,4,882.0
+North Dakota,2013,1,888.0
+North Dakota,2013,2,881.0
+North Dakota,2013,3,884.0
+North Dakota,2013,4,843.0
+North Dakota,2014,1,745.0
+North Dakota,2014,2,865.0
+North Dakota,2014,3,835.0
+North Dakota,2014,4,804.0
+North Dakota,2015,1,798.0
+North Dakota,2015,2,792.0
+North Dakota,2015,3,762.0
+North Dakota,2015,4,596.0
+North Dakota,2016,1,662.0
+North Dakota,2016,2,678.0
+North Dakota,2016,3,655.0
+North Dakota,2016,4,659.0
+North Dakota,2017,1,625.0
+North Dakota,2017,2,730.0
+North Dakota,2017,3,654.0
+North Dakota,2017,4,666.0
+North Dakota,2018,1,678.0
+North Dakota,2018,2,770.0
+North Dakota,2018,3,662.0
+North Dakota,2018,4,618.0
+North Dakota,2019,1,668.0
+North Dakota,2019,2,684.0
+North Dakota,2019,3,757.0
+North Dakota,2019,4,715.0
+North Dakota,2020,1,600.0
+North Dakota,2020,2,725.0
+North Dakota,2020,3,750.0
+North Dakota,2020,4,713.0
+North Dakota,2021,1,775.0
+North Dakota,2021,2,921.0
+North Dakota,2021,3,851.0
+North Dakota,2021,4,857.0
+North Dakota,2022,1,881.0
+North Dakota,2022,2,1061.0
+North Dakota,2022,3,1033.0
+North Dakota,2022,4,850.0
+North Dakota,2023,1,947.0
+North Dakota,2023,2,1005.0
+North Dakota,2023,3,879.0
+North Dakota,2023,4,831.0
+North Dakota,2024,1,794.0
+North Dakota,2024,2,905.0
+North Dakota,2024,3,819.0
+North Dakota,2024,4,903.0
+North Dakota,2025,1,791.0
+North Dakota,2025,2,883.0
+North Dakota,2025,3,837.0
+North Dakota,2025,4,813.0
+North Dakota,2026,1,857.0
+Ohio,1992,3,
+Ohio,1992,4,
+Ohio,1993,1,
+Ohio,1993,2,7241.0
+Ohio,1993,3,5774.0
+Ohio,1993,4,4272.0
+Ohio,1994,1,6968.0
+Ohio,1994,2,7102.0
+Ohio,1994,3,6387.0
+Ohio,1994,4,8244.0
+Ohio,1995,1,6913.0
+Ohio,1995,2,7277.0
+Ohio,1995,3,6311.0
+Ohio,1995,4,5614.0
+Ohio,1996,1,7817.0
+Ohio,1996,2,6920.0
+Ohio,1996,3,6373.0
+Ohio,1996,4,5903.0
+Ohio,1997,1,6954.0
+Ohio,1997,2,6206.0
+Ohio,1997,3,5961.0
+Ohio,1997,4,6126.0
+Ohio,1998,1,6528.0
+Ohio,1998,2,6978.0
+Ohio,1998,3,6149.0
+Ohio,1998,4,4963.0
+Ohio,1999,1,6714.0
+Ohio,1999,2,5708.0
+Ohio,1999,3,6439.0
+Ohio,1999,4,5321.0
+Ohio,2000,1,6729.0
+Ohio,2000,2,6472.0
+Ohio,2000,3,5406.0
+Ohio,2000,4,5338.0
+Ohio,2001,1,6542.0
+Ohio,2001,2,6514.0
+Ohio,2001,3,5644.0
+Ohio,2001,4,5111.0
+Ohio,2002,1,6918.0
+Ohio,2002,2,6366.0
+Ohio,2002,3,5552.0
+Ohio,2002,4,5387.0
+Ohio,2003,1,5963.0
+Ohio,2003,2,5927.0
+Ohio,2003,3,5344.0
+Ohio,2003,4,5421.0
+Ohio,2004,1,6271.0
+Ohio,2004,2,6153.0
+Ohio,2004,3,5477.0
+Ohio,2004,4,5262.0
+Ohio,2005,1,6288.0
+Ohio,2005,2,6338.0
+Ohio,2005,3,5341.0
+Ohio,2005,4,4499.0
+Ohio,2006,1,8095.0
+Ohio,2006,2,4745.0
+Ohio,2006,3,4750.0
+Ohio,2006,4,4728.0
+Ohio,2007,1,7290.0
+Ohio,2007,2,5899.0
+Ohio,2007,3,5142.0
+Ohio,2007,4,5187.0
+Ohio,2008,1,6070.0
+Ohio,2008,2,5173.0
+Ohio,2008,3,4607.0
+Ohio,2008,4,3125.0
+Ohio,2009,1,5834.0
+Ohio,2009,2,4458.0
+Ohio,2009,3,4357.0
+Ohio,2009,4,4636.0
+Ohio,2010,1,4910.0
+Ohio,2010,2,3597.0
+Ohio,2010,3,5202.0
+Ohio,2010,4,5582.0
+Ohio,2011,1,4937.0
+Ohio,2011,2,5771.0
+Ohio,2011,3,5051.0
+Ohio,2011,4,5135.0
+Ohio,2012,1,6042.0
+Ohio,2012,2,5165.0
+Ohio,2012,3,4650.0
+Ohio,2012,4,4745.0
+Ohio,2013,1,5845.0
+Ohio,2013,2,5263.0
+Ohio,2013,3,4742.0
+Ohio,2013,4,4850.0
+Ohio,2014,1,6061.0
+Ohio,2014,2,5247.0
+Ohio,2014,3,4966.0
+Ohio,2014,4,4999.0
+Ohio,2015,1,5987.0
+Ohio,2015,2,5482.0
+Ohio,2015,3,5316.0
+Ohio,2015,4,5156.0
+Ohio,2016,1,6496.0
+Ohio,2016,2,5503.0
+Ohio,2016,3,5019.0
+Ohio,2016,4,4876.0
+Ohio,2017,1,5879.0
+Ohio,2017,2,5515.0
+Ohio,2017,3,5102.0
+Ohio,2017,4,5125.0
+Ohio,2018,1,5950.0
+Ohio,2018,2,5804.0
+Ohio,2018,3,5379.0
+Ohio,2018,4,5595.0
+Ohio,2019,1,6244.0
+Ohio,2019,2,5776.0
+Ohio,2019,3,5526.0
+Ohio,2019,4,5533.0
+Ohio,2020,1,6680.0
+Ohio,2020,2,5227.0
+Ohio,2020,3,5933.0
+Ohio,2020,4,6742.0
+Ohio,2021,1,7699.0
+Ohio,2021,2,8365.0
+Ohio,2021,3,7565.0
+Ohio,2021,4,7121.0
+Ohio,2022,1,8320.0
+Ohio,2022,2,7474.0
+Ohio,2022,3,7512.0
+Ohio,2022,4,7710.0
+Ohio,2023,1,7991.0
+Ohio,2023,2,7731.0
+Ohio,2023,3,6667.0
+Ohio,2023,4,6504.0
+Ohio,2024,1,7272.0
+Ohio,2024,2,6733.0
+Ohio,2024,3,6707.0
+Ohio,2024,4,6373.0
+Ohio,2025,1,7172.0
+Ohio,2025,2,6709.0
+Ohio,2025,3,6625.0
+Ohio,2025,4,6696.0
+Ohio,2026,1,7294.0
+Oklahoma,1992,3,
+Oklahoma,1992,4,
+Oklahoma,1993,1,
+Oklahoma,1993,2,2285.0
+Oklahoma,1993,3,2346.0
+Oklahoma,1993,4,2235.0
+Oklahoma,1994,1,2594.0
+Oklahoma,1994,2,2090.0
+Oklahoma,1994,3,2259.0
+Oklahoma,1994,4,2286.0
+Oklahoma,1995,1,2528.0
+Oklahoma,1995,2,2127.0
+Oklahoma,1995,3,2186.0
+Oklahoma,1995,4,2297.0
+Oklahoma,1996,1,2262.0
+Oklahoma,1996,2,2444.0
+Oklahoma,1996,3,2333.0
+Oklahoma,1996,4,2092.0
+Oklahoma,1997,1,2905.0
+Oklahoma,1997,2,2509.0
+Oklahoma,1997,3,1036.0
+Oklahoma,1997,4,3419.0
+Oklahoma,1998,1,2580.0
+Oklahoma,1998,2,1972.0
+Oklahoma,1998,3,1986.0
+Oklahoma,1998,4,1719.0
+Oklahoma,1999,1,3546.0
+Oklahoma,1999,2,2118.0
+Oklahoma,1999,3,2065.0
+Oklahoma,1999,4,2265.0
+Oklahoma,2000,1,2589.0
+Oklahoma,2000,2,1729.0
+Oklahoma,2000,3,2311.0
+Oklahoma,2000,4,2147.0
+Oklahoma,2001,1,2280.0
+Oklahoma,2001,2,1906.0
+Oklahoma,2001,3,3273.0
+Oklahoma,2001,4,1987.0
+Oklahoma,2002,1,2612.0
+Oklahoma,2002,2,2089.0
+Oklahoma,2002,3,2087.0
+Oklahoma,2002,4,2269.0
+Oklahoma,2003,1,2258.0
+Oklahoma,2003,2,2110.0
+Oklahoma,2003,3,2075.0
+Oklahoma,2003,4,1992.0
+Oklahoma,2004,1,2651.0
+Oklahoma,2004,2,2596.0
+Oklahoma,2004,3,2031.0
+Oklahoma,2004,4,2025.0
+Oklahoma,2005,1,2467.0
+Oklahoma,2005,2,2334.0
+Oklahoma,2005,3,2198.0
+Oklahoma,2005,4,2478.0
+Oklahoma,2006,1,2880.0
+Oklahoma,2006,2,2585.0
+Oklahoma,2006,3,2277.0
+Oklahoma,2006,4,2391.0
+Oklahoma,2007,1,2351.0
+Oklahoma,2007,2,2657.0
+Oklahoma,2007,3,2195.0
+Oklahoma,2007,4,2147.0
+Oklahoma,2008,1,2436.0
+Oklahoma,2008,2,2557.0
+Oklahoma,2008,3,1871.0
+Oklahoma,2008,4,2218.0
+Oklahoma,2009,1,2906.0
+Oklahoma,2009,2,1846.0
+Oklahoma,2009,3,1716.0
+Oklahoma,2009,4,2262.0
+Oklahoma,2010,1,2510.0
+Oklahoma,2010,2,2154.0
+Oklahoma,2010,3,2030.0
+Oklahoma,2010,4,2291.0
+Oklahoma,2011,1,2396.0
+Oklahoma,2011,2,2006.0
+Oklahoma,2011,3,2067.0
+Oklahoma,2011,4,2322.0
+Oklahoma,2012,1,2367.0
+Oklahoma,2012,2,2121.0
+Oklahoma,2012,3,2216.0
+Oklahoma,2012,4,1901.0
+Oklahoma,2013,1,2756.0
+Oklahoma,2013,2,2259.0
+Oklahoma,2013,3,2384.0
+Oklahoma,2013,4,2255.0
+Oklahoma,2014,1,2633.0
+Oklahoma,2014,2,2390.0
+Oklahoma,2014,3,2191.0
+Oklahoma,2014,4,2419.0
+Oklahoma,2015,1,2656.0
+Oklahoma,2015,2,2296.0
+Oklahoma,2015,3,2213.0
+Oklahoma,2015,4,2274.0
+Oklahoma,2016,1,2522.0
+Oklahoma,2016,2,2250.0
+Oklahoma,2016,3,2202.0
+Oklahoma,2016,4,2325.0
+Oklahoma,2017,1,2839.0
+Oklahoma,2017,2,2485.0
+Oklahoma,2017,3,2379.0
+Oklahoma,2017,4,2318.0
+Oklahoma,2018,1,2527.0
+Oklahoma,2018,2,2495.0
+Oklahoma,2018,3,2329.0
+Oklahoma,2018,4,2632.0
+Oklahoma,2019,1,2576.0
+Oklahoma,2019,2,2625.0
+Oklahoma,2019,3,2640.0
+Oklahoma,2019,4,2518.0
+Oklahoma,2020,1,2338.0
+Oklahoma,2020,2,2388.0
+Oklahoma,2020,3,1857.0
+Oklahoma,2020,4,3143.0
+Oklahoma,2021,1,3134.0
+Oklahoma,2021,2,3269.0
+Oklahoma,2021,3,3327.0
+Oklahoma,2021,4,3357.0
+Oklahoma,2022,1,3833.0
+Oklahoma,2022,2,3919.0
+Oklahoma,2022,3,3354.0
+Oklahoma,2022,4,4214.0
+Oklahoma,2023,1,3976.0
+Oklahoma,2023,2,3568.0
+Oklahoma,2023,3,3314.0
+Oklahoma,2023,4,3243.0
+Oklahoma,2024,1,3873.0
+Oklahoma,2024,2,3030.0
+Oklahoma,2024,3,2980.0
+Oklahoma,2024,4,3028.0
+Oklahoma,2025,1,3243.0
+Oklahoma,2025,2,3325.0
+Oklahoma,2025,3,3079.0
+Oklahoma,2025,4,2948.0
+Oklahoma,2026,1,3641.0
+Oregon,1992,3,
+Oregon,1992,4,
+Oregon,1993,1,
+Oregon,1993,2,2946.0
+Oregon,1993,3,3111.0
+Oregon,1993,4,2926.0
+Oregon,1994,1,2873.0
+Oregon,1994,2,3113.0
+Oregon,1994,3,2991.0
+Oregon,1994,4,2949.0
+Oregon,1995,1,2947.0
+Oregon,1995,2,2970.0
+Oregon,1995,3,2943.0
+Oregon,1995,4,3138.0
+Oregon,1996,1,3003.0
+Oregon,1996,2,3263.0
+Oregon,1996,3,3170.0
+Oregon,1996,4,3442.0
+Oregon,1997,1,3530.0
+Oregon,1997,2,3389.0
+Oregon,1997,3,2973.0
+Oregon,1997,4,3253.0
+Oregon,1998,1,3060.0
+Oregon,1998,2,3225.0
+Oregon,1998,3,2947.0
+Oregon,1998,4,2713.0
+Oregon,1999,1,3252.0
+Oregon,1999,2,2870.0
+Oregon,1999,3,3243.0
+Oregon,1999,4,3135.0
+Oregon,2000,1,3056.0
+Oregon,2000,2,3476.0
+Oregon,2000,3,3228.0
+Oregon,2000,4,2838.0
+Oregon,2001,1,3282.0
+Oregon,2001,2,2985.0
+Oregon,2001,3,2873.0
+Oregon,2001,4,2732.0
+Oregon,2002,1,2913.0
+Oregon,2002,2,3106.0
+Oregon,2002,3,3093.0
+Oregon,2002,4,3165.0
+Oregon,2003,1,3156.0
+Oregon,2003,2,2914.0
+Oregon,2003,3,3136.0
+Oregon,2003,4,3169.0
+Oregon,2004,1,2935.0
+Oregon,2004,2,3126.0
+Oregon,2004,3,3085.0
+Oregon,2004,4,3253.0
+Oregon,2005,1,3351.0
+Oregon,2005,2,3025.0
+Oregon,2005,3,3440.0
+Oregon,2005,4,3315.0
+Oregon,2006,1,3378.0
+Oregon,2006,2,3348.0
+Oregon,2006,3,3289.0
+Oregon,2006,4,3385.0
+Oregon,2007,1,3561.0
+Oregon,2007,2,3040.0
+Oregon,2007,3,3064.0
+Oregon,2007,4,3189.0
+Oregon,2008,1,3010.0
+Oregon,2008,2,3177.0
+Oregon,2008,3,2803.0
+Oregon,2008,4,2926.0
+Oregon,2009,1,2707.0
+Oregon,2009,2,2538.0
+Oregon,2009,3,2565.0
+Oregon,2009,4,2870.0
+Oregon,2010,1,2764.0
+Oregon,2010,2,2929.0
+Oregon,2010,3,3036.0
+Oregon,2010,4,2823.0
+Oregon,2011,1,3175.0
+Oregon,2011,2,2799.0
+Oregon,2011,3,2908.0
+Oregon,2011,4,2898.0
+Oregon,2012,1,3184.0
+Oregon,2012,2,2803.0
+Oregon,2012,3,2686.0
+Oregon,2012,4,2984.0
+Oregon,2013,1,3279.0
+Oregon,2013,2,3021.0
+Oregon,2013,3,2885.0
+Oregon,2013,4,2703.0
+Oregon,2014,1,3094.0
+Oregon,2014,2,3237.0
+Oregon,2014,3,3005.0
+Oregon,2014,4,3090.0
+Oregon,2015,1,3204.0
+Oregon,2015,2,2943.0
+Oregon,2015,3,3416.0
+Oregon,2015,4,3096.0
+Oregon,2016,1,3376.0
+Oregon,2016,2,3177.0
+Oregon,2016,3,3306.0
+Oregon,2016,4,3035.0
+Oregon,2017,1,3366.0
+Oregon,2017,2,3266.0
+Oregon,2017,3,3821.0
+Oregon,2017,4,3384.0
+Oregon,2018,1,3977.0
+Oregon,2018,2,3856.0
+Oregon,2018,3,3546.0
+Oregon,2018,4,3298.0
+Oregon,2019,1,3980.0
+Oregon,2019,2,3707.0
+Oregon,2019,3,3451.0
+Oregon,2019,4,3381.0
+Oregon,2020,1,10074.0
+Oregon,2020,2,3456.0
+Oregon,2020,3,5882.0
+Oregon,2020,4,4352.0
+Oregon,2021,1,4855.0
+Oregon,2021,2,5185.0
+Oregon,2021,3,4756.0
+Oregon,2021,4,3748.0
+Oregon,2022,1,5333.0
+Oregon,2022,2,4038.0
+Oregon,2022,3,3302.0
+Oregon,2022,4,6287.0
+Oregon,2023,1,6453.0
+Oregon,2023,2,6259.0
+Oregon,2023,3,4622.0
+Oregon,2023,4,4203.0
+Oregon,2024,1,5364.0
+Oregon,2024,2,4150.0
+Oregon,2024,3,4100.0
+Oregon,2024,4,4127.0
+Oregon,2025,1,4352.0
+Oregon,2025,2,3760.0
+Oregon,2025,3,2862.0
+Oregon,2025,4,3242.0
+Oregon,2026,1,3261.0
+Pennsylvania,1992,3,
+Pennsylvania,1992,4,
+Pennsylvania,1993,1,
+Pennsylvania,1993,2,6653.0
+Pennsylvania,1993,3,6351.0
+Pennsylvania,1993,4,5269.0
+Pennsylvania,1994,1,6595.0
+Pennsylvania,1994,2,7118.0
+Pennsylvania,1994,3,5396.0
+Pennsylvania,1994,4,4378.0
+Pennsylvania,1995,1,6469.0
+Pennsylvania,1995,2,7476.0
+Pennsylvania,1995,3,6095.0
+Pennsylvania,1995,4,4620.0
+Pennsylvania,1996,1,6083.0
+Pennsylvania,1996,2,7766.0
+Pennsylvania,1996,3,5997.0
+Pennsylvania,1996,4,6775.0
+Pennsylvania,1997,1,7235.0
+Pennsylvania,1997,2,7245.0
+Pennsylvania,1997,3,9021.0
+Pennsylvania,1997,4,6881.0
+Pennsylvania,1998,1,7934.0
+Pennsylvania,1998,2,7137.0
+Pennsylvania,1998,3,5646.0
+Pennsylvania,1998,4,6316.0
+Pennsylvania,1999,1,8170.0
+Pennsylvania,1999,2,6635.0
+Pennsylvania,1999,3,7372.0
+Pennsylvania,1999,4,5949.0
+Pennsylvania,2000,1,10310.0
+Pennsylvania,2000,2,7183.0
+Pennsylvania,2000,3,6903.0
+Pennsylvania,2000,4,6798.0
+Pennsylvania,2001,1,7834.0
+Pennsylvania,2001,2,9358.0
+Pennsylvania,2001,3,6651.0
+Pennsylvania,2001,4,7081.0
+Pennsylvania,2002,1,8610.0
+Pennsylvania,2002,2,7935.0
+Pennsylvania,2002,3,6306.0
+Pennsylvania,2002,4,6850.0
+Pennsylvania,2003,1,6944.0
+Pennsylvania,2003,2,6943.0
+Pennsylvania,2003,3,6062.0
+Pennsylvania,2003,4,6492.0
+Pennsylvania,2004,1,8002.0
+Pennsylvania,2004,2,7239.0
+Pennsylvania,2004,3,6247.0
+Pennsylvania,2004,4,6765.0
+Pennsylvania,2005,1,10187.0
+Pennsylvania,2005,2,8023.0
+Pennsylvania,2005,3,7160.0
+Pennsylvania,2005,4,8024.0
+Pennsylvania,2006,1,10953.0
+Pennsylvania,2006,2,7257.0
+Pennsylvania,2006,3,6843.0
+Pennsylvania,2006,4,6459.0
+Pennsylvania,2007,1,7702.0
+Pennsylvania,2007,2,7497.0
+Pennsylvania,2007,3,6672.0
+Pennsylvania,2007,4,6253.0
+Pennsylvania,2008,1,8027.0
+Pennsylvania,2008,2,7865.0
+Pennsylvania,2008,3,6807.0
+Pennsylvania,2008,4,6240.0
+Pennsylvania,2009,1,7063.0
+Pennsylvania,2009,2,6854.0
+Pennsylvania,2009,3,6223.0
+Pennsylvania,2009,4,5943.0
+Pennsylvania,2010,1,7265.0
+Pennsylvania,2010,2,7435.0
+Pennsylvania,2010,3,6534.0
+Pennsylvania,2010,4,6690.0
+Pennsylvania,2011,1,7092.0
+Pennsylvania,2011,2,8255.0
+Pennsylvania,2011,3,4333.0
+Pennsylvania,2011,4,8780.0
+Pennsylvania,2012,1,9115.0
+Pennsylvania,2012,2,8662.0
+Pennsylvania,2012,3,7036.0
+Pennsylvania,2012,4,7856.0
+Pennsylvania,2013,1,7320.0
+Pennsylvania,2013,2,7474.0
+Pennsylvania,2013,3,6722.0
+Pennsylvania,2013,4,6785.0
+Pennsylvania,2014,1,7182.0
+Pennsylvania,2014,2,7129.0
+Pennsylvania,2014,3,6340.0
+Pennsylvania,2014,4,6744.0
+Pennsylvania,2015,1,7871.0
+Pennsylvania,2015,2,7204.0
+Pennsylvania,2015,3,6878.0
+Pennsylvania,2015,4,6797.0
+Pennsylvania,2016,1,7773.0
+Pennsylvania,2016,2,6891.0
+Pennsylvania,2016,3,6831.0
+Pennsylvania,2016,4,6398.0
+Pennsylvania,2017,1,7819.0
+Pennsylvania,2017,2,7137.0
+Pennsylvania,2017,3,6458.0
+Pennsylvania,2017,4,6640.0
+Pennsylvania,2018,1,7513.0
+Pennsylvania,2018,2,7093.0
+Pennsylvania,2018,3,6831.0
+Pennsylvania,2018,4,6719.0
+Pennsylvania,2019,1,7529.0
+Pennsylvania,2019,2,7453.0
+Pennsylvania,2019,3,7039.0
+Pennsylvania,2019,4,7148.0
+Pennsylvania,2020,1,6826.0
+Pennsylvania,2020,2,5974.0
+Pennsylvania,2020,3,8114.0
+Pennsylvania,2020,4,7915.0
+Pennsylvania,2021,1,9825.0
+Pennsylvania,2021,2,10647.0
+Pennsylvania,2021,3,10845.0
+Pennsylvania,2021,4,10659.0
+Pennsylvania,2022,1,11102.0
+Pennsylvania,2022,2,10198.0
+Pennsylvania,2022,3,9598.0
+Pennsylvania,2022,4,8322.0
+Pennsylvania,2023,1,9486.0
+Pennsylvania,2023,2,8443.0
+Pennsylvania,2023,3,8107.0
+Pennsylvania,2023,4,8956.0
+Pennsylvania,2024,1,10237.0
+Pennsylvania,2024,2,8644.0
+Pennsylvania,2024,3,8344.0
+Pennsylvania,2024,4,8297.0
+Pennsylvania,2025,1,9247.0
+Pennsylvania,2025,2,8714.0
+Pennsylvania,2025,3,8712.0
+Pennsylvania,2025,4,8607.0
+Pennsylvania,2026,1,9532.0
+Puerto Rico,1992,3,
+Puerto Rico,1992,4,
+Puerto Rico,1993,1,
+Puerto Rico,1993,2,1148.0
+Puerto Rico,1993,3,984.0
+Puerto Rico,1993,4,1006.0
+Puerto Rico,1994,1,1332.0
+Puerto Rico,1994,2,1260.0
+Puerto Rico,1994,3,1172.0
+Puerto Rico,1994,4,1099.0
+Puerto Rico,1995,1,1502.0
+Puerto Rico,1995,2,1249.0
+Puerto Rico,1995,3,1158.0
+Puerto Rico,1995,4,1172.0
+Puerto Rico,1996,1,1756.0
+Puerto Rico,1996,2,1060.0
+Puerto Rico,1996,3,1253.0
+Puerto Rico,1996,4,1365.0
+Puerto Rico,1997,1,1555.0
+Puerto Rico,1997,2,1621.0
+Puerto Rico,1997,3,1532.0
+Puerto Rico,1997,4,1409.0
+Puerto Rico,1998,1,1621.0
+Puerto Rico,1998,2,777.0
+Puerto Rico,1998,3,1241.0
+Puerto Rico,1998,4,1174.0
+Puerto Rico,1999,1,1468.0
+Puerto Rico,1999,2,1355.0
+Puerto Rico,1999,3,1413.0
+Puerto Rico,1999,4,1067.0
+Puerto Rico,2000,1,1039.0
+Puerto Rico,2000,2,1679.0
+Puerto Rico,2000,3,719.0
+Puerto Rico,2000,4,1553.0
+Puerto Rico,2001,1,1239.0
+Puerto Rico,2001,2,677.0
+Puerto Rico,2001,3,812.0
+Puerto Rico,2001,4,518.0
+Puerto Rico,2002,1,436.0
+Puerto Rico,2002,2,356.0
+Puerto Rico,2002,3,269.0
+Puerto Rico,2002,4,209.0
+Puerto Rico,2003,1,182.0
+Puerto Rico,2003,2,137.0
+Puerto Rico,2003,3,178.0
+Puerto Rico,2003,4,7310.0
+Puerto Rico,2004,1,1064.0
+Puerto Rico,2004,2,1762.0
+Puerto Rico,2004,3,1355.0
+Puerto Rico,2004,4,994.0
+Puerto Rico,2005,1,1561.0
+Puerto Rico,2005,2,1314.0
+Puerto Rico,2005,3,1344.0
+Puerto Rico,2005,4,1009.0
+Puerto Rico,2006,1,1105.0
+Puerto Rico,2006,2,1254.0
+Puerto Rico,2006,3,1000.0
+Puerto Rico,2006,4,1261.0
+Puerto Rico,2007,1,1363.0
+Puerto Rico,2007,2,1258.0
+Puerto Rico,2007,3,1280.0
+Puerto Rico,2007,4,796.0
+Puerto Rico,2008,1,1549.0
+Puerto Rico,2008,2,1304.0
+Puerto Rico,2008,3,607.0
+Puerto Rico,2008,4,922.0
+Puerto Rico,2009,1,1345.0
+Puerto Rico,2009,2,999.0
+Puerto Rico,2009,3,1186.0
+Puerto Rico,2009,4,1002.0
+Puerto Rico,2010,1,1157.0
+Puerto Rico,2010,2,839.0
+Puerto Rico,2010,3,839.0
+Puerto Rico,2010,4,778.0
+Puerto Rico,2011,1,1072.0
+Puerto Rico,2011,2,869.0
+Puerto Rico,2011,3,853.0
+Puerto Rico,2011,4,1044.0
+Puerto Rico,2012,1,1205.0
+Puerto Rico,2012,2,999.0
+Puerto Rico,2012,3,1109.0
+Puerto Rico,2012,4,858.0
+Puerto Rico,2013,1,1068.0
+Puerto Rico,2013,2,942.0
+Puerto Rico,2013,3,1131.0
+Puerto Rico,2013,4,874.0
+Puerto Rico,2014,1,1045.0
+Puerto Rico,2014,2,937.0
+Puerto Rico,2014,3,888.0
+Puerto Rico,2014,4,812.0
+Puerto Rico,2015,1,1057.0
+Puerto Rico,2015,2,809.0
+Puerto Rico,2015,3,803.0
+Puerto Rico,2015,4,817.0
+Puerto Rico,2016,1,1047.0
+Puerto Rico,2016,2,876.0
+Puerto Rico,2016,3,883.0
+Puerto Rico,2016,4,725.0
+Puerto Rico,2017,1,1134.0
+Puerto Rico,2017,2,905.0
+Puerto Rico,2017,3,493.0
+Puerto Rico,2017,4,722.0
+Puerto Rico,2018,1,1116.0
+Puerto Rico,2018,2,1070.0
+Puerto Rico,2018,3,1190.0
+Puerto Rico,2018,4,939.0
+Puerto Rico,2019,1,1427.0
+Puerto Rico,2019,2,1269.0
+Puerto Rico,2019,3,1044.0
+Puerto Rico,2019,4,872.0
+Puerto Rico,2020,1,820.0
+Puerto Rico,2020,2,918.0
+Puerto Rico,2020,3,1184.0
+Puerto Rico,2020,4,929.0
+Puerto Rico,2021,1,1436.0
+Puerto Rico,2021,2,1385.0
+Puerto Rico,2021,3,1401.0
+Puerto Rico,2021,4,1383.0
+Puerto Rico,2022,1,1197.0
+Puerto Rico,2022,2,1253.0
+Puerto Rico,2022,3,1055.0
+Puerto Rico,2022,4,1043.0
+Puerto Rico,2023,1,1140.0
+Puerto Rico,2023,2,1059.0
+Puerto Rico,2023,3,1214.0
+Puerto Rico,2023,4,1080.0
+Puerto Rico,2024,1,1134.0
+Puerto Rico,2024,2,1168.0
+Puerto Rico,2024,3,986.0
+Puerto Rico,2024,4,875.0
+Puerto Rico,2025,1,997.0
+Puerto Rico,2025,2,1283.0
+Puerto Rico,2025,3,964.0
+Puerto Rico,2025,4,870.0
+Puerto Rico,2026,1,948.0
+Rhode Island,1992,3,
+Rhode Island,1992,4,
+Rhode Island,1993,1,
+Rhode Island,1993,2,927.0
+Rhode Island,1993,3,814.0
+Rhode Island,1993,4,792.0
+Rhode Island,1994,1,807.0
+Rhode Island,1994,2,869.0
+Rhode Island,1994,3,744.0
+Rhode Island,1994,4,800.0
+Rhode Island,1995,1,785.0
+Rhode Island,1995,2,915.0
+Rhode Island,1995,3,875.0
+Rhode Island,1995,4,792.0
+Rhode Island,1996,1,867.0
+Rhode Island,1996,2,913.0
+Rhode Island,1996,3,788.0
+Rhode Island,1996,4,765.0
+Rhode Island,1997,1,878.0
+Rhode Island,1997,2,889.0
+Rhode Island,1997,3,832.0
+Rhode Island,1997,4,802.0
+Rhode Island,1998,1,877.0
+Rhode Island,1998,2,942.0
+Rhode Island,1998,3,847.0
+Rhode Island,1998,4,752.0
+Rhode Island,1999,1,887.0
+Rhode Island,1999,2,941.0
+Rhode Island,1999,3,857.0
+Rhode Island,1999,4,752.0
+Rhode Island,2000,1,982.0
+Rhode Island,2000,2,1008.0
+Rhode Island,2000,3,843.0
+Rhode Island,2000,4,721.0
+Rhode Island,2001,1,1071.0
+Rhode Island,2001,2,912.0
+Rhode Island,2001,3,822.0
+Rhode Island,2001,4,698.0
+Rhode Island,2002,1,906.0
+Rhode Island,2002,2,925.0
+Rhode Island,2002,3,853.0
+Rhode Island,2002,4,772.0
+Rhode Island,2003,1,885.0
+Rhode Island,2003,2,940.0
+Rhode Island,2003,3,866.0
+Rhode Island,2003,4,742.0
+Rhode Island,2004,1,941.0
+Rhode Island,2004,2,984.0
+Rhode Island,2004,3,888.0
+Rhode Island,2004,4,825.0
+Rhode Island,2005,1,946.0
+Rhode Island,2005,2,965.0
+Rhode Island,2005,3,923.0
+Rhode Island,2005,4,701.0
+Rhode Island,2006,1,848.0
+Rhode Island,2006,2,1022.0
+Rhode Island,2006,3,841.0
+Rhode Island,2006,4,801.0
+Rhode Island,2007,1,957.0
+Rhode Island,2007,2,860.0
+Rhode Island,2007,3,790.0
+Rhode Island,2007,4,779.0
+Rhode Island,2008,1,864.0
+Rhode Island,2008,2,848.0
+Rhode Island,2008,3,756.0
+Rhode Island,2008,4,700.0
+Rhode Island,2009,1,769.0
+Rhode Island,2009,2,706.0
+Rhode Island,2009,3,709.0
+Rhode Island,2009,4,705.0
+Rhode Island,2010,1,818.0
+Rhode Island,2010,2,810.0
+Rhode Island,2010,3,802.0
+Rhode Island,2010,4,779.0
+Rhode Island,2011,1,801.0
+Rhode Island,2011,2,900.0
+Rhode Island,2011,3,811.0
+Rhode Island,2011,4,793.0
+Rhode Island,2012,1,923.0
+Rhode Island,2012,2,902.0
+Rhode Island,2012,3,783.0
+Rhode Island,2012,4,801.0
+Rhode Island,2013,1,839.0
+Rhode Island,2013,2,851.0
+Rhode Island,2013,3,810.0
+Rhode Island,2013,4,701.0
+Rhode Island,2014,1,862.0
+Rhode Island,2014,2,908.0
+Rhode Island,2014,3,833.0
+Rhode Island,2014,4,783.0
+Rhode Island,2015,1,872.0
+Rhode Island,2015,2,1008.0
+Rhode Island,2015,3,916.0
+Rhode Island,2015,4,895.0
+Rhode Island,2016,1,930.0
+Rhode Island,2016,2,894.0
+Rhode Island,2016,3,881.0
+Rhode Island,2016,4,743.0
+Rhode Island,2017,1,966.0
+Rhode Island,2017,2,916.0
+Rhode Island,2017,3,904.0
+Rhode Island,2017,4,884.0
+Rhode Island,2018,1,977.0
+Rhode Island,2018,2,991.0
+Rhode Island,2018,3,957.0
+Rhode Island,2018,4,922.0
+Rhode Island,2019,1,1022.0
+Rhode Island,2019,2,1062.0
+Rhode Island,2019,3,952.0
+Rhode Island,2019,4,982.0
+Rhode Island,2020,1,1099.0
+Rhode Island,2020,2,948.0
+Rhode Island,2020,3,1190.0
+Rhode Island,2020,4,1259.0
+Rhode Island,2021,1,1476.0
+Rhode Island,2021,2,1754.0
+Rhode Island,2021,3,1726.0
+Rhode Island,2021,4,1668.0
+Rhode Island,2022,1,1858.0
+Rhode Island,2022,2,1889.0
+Rhode Island,2022,3,1731.0
+Rhode Island,2022,4,1465.0
+Rhode Island,2023,1,1683.0
+Rhode Island,2023,2,1483.0
+Rhode Island,2023,3,1340.0
+Rhode Island,2023,4,1277.0
+Rhode Island,2024,1,1400.0
+Rhode Island,2024,2,1441.0
+Rhode Island,2024,3,1402.0
+Rhode Island,2024,4,1263.0
+Rhode Island,2025,1,1407.0
+Rhode Island,2025,2,1243.0
+Rhode Island,2025,3,1328.0
+Rhode Island,2025,4,1371.0
+Rhode Island,2026,1,1244.0
+South Carolina,1992,3,
+South Carolina,1992,4,
+South Carolina,1993,1,
+South Carolina,1993,2,2455.0
+South Carolina,1993,3,2146.0
+South Carolina,1993,4,2272.0
+South Carolina,1994,1,2616.0
+South Carolina,1994,2,2533.0
+South Carolina,1994,3,2153.0
+South Carolina,1994,4,2489.0
+South Carolina,1995,1,2815.0
+South Carolina,1995,2,2677.0
+South Carolina,1995,3,2505.0
+South Carolina,1995,4,2638.0
+South Carolina,1996,1,2908.0
+South Carolina,1996,2,2607.0
+South Carolina,1996,3,2569.0
+South Carolina,1996,4,2436.0
+South Carolina,1997,1,3419.0
+South Carolina,1997,2,2813.0
+South Carolina,1997,3,2927.0
+South Carolina,1997,4,1908.0
+South Carolina,1998,1,1459.0
+South Carolina,1998,2,4577.0
+South Carolina,1998,3,2738.0
+South Carolina,1998,4,2716.0
+South Carolina,1999,1,3328.0
+South Carolina,1999,2,2847.0
+South Carolina,1999,3,2472.0
+South Carolina,1999,4,2580.0
+South Carolina,2000,1,2419.0
+South Carolina,2000,2,2917.0
+South Carolina,2000,3,2371.0
+South Carolina,2000,4,3342.0
+South Carolina,2001,1,2935.0
+South Carolina,2001,2,1326.0
+South Carolina,2001,3,3855.0
+South Carolina,2001,4,2529.0
+South Carolina,2002,1,3115.0
+South Carolina,2002,2,2857.0
+South Carolina,2002,3,2696.0
+South Carolina,2002,4,2462.0
+South Carolina,2003,1,2955.0
+South Carolina,2003,2,2558.0
+South Carolina,2003,3,2454.0
+South Carolina,2003,4,2663.0
+South Carolina,2004,1,2864.0
+South Carolina,2004,2,3017.0
+South Carolina,2004,3,2519.0
+South Carolina,2004,4,2854.0
+South Carolina,2005,1,3061.0
+South Carolina,2005,2,2327.0
+South Carolina,2005,3,2728.0
+South Carolina,2005,4,2421.0
+South Carolina,2006,1,2889.0
+South Carolina,2006,2,3611.0
+South Carolina,2006,3,3680.0
+South Carolina,2006,4,3010.0
+South Carolina,2007,1,3649.0
+South Carolina,2007,2,2863.0
+South Carolina,2007,3,2631.0
+South Carolina,2007,4,2774.0
+South Carolina,2008,1,3119.0
+South Carolina,2008,2,2747.0
+South Carolina,2008,3,2428.0
+South Carolina,2008,4,2488.0
+South Carolina,2009,1,2560.0
+South Carolina,2009,2,2139.0
+South Carolina,2009,3,2061.0
+South Carolina,2009,4,2279.0
+South Carolina,2010,1,2430.0
+South Carolina,2010,2,2295.0
+South Carolina,2010,3,2176.0
+South Carolina,2010,4,2277.0
+South Carolina,2011,1,2824.0
+South Carolina,2011,2,2383.0
+South Carolina,2011,3,2625.0
+South Carolina,2011,4,2261.0
+South Carolina,2012,1,2824.0
+South Carolina,2012,2,2382.0
+South Carolina,2012,3,2247.0
+South Carolina,2012,4,2542.0
+South Carolina,2013,1,2551.0
+South Carolina,2013,2,2646.0
+South Carolina,2013,3,2667.0
+South Carolina,2013,4,2404.0
+South Carolina,2014,1,3006.0
+South Carolina,2014,2,2517.0
+South Carolina,2014,3,2825.0
+South Carolina,2014,4,2521.0
+South Carolina,2015,1,2775.0
+South Carolina,2015,2,3029.0
+South Carolina,2015,3,2522.0
+South Carolina,2015,4,3067.0
+South Carolina,2016,1,3188.0
+South Carolina,2016,2,2910.0
+South Carolina,2016,3,2635.0
+South Carolina,2016,4,2811.0
+South Carolina,2017,1,3117.0
+South Carolina,2017,2,3055.0
+South Carolina,2017,3,2745.0
+South Carolina,2017,4,3142.0
+South Carolina,2018,1,3915.0
+South Carolina,2018,2,4441.0
+South Carolina,2018,3,2757.0
+South Carolina,2018,4,4385.0
+South Carolina,2019,1,3917.0
+South Carolina,2019,2,3676.0
+South Carolina,2019,3,3456.0
+South Carolina,2019,4,3558.0
+South Carolina,2020,1,5149.0
+South Carolina,2020,2,2980.0
+South Carolina,2020,3,3374.0
+South Carolina,2020,4,4025.0
+South Carolina,2021,1,5065.0
+South Carolina,2021,2,4637.0
+South Carolina,2021,3,4725.0
+South Carolina,2021,4,5041.0
+South Carolina,2022,1,8612.0
+South Carolina,2022,2,5572.0
+South Carolina,2022,3,6209.0
+South Carolina,2022,4,6004.0
+South Carolina,2023,1,6608.0
+South Carolina,2023,2,5376.0
+South Carolina,2023,3,5503.0
+South Carolina,2023,4,4858.0
+South Carolina,2024,1,6221.0
+South Carolina,2024,2,6392.0
+South Carolina,2024,3,6295.0
+South Carolina,2024,4,5545.0
+South Carolina,2025,1,6382.0
+South Carolina,2025,2,5471.0
+South Carolina,2025,3,4794.0
+South Carolina,2025,4,5488.0
+South Carolina,2026,1,5734.0
+South Dakota,1992,3,
+South Dakota,1992,4,
+South Dakota,1993,1,
+South Dakota,1993,2,556.0
+South Dakota,1993,3,529.0
+South Dakota,1993,4,531.0
+South Dakota,1994,1,564.0
+South Dakota,1994,2,537.0
+South Dakota,1994,3,526.0
+South Dakota,1994,4,493.0
+South Dakota,1995,1,580.0
+South Dakota,1995,2,559.0
+South Dakota,1995,3,538.0
+South Dakota,1995,4,503.0
+South Dakota,1996,1,520.0
+South Dakota,1996,2,545.0
+South Dakota,1996,3,572.0
+South Dakota,1996,4,480.0
+South Dakota,1997,1,432.0
+South Dakota,1997,2,550.0
+South Dakota,1997,3,601.0
+South Dakota,1997,4,594.0
+South Dakota,1998,1,557.0
+South Dakota,1998,2,736.0
+South Dakota,1998,3,558.0
+South Dakota,1998,4,507.0
+South Dakota,1999,1,578.0
+South Dakota,1999,2,556.0
+South Dakota,1999,3,609.0
+South Dakota,1999,4,551.0
+South Dakota,2000,1,587.0
+South Dakota,2000,2,595.0
+South Dakota,2000,3,609.0
+South Dakota,2000,4,591.0
+South Dakota,2001,1,521.0
+South Dakota,2001,2,653.0
+South Dakota,2001,3,571.0
+South Dakota,2001,4,562.0
+South Dakota,2002,1,550.0
+South Dakota,2002,2,615.0
+South Dakota,2002,3,517.0
+South Dakota,2002,4,573.0
+South Dakota,2003,1,509.0
+South Dakota,2003,2,558.0
+South Dakota,2003,3,578.0
+South Dakota,2003,4,619.0
+South Dakota,2004,1,511.0
+South Dakota,2004,2,631.0
+South Dakota,2004,3,589.0
+South Dakota,2004,4,637.0
+South Dakota,2005,1,568.0
+South Dakota,2005,2,650.0
+South Dakota,2005,3,587.0
+South Dakota,2005,4,636.0
+South Dakota,2006,1,563.0
+South Dakota,2006,2,629.0
+South Dakota,2006,3,623.0
+South Dakota,2006,4,576.0
+South Dakota,2007,1,517.0
+South Dakota,2007,2,563.0
+South Dakota,2007,3,578.0
+South Dakota,2007,4,598.0
+South Dakota,2008,1,522.0
+South Dakota,2008,2,649.0
+South Dakota,2008,3,561.0
+South Dakota,2008,4,534.0
+South Dakota,2009,1,488.0
+South Dakota,2009,2,605.0
+South Dakota,2009,3,506.0
+South Dakota,2009,4,545.0
+South Dakota,2010,1,576.0
+South Dakota,2010,2,547.0
+South Dakota,2010,3,546.0
+South Dakota,2010,4,558.0
+South Dakota,2011,1,547.0
+South Dakota,2011,2,568.0
+South Dakota,2011,3,650.0
+South Dakota,2011,4,604.0
+South Dakota,2012,1,552.0
+South Dakota,2012,2,590.0
+South Dakota,2012,3,550.0
+South Dakota,2012,4,635.0
+South Dakota,2013,1,576.0
+South Dakota,2013,2,614.0
+South Dakota,2013,3,561.0
+South Dakota,2013,4,664.0
+South Dakota,2014,1,609.0
+South Dakota,2014,2,654.0
+South Dakota,2014,3,628.0
+South Dakota,2014,4,651.0
+South Dakota,2015,1,609.0
+South Dakota,2015,2,669.0
+South Dakota,2015,3,662.0
+South Dakota,2015,4,665.0
+South Dakota,2016,1,615.0
+South Dakota,2016,2,708.0
+South Dakota,2016,3,575.0
+South Dakota,2016,4,684.0
+South Dakota,2017,1,650.0
+South Dakota,2017,2,673.0
+South Dakota,2017,3,658.0
+South Dakota,2017,4,710.0
+South Dakota,2018,1,733.0
+South Dakota,2018,2,649.0
+South Dakota,2018,3,671.0
+South Dakota,2018,4,741.0
+South Dakota,2019,1,750.0
+South Dakota,2019,2,754.0
+South Dakota,2019,3,698.0
+South Dakota,2019,4,789.0
+South Dakota,2020,1,792.0
+South Dakota,2020,2,691.0
+South Dakota,2020,3,822.0
+South Dakota,2020,4,927.0
+South Dakota,2021,1,1016.0
+South Dakota,2021,2,1176.0
+South Dakota,2021,3,1177.0
+South Dakota,2021,4,1277.0
+South Dakota,2022,1,1157.0
+South Dakota,2022,2,1258.0
+South Dakota,2022,3,1245.0
+South Dakota,2022,4,1240.0
+South Dakota,2023,1,1011.0
+South Dakota,2023,2,1063.0
+South Dakota,2023,3,952.0
+South Dakota,2023,4,986.0
+South Dakota,2024,1,1021.0
+South Dakota,2024,2,1026.0
+South Dakota,2024,3,925.0
+South Dakota,2024,4,950.0
+South Dakota,2025,1,1001.0
+South Dakota,2025,2,982.0
+South Dakota,2025,3,905.0
+South Dakota,2025,4,972.0
+South Dakota,2026,1,1065.0
+Tennessee,1992,3,
+Tennessee,1992,4,
+Tennessee,1993,1,
+Tennessee,1993,2,2882.0
+Tennessee,1993,3,2887.0
+Tennessee,1993,4,2987.0
+Tennessee,1994,1,3650.0
+Tennessee,1994,2,3226.0
+Tennessee,1994,3,3235.0
+Tennessee,1994,4,2920.0
+Tennessee,1995,1,3754.0
+Tennessee,1995,2,3439.0
+Tennessee,1995,3,3249.0
+Tennessee,1995,4,3404.0
+Tennessee,1996,1,3751.0
+Tennessee,1996,2,3519.0
+Tennessee,1996,3,3279.0
+Tennessee,1996,4,3199.0
+Tennessee,1997,1,4021.0
+Tennessee,1997,2,3331.0
+Tennessee,1997,3,3584.0
+Tennessee,1997,4,3494.0
+Tennessee,1998,1,3732.0
+Tennessee,1998,2,3607.0
+Tennessee,1998,3,3450.0
+Tennessee,1998,4,2880.0
+Tennessee,1999,1,4078.0
+Tennessee,1999,2,3204.0
+Tennessee,1999,3,3204.0
+Tennessee,1999,4,3164.0
+Tennessee,2000,1,3845.0
+Tennessee,2000,2,3130.0
+Tennessee,2000,3,3028.0
+Tennessee,2000,4,2866.0
+Tennessee,2001,1,3734.0
+Tennessee,2001,2,3179.0
+Tennessee,2001,3,2816.0
+Tennessee,2001,4,2974.0
+Tennessee,2002,1,3657.0
+Tennessee,2002,2,3084.0
+Tennessee,2002,3,2791.0
+Tennessee,2002,4,3026.0
+Tennessee,2003,1,4268.0
+Tennessee,2003,2,3097.0
+Tennessee,2003,3,2943.0
+Tennessee,2003,4,2935.0
+Tennessee,2004,1,3872.0
+Tennessee,2004,2,3161.0
+Tennessee,2004,3,3044.0
+Tennessee,2004,4,3182.0
+Tennessee,2005,1,3985.0
+Tennessee,2005,2,3358.0
+Tennessee,2005,3,3420.0
+Tennessee,2005,4,2981.0
+Tennessee,2006,1,4290.0
+Tennessee,2006,2,3596.0
+Tennessee,2006,3,3213.0
+Tennessee,2006,4,3031.0
+Tennessee,2007,1,4217.0
+Tennessee,2007,2,3392.0
+Tennessee,2007,3,3453.0
+Tennessee,2007,4,3194.0
+Tennessee,2008,1,4151.0
+Tennessee,2008,2,3244.0
+Tennessee,2008,3,2914.0
+Tennessee,2008,4,2721.0
+Tennessee,2009,1,3394.0
+Tennessee,2009,2,2772.0
+Tennessee,2009,3,2614.0
+Tennessee,2009,4,2566.0
+Tennessee,2010,1,3394.0
+Tennessee,2010,2,2989.0
+Tennessee,2010,3,2816.0
+Tennessee,2010,4,2753.0
+Tennessee,2011,1,3450.0
+Tennessee,2011,2,2988.0
+Tennessee,2011,3,2950.0
+Tennessee,2011,4,2683.0
+Tennessee,2012,1,3819.0
+Tennessee,2012,2,3320.0
+Tennessee,2012,3,2920.0
+Tennessee,2012,4,2749.0
+Tennessee,2013,1,3931.0
+Tennessee,2013,2,3145.0
+Tennessee,2013,3,3033.0
+Tennessee,2013,4,2757.0
+Tennessee,2014,1,3687.0
+Tennessee,2014,2,3248.0
+Tennessee,2014,3,3032.0
+Tennessee,2014,4,2952.0
+Tennessee,2015,1,4065.0
+Tennessee,2015,2,3356.0
+Tennessee,2015,3,3309.0
+Tennessee,2015,4,3185.0
+Tennessee,2016,1,4063.0
+Tennessee,2016,2,3502.0
+Tennessee,2016,3,3456.0
+Tennessee,2016,4,3229.0
+Tennessee,2017,1,4055.0
+Tennessee,2017,2,3817.0
+Tennessee,2017,3,3421.0
+Tennessee,2017,4,3300.0
+Tennessee,2018,1,3958.0
+Tennessee,2018,2,4289.0
+Tennessee,2018,3,3827.0
+Tennessee,2018,4,3560.0
+Tennessee,2019,1,4602.0
+Tennessee,2019,2,4207.0
+Tennessee,2019,3,3931.0
+Tennessee,2019,4,3594.0
+Tennessee,2020,1,7342.0
+Tennessee,2020,2,4242.0
+Tennessee,2020,3,4890.0
+Tennessee,2020,4,5047.0
+Tennessee,2021,1,6470.0
+Tennessee,2021,2,6536.0
+Tennessee,2021,3,6953.0
+Tennessee,2021,4,6224.0
+Tennessee,2022,1,8142.0
+Tennessee,2022,2,7166.0
+Tennessee,2022,3,6818.0
+Tennessee,2022,4,5830.0
+Tennessee,2023,1,7089.0
+Tennessee,2023,2,6309.0
+Tennessee,2023,3,1599.0
+Tennessee,2023,4,8274.0
+Tennessee,2024,1,8401.0
+Tennessee,2024,2,8219.0
+Tennessee,2024,3,6442.0
+Tennessee,2024,4,4762.0
+Tennessee,2025,1,6968.0
+Tennessee,2025,2,4336.0
+Tennessee,2025,3,6762.0
+Tennessee,2025,4,6405.0
+Tennessee,2026,1,7085.0
+Texas,1992,3,
+Texas,1992,4,
+Texas,1993,1,
+Texas,1993,2,12390.0
+Texas,1993,3,11298.0
+Texas,1993,4,8537.0
+Texas,1994,1,9090.0
+Texas,1994,2,13321.0
+Texas,1994,3,13202.0
+Texas,1994,4,14256.0
+Texas,1995,1,11612.0
+Texas,1995,2,10778.0
+Texas,1995,3,11318.0
+Texas,1995,4,10044.0
+Texas,1996,1,10873.0
+Texas,1996,2,12287.0
+Texas,1996,3,11108.0
+Texas,1996,4,16169.0
+Texas,1997,1,21242.0
+Texas,1997,2,12997.0
+Texas,1997,3,13916.0
+Texas,1997,4,12971.0
+Texas,1998,1,14636.0
+Texas,1998,2,12762.0
+Texas,1998,3,13070.0
+Texas,1998,4,11588.0
+Texas,1999,1,13678.0
+Texas,1999,2,12193.0
+Texas,1999,3,11911.0
+Texas,1999,4,13938.0
+Texas,2000,1,15253.0
+Texas,2000,2,12894.0
+Texas,2000,3,12353.0
+Texas,2000,4,10727.0
+Texas,2001,1,14862.0
+Texas,2001,2,13354.0
+Texas,2001,3,12564.0
+Texas,2001,4,13806.0
+Texas,2002,1,14936.0
+Texas,2002,2,13102.0
+Texas,2002,3,12749.0
+Texas,2002,4,14171.0
+Texas,2003,1,14052.0
+Texas,2003,2,12555.0
+Texas,2003,3,11945.0
+Texas,2003,4,14034.0
+Texas,2004,1,14719.0
+Texas,2004,2,12543.0
+Texas,2004,3,12133.0
+Texas,2004,4,13507.0
+Texas,2005,1,15379.0
+Texas,2005,2,13012.0
+Texas,2005,3,12737.0
+Texas,2005,4,14166.0
+Texas,2006,1,15321.0
+Texas,2006,2,14722.0
+Texas,2006,3,13529.0
+Texas,2006,4,14119.0
+Texas,2007,1,15814.0
+Texas,2007,2,13441.0
+Texas,2007,3,13180.0
+Texas,2007,4,14668.0
+Texas,2008,1,16739.0
+Texas,2008,2,13574.0
+Texas,2008,3,12746.0
+Texas,2008,4,13756.0
+Texas,2009,1,15008.0
+Texas,2009,2,11954.0
+Texas,2009,3,11273.0
+Texas,2009,4,12982.0
+Texas,2010,1,15039.0
+Texas,2010,2,12715.0
+Texas,2010,3,12271.0
+Texas,2010,4,14140.0
+Texas,2011,1,15772.0
+Texas,2011,2,13466.0
+Texas,2011,3,13570.0
+Texas,2011,4,14284.0
+Texas,2012,1,16323.0
+Texas,2012,2,14295.0
+Texas,2012,3,13241.0
+Texas,2012,4,14281.0
+Texas,2013,1,16937.0
+Texas,2013,2,14078.0
+Texas,2013,3,14443.0
+Texas,2013,4,14030.0
+Texas,2014,1,17056.0
+Texas,2014,2,14374.0
+Texas,2014,3,14175.0
+Texas,2014,4,15449.0
+Texas,2015,1,18444.0
+Texas,2015,2,15925.0
+Texas,2015,3,15553.0
+Texas,2015,4,15920.0
+Texas,2016,1,18476.0
+Texas,2016,2,15961.0
+Texas,2016,3,17391.0
+Texas,2016,4,17149.0
+Texas,2017,1,19663.0
+Texas,2017,2,17336.0
+Texas,2017,3,16696.0
+Texas,2017,4,18588.0
+Texas,2018,1,20635.0
+Texas,2018,2,18278.0
+Texas,2018,3,18286.0
+Texas,2018,4,18615.0
+Texas,2019,1,20426.0
+Texas,2019,2,18504.0
+Texas,2019,3,18297.0
+Texas,2019,4,18698.0
+Texas,2020,1,19777.0
+Texas,2020,2,16859.0
+Texas,2020,3,19053.0
+Texas,2020,4,20658.0
+Texas,2021,1,23186.0
+Texas,2021,2,24072.0
+Texas,2021,3,24139.0
+Texas,2021,4,25850.0
+Texas,2022,1,26368.0
+Texas,2022,2,23435.0
+Texas,2022,3,23614.0
+Texas,2022,4,23611.0
+Texas,2023,1,26056.0
+Texas,2023,2,22916.0
+Texas,2023,3,21003.0
+Texas,2023,4,22461.0
+Texas,2024,1,25929.0
+Texas,2024,2,21636.0
+Texas,2024,3,19923.0
+Texas,2024,4,22985.0
+Texas,2025,1,23857.0
+Texas,2025,2,21088.0
+Texas,2025,3,21318.0
+Texas,2025,4,24228.0
+Texas,2026,1,29942.0
+U.S. totals,1992,3,
+U.S. totals,1992,4,
+U.S. totals,1993,1,
+U.S. totals,1993,2,183.0
+U.S. totals,1993,3,182.0
+U.S. totals,1993,4,177.0
+U.S. totals,1994,1,198.0
+U.S. totals,1994,2,196.0
+U.S. totals,1994,3,187.0
+U.S. totals,1994,4,188.0
+U.S. totals,1995,1,211.0
+U.S. totals,1995,2,196.0
+U.S. totals,1995,3,183.0
+U.S. totals,1995,4,193.0
+U.S. totals,1996,1,217.0
+U.S. totals,1996,2,202.0
+U.S. totals,1996,3,189.0
+U.S. totals,1996,4,211.0
+U.S. totals,1997,1,225.0
+U.S. totals,1997,2,210.0
+U.S. totals,1997,3,196.0
+U.S. totals,1997,4,193.0
+U.S. totals,1998,1,236.0
+U.S. totals,1998,2,227.0
+U.S. totals,1998,3,196.0
+U.S. totals,1998,4,200.0
+U.S. totals,1999,1,227.0
+U.S. totals,1999,2,220.0
+U.S. totals,1999,3,197.0
+U.S. totals,1999,4,220.0
+U.S. totals,2000,1,240.0
+U.S. totals,2000,2,216.0
+U.S. totals,2000,3,211.0
+U.S. totals,2000,4,211.0
+U.S. totals,2001,1,235.0
+U.S. totals,2001,2,220.0
+U.S. totals,2001,3,203.0
+U.S. totals,2001,4,210.0
+U.S. totals,2002,1,235.0
+U.S. totals,2002,2,227.0
+U.S. totals,2002,3,205.0
+U.S. totals,2002,4,216.0
+U.S. totals,2003,1,230.0
+U.S. totals,2003,2,210.0
+U.S. totals,2003,3,196.0
+U.S. totals,2003,4,212.0
+U.S. totals,2004,1,238.0
+U.S. totals,2004,2,221.0
+U.S. totals,2004,3,212.0
+U.S. totals,2004,4,224.0
+U.S. totals,2005,1,242.0
+U.S. totals,2005,2,232.0
+U.S. totals,2005,3,221.0
+U.S. totals,2005,4,234.0
+U.S. totals,2006,1,253.0
+U.S. totals,2006,2,233.0
+U.S. totals,2006,3,211.0
+U.S. totals,2006,4,233.0
+U.S. totals,2007,1,246.0
+U.S. totals,2007,2,223.0
+U.S. totals,2007,3,220.0
+U.S. totals,2007,4,226.0
+U.S. totals,2008,1,242.0
+U.S. totals,2008,2,219.0
+U.S. totals,2008,3,201.0
+U.S. totals,2008,4,209.0
+U.S. totals,2009,1,214.0
+U.S. totals,2009,2,200.0
+U.S. totals,2009,3,182.0
+U.S. totals,2009,4,200.0
+U.S. totals,2010,1,205.0
+U.S. totals,2010,2,194.0
+U.S. totals,2010,3,193.0
+U.S. totals,2010,4,215.0
+U.S. totals,2011,1,217.0
+U.S. totals,2011,2,213.0
+U.S. totals,2011,3,193.0
+U.S. totals,2011,4,213.0
+U.S. totals,2012,1,252.0
+U.S. totals,2012,2,217.0
+U.S. totals,2012,3,200.0
+U.S. totals,2012,4,215.0
+U.S. totals,2013,1,220.0
+U.S. totals,2013,2,221.0
+U.S. totals,2013,3,206.0
+U.S. totals,2013,4,218.0
+U.S. totals,2014,1,232.0
+U.S. totals,2014,2,219.0
+U.S. totals,2014,3,212.0
+U.S. totals,2014,4,225.0
+U.S. totals,2015,1,249.0
+U.S. totals,2015,2,234.0
+U.S. totals,2015,3,227.0
+U.S. totals,2015,4,247.0
+U.S. totals,2016,1,249.0
+U.S. totals,2016,2,238.0
+U.S. totals,2016,3,224.0
+U.S. totals,2016,4,243.0
+U.S. totals,2017,1,255.0
+U.S. totals,2017,2,239.0
+U.S. totals,2017,3,226.0
+U.S. totals,2017,4,247.0
+U.S. totals,2018,1,264.0
+U.S. totals,2018,2,263.0
+U.S. totals,2018,3,237.0
+U.S. totals,2018,4,248.0
+U.S. totals,2019,1,273.0
+U.S. totals,2019,2,255.0
+U.S. totals,2019,3,238.0
+U.S. totals,2019,4,272.0
+U.S. totals,2020,1,293.0
+U.S. totals,2020,2,224.0
+U.S. totals,2020,3,261.0
+U.S. totals,2020,4,289.0
+U.S. totals,2021,1,325.0
+U.S. totals,2021,2,347.0
+U.S. totals,2021,3,336.0
+U.S. totals,2021,4,381.0
+U.S. totals,2022,1,374.0
+U.S. totals,2022,2,361.0
+U.S. totals,2022,3,326.0
+U.S. totals,2022,4,347.0
+U.S. totals,2023,1,351.0
+U.S. totals,2023,2,329.0
+U.S. totals,2023,3,297.0
+U.S. totals,2023,4,329.0
+U.S. totals,2024,1,348.0
+U.S. totals,2024,2,324.0
+U.S. totals,2024,3,295.0
+U.S. totals,2024,4,324.0
+U.S. totals,2025,1,353.0
+U.S. totals,2025,2,305.0
+U.S. totals,2025,3,303.0
+U.S. totals,2025,4,343.0
+U.S. totals,2026,1,341.0
+Utah,1992,3,
+Utah,1992,4,
+Utah,1993,1,
+Utah,1993,2,1736.0
+Utah,1993,3,1634.0
+Utah,1993,4,1652.0
+Utah,1994,1,1980.0
+Utah,1994,2,1838.0
+Utah,1994,3,1780.0
+Utah,1994,4,1795.0
+Utah,1995,1,1942.0
+Utah,1995,2,1946.0
+Utah,1995,3,1942.0
+Utah,1995,4,2028.0
+Utah,1996,1,2260.0
+Utah,1996,2,2302.0
+Utah,1996,3,2184.0
+Utah,1996,4,2052.0
+Utah,1997,1,2294.0
+Utah,1997,2,2161.0
+Utah,1997,3,2279.0
+Utah,1997,4,2158.0
+Utah,1998,1,2527.0
+Utah,1998,2,2447.0
+Utah,1998,3,2292.0
+Utah,1998,4,2344.0
+Utah,1999,1,2623.0
+Utah,1999,2,2302.0
+Utah,1999,3,2371.0
+Utah,1999,4,2373.0
+Utah,2000,1,2545.0
+Utah,2000,2,2330.0
+Utah,2000,3,2386.0
+Utah,2000,4,2526.0
+Utah,2001,1,2622.0
+Utah,2001,2,2322.0
+Utah,2001,3,2226.0
+Utah,2001,4,2463.0
+Utah,2002,1,2282.0
+Utah,2002,2,2359.0
+Utah,2002,3,2199.0
+Utah,2002,4,2555.0
+Utah,2003,1,2555.0
+Utah,2003,2,2264.0
+Utah,2003,3,2299.0
+Utah,2003,4,2779.0
+Utah,2004,1,2618.0
+Utah,2004,2,2442.0
+Utah,2004,3,2495.0
+Utah,2004,4,3141.0
+Utah,2005,1,2926.0
+Utah,2005,2,2652.0
+Utah,2005,3,2619.0
+Utah,2005,4,3249.0
+Utah,2006,1,3316.0
+Utah,2006,2,2876.0
+Utah,2006,3,2662.0
+Utah,2006,4,3589.0
+Utah,2007,1,3132.0
+Utah,2007,2,2839.0
+Utah,2007,3,2416.0
+Utah,2007,4,3120.0
+Utah,2008,1,2625.0
+Utah,2008,2,2344.0
+Utah,2008,3,2420.0
+Utah,2008,4,2895.0
+Utah,2009,1,2132.0
+Utah,2009,2,2107.0
+Utah,2009,3,1880.0
+Utah,2009,4,2606.0
+Utah,2010,1,2211.0
+Utah,2010,2,2020.0
+Utah,2010,3,1952.0
+Utah,2010,4,2846.0
+Utah,2011,1,2279.0
+Utah,2011,2,2245.0
+Utah,2011,3,2164.0
+Utah,2011,4,2781.0
+Utah,2012,1,2471.0
+Utah,2012,2,2313.0
+Utah,2012,3,2308.0
+Utah,2012,4,2787.0
+Utah,2013,1,2393.0
+Utah,2013,2,2291.0
+Utah,2013,3,2244.0
+Utah,2013,4,2835.0
+Utah,2014,1,2019.0
+Utah,2014,2,2760.0
+Utah,2014,3,2479.0
+Utah,2014,4,3179.0
+Utah,2015,1,2648.0
+Utah,2015,2,2710.0
+Utah,2015,3,2679.0
+Utah,2015,4,3040.0
+Utah,2016,1,2916.0
+Utah,2016,2,2618.0
+Utah,2016,3,2804.0
+Utah,2016,4,2977.0
+Utah,2017,1,2876.0
+Utah,2017,2,2941.0
+Utah,2017,3,2721.0
+Utah,2017,4,3524.0
+Utah,2018,1,3269.0
+Utah,2018,2,3360.0
+Utah,2018,3,3283.0
+Utah,2018,4,4097.0
+Utah,2019,1,3528.0
+Utah,2019,2,3426.0
+Utah,2019,3,3158.0
+Utah,2019,4,3851.0
+Utah,2020,1,3387.0
+Utah,2020,2,3652.0
+Utah,2020,3,4064.0
+Utah,2020,4,4943.0
+Utah,2021,1,4325.0
+Utah,2021,2,4597.0
+Utah,2021,3,4822.0
+Utah,2021,4,5580.0
+Utah,2022,1,5065.0
+Utah,2022,2,5142.0
+Utah,2022,3,4852.0
+Utah,2022,4,5278.0
+Utah,2023,1,4628.0
+Utah,2023,2,4280.0
+Utah,2023,3,4341.0
+Utah,2023,4,5058.0
+Utah,2024,1,4673.0
+Utah,2024,2,4734.0
+Utah,2024,3,4108.0
+Utah,2024,4,5386.0
+Utah,2025,1,4302.0
+Utah,2025,2,4488.0
+Utah,2025,3,4266.0
+Utah,2025,4,5005.0
+Utah,2026,1,4133.0
+Vermont,1992,3,
+Vermont,1992,4,
+Vermont,1993,1,
+Vermont,1993,2,512.0
+Vermont,1993,3,540.0
+Vermont,1993,4,490.0
+Vermont,1994,1,417.0
+Vermont,1994,2,486.0
+Vermont,1994,3,481.0
+Vermont,1994,4,467.0
+Vermont,1995,1,452.0
+Vermont,1995,2,526.0
+Vermont,1995,3,500.0
+Vermont,1995,4,526.0
+Vermont,1996,1,414.0
+Vermont,1996,2,525.0
+Vermont,1996,3,484.0
+Vermont,1996,4,536.0
+Vermont,1997,1,519.0
+Vermont,1997,2,508.0
+Vermont,1997,3,618.0
+Vermont,1997,4,433.0
+Vermont,1998,1,481.0
+Vermont,1998,2,542.0
+Vermont,1998,3,475.0
+Vermont,1998,4,287.0
+Vermont,1999,1,607.0
+Vermont,1999,2,495.0
+Vermont,1999,3,514.0
+Vermont,1999,4,527.0
+Vermont,2000,1,538.0
+Vermont,2000,2,453.0
+Vermont,2000,3,474.0
+Vermont,2000,4,486.0
+Vermont,2001,1,388.0
+Vermont,2001,2,304.0
+Vermont,2001,3,449.0
+Vermont,2001,4,574.0
+Vermont,2002,1,432.0
+Vermont,2002,2,527.0
+Vermont,2002,3,493.0
+Vermont,2002,4,508.0
+Vermont,2003,1,459.0
+Vermont,2003,2,523.0
+Vermont,2003,3,410.0
+Vermont,2003,4,431.0
+Vermont,2004,1,575.0
+Vermont,2004,2,516.0
+Vermont,2004,3,587.0
+Vermont,2004,4,436.0
+Vermont,2005,1,391.0
+Vermont,2005,2,460.0
+Vermont,2005,3,482.0
+Vermont,2005,4,498.0
+Vermont,2006,1,455.0
+Vermont,2006,2,432.0
+Vermont,2006,3,510.0
+Vermont,2006,4,477.0
+Vermont,2007,1,310.0
+Vermont,2007,2,360.0
+Vermont,2007,3,780.0
+Vermont,2007,4,559.0
+Vermont,2008,1,453.0
+Vermont,2008,2,444.0
+Vermont,2008,3,447.0
+Vermont,2008,4,427.0
+Vermont,2009,1,469.0
+Vermont,2009,2,387.0
+Vermont,2009,3,402.0
+Vermont,2009,4,390.0
+Vermont,2010,1,393.0
+Vermont,2010,2,470.0
+Vermont,2010,3,461.0
+Vermont,2010,4,446.0
+Vermont,2011,1,452.0
+Vermont,2011,2,454.0
+Vermont,2011,3,477.0
+Vermont,2011,4,479.0
+Vermont,2012,1,419.0
+Vermont,2012,2,518.0
+Vermont,2012,3,472.0
+Vermont,2012,4,407.0
+Vermont,2013,1,416.0
+Vermont,2013,2,519.0
+Vermont,2013,3,454.0
+Vermont,2013,4,499.0
+Vermont,2014,1,462.0
+Vermont,2014,2,521.0
+Vermont,2014,3,538.0
+Vermont,2014,4,453.0
+Vermont,2015,1,484.0
+Vermont,2015,2,485.0
+Vermont,2015,3,523.0
+Vermont,2015,4,426.0
+Vermont,2016,1,510.0
+Vermont,2016,2,496.0
+Vermont,2016,3,561.0
+Vermont,2016,4,476.0
+Vermont,2017,1,483.0
+Vermont,2017,2,573.0
+Vermont,2017,3,508.0
+Vermont,2017,4,443.0
+Vermont,2018,1,507.0
+Vermont,2018,2,585.0
+Vermont,2018,3,524.0
+Vermont,2018,4,539.0
+Vermont,2019,1,580.0
+Vermont,2019,2,587.0
+Vermont,2019,3,583.0
+Vermont,2019,4,504.0
+Vermont,2020,1,352.0
+Vermont,2020,2,447.0
+Vermont,2020,3,501.0
+Vermont,2020,4,455.0
+Vermont,2021,1,754.0
+Vermont,2021,2,1209.0
+Vermont,2021,3,1070.0
+Vermont,2021,4,900.0
+Vermont,2022,1,1182.0
+Vermont,2022,2,919.0
+Vermont,2022,3,1262.0
+Vermont,2022,4,1112.0
+Vermont,2023,1,1024.0
+Vermont,2023,2,905.0
+Vermont,2023,3,920.0
+Vermont,2023,4,819.0
+Vermont,2024,1,995.0
+Vermont,2024,2,778.0
+Vermont,2024,3,987.0
+Vermont,2024,4,713.0
+Vermont,2025,1,843.0
+Vermont,2025,2,836.0
+Vermont,2025,3,984.0
+Vermont,2025,4,830.0
+Vermont,2026,1,913.0
+Virgin Islands,1992,3,
+Virgin Islands,1992,4,
+Virgin Islands,1993,1,
+Virgin Islands,1993,2,123.0
+Virgin Islands,1993,3,99.0
+Virgin Islands,1993,4,114.0
+Virgin Islands,1994,1,115.0
+Virgin Islands,1994,2,99.0
+Virgin Islands,1994,3,79.0
+Virgin Islands,1994,4,77.0
+Virgin Islands,1995,1,93.0
+Virgin Islands,1995,2,82.0
+Virgin Islands,1995,3,57.0
+Virgin Islands,1995,4,85.0
+Virgin Islands,1996,1,111.0
+Virgin Islands,1996,2,71.0
+Virgin Islands,1996,3,73.0
+Virgin Islands,1996,4,35.0
+Virgin Islands,1997,1,179.0
+Virgin Islands,1997,2,104.0
+Virgin Islands,1997,3,89.0
+Virgin Islands,1997,4,79.0
+Virgin Islands,1998,1,106.0
+Virgin Islands,1998,2,60.0
+Virgin Islands,1998,3,58.0
+Virgin Islands,1998,4,38.0
+Virgin Islands,1999,1,93.0
+Virgin Islands,1999,2,27.0
+Virgin Islands,1999,3,41.0
+Virgin Islands,1999,4,19.0
+Virgin Islands,2000,1,24.0
+Virgin Islands,2000,2,135.0
+Virgin Islands,2000,3,85.0
+Virgin Islands,2000,4,55.0
+Virgin Islands,2001,1,118.0
+Virgin Islands,2001,2,61.0
+Virgin Islands,2001,3,73.0
+Virgin Islands,2001,4,64.0
+Virgin Islands,2002,1,77.0
+Virgin Islands,2002,2,57.0
+Virgin Islands,2002,3,44.0
+Virgin Islands,2002,4,57.0
+Virgin Islands,2003,1,97.0
+Virgin Islands,2003,2,60.0
+Virgin Islands,2003,3,38.0
+Virgin Islands,2003,4,80.0
+Virgin Islands,2004,1,63.0
+Virgin Islands,2004,2,87.0
+Virgin Islands,2004,3,69.0
+Virgin Islands,2004,4,38.0
+Virgin Islands,2005,1,109.0
+Virgin Islands,2005,2,63.0
+Virgin Islands,2005,3,65.0
+Virgin Islands,2005,4,81.0
+Virgin Islands,2006,1,76.0
+Virgin Islands,2006,2,53.0
+Virgin Islands,2006,3,59.0
+Virgin Islands,2006,4,59.0
+Virgin Islands,2007,1,81.0
+Virgin Islands,2007,2,67.0
+Virgin Islands,2007,3,67.0
+Virgin Islands,2007,4,75.0
+Virgin Islands,2008,1,87.0
+Virgin Islands,2008,2,69.0
+Virgin Islands,2008,3,69.0
+Virgin Islands,2008,4,64.0
+Virgin Islands,2009,1,86.0
+Virgin Islands,2009,2,58.0
+Virgin Islands,2009,3,66.0
+Virgin Islands,2009,4,39.0
+Virgin Islands,2010,1,72.0
+Virgin Islands,2010,2,52.0
+Virgin Islands,2010,3,61.0
+Virgin Islands,2010,4,60.0
+Virgin Islands,2011,1,75.0
+Virgin Islands,2011,2,56.0
+Virgin Islands,2011,3,52.0
+Virgin Islands,2011,4,51.0
+Virgin Islands,2012,1,51.0
+Virgin Islands,2012,2,61.0
+Virgin Islands,2012,3,60.0
+Virgin Islands,2012,4,55.0
+Virgin Islands,2013,1,76.0
+Virgin Islands,2013,2,54.0
+Virgin Islands,2013,3,45.0
+Virgin Islands,2013,4,41.0
+Virgin Islands,2014,1,57.0
+Virgin Islands,2014,2,62.0
+Virgin Islands,2014,3,68.0
+Virgin Islands,2014,4,51.0
+Virgin Islands,2015,1,57.0
+Virgin Islands,2015,2,37.0
+Virgin Islands,2015,3,54.0
+Virgin Islands,2015,4,56.0
+Virgin Islands,2016,1,42.0
+Virgin Islands,2016,2,53.0
+Virgin Islands,2016,3,47.0
+Virgin Islands,2016,4,41.0
+Virgin Islands,2017,1,57.0
+Virgin Islands,2017,2,42.0
+Virgin Islands,2017,3,27.0
+Virgin Islands,2017,4,28.0
+Virgin Islands,2018,1,66.0
+Virgin Islands,2018,2,48.0
+Virgin Islands,2018,3,38.0
+Virgin Islands,2018,4,60.0
+Virgin Islands,2019,1,101.0
+Virgin Islands,2019,2,59.0
+Virgin Islands,2019,3,52.0
+Virgin Islands,2019,4,59.0
+Virgin Islands,2020,1,86.0
+Virgin Islands,2020,2,43.0
+Virgin Islands,2020,3,24.0
+Virgin Islands,2020,4,51.0
+Virgin Islands,2021,1,109.0
+Virgin Islands,2021,2,73.0
+Virgin Islands,2021,3,38.0
+Virgin Islands,2021,4,64.0
+Virgin Islands,2022,1,88.0
+Virgin Islands,2022,2,63.0
+Virgin Islands,2022,3,48.0
+Virgin Islands,2022,4,42.0
+Virgin Islands,2023,1,100.0
+Virgin Islands,2023,2,73.0
+Virgin Islands,2023,3,58.0
+Virgin Islands,2023,4,34.0
+Virgin Islands,2024,1,47.0
+Virgin Islands,2024,2,9.0
+Virgin Islands,2024,3,31.0
+Virgin Islands,2024,4,18.0
+Virgin Islands,2025,1,14.0
+Virgin Islands,2025,2,106.0
+Virgin Islands,2025,3,33.0
+Virgin Islands,2025,4,35.0
+Virgin Islands,2026,1,66.0
+Virginia,1992,3,
+Virginia,1992,4,
+Virginia,1993,1,
+Virginia,1993,2,3781.0
+Virginia,1993,3,3967.0
+Virginia,1993,4,4473.0
+Virginia,1994,1,4329.0
+Virginia,1994,2,4287.0
+Virginia,1994,3,4174.0
+Virginia,1994,4,4314.0
+Virginia,1995,1,5084.0
+Virginia,1995,2,3214.0
+Virginia,1995,3,4141.0
+Virginia,1995,4,5435.0
+Virginia,1996,1,3986.0
+Virginia,1996,2,4515.0
+Virginia,1996,3,4383.0
+Virginia,1996,4,5344.0
+Virginia,1997,1,5163.0
+Virginia,1997,2,4505.0
+Virginia,1997,3,4484.0
+Virginia,1997,4,5530.0
+Virginia,1998,1,4726.0
+Virginia,1998,2,4583.0
+Virginia,1998,3,5122.0
+Virginia,1998,4,4247.0
+Virginia,1999,1,5455.0
+Virginia,1999,2,4795.0
+Virginia,1999,3,4419.0
+Virginia,1999,4,4792.0
+Virginia,2000,1,5621.0
+Virginia,2000,2,4434.0
+Virginia,2000,3,4786.0
+Virginia,2000,4,4767.0
+Virginia,2001,1,5252.0
+Virginia,2001,2,5456.0
+Virginia,2001,3,4277.0
+Virginia,2001,4,4928.0
+Virginia,2002,1,5297.0
+Virginia,2002,2,4815.0
+Virginia,2002,3,4151.0
+Virginia,2002,4,4813.0
+Virginia,2003,1,5374.0
+Virginia,2003,2,4393.0
+Virginia,2003,3,4123.0
+Virginia,2003,4,4883.0
+Virginia,2004,1,5940.0
+Virginia,2004,2,5687.0
+Virginia,2004,3,4245.0
+Virginia,2004,4,5140.0
+Virginia,2005,1,6653.0
+Virginia,2005,2,4965.0
+Virginia,2005,3,5481.0
+Virginia,2005,4,6212.0
+Virginia,2006,1,5811.0
+Virginia,2006,2,5848.0
+Virginia,2006,3,4135.0
+Virginia,2006,4,4445.0
+Virginia,2007,1,8799.0
+Virginia,2007,2,6245.0
+Virginia,2007,3,5778.0
+Virginia,2007,4,3520.0
+Virginia,2008,1,7988.0
+Virginia,2008,2,6219.0
+Virginia,2008,3,6011.0
+Virginia,2008,4,6001.0
+Virginia,2009,1,5678.0
+Virginia,2009,2,5210.0
+Virginia,2009,3,5112.0
+Virginia,2009,4,5033.0
+Virginia,2010,1,5437.0
+Virginia,2010,2,6085.0
+Virginia,2010,3,5583.0
+Virginia,2010,4,6130.0
+Virginia,2011,1,6112.0
+Virginia,2011,2,5907.0
+Virginia,2011,3,5112.0
+Virginia,2011,4,6730.0
+Virginia,2012,1,6334.0
+Virginia,2012,2,4830.0
+Virginia,2012,3,6840.0
+Virginia,2012,4,6172.0
+Virginia,2013,1,5508.0
+Virginia,2013,2,3187.0
+Virginia,2013,3,5096.0
+Virginia,2013,4,5343.0
+Virginia,2014,1,6015.0
+Virginia,2014,2,6257.0
+Virginia,2014,3,4785.0
+Virginia,2014,4,2309.0
+Virginia,2015,1,10770.0
+Virginia,2015,2,6680.0
+Virginia,2015,3,11230.0
+Virginia,2015,4,6539.0
+Virginia,2016,1,6465.0
+Virginia,2016,2,7819.0
+Virginia,2016,3,4524.0
+Virginia,2016,4,5702.0
+Virginia,2017,1,6161.0
+Virginia,2017,2,5915.0
+Virginia,2017,3,5393.0
+Virginia,2017,4,5969.0
+Virginia,2018,1,6016.0
+Virginia,2018,2,6170.0
+Virginia,2018,3,5647.0
+Virginia,2018,4,5941.0
+Virginia,2019,1,12350.0
+Virginia,2019,2,6963.0
+Virginia,2019,3,2821.0
+Virginia,2019,4,10040.0
+Virginia,2020,1,7704.0
+Virginia,2020,2,6348.0
+Virginia,2020,3,7193.0
+Virginia,2020,4,7503.0
+Virginia,2021,1,8214.0
+Virginia,2021,2,8210.0
+Virginia,2021,3,8141.0
+Virginia,2021,4,9408.0
+Virginia,2022,1,10161.0
+Virginia,2022,2,9600.0
+Virginia,2022,3,8654.0
+Virginia,2022,4,8674.0
+Virginia,2023,1,9503.0
+Virginia,2023,2,9129.0
+Virginia,2023,3,7904.0
+Virginia,2023,4,8654.0
+Virginia,2024,1,9604.0
+Virginia,2024,2,8217.0
+Virginia,2024,3,7008.0
+Virginia,2024,4,8951.0
+Virginia,2025,1,8230.0
+Virginia,2025,2,8779.0
+Virginia,2025,3,7548.0
+Virginia,2025,4,7991.0
+Virginia,2026,1,8259.0
+Washington,1992,3,
+Washington,1992,4,
+Washington,1993,1,
+Washington,1993,2,4638.0
+Washington,1993,3,5644.0
+Washington,1993,4,7069.0
+Washington,1994,1,4831.0
+Washington,1994,2,5272.0
+Washington,1994,3,7188.0
+Washington,1994,4,6480.0
+Washington,1995,1,6355.0
+Washington,1995,2,6170.0
+Washington,1995,3,6027.0
+Washington,1995,4,5238.0
+Washington,1996,1,5505.0
+Washington,1996,2,6147.0
+Washington,1996,3,5750.0
+Washington,1996,4,8084.0
+Washington,1997,1,5284.0
+Washington,1997,2,9081.0
+Washington,1997,3,8419.0
+Washington,1997,4,7460.0
+Washington,1998,1,7387.0
+Washington,1998,2,9262.0
+Washington,1998,3,5403.0
+Washington,1998,4,8367.0
+Washington,1999,1,7783.0
+Washington,1999,2,7796.0
+Washington,1999,3,8396.0
+Washington,1999,4,7675.0
+Washington,2000,1,8363.0
+Washington,2000,2,8800.0
+Washington,2000,3,8966.0
+Washington,2000,4,7753.0
+Washington,2001,1,7919.0
+Washington,2001,2,7986.0
+Washington,2001,3,8349.0
+Washington,2001,4,7676.0
+Washington,2002,1,7820.0
+Washington,2002,2,7677.0
+Washington,2002,3,7981.0
+Washington,2002,4,5947.0
+Washington,2003,1,9423.0
+Washington,2003,2,7604.0
+Washington,2003,3,7426.0
+Washington,2003,4,6939.0
+Washington,2004,1,6075.0
+Washington,2004,2,6537.0
+Washington,2004,3,6620.0
+Washington,2004,4,5965.0
+Washington,2005,1,6231.0
+Washington,2005,2,6096.0
+Washington,2005,3,6613.0
+Washington,2005,4,6021.0
+Washington,2006,1,6432.0
+Washington,2006,2,6080.0
+Washington,2006,3,7243.0
+Washington,2006,4,5856.0
+Washington,2007,1,6243.0
+Washington,2007,2,6689.0
+Washington,2007,3,6651.0
+Washington,2007,4,6324.0
+Washington,2008,1,6942.0
+Washington,2008,2,6422.0
+Washington,2008,3,7438.0
+Washington,2008,4,4715.0
+Washington,2009,1,6942.0
+Washington,2009,2,6839.0
+Washington,2009,3,7516.0
+Washington,2009,4,7372.0
+Washington,2010,1,7344.0
+Washington,2010,2,6058.0
+Washington,2010,3,6836.0
+Washington,2010,4,6083.0
+Washington,2011,1,6363.0
+Washington,2011,2,6036.0
+Washington,2011,3,6112.0
+Washington,2011,4,5354.0
+Washington,2012,1,5836.0
+Washington,2012,2,5840.0
+Washington,2012,3,5935.0
+Washington,2012,4,5446.0
+Washington,2013,1,6040.0
+Washington,2013,2,5195.0
+Washington,2013,3,5384.0
+Washington,2013,4,5322.0
+Washington,2014,1,5949.0
+Washington,2014,2,4442.0
+Washington,2014,3,5290.0
+Washington,2014,4,4636.0
+Washington,2015,1,4469.0
+Washington,2015,2,4942.0
+Washington,2015,3,4366.0
+Washington,2015,4,5364.0
+Washington,2016,1,6869.0
+Washington,2016,2,5747.0
+Washington,2016,3,4786.0
+Washington,2016,4,6709.0
+Washington,2017,1,4748.0
+Washington,2017,2,5311.0
+Washington,2017,3,6088.0
+Washington,2017,4,6578.0
+Washington,2018,1,9184.0
+Washington,2018,2,14436.0
+Washington,2018,3,7149.0
+Washington,2018,4,4105.0
+Washington,2019,1,5718.0
+Washington,2019,2,5820.0
+Washington,2019,3,5378.0
+Washington,2019,4,5944.0
+Washington,2020,1,5321.0
+Washington,2020,2,5076.0
+Washington,2020,3,4965.0
+Washington,2020,4,5266.0
+Washington,2021,1,6129.0
+Washington,2021,2,6700.0
+Washington,2021,3,6680.0
+Washington,2021,4,15018.0
+Washington,2022,1,12900.0
+Washington,2022,2,8889.0
+Washington,2022,3,6993.0
+Washington,2022,4,6358.0
+Washington,2023,1,6160.0
+Washington,2023,2,5717.0
+Washington,2023,3,6051.0
+Washington,2023,4,5948.0
+Washington,2024,1,6695.0
+Washington,2024,2,6324.0
+Washington,2024,3,5764.0
+Washington,2024,4,5058.0
+Washington,2025,1,6036.0
+Washington,2025,2,6368.0
+Washington,2025,3,5968.0
+Washington,2025,4,5392.0
+Washington,2026,1,5710.0
+West Virginia,1992,3,
+West Virginia,1992,4,
+West Virginia,1993,1,
+West Virginia,1993,2,1170.0
+West Virginia,1993,3,1175.0
+West Virginia,1993,4,957.0
+West Virginia,1994,1,1081.0
+West Virginia,1994,2,1223.0
+West Virginia,1994,3,1179.0
+West Virginia,1994,4,791.0
+West Virginia,1995,1,1126.0
+West Virginia,1995,2,1445.0
+West Virginia,1995,3,1019.0
+West Virginia,1995,4,998.0
+West Virginia,1996,1,1055.0
+West Virginia,1996,2,1141.0
+West Virginia,1996,3,1117.0
+West Virginia,1996,4,1037.0
+West Virginia,1997,1,1155.0
+West Virginia,1997,2,1113.0
+West Virginia,1997,3,1237.0
+West Virginia,1997,4,973.0
+West Virginia,1998,1,1039.0
+West Virginia,1998,2,1386.0
+West Virginia,1998,3,1136.0
+West Virginia,1998,4,952.0
+West Virginia,1999,1,1139.0
+West Virginia,1999,2,1018.0
+West Virginia,1999,3,1050.0
+West Virginia,1999,4,939.0
+West Virginia,2000,1,1165.0
+West Virginia,2000,2,1015.0
+West Virginia,2000,3,982.0
+West Virginia,2000,4,852.0
+West Virginia,2001,1,1017.0
+West Virginia,2001,2,1079.0
+West Virginia,2001,3,907.0
+West Virginia,2001,4,784.0
+West Virginia,2002,1,1158.0
+West Virginia,2002,2,918.0
+West Virginia,2002,3,1012.0
+West Virginia,2002,4,823.0
+West Virginia,2003,1,999.0
+West Virginia,2003,2,997.0
+West Virginia,2003,3,994.0
+West Virginia,2003,4,917.0
+West Virginia,2004,1,1134.0
+West Virginia,2004,2,1121.0
+West Virginia,2004,3,1001.0
+West Virginia,2004,4,948.0
+West Virginia,2005,1,976.0
+West Virginia,2005,2,1123.0
+West Virginia,2005,3,987.0
+West Virginia,2005,4,896.0
+West Virginia,2006,1,1116.0
+West Virginia,2006,2,1015.0
+West Virginia,2006,3,979.0
+West Virginia,2006,4,810.0
+West Virginia,2007,1,1012.0
+West Virginia,2007,2,940.0
+West Virginia,2007,3,962.0
+West Virginia,2007,4,788.0
+West Virginia,2008,1,992.0
+West Virginia,2008,2,887.0
+West Virginia,2008,3,868.0
+West Virginia,2008,4,856.0
+West Virginia,2009,1,928.0
+West Virginia,2009,2,808.0
+West Virginia,2009,3,748.0
+West Virginia,2009,4,778.0
+West Virginia,2010,1,870.0
+West Virginia,2010,2,879.0
+West Virginia,2010,3,749.0
+West Virginia,2010,4,801.0
+West Virginia,2011,1,859.0
+West Virginia,2011,2,986.0
+West Virginia,2011,3,958.0
+West Virginia,2011,4,887.0
+West Virginia,2012,1,945.0
+West Virginia,2012,2,896.0
+West Virginia,2012,3,843.0
+West Virginia,2012,4,723.0
+West Virginia,2013,1,935.0
+West Virginia,2013,2,869.0
+West Virginia,2013,3,810.0
+West Virginia,2013,4,642.0
+West Virginia,2014,1,907.0
+West Virginia,2014,2,964.0
+West Virginia,2014,3,868.0
+West Virginia,2014,4,878.0
+West Virginia,2015,1,1044.0
+West Virginia,2015,2,862.0
+West Virginia,2015,3,816.0
+West Virginia,2015,4,823.0
+West Virginia,2016,1,838.0
+West Virginia,2016,2,867.0
+West Virginia,2016,3,890.0
+West Virginia,2016,4,871.0
+West Virginia,2017,1,917.0
+West Virginia,2017,2,999.0
+West Virginia,2017,3,861.0
+West Virginia,2017,4,818.0
+West Virginia,2018,1,921.0
+West Virginia,2018,2,960.0
+West Virginia,2018,3,939.0
+West Virginia,2018,4,837.0
+West Virginia,2019,1,898.0
+West Virginia,2019,2,1100.0
+West Virginia,2019,3,850.0
+West Virginia,2019,4,844.0
+West Virginia,2020,1,2728.0
+West Virginia,2020,2,995.0
+West Virginia,2020,3,1085.0
+West Virginia,2020,4,1179.0
+West Virginia,2021,1,1292.0
+West Virginia,2021,2,1499.0
+West Virginia,2021,3,1341.0
+West Virginia,2021,4,1587.0
+West Virginia,2022,1,1710.0
+West Virginia,2022,2,1632.0
+West Virginia,2022,3,1596.0
+West Virginia,2022,4,1407.0
+West Virginia,2023,1,1570.0
+West Virginia,2023,2,1897.0
+West Virginia,2023,3,1833.0
+West Virginia,2023,4,1428.0
+West Virginia,2024,1,1878.0
+West Virginia,2024,2,1570.0
+West Virginia,2024,3,1303.0
+West Virginia,2024,4,1625.0
+West Virginia,2025,1,1357.0
+West Virginia,2025,2,1163.0
+West Virginia,2025,3,1275.0
+West Virginia,2025,4,1188.0
+West Virginia,2026,1,1648.0
+Wisconsin,1992,3,
+Wisconsin,1992,4,
+Wisconsin,1993,1,
+Wisconsin,1993,2,2510.0
+Wisconsin,1993,3,2830.0
+Wisconsin,1993,4,3021.0
+Wisconsin,1994,1,2792.0
+Wisconsin,1994,2,2959.0
+Wisconsin,1994,3,3120.0
+Wisconsin,1994,4,2997.0
+Wisconsin,1995,1,2846.0
+Wisconsin,1995,2,2943.0
+Wisconsin,1995,3,2483.0
+Wisconsin,1995,4,3103.0
+Wisconsin,1996,1,2528.0
+Wisconsin,1996,2,3016.0
+Wisconsin,1996,3,2787.0
+Wisconsin,1996,4,3260.0
+Wisconsin,1997,1,2152.0
+Wisconsin,1997,2,2900.0
+Wisconsin,1997,3,3007.0
+Wisconsin,1997,4,3666.0
+Wisconsin,1998,1,2075.0
+Wisconsin,1998,2,2924.0
+Wisconsin,1998,3,2920.0
+Wisconsin,1998,4,3345.0
+Wisconsin,1999,1,2643.0
+Wisconsin,1999,2,3161.0
+Wisconsin,1999,3,2786.0
+Wisconsin,1999,4,2956.0
+Wisconsin,2000,1,2563.0
+Wisconsin,2000,2,3089.0
+Wisconsin,2000,3,2658.0
+Wisconsin,2000,4,2419.0
+Wisconsin,2001,1,2558.0
+Wisconsin,2001,2,2836.0
+Wisconsin,2001,3,2722.0
+Wisconsin,2001,4,2727.0
+Wisconsin,2002,1,3027.0
+Wisconsin,2002,2,2822.0
+Wisconsin,2002,3,2744.0
+Wisconsin,2002,4,2818.0
+Wisconsin,2003,1,2413.0
+Wisconsin,2003,2,2706.0
+Wisconsin,2003,3,2693.0
+Wisconsin,2003,4,2901.0
+Wisconsin,2004,1,2523.0
+Wisconsin,2004,2,3054.0
+Wisconsin,2004,3,2752.0
+Wisconsin,2004,4,3171.0
+Wisconsin,2005,1,2676.0
+Wisconsin,2005,2,2838.0
+Wisconsin,2005,3,2910.0
+Wisconsin,2005,4,3222.0
+Wisconsin,2006,1,2725.0
+Wisconsin,2006,2,2950.0
+Wisconsin,2006,3,3010.0
+Wisconsin,2006,4,3098.0
+Wisconsin,2007,1,2637.0
+Wisconsin,2007,2,2681.0
+Wisconsin,2007,3,2557.0
+Wisconsin,2007,4,2497.0
+Wisconsin,2008,1,2744.0
+Wisconsin,2008,2,2900.0
+Wisconsin,2008,3,2791.0
+Wisconsin,2008,4,2767.0
+Wisconsin,2009,1,2421.0
+Wisconsin,2009,2,2123.0
+Wisconsin,2009,3,2069.0
+Wisconsin,2009,4,2520.0
+Wisconsin,2010,1,2345.0
+Wisconsin,2010,2,2364.0
+Wisconsin,2010,3,2406.0
+Wisconsin,2010,4,2784.0
+Wisconsin,2011,1,2536.0
+Wisconsin,2011,2,2584.0
+Wisconsin,2011,3,2722.0
+Wisconsin,2011,4,2841.0
+Wisconsin,2012,1,3167.0
+Wisconsin,2012,2,3282.0
+Wisconsin,2012,3,3227.0
+Wisconsin,2012,4,3407.0
+Wisconsin,2013,1,3246.0
+Wisconsin,2013,2,3445.0
+Wisconsin,2013,3,3642.0
+Wisconsin,2013,4,3125.0
+Wisconsin,2014,1,3119.0
+Wisconsin,2014,2,3285.0
+Wisconsin,2014,3,3262.0
+Wisconsin,2014,4,3849.0
+Wisconsin,2015,1,3202.0
+Wisconsin,2015,2,3429.0
+Wisconsin,2015,3,3807.0
+Wisconsin,2015,4,3720.0
+Wisconsin,2016,1,3391.0
+Wisconsin,2016,2,3519.0
+Wisconsin,2016,3,3888.0
+Wisconsin,2016,4,3914.0
+Wisconsin,2017,1,3626.0
+Wisconsin,2017,2,3763.0
+Wisconsin,2017,3,3547.0
+Wisconsin,2017,4,3810.0
+Wisconsin,2018,1,3671.0
+Wisconsin,2018,2,3856.0
+Wisconsin,2018,3,3776.0
+Wisconsin,2018,4,3776.0
+Wisconsin,2019,1,3667.0
+Wisconsin,2019,2,3973.0
+Wisconsin,2019,3,3625.0
+Wisconsin,2019,4,3992.0
+Wisconsin,2020,1,4128.0
+Wisconsin,2020,2,3409.0
+Wisconsin,2020,3,4113.0
+Wisconsin,2020,4,4468.0
+Wisconsin,2021,1,5085.0
+Wisconsin,2021,2,5774.0
+Wisconsin,2021,3,5421.0
+Wisconsin,2021,4,5772.0
+Wisconsin,2022,1,6041.0
+Wisconsin,2022,2,6527.0
+Wisconsin,2022,3,6657.0
+Wisconsin,2022,4,5837.0
+Wisconsin,2023,1,5688.0
+Wisconsin,2023,2,5234.0
+Wisconsin,2023,3,5158.0
+Wisconsin,2023,4,5187.0
+Wisconsin,2024,1,5274.0
+Wisconsin,2024,2,5385.0
+Wisconsin,2024,3,5148.0
+Wisconsin,2024,4,4855.0
+Wisconsin,2025,1,5164.0
+Wisconsin,2025,2,5078.0
+Wisconsin,2025,3,4797.0
+Wisconsin,2025,4,5290.0
+Wisconsin,2026,1,5247.0
+Wyoming,1992,3,
+Wyoming,1992,4,
+Wyoming,1993,1,
+Wyoming,1993,2,593.0
+Wyoming,1993,3,603.0
+Wyoming,1993,4,447.0
+Wyoming,1994,1,503.0
+Wyoming,1994,2,705.0
+Wyoming,1994,3,508.0
+Wyoming,1994,4,465.0
+Wyoming,1995,1,499.0
+Wyoming,1995,2,622.0
+Wyoming,1995,3,538.0
+Wyoming,1995,4,477.0
+Wyoming,1996,1,472.0
+Wyoming,1996,2,582.0
+Wyoming,1996,3,556.0
+Wyoming,1996,4,447.0
+Wyoming,1997,1,449.0
+Wyoming,1997,2,539.0
+Wyoming,1997,3,597.0
+Wyoming,1997,4,537.0
+Wyoming,1998,1,566.0
+Wyoming,1998,2,744.0
+Wyoming,1998,3,578.0
+Wyoming,1998,4,409.0
+Wyoming,1999,1,510.0
+Wyoming,1999,2,604.0
+Wyoming,1999,3,505.0
+Wyoming,1999,4,512.0
+Wyoming,2000,1,537.0
+Wyoming,2000,2,649.0
+Wyoming,2000,3,516.0
+Wyoming,2000,4,558.0
+Wyoming,2001,1,556.0
+Wyoming,2001,2,692.0
+Wyoming,2001,3,566.0
+Wyoming,2001,4,485.0
+Wyoming,2002,1,496.0
+Wyoming,2002,2,608.0
+Wyoming,2002,3,576.0
+Wyoming,2002,4,484.0
+Wyoming,2003,1,460.0
+Wyoming,2003,2,582.0
+Wyoming,2003,3,547.0
+Wyoming,2003,4,494.0
+Wyoming,2004,1,541.0
+Wyoming,2004,2,695.0
+Wyoming,2004,3,573.0
+Wyoming,2004,4,535.0
+Wyoming,2005,1,580.0
+Wyoming,2005,2,653.0
+Wyoming,2005,3,638.0
+Wyoming,2005,4,547.0
+Wyoming,2006,1,659.0
+Wyoming,2006,2,771.0
+Wyoming,2006,3,640.0
+Wyoming,2006,4,583.0
+Wyoming,2007,1,622.0
+Wyoming,2007,2,740.0
+Wyoming,2007,3,646.0
+Wyoming,2007,4,631.0
+Wyoming,2008,1,619.0
+Wyoming,2008,2,669.0
+Wyoming,2008,3,602.0
+Wyoming,2008,4,576.0
+Wyoming,2009,1,519.0
+Wyoming,2009,2,547.0
+Wyoming,2009,3,507.0
+Wyoming,2009,4,519.0
+Wyoming,2010,1,535.0
+Wyoming,2010,2,598.0
+Wyoming,2010,3,592.0
+Wyoming,2010,4,575.0
+Wyoming,2011,1,537.0
+Wyoming,2011,2,613.0
+Wyoming,2011,3,571.0
+Wyoming,2011,4,553.0
+Wyoming,2012,1,563.0
+Wyoming,2012,2,581.0
+Wyoming,2012,3,582.0
+Wyoming,2012,4,535.0
+Wyoming,2013,1,538.0
+Wyoming,2013,2,588.0
+Wyoming,2013,3,586.0
+Wyoming,2013,4,563.0
+Wyoming,2014,1,511.0
+Wyoming,2014,2,584.0
+Wyoming,2014,3,534.0
+Wyoming,2014,4,549.0
+Wyoming,2015,1,911.0
+Wyoming,2015,2,653.0
+Wyoming,2015,3,623.0
+Wyoming,2015,4,606.0
+Wyoming,2016,1,567.0
+Wyoming,2016,2,624.0
+Wyoming,2016,3,640.0
+Wyoming,2016,4,530.0
+Wyoming,2017,1,567.0
+Wyoming,2017,2,604.0
+Wyoming,2017,3,622.0
+Wyoming,2017,4,578.0
+Wyoming,2018,1,570.0
+Wyoming,2018,2,582.0
+Wyoming,2018,3,588.0
+Wyoming,2018,4,636.0
+Wyoming,2019,1,704.0
+Wyoming,2019,2,598.0
+Wyoming,2019,3,642.0
+Wyoming,2019,4,706.0
+Wyoming,2020,1,693.0
+Wyoming,2020,2,583.0
+Wyoming,2020,3,656.0
+Wyoming,2020,4,724.0
+Wyoming,2021,1,813.0
+Wyoming,2021,2,922.0
+Wyoming,2021,3,943.0
+Wyoming,2021,4,934.0
+Wyoming,2022,1,803.0
+Wyoming,2022,2,964.0
+Wyoming,2022,3,988.0
+Wyoming,2022,4,977.0
+Wyoming,2023,1,951.0
+Wyoming,2023,2,957.0
+Wyoming,2023,3,974.0
+Wyoming,2023,4,788.0
+Wyoming,2024,1,899.0
+Wyoming,2024,2,791.0
+Wyoming,2024,3,802.0
+Wyoming,2024,4,752.0
+Wyoming,2025,1,702.0
+Wyoming,2025,2,917.0
+Wyoming,2025,3,888.0
+Wyoming,2025,4,895.0
+Wyoming,2026,1,1028.0
