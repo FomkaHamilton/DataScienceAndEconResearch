@@ -769,6 +769,7 @@ All of these analyses were computed after the main results had been seen, so if 
   For comparison, the frozen all-applications forecasts (full training) are 5.3 and 6.8 at h = 0, and 5.7 and 8.5 at h = 3.
 - **Testing the scorer:** it was dry-run on synthetic actual values (output not saved), and run on the 28 October release, where it reports nothing to score yet.
 - **Next steps:** the forecasts and the scoring code are committed and tagged `prereg-live-forecasts-pbf-2026q2q3`. Score with the scorer after BLS publishes 2026Q2 (27 January 2027).
+- **Timing evidence:** GitHub's activity log shows the forecast commit (fca1d5a) pushed at 2026-11-10T04:11:59Z, and Addendum 5 (4424573) at 2026-11-10T03:51:22Z. Snapshot: `outputs/live_forecasts/github_push_log_retrieved_2026-11-09.json`. The hash-only gist the author is to post covers both sets of forecasts.
 
 **AI-use record:**
 
