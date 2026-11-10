@@ -641,3 +641,137 @@ The audit found no look-ahead in the forecasts. It raised the following issues:
 All of these analyses were computed after the main results had been seen, so if they are reported they must be labeled post hoc. The author's decision on reframing and on any new analyses is pending. No change to the paper's framing has been made.
 
 **AI-use record:** Claude (Opus 5.5, via Claude Code) ran the audit with parallel sub-agents, re-verified the findings and applied the corrections. Not yet reviewed by the author.
+
+## 2026-11-09: Revision analyses (Addendum 5) and live forecasts from Census's projections
+
+**The author's decisions** (in chat, 2026-11-09):
+
+- revise the paper fully before submission;
+- reframe it around applications as an *episodic* indicator;
+- about 10 hours a week, aiming to submit in late December 2026;
+- replace the AI context file with a neutral `AI_USE.md` (not yet done).
+
+**Addendum 5** was committed (4424573) before any of its analyses were run, except those it lists as already seen.
+
+**Implementation.**
+
+- `src/analysis/run_addendum5.py` runs items A–E and G and writes `outputs/tables/a5_*.csv`. It is now a step of `replication/run_all.py`.
+- `src/cleaning/extract_bed_vintage.py` writes the births extract from the 28 October BLS release that item G3 uses ([data/MANIFEST.md](data/MANIFEST.md), Section 6).
+- **Built-in checks, all passed:**
+  - the benchmark reproduces `rq2_predictions.csv` on all 3,264 state-quarters (maximum difference 1e-16);
+  - the quarterly construction used for the projections reproduces the committed all-applications features exactly;
+  - the recomputed targets reproduce `births_yoy` (maximum difference 2e-16).
+- **The audit's numbers reproduce exactly:**
+  - the 2022–25 versus 2010–19 change tests (p = 0.058, 0.49, 0.014, 0.023 and < 0.001);
+  - the benchmark's MAE loss to the no-change forecast (−9.5% and −7.0%) and its mean errors (+0.048 and −0.078);
+  - the test-window h = 3 information test with a t(11) reference (p = 0.089).
+- **One diagnostic was added:** a flag for comparisons in which the two-way clustered variance falls below both one-way variances. It affects 17 comparisons against the no-change forecast, all on squared error; their wild bootstrap p-values are the ones to report. No comparison in the paper's primary tables is affected (checked). This and three other implementation notes are appended to Addendum 5.
+
+**Results.** None of these results is pre-specified except item A. 2022 is descriptive.
+
+*A. The no-change forecast* (test window; positive = model better):
+
+- **Absolute error:** every test-window model is 6–9% less accurate than the no-change forecast (two-way p from 0.007 for the benchmark to 0.17).
+- **Squared error:** the models range from −1.3% to +4.5%, and none differs significantly (smallest bootstrap p = 0.63).
+
+*B and C. The pattern over time, and tests of change.*
+
+- **The criterion:** a lasting change (2023–25 versus 2010–19) significant at 5% after Holm adjustment across the 20 series × lead tests.
+- **Where it holds:** only corporate applications, at h = 0 (−18.9 percentage points of the 2010–19 benchmark MSE; Holm p < 0.001) and h = 1 (−17.0; Holm p = 0.011), with both statistics.
+- **Where it does not:**
+  - all applications at h = 0 (−6.8; raw p = 0.12) and h = 3 (+1.4; raw p = 0.82);
+  - high-propensity applications at h = 0 (−14.6; raw p = 0.034; Holm p = 0.61).
+- **The 2020–21 and 2022 contrasts:** none is significant after Holm adjustment.
+
+*D. Inference robustness.*
+
+- **Before 2020,** the information tests survive both checks: at h = 0–3, every series has Clark–West p ≤ 0.006 with the t(G − 1) reference and ≤ 0.005 with the Newey–West/Harvey–Leybourne–Newbold test on quarterly means.
+- **In 2020–21** (8 quarters), no Clark–West test reaches 5% with the second test; the smallest p is 0.078.
+- **In the test window,** p-values rise under the second test. Normal → t(11) → Newey–West/HLN:
+
+  | Model | Normal | t(11) | Newey–West/HLN |
+  |---|---|---|---|
+  | All applications, h = 3 | 0.076 | 0.089 | 0.189 |
+  | Gradient boosting | 0.001 | 0.006 | 0.047 |
+  | Random forest | 0.014 | 0.025 | 0.056 |
+  | Elastic net | 0.052 | 0.066 | 0.141 |
+
+*E. Census's projected business formations (BF_PBF4Q)*, compared with the benchmark, % of benchmark MSE:
+
+| Lead | 2010–19 | 2020–21 | 2022 | 2023–25 |
+|---|---|---|---|---|
+| h = 0 | +5.9 | +21.6 | −10.4 | −5.1 |
+| h = 1 | +7.4 | +21.0 | −6.3 | −3.1 |
+| h = 2 | +5.1 | +19.3 | −3.2 | −2.5 |
+| h = 3 | +2.5 | +11.9 | −3.6 | −2.0 |
+| h = 4 | +1.6 | +0.2 | +11.9 | −0.6 |
+
+- **Clark–West in 2010–19:** Holm-adjusted p (over 10 tests) below 0.01 at every lead, with two-way clustering and with the bootstrap. In 2023–25: Holm p = 1.
+- **Against all applications at the same lead:**
+  - in 2010–19, the projections are better by 3.3% at h = 0 (p < 0.001), and by 1.7% at h = 3 (p = 0.085; bootstrap p = 0.015);
+  - in 2023–25, they are worse by 1.4–3.7% (not significant).
+- **Change, 2023–25 versus 2010–19, at h = 0:** −13.1 points (raw p = 0.011; Holm over the 5 leads, 0.057).
+
+*G1. State versus national information.*
+
+- **State application growth demeaned by the cross-state mean** is within ±0.3% of the benchmark's MSE in every period, at both leads.
+- **National application growth**, % of benchmark MSE:
+
+  | Period | h = 0 | h = 3 |
+  |---|---|---|
+  | 2010–19 | +4.0 (Clark–West p < 0.001) | +1.6 (p = 0.004) |
+  | 2020–21 | +6.0 | +33.8 |
+  | 2022 | −24.4 | −51.3 |
+  | 2023–25 | −1.3 | +4.6 (Clark–West p = 0.034) |
+
+  At h = 3 in 2023–25, national growth beats the state-applications model by 3.1% (p = 0.042; bootstrap p = 0.012).
+- **An independent in-sample check confirms it** (not saved; pooled OLS with state and quarter dummies, errors clustered by quarter, 2006–2019 and 2006–2025):
+  - the coefficient on the cross-state mean is 0.30–0.45 (t = 2.4–3.9);
+  - the coefficient on the state deviation is 0.02–0.07 (t ≤ 1.84);
+  - the correlation between state-specific births growth and state-specific application growth is 0.013 at h = 0 and 0.007 at h = 3.
+- **The information in state application counts is national.**
+
+*G2. Births-weighted loss.* Similar to unweighted: at h = 3 in the test window, +1.9% weighted against +1.6% unweighted. The exception is random forest (−5.2% weighted, −0.8% unweighted).
+
+*G3. The BED revision.*
+
+- **The October 28 release** revised the 2025 targets by 0.008 log points on average (at most 0.060) and left 2023–24 unchanged.
+- **Against it,** the h = 3 test-window gain is +1.3% (was +1.6%), and the benchmark's RMSE is 0.1791 (was 0.1798).
+
+**What this means for draft v2.**
+
+- **The headline changes.** "The relationship changed after 2020" becomes an episodic description:
+  - real but small information before 2020 (larger for the narrower series and for Census's projections);
+  - large gains in 2020–21 and losses in 2022;
+  - none in 2023–25;
+  - a statistically supported lasting change only for corporate applications.
+- **The state-level contribution is national.** G1 belongs in the main text. It bears on the novelty claim (state-level forecasting) and on the interpretation of RQ4.
+- **The no-change comparison belongs in the main results.** It is part of the pre-specified estimand, and it shows the benchmark is a low bar.
+- **Test-window Clark–West significance for the machine-learning models is fragile.**
+
+**Item F (confirmatory): live forecasts from Census's projections.**
+
+- **Scripts:** `src/analysis/make_live_forecasts_pbf.py` and `src/analysis/evaluate_live_forecasts_pbf.py`.
+- **Forecast file:** `outputs/live_forecasts/live_forecasts_pbf_2026Q2-Q3.csv`, 612 forecasts, SHA-256 `2fe32076b08657e71cb4cf7ff94ee5515fe6620001822079e8e0da44e4692a3f`.
+- **Data:** the same committed processed files as Addendum 3, BFS through September 2026 and BED through 2025Q4, both retrieved 14 October 2026; checked unchanged since commit 9630b2d.
+- **The benchmark forecasts reproduce the frozen Addendum 3 file** (maximum difference 1e-16; identical training sizes).
+- **Mean forecasts across states**, year-over-year log change × 100:
+
+  | Model | 2026Q2 | 2026Q3 |
+  |---|---|---|
+  | Benchmark | 2.8 | 2.7 |
+  | Projections, h = 0 | 7.3 | 9.1 |
+  | Projections, h = 3 | 4.3 | 8.8 |
+  | Benchmark, trained without 2020–22 | 0.7 | 0.3 |
+  | Projections, h = 0, trained without 2020–22 | 4.1 | 4.7 |
+  | Projections, h = 3, trained without 2020–22 | 1.9 | 4.6 |
+
+  For comparison, the frozen all-applications forecasts (full training) are 5.3 and 6.8 at h = 0, and 5.7 and 8.5 at h = 3.
+- **Testing the scorer:** it was dry-run on synthetic actual values (output not saved), and run on the 28 October release, where it reports nothing to score yet.
+- **Next steps:** the forecasts and the scoring code are committed and tagged `prereg-live-forecasts-pbf-2026q2q3`. Score with the scorer after BLS publishes 2026Q2 (27 January 2027).
+
+**AI-use record:**
+
+- **Who did the work:** Claude (Opus 5.5, via Claude Code) wrote and ran the scripts, checked the results against the audit's independent calculations, and wrote this entry.
+- **One exception:** an earlier read-only data check in this working session ran on Claude Fable 5.1, while the session's model was briefly switched; it changed no file.
+- **Review status:** not yet reviewed by the author.
