@@ -1,4 +1,8 @@
 <!--
+SUPERSEDED by draft_v2.md (2026-11-09); kept for reference. The figure files
+are shared with draft v2: Figure 4 now also shows Census's projected business
+formations, and Figures 5-7 link to the renumbered files figA1_, figA2_ and
+fig6_ (same content).
 DRAFT v1. Figures placed and text copy-edited 2026-10-15; restructured for the
 Journal of Forecasting (title page, statements, Wiley AI disclosures) 2026-10-19.
 Not yet reviewed by the author.
@@ -184,7 +188,7 @@ From 2022 onward the advantage vanished. At the same-quarter and three-quarter l
 
 The weight the models place on applications also changed. Apart from the first estimates in 2010, which rest on short samples, the estimated weight on all applications at the three-quarter lead stayed between about 0.11 and 0.20 through 2021, averaging 0.18 over 2010–2019. Once the pandemic surge entered the estimation sample it rose sharply, peaking at 0.41 in 2022, and has since settled at about 0.31–0.34, roughly double its pre-2020 level. In elasticity terms, before 2020 a 10 log-point year-over-year rise in applications was associated with a rise of about 1.8 log points in establishment births three quarters later, whereas models estimated through the pandemic imply roughly 3.3. Decker and Haltiwanger (2023, appendix Table F4) find a related pattern in levels: in state-by-quarter regressions with state effects, the elasticity of establishment births with respect to high-propensity applications rises from 0.32 to 0.57 when 2020–2022 are added to the sample, whereas with year-by-quarter time effects it falls from 0.31 to 0.19. That contrast suggests that the pandemic-era increase reflects common national movements rather than differences across states. The narrower series moved much less (Figure 5). Indexed to each series' own 2010–2019 average, the weight on all applications averaged 193 over 2022–2025, against 132 for applications with planned wages, 112 for high-propensity applications, and 111 for corporate applications.
 
-![Figure 5](figures/fig5_weight_paths_indexed.png)
+![Figure 5](figures/figA1_weight_paths_indexed.png)
 
 **Figure 5.** Estimated weight on applications at a three-quarter lead, from each expanding-window re-estimation, by series. Each series is indexed to its own 2010–2019 average (= 100). Estimates are dated by forecast quarter; each uses data through three quarters earlier. The 2010 estimates rest on short samples. *Source: outputs/tables/rq2_coefficient_paths_h3.csv.*
 
@@ -196,7 +200,7 @@ These results bear directly on the most natural explanation for the breakdown. D
 
 If applications predict births because they track new firms, gains should be larger where new firms account for more new establishments. Across states, the 2010–2019 same-quarter gain from applications is positively rank-correlated with the state's new-firm share (Spearman ρ = 0.37, Holm-adjusted p = 0.014; Figure 6). The three-quarter-lead correlation is weak (ρ = 0.11, Holm-adjusted p = 0.44), and over 2022–2025 there is no relationship. This analysis is exploratory and cross-sectional, and the new-firm share comes from a different statistical system than the outcome.
 
-![Figure 6](figures/fig6_gain_vs_new_firm_share.png)
+![Figure 6](figures/figA2_gain_vs_new_firm_share.png)
 
 **Figure 6.** State accuracy gain from applications over 2010–2019, against the share of new establishments belonging to new firms (Business Dynamics Statistics, 2010–2019 average). One point per state (51). Holm adjustment is across the two leads. *Sources: outputs/tables/rq4_state_data.csv, rq4_correlations.csv.*
 
@@ -229,7 +233,7 @@ The interpretation in Section 7 was formed after the 2023–2025 results had bee
 
 The forecasts were produced with exactly the procedure described above, in two variants: one estimated on all available data and one excluding 2020–2022 from estimation (Figure 7). Two readings were registered in advance. The first is the paper's claim, that applications still do not improve forecasts; the second is an alternative, that excluding the pandemic years from estimation improves the applications model. The scoring code was committed with the forecasts. BLS published the 2026Q1 data on 28 October 2026; 2026Q2 and 2026Q3 are expected around late January and late April 2027.
 
-![Figure 7](figures/fig7_live_forecasts_2026.png)
+![Figure 7](figures/fig6_live_forecasts_2026.png)
 
 **Figure 7.** Pre-registered forecasts for 2026Q1–Q3, committed before BLS published any 2026 establishment-birth data. Each point is the average forecast across the 51 states, with equal weights as in the evaluation. Filled points: models estimated on all data. Hollow points: models estimated excluding 2020–2022. The dashed line marks the actual average change in 2026Q1, from the BLS release of 28 October 2026; 2026Q2 and 2026Q3 had not yet been published. The pre-registered test compares state-level squared errors, not these averages. *Sources: outputs/live_forecasts/live_forecasts_2026Q1-Q3.csv, actuals_2026-11-04.csv.*
 

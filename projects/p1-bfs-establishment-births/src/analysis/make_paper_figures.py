@@ -14,7 +14,13 @@ Color: all business applications (BA) and establishment births are
 drawn in black; color is used only to tell the narrower application
 series apart. The three series colors were checked pairwise for
 distinguishability on white; the green (CBA) is below 3:1 contrast, so
-every colored line is also labeled directly.
+every colored line is also labeled directly. Census's projected business
+formations (PBF4Q) are a dashed gray line, and the state-versus-national
+comparison (Figure 5) uses black and gray line styles only, so no new
+hue is introduced.
+
+Numbering: Figures 1-6 appear in the main text; Figures A1-A2 in the
+appendix.
 
 Usage:
     python make_paper_figures.py
@@ -44,12 +50,20 @@ OUT_DIR = PROJECT_ROOT / "manuscript" / "figures"
 WIDTH = 6.5  # inches, full text width
 SURFACE, INK, INK_2, MUTED, GRID, SHADE = "#ffffff", "#0b0b0b", "#52514e", "#898781", "#e1e0d9", "#efeee9"
 NAIVE_GRAY = "#a9a79f"
-SERIES_COLOR = {"BA": INK, "HBA": "#2a78d6", "WBA": "#eb6834", "CBA": "#1baf7a"}
+SERIES_COLOR = {"BA": INK, "HBA": "#2a78d6", "WBA": "#eb6834", "CBA": "#1baf7a", "PBF": INK_2}
+SERIES_STYLE = {"PBF": (0, (4, 2))}  # dashed; all others solid
 SERIES_NAME = {
     "BA": "All applications",
     "HBA": "High-propensity",
     "WBA": "Planned wages",
     "CBA": "Corporate",
+    "PBF": "Census projections",
+}
+# Figure 5 (Addendum 5, item G1): legend label, end label, color, line width, line style.
+G1_LINES = {
+    "BA": ("State applications", "State", INK, 1.6, "solid"),
+    "NAT": ("National applications", "National", INK, 1.3, (0, (4, 2))),
+    "DEM": ("State applications minus the cross-state mean", "Demeaned", MUTED, 1.3, "solid"),
 }
 PERIODS = [
     ("Pandemic\n2020–21", "2020-01-01", "2022-01-01"),
@@ -104,12 +118,14 @@ def _spread(values: list[float], min_gap: float) -> list[float]:
     return list(out)
 
 
-def _end_labels(ax, ends: dict[str, tuple[pd.Timestamp, float]], min_gap: float) -> None:
+def _end_labels(ax, ends: dict[str, tuple[pd.Timestamp, float]], min_gap: float,
+                names: dict[str, str] | None = None) -> None:
+    names = names or SERIES_NAME
     keys = list(ends)
     ys = _spread([ends[k][1] for k in keys], min_gap)
     for k, y in zip(keys, ys):
         x = ends[k][0]
-        ax.text(x + pd.Timedelta(days=60), y, SERIES_NAME[k], fontsize=6.5, color=INK,
+        ax.text(x + pd.Timedelta(days=60), y, names[k], fontsize=6.5, color=INK,
                 va="center", ha="left")
 
 
@@ -264,15 +280,16 @@ def fig_cumulative_ba(preds: pd.DataFrame) -> None:
 
 
 def fig_cumulative_by_series(preds: pd.DataFrame) -> None:
+    series = ["BA", "HBA", "WBA", "CBA", "PBF"]
     fig, axes = plt.subplots(1, 2, figsize=(WIDTH, 3.0), sharey=True, facecolor=SURFACE)
     for ax, h, title in [(axes[0], 0, "(a) Same quarter (h = 0)"), (axes[1], 3, "(b) Applications lagged three quarters (h = 3)")]:
         _style(ax)
         _shade_periods(ax, labels=False)  # panels too narrow for labels; the caption names the shaded periods
         ends = {}
-        for s in ["BA", "HBA", "WBA", "CBA"]:
+        for s in series:
             q = _cumulative_gains(preds, s, h)
             ax.plot(q["date"], q["cum_pct"], color=SERIES_COLOR[s], linewidth=1.6 if s == "BA" else 1.2,
-                    zorder=3 if s == "BA" else 2)
+                    linestyle=SERIES_STYLE.get(s, "solid"), zorder=3 if s == "BA" else 2)
             ends[s] = (q["date"].iloc[-1], q["cum_pct"].iloc[-1])
             print(f"  {s} h{h}: end-2019 {q.loc[q['year'] <= 2019, 'cum_pct'].iloc[-1]:.1f}%, "
                   f"end-2025 {q['cum_pct'].iloc[-1]:.1f}%")
@@ -282,15 +299,45 @@ def fig_cumulative_by_series(preds: pd.DataFrame) -> None:
         ax.set_xticks([pd.Timestamp(f"{y}-01-01") for y in [2010, 2014, 2018, 2022, 2026]])
         ax.xaxis.set_major_formatter(matplotlib.dates.DateFormatter("%Y"))
     axes[0].set_ylabel("Cumulative accuracy gain,\n% of benchmark total squared error", fontsize=7.5, color=INK_2)
-    handles = [Line2D([], [], color=SERIES_COLOR[s], linewidth=1.6 if s == "BA" else 1.2, label=SERIES_NAME[s])
-               for s in ["BA", "HBA", "WBA", "CBA"]]
-    fig.legend(handles=handles, loc="upper left", bbox_to_anchor=(0.01, 1.0), ncol=4, frameon=False,
-               fontsize=7.5, labelcolor=INK)
+    handles = [Line2D([], [], color=SERIES_COLOR[s], linewidth=1.6 if s == "BA" else 1.2,
+                      linestyle=SERIES_STYLE.get(s, "solid"), label=SERIES_NAME[s]) for s in series]
+    fig.legend(handles=handles, loc="upper left", bbox_to_anchor=(0.01, 1.0), ncol=len(series), frameon=False,
+               fontsize=7.5, labelcolor=INK, handlelength=2.0, columnspacing=1.2)
     fig.tight_layout(rect=(0, 0, 1, 0.93), w_pad=1.5)
     _save(fig, "fig4_cumulative_gain_by_series")
 
 
 # ---------------------------------------------------------------- figure 5
+
+def fig_state_vs_national(g1: pd.DataFrame) -> None:
+    """Cumulative gain from state applications, national applications, and state applications
+    minus their cross-state mean (Addendum 5, item G1)."""
+    fig, axes = plt.subplots(1, 2, figsize=(WIDTH, 3.0), sharey=True, facecolor=SURFACE)
+    for ax, h, title in [(axes[0], 0, "(a) Same quarter (h = 0)"), (axes[1], 3, "(b) Applications lagged three quarters (h = 3)")]:
+        _style(ax)
+        _shade_periods(ax, labels=False)
+        ends = {}
+        for s, (_, _, color, lw, ls) in G1_LINES.items():
+            q = _cumulative_gains(g1, s, h)
+            ax.plot(q["date"], q["cum_pct"], color=color, linewidth=lw, linestyle=ls, zorder=3 if s == "BA" else 2)
+            ends[s] = (q["date"].iloc[-1], q["cum_pct"].iloc[-1])
+            print(f"  {s} h{h}: end-2019 {q.loc[q['year'] <= 2019, 'cum_pct'].iloc[-1]:.1f}%, "
+                  f"end-2025 {q['cum_pct'].iloc[-1]:.1f}%")
+        _end_labels(ax, ends, min_gap=0.9, names={k: v[1] for k, v in G1_LINES.items()})
+        _panel_title(ax, title)
+        ax.set_xlim(pd.Timestamp("2009-07-01"), pd.Timestamp("2030-06-01"))
+        ax.set_xticks([pd.Timestamp(f"{y}-01-01") for y in [2010, 2014, 2018, 2022, 2026]])
+        ax.xaxis.set_major_formatter(matplotlib.dates.DateFormatter("%Y"))
+    axes[0].set_ylabel("Cumulative accuracy gain,\n% of benchmark total squared error", fontsize=7.5, color=INK_2)
+    handles = [Line2D([], [], color=color, linewidth=lw, linestyle=ls, label=legend)
+               for legend, _, color, lw, ls in G1_LINES.values()]
+    fig.legend(handles=handles, loc="upper left", bbox_to_anchor=(0.01, 1.0), ncol=len(handles), frameon=False,
+               fontsize=7.5, labelcolor=INK, handlelength=2.4)
+    fig.tight_layout(rect=(0, 0, 1, 0.93), w_pad=1.5)
+    _save(fig, "fig5_state_vs_national")
+
+
+# ---------------------------------------------------------------- figure A1
 
 def fig_weights_indexed() -> None:
     c = pd.read_csv(TABLE_DIR / "rq2_coefficient_paths_h3.csv")
@@ -318,10 +365,10 @@ def fig_weights_indexed() -> None:
     fig.legend(handles=handles, loc="upper left", bbox_to_anchor=(0.01, 1.0), ncol=4, frameon=False,
                fontsize=7.5, labelcolor=INK)
     fig.tight_layout(rect=(0, 0, 1, 0.92))
-    _save(fig, "fig5_weight_paths_indexed")
+    _save(fig, "figA1_weight_paths_indexed")
 
 
-# ---------------------------------------------------------------- figure 6
+# ---------------------------------------------------------------- figure A2
 
 def fig_new_firm_share() -> None:
     d = pd.read_csv(TABLE_DIR / "rq4_state_data.csv")
@@ -340,10 +387,10 @@ def fig_new_firm_share() -> None:
         ax.set_xlabel("New establishments from new firms, 2010–19 (%)", fontsize=7.5, color=INK_2)
     axes[0].set_ylabel("Accuracy gain from applications,\n2010–19 (% of benchmark MSE)", fontsize=7.5, color=INK_2)
     fig.tight_layout(w_pad=1.5)
-    _save(fig, "fig6_gain_vs_new_firm_share")
+    _save(fig, "figA2_gain_vs_new_firm_share")
 
 
-# ---------------------------------------------------------------- figure 7
+# ---------------------------------------------------------------- figure 6
 
 def fig_live_forecasts() -> None:
     """Pre-registered forecasts, averaged across states with equal weights (as in the evaluation,
@@ -399,7 +446,7 @@ def fig_live_forecasts() -> None:
     fig.legend(handles=handles, loc="upper left", bbox_to_anchor=(0.01, 1.0), ncol=len(handles), frameon=False,
                fontsize=7.5, labelcolor=INK)
     fig.tight_layout(rect=(0, 0, 1, 0.88), w_pad=1.0)
-    _save(fig, "fig7_live_forecasts_2026")
+    _save(fig, "fig6_live_forecasts_2026")
     print(nat.pivot_table(index=["year", "quarter", "model"], columns="training", values="yoy").round(1).to_string())
 
 
@@ -407,13 +454,18 @@ def main() -> None:
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     preds = pd.read_csv(TABLE_DIR / "rq2_predictions.csv")
     _check_against_committed(preds)
+    keys = ["geo", "year", "quarter"]
+    pbf = pd.read_csv(TABLE_DIR / "a5_E_pbf_predictions.csv")[keys + ["pred_PBF_h0", "pred_PBF_h3"]]
+    preds = preds.merge(pbf, on=keys, how="left", validate="one_to_one")
+    g1 = pd.read_csv(TABLE_DIR / "a5_G1_predictions.csv")
     print("Figure 1"); fig_raw_data()
     print("Figure 2"); fig_test_window_intervals()
     print("Figure 3"); fig_cumulative_ba(preds)
     print("Figure 4"); fig_cumulative_by_series(preds)
-    print("Figure 5"); fig_weights_indexed()
-    print("Figure 6"); fig_new_firm_share()
-    print("Figure 7"); fig_live_forecasts()
+    print("Figure 5"); fig_state_vs_national(g1)
+    print("Figure 6"); fig_live_forecasts()
+    print("Figure A1"); fig_weights_indexed()
+    print("Figure A2"); fig_new_firm_share()
 
 
 if __name__ == "__main__":
