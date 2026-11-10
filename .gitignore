@@ -49,3 +49,6 @@ projects/**/outputs/figures/*
 
 # --- Manuscript submission working files (local only: cover letter, checklist, built Word files) ---
 projects/**/manuscript/submission/
+
+# --- Author's local working files (see AI_USE.md) ---
+research_partner_context_v2.txt

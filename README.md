@@ -2,20 +2,20 @@
 
 An independent research program with two parallel tracks: applied data science (accessible projects built on public data) and applied econometrics (projects with more demanding identification). The goal is a reproducible path from research question to peer-reviewed publication.
 
-The author's working instructions for the AI research assistant, including the collaboration and research-integrity ground rules, are in [research_partner_context_v2.txt](research_partner_context_v2.txt).
+The research uses an AI assistant extensively; [AI_USE.md](AI_USE.md) describes how, and the research-integrity rules the work follows.
 
 ## Projects and current status
 
-| Project | Track | Status (2026-10-15) |
+| Project | Track | Status (2026-11-09) |
 |---|---|---|
-| [Project 1](projects/p1-bfs-establishment-births/README.md): Census business applications (BFS) and BLS state establishment births (BED) | Data science | Main analyses complete; manuscript draft v1 written; pre-registered live forecasts being scored (2026Q1 done) |
+| [Project 1](projects/p1-bfs-establishment-births/README.md): Census business applications (BFS) and BLS state establishment births (BED) | Data science | Main and revision analyses complete; manuscript being revised (draft v2); pre-registered live forecasts being scored (2026Q1 done) |
 | Project 2: Household income volatility and material hardship (Census SIPP 2018+ panels) | Econometrics | Approved 2026-10-14; not started |
 
 **Project 1.** Do state-level business applications from the Census Bureau's Business Formation Statistics (BFS) improve out-of-sample forecasts of state establishment births in the BLS Business Employment Dynamics (BED), and do machine-learning methods add value over econometric benchmarks? The question is predictive only; the project makes no causal claims.
 
-- Paper (draft v1): *Business Applications as a Leading Indicator of New Establishments: Evidence from U.S. States That the Relationship Changed After 2020* ([manuscript/draft_v1.md](projects/p1-bfs-establishment-births/manuscript/draft_v1.md)). Target journal: *Journal of Forecasting*.
-- Main finding: no detectable forecasting gain in the locked 2023–2025 test window, and a relationship that is regime-dependent over 2010–2025 (modest but real before 2020, large in 2020–21, absent in 2022–25). See the [project README](projects/p1-bfs-establishment-births/README.md) for a fuller summary.
-- Forecasts for 2026Q1–Q3 were pre-registered (tag `prereg-live-forecasts-2026`) and are scored as BLS publishes each quarter; 2026Q1 was scored on 2026-11-04.
+- Paper (draft v1): *Business Applications as a Leading Indicator of New Establishments: Evidence from U.S. States That the Relationship Changed After 2020* ([manuscript/draft_v1.md](projects/p1-bfs-establishment-births/manuscript/draft_v1.md)). It is being revised into draft v2, with a new title and framing. Target journal: *Journal of Forecasting*.
+- Main finding: no detectable forecasting gain in the locked 2023–2025 test window. Over 2010–2025 the gains are episodic: small but real before 2020, large in 2020–21, negative in 2022 and absent in 2023–25. The information is national rather than state-specific. See the [project README](projects/p1-bfs-establishment-births/README.md) for a fuller summary.
+- Forecasts for 2026Q1–Q3 were pre-registered (tag `prereg-live-forecasts-2026`) and are scored as BLS publishes each quarter; 2026Q1 was scored on 2026-11-04. Forecasts for 2026Q2–Q3 from Census's projected business formations were pre-registered on 2026-11-09 (tag `prereg-live-forecasts-pbf-2026q2q3`).
 
 **Project 2.** Using within-household variation (household fixed effects) in the Census Survey of Income and Program Participation (SIPP) 2018+ panels, is month-to-month income volatility associated with material hardship, holding income level fixed? The analysis is associational unless a credible quasi-experiment is identified during the design phase.
 
@@ -66,4 +66,4 @@ The code in this repository is released under the [MIT License](LICENSE). The ma
 
 ## AI assistance disclosure
 
-This research program uses AI tools (Anthropic's Claude, via Claude Code) for literature discovery, code generation, analysis support and drafting. The author reviews and approves substantive research decisions, verifies citations and code, and retains full responsibility for the final work. The AI-use record is kept in `research_log.md`, both at the repository root and in each project; entries note when work has not yet been reviewed by the author. Disclosure in any manuscript follows the target journal's policy.
+This research program uses AI tools (Anthropic's Claude, via Claude Code) for literature discovery, code generation, analysis and drafting. The author makes the main research decisions and is responsible for the work. See [AI_USE.md](AI_USE.md) for details. The AI-use record is kept in `research_log.md`, both at the repository root and in each project; entries note when work has not yet been reviewed by the author. Disclosure in any manuscript follows the target journal's policy.

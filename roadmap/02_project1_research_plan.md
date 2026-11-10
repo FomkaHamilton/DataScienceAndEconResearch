@@ -28,7 +28,7 @@ Original working title: *Do Business Applications Predict Where New Establishmen
 
 ---
 
-## 2. Formal design (following the design checklist in [research_partner_context_v2.txt](../research_partner_context_v2.txt))
+## 2. Formal design (following the design checklist in the author's working instructions to the AI assistant; see [AI_USE.md](../AI_USE.md))
 
 | Element | Definition |
 |---|---|

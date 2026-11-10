@@ -52,3 +52,15 @@ The author's initial preference was Candidate 4 (minimum wage and business dynam
 This is a judgment call, not a certainty. If the Phase 1 literature review for Candidate 3 finds a closer prior paper, or if no credible instrument for income volatility emerges, Candidate 4 remains the fallback, and the shared-infrastructure argument for it still holds.
 
 **Repository:** moved out of OneDrive (to avoid sync conflicts) to a local, non-synced path and pushed to a private GitHub repository. See the commit history for setup.
+
+---
+
+## 2026-11-09: AI-use documentation
+
+**Decision (the author's, 2026-11-09):** replace the author's working instructions to the AI assistant (`research_partner_context_v2.txt`) in the current files with a neutral description, [AI_USE.md](AI_USE.md).
+
+- The file is no longer tracked (`git rm --cached`) and is listed in `.gitignore`; the author keeps a local copy.
+- It remains in the git history, which was not rewritten: a rewrite would change the commit IDs that the pre-registration records cite. AI_USE.md says so.
+- The root README and the Project 1 research plan now point to AI_USE.md.
+
+**AI-use record:** Claude (Opus 5.5, via Claude Code) drafted AI_USE.md and made the changes. Not yet reviewed by the author.
