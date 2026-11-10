@@ -70,6 +70,7 @@ Hyperparameters tuned only within the development window via time-series cross-v
 - [pre_analysis_plan_addendum_2.md](pre_analysis_plan_addendum_2.md) (2026-10-15) — RQ2 (which application series), in the test window and over time, committed before running.
 - [pre_analysis_plan_addendum_3.md](pre_analysis_plan_addendum_3.md) (2026-10-15) — pre-registered live forecasts for 2026Q1–Q3, committed before BLS published any 2026 data.
 - [pre_analysis_plan_addendum_4.md](pre_analysis_plan_addendum_4.md) (2026-10-15) — RQ4 (new-firm share, exploratory) details, committed before running.
+- [pre_analysis_plan_addendum_5.md](pre_analysis_plan_addendum_5.md) (2026-11-09) — pre-submission revision analyses (mostly not pre-specified; one new live test of Census's projections), committed before running.
 
 ## 8. What would change this plan
 
